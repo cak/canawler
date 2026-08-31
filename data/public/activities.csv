@@ -1,0 +1,24 @@
+activity_id,date,activity_name,activity_type,strava_distance_miles,co_travel_miles,co_unique_miles,new_co_unique_miles,cumulative_unique_miles,cumulative_percent_complete,min_milepost,max_milepost,moving_time_minutes,elevation_gain_feet,strava_url
+199816335,2013-03-12,Capital Crescent Trail,run,9.044,2.458,1.3,1.3,1.3,0.705,0.63,1.94,71.37,137.1,https://www.strava.com/activities/199816335
+199814600,2013-04-02,Glen Echo Park,run,6.334,2.63,2.64,2.64,3.94,2.136,4.72,7.36,51.12,108.9,https://www.strava.com/activities/199814600
+199813593,2013-04-09,Chesapeake and Ohio Canal,run,10.748,0.85,0.61,0.61,4.55,2.466,0.0,0.61,85.62,399.0,https://www.strava.com/activities/199813593
+199812372,2013-04-16,C&O/CCT,run,10.308,4.782,2.51,1.19,5.74,3.111,0.59,3.39,82.7,287.4,https://www.strava.com/activities/199812372
+199789540,2013-09-14,Abebe Bikila Day Int'l Peace Half Marathon 2013,run,13.13,13.079,6.55,3.71,9.45,5.122,2.9,9.45,85.35,85.0,https://www.strava.com/activities/199789540
+199781227,2013-11-17,Potomac River Run Marathon 2013,run,26.092,25.962,6.52,0.59,10.04,5.442,3.52,10.04,191.72,143.7,https://www.strava.com/activities/199781227
+199744774,2014-09-14,C&O Canal 18m,run,18.05,17.138,8.62,8.62,18.66,10.114,39.45,48.07,129.67,33.1,https://www.strava.com/activities/199744774
+200480099,2014-09-27,"09/27/2014 Jefferson, Maryland",run,20.072,19.954,10.04,10.0,28.66,15.534,48.03,58.07,146.23,36.1,https://www.strava.com/activities/200480099
+206547267,2014-10-12,Last 20 before NYC Marathon,run,20.05,19.928,10.22,6.88,35.54,19.263,54.73,64.95,148.9,291.0,https://www.strava.com/activities/206547267
+311074835,2015-05-24,"05/24/2015 Point of Rocks, Maryland",bike,30.071,30.222,15.22,6.61,42.15,22.846,32.84,48.06,160.57,0.0,https://www.strava.com/activities/311074835
+359621002,2015-08-02,"08/02/2015 Jefferson, Maryland",run,17.31,18.007,9.07,0.0,42.15,22.846,48.04,57.12,132.5,35.8,https://www.strava.com/activities/359621002
+375827343,2015-08-23,Morning Run,run,20.058,17.883,8.95,0.0,42.15,22.846,54.42,63.37,152.28,131.9,https://www.strava.com/activities/375827343
+386308394,2015-09-06,Morning Run,run,20.05,11.579,5.8,0.0,42.15,22.846,54.61,60.41,155.4,313.6,https://www.strava.com/activities/386308394
+716592937,2016-09-18,Morning Run,run,10.047,10.089,4.94,0.0,42.15,22.846,47.62,52.56,75.7,0.0,https://www.strava.com/activities/716592937
+719317661,2016-09-20,Afternoon Run,run,9.501,3.372,1.7,0.0,42.15,22.846,60.4,62.1,71.53,549.5,https://www.strava.com/activities/719317661
+730943315,2016-10-01,Morning Run,run,13.062,2.049,2.06,2.06,44.21,23.962,70.67,72.73,94.5,689.6,https://www.strava.com/activities/730943315
+746946174,2016-10-16,Morning Run,run,19.149,18.683,9.68,0.0,44.21,23.962,48.02,57.7,148.78,41.7,https://www.strava.com/activities/746946174
+752586140,2016-10-22,Morning Ride,bike,10.569,8.405,4.22,0.0,44.21,23.962,60.42,64.64,70.75,46.9,https://www.strava.com/activities/752586140
+760819957,2016-10-30,Morning Run,run,20.051,20.062,10.03,0.0,44.21,23.962,38.03,48.06,155.62,70.9,https://www.strava.com/activities/760819957
+767883779,2016-11-06,Morning Run,run,20.118,20.379,10.22,10.22,54.43,29.501,89.47,99.69,157.77,37.4,https://www.strava.com/activities/767883779
+781060553,2016-11-20,Morning Run,run,20.101,20.213,10.12,10.12,64.55,34.986,99.69,109.81,153.43,66.3,https://www.strava.com/activities/781060553
+13906962190,2021-07-31,Tuscarora,run,8.062,8.026,3.93,0.0,64.55,34.986,44.34,48.27,73.13,0.0,https://www.strava.com/activities/13906962190
+19965023599,2026-08-30,Hike on the C&O Canawl,hike,0.838,0.574,0.42,0.0,64.55,34.986,99.2,99.62,30.2,8.5,https://www.strava.com/activities/19965023599
