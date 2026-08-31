@@ -1,0 +1,569 @@
+[
+  {
+    "activity_id": 199816335,
+    "activity_name": "Capital Crescent Trail",
+    "activity_type": "run",
+    "co_travel_miles": 2.458,
+    "co_unique_miles": 1.3,
+    "cumulative_percent_complete": 0.705,
+    "cumulative_unique_miles": 1.3,
+    "date": "2013-03-12",
+    "elevation_gain_feet": 137.1,
+    "max_milepost": 1.94,
+    "min_milepost": 0.63,
+    "moving_time_minutes": 71.37,
+    "new_co_unique_miles": 1.3,
+    "segments": [
+      {
+        "end_milepost": 1.17,
+        "miles": 0.54,
+        "start_milepost": 0.63
+      },
+      {
+        "end_milepost": 1.94,
+        "miles": 0.76,
+        "start_milepost": 1.18
+      }
+    ],
+    "strava_distance_miles": 9.044,
+    "strava_url": "https://www.strava.com/activities/199816335"
+  },
+  {
+    "activity_id": 199814600,
+    "activity_name": "Glen Echo Park",
+    "activity_type": "run",
+    "co_travel_miles": 2.63,
+    "co_unique_miles": 2.64,
+    "cumulative_percent_complete": 2.136,
+    "cumulative_unique_miles": 3.94,
+    "date": "2013-04-02",
+    "elevation_gain_feet": 108.9,
+    "max_milepost": 7.36,
+    "min_milepost": 4.72,
+    "moving_time_minutes": 51.12,
+    "new_co_unique_miles": 2.64,
+    "segments": [
+      {
+        "end_milepost": 7.36,
+        "miles": 2.64,
+        "start_milepost": 4.72
+      }
+    ],
+    "strava_distance_miles": 6.334,
+    "strava_url": "https://www.strava.com/activities/199814600"
+  },
+  {
+    "activity_id": 199813593,
+    "activity_name": "Chesapeake and Ohio Canal",
+    "activity_type": "run",
+    "co_travel_miles": 0.85,
+    "co_unique_miles": 0.61,
+    "cumulative_percent_complete": 2.466,
+    "cumulative_unique_miles": 4.55,
+    "date": "2013-04-09",
+    "elevation_gain_feet": 399.0,
+    "max_milepost": 0.61,
+    "min_milepost": 0.0,
+    "moving_time_minutes": 85.62,
+    "new_co_unique_miles": 0.61,
+    "segments": [
+      {
+        "end_milepost": 0.61,
+        "miles": 0.61,
+        "start_milepost": 0.0
+      }
+    ],
+    "strava_distance_miles": 10.748,
+    "strava_url": "https://www.strava.com/activities/199813593"
+  },
+  {
+    "activity_id": 199812372,
+    "activity_name": "C&O/CCT",
+    "activity_type": "run",
+    "co_travel_miles": 4.782,
+    "co_unique_miles": 2.51,
+    "cumulative_percent_complete": 3.111,
+    "cumulative_unique_miles": 5.74,
+    "date": "2013-04-16",
+    "elevation_gain_feet": 287.4,
+    "max_milepost": 3.39,
+    "min_milepost": 0.59,
+    "moving_time_minutes": 82.7,
+    "new_co_unique_miles": 1.19,
+    "segments": [
+      {
+        "end_milepost": 3.05,
+        "miles": 2.46,
+        "start_milepost": 0.59
+      },
+      {
+        "end_milepost": 3.39,
+        "miles": 0.05,
+        "start_milepost": 3.34
+      }
+    ],
+    "strava_distance_miles": 10.308,
+    "strava_url": "https://www.strava.com/activities/199812372"
+  },
+  {
+    "activity_id": 199789540,
+    "activity_name": "Abebe Bikila Day Int'l Peace Half Marathon 2013",
+    "activity_type": "run",
+    "co_travel_miles": 13.079,
+    "co_unique_miles": 6.55,
+    "cumulative_percent_complete": 5.122,
+    "cumulative_unique_miles": 9.45,
+    "date": "2013-09-14",
+    "elevation_gain_feet": 85.0,
+    "max_milepost": 9.45,
+    "min_milepost": 2.9,
+    "moving_time_minutes": 85.35,
+    "new_co_unique_miles": 3.71,
+    "segments": [
+      {
+        "end_milepost": 9.45,
+        "miles": 6.55,
+        "start_milepost": 2.9
+      }
+    ],
+    "strava_distance_miles": 13.13,
+    "strava_url": "https://www.strava.com/activities/199789540"
+  },
+  {
+    "activity_id": 199781227,
+    "activity_name": "Potomac River Run Marathon 2013",
+    "activity_type": "run",
+    "co_travel_miles": 25.962,
+    "co_unique_miles": 6.52,
+    "cumulative_percent_complete": 5.442,
+    "cumulative_unique_miles": 10.04,
+    "date": "2013-11-17",
+    "elevation_gain_feet": 143.7,
+    "max_milepost": 10.04,
+    "min_milepost": 3.52,
+    "moving_time_minutes": 191.72,
+    "new_co_unique_miles": 0.59,
+    "segments": [
+      {
+        "end_milepost": 10.04,
+        "miles": 6.52,
+        "start_milepost": 3.52
+      }
+    ],
+    "strava_distance_miles": 26.092,
+    "strava_url": "https://www.strava.com/activities/199781227"
+  },
+  {
+    "activity_id": 199744774,
+    "activity_name": "C&O Canal 18m",
+    "activity_type": "run",
+    "co_travel_miles": 17.138,
+    "co_unique_miles": 8.62,
+    "cumulative_percent_complete": 10.114,
+    "cumulative_unique_miles": 18.66,
+    "date": "2014-09-14",
+    "elevation_gain_feet": 33.1,
+    "max_milepost": 48.07,
+    "min_milepost": 39.45,
+    "moving_time_minutes": 129.67,
+    "new_co_unique_miles": 8.62,
+    "segments": [
+      {
+        "end_milepost": 48.07,
+        "miles": 8.62,
+        "start_milepost": 39.45
+      }
+    ],
+    "strava_distance_miles": 18.05,
+    "strava_url": "https://www.strava.com/activities/199744774"
+  },
+  {
+    "activity_id": 200480099,
+    "activity_name": "09/27/2014 Jefferson, Maryland",
+    "activity_type": "run",
+    "co_travel_miles": 19.954,
+    "co_unique_miles": 10.04,
+    "cumulative_percent_complete": 15.534,
+    "cumulative_unique_miles": 28.66,
+    "date": "2014-09-27",
+    "elevation_gain_feet": 36.1,
+    "max_milepost": 58.07,
+    "min_milepost": 48.03,
+    "moving_time_minutes": 146.23,
+    "new_co_unique_miles": 10.0,
+    "segments": [
+      {
+        "end_milepost": 58.07,
+        "miles": 10.04,
+        "start_milepost": 48.03
+      }
+    ],
+    "strava_distance_miles": 20.072,
+    "strava_url": "https://www.strava.com/activities/200480099"
+  },
+  {
+    "activity_id": 206547267,
+    "activity_name": "Last 20 before NYC Marathon",
+    "activity_type": "run",
+    "co_travel_miles": 19.928,
+    "co_unique_miles": 10.22,
+    "cumulative_percent_complete": 19.263,
+    "cumulative_unique_miles": 35.54,
+    "date": "2014-10-12",
+    "elevation_gain_feet": 291.0,
+    "max_milepost": 64.95,
+    "min_milepost": 54.73,
+    "moving_time_minutes": 148.9,
+    "new_co_unique_miles": 6.88,
+    "segments": [
+      {
+        "end_milepost": 64.95,
+        "miles": 10.22,
+        "start_milepost": 54.73
+      }
+    ],
+    "strava_distance_miles": 20.05,
+    "strava_url": "https://www.strava.com/activities/206547267"
+  },
+  {
+    "activity_id": 311074835,
+    "activity_name": "05/24/2015 Point of Rocks, Maryland",
+    "activity_type": "bike",
+    "co_travel_miles": 30.222,
+    "co_unique_miles": 15.22,
+    "cumulative_percent_complete": 22.846,
+    "cumulative_unique_miles": 42.15,
+    "date": "2015-05-24",
+    "elevation_gain_feet": 0.0,
+    "max_milepost": 48.06,
+    "min_milepost": 32.84,
+    "moving_time_minutes": 160.57,
+    "new_co_unique_miles": 6.61,
+    "segments": [
+      {
+        "end_milepost": 48.06,
+        "miles": 15.22,
+        "start_milepost": 32.84
+      }
+    ],
+    "strava_distance_miles": 30.071,
+    "strava_url": "https://www.strava.com/activities/311074835"
+  },
+  {
+    "activity_id": 359621002,
+    "activity_name": "08/02/2015 Jefferson, Maryland",
+    "activity_type": "run",
+    "co_travel_miles": 18.007,
+    "co_unique_miles": 9.07,
+    "cumulative_percent_complete": 22.846,
+    "cumulative_unique_miles": 42.15,
+    "date": "2015-08-02",
+    "elevation_gain_feet": 35.8,
+    "max_milepost": 57.12,
+    "min_milepost": 48.04,
+    "moving_time_minutes": 132.5,
+    "new_co_unique_miles": 0.0,
+    "segments": [
+      {
+        "end_milepost": 53.87,
+        "miles": 5.83,
+        "start_milepost": 48.04
+      },
+      {
+        "end_milepost": 57.12,
+        "miles": 3.24,
+        "start_milepost": 53.88
+      }
+    ],
+    "strava_distance_miles": 17.31,
+    "strava_url": "https://www.strava.com/activities/359621002"
+  },
+  {
+    "activity_id": 375827343,
+    "activity_name": "Morning Run",
+    "activity_type": "run",
+    "co_travel_miles": 17.883,
+    "co_unique_miles": 8.95,
+    "cumulative_percent_complete": 22.846,
+    "cumulative_unique_miles": 42.15,
+    "date": "2015-08-23",
+    "elevation_gain_feet": 131.9,
+    "max_milepost": 63.37,
+    "min_milepost": 54.42,
+    "moving_time_minutes": 152.28,
+    "new_co_unique_miles": 0.0,
+    "segments": [
+      {
+        "end_milepost": 63.37,
+        "miles": 8.95,
+        "start_milepost": 54.42
+      }
+    ],
+    "strava_distance_miles": 20.058,
+    "strava_url": "https://www.strava.com/activities/375827343"
+  },
+  {
+    "activity_id": 386308394,
+    "activity_name": "Morning Run",
+    "activity_type": "run",
+    "co_travel_miles": 11.579,
+    "co_unique_miles": 5.8,
+    "cumulative_percent_complete": 22.846,
+    "cumulative_unique_miles": 42.15,
+    "date": "2015-09-06",
+    "elevation_gain_feet": 313.6,
+    "max_milepost": 60.41,
+    "min_milepost": 54.61,
+    "moving_time_minutes": 155.4,
+    "new_co_unique_miles": 0.0,
+    "segments": [
+      {
+        "end_milepost": 60.41,
+        "miles": 5.8,
+        "start_milepost": 54.61
+      }
+    ],
+    "strava_distance_miles": 20.05,
+    "strava_url": "https://www.strava.com/activities/386308394"
+  },
+  {
+    "activity_id": 716592937,
+    "activity_name": "Morning Run",
+    "activity_type": "run",
+    "co_travel_miles": 10.089,
+    "co_unique_miles": 4.94,
+    "cumulative_percent_complete": 22.846,
+    "cumulative_unique_miles": 42.15,
+    "date": "2016-09-18",
+    "elevation_gain_feet": 0.0,
+    "max_milepost": 52.56,
+    "min_milepost": 47.62,
+    "moving_time_minutes": 75.7,
+    "new_co_unique_miles": 0.0,
+    "segments": [
+      {
+        "end_milepost": 52.56,
+        "miles": 4.94,
+        "start_milepost": 47.62
+      }
+    ],
+    "strava_distance_miles": 10.047,
+    "strava_url": "https://www.strava.com/activities/716592937"
+  },
+  {
+    "activity_id": 719317661,
+    "activity_name": "Afternoon Run",
+    "activity_type": "run",
+    "co_travel_miles": 3.372,
+    "co_unique_miles": 1.7,
+    "cumulative_percent_complete": 22.846,
+    "cumulative_unique_miles": 42.15,
+    "date": "2016-09-20",
+    "elevation_gain_feet": 549.5,
+    "max_milepost": 62.1,
+    "min_milepost": 60.4,
+    "moving_time_minutes": 71.53,
+    "new_co_unique_miles": 0.0,
+    "segments": [
+      {
+        "end_milepost": 62.1,
+        "miles": 1.7,
+        "start_milepost": 60.4
+      }
+    ],
+    "strava_distance_miles": 9.501,
+    "strava_url": "https://www.strava.com/activities/719317661"
+  },
+  {
+    "activity_id": 730943315,
+    "activity_name": "Morning Run",
+    "activity_type": "run",
+    "co_travel_miles": 2.049,
+    "co_unique_miles": 2.06,
+    "cumulative_percent_complete": 23.962,
+    "cumulative_unique_miles": 44.21,
+    "date": "2016-10-01",
+    "elevation_gain_feet": 689.6,
+    "max_milepost": 72.73,
+    "min_milepost": 70.67,
+    "moving_time_minutes": 94.5,
+    "new_co_unique_miles": 2.06,
+    "segments": [
+      {
+        "end_milepost": 72.73,
+        "miles": 2.06,
+        "start_milepost": 70.67
+      }
+    ],
+    "strava_distance_miles": 13.062,
+    "strava_url": "https://www.strava.com/activities/730943315"
+  },
+  {
+    "activity_id": 746946174,
+    "activity_name": "Morning Run",
+    "activity_type": "run",
+    "co_travel_miles": 18.683,
+    "co_unique_miles": 9.68,
+    "cumulative_percent_complete": 23.962,
+    "cumulative_unique_miles": 44.21,
+    "date": "2016-10-16",
+    "elevation_gain_feet": 41.7,
+    "max_milepost": 57.7,
+    "min_milepost": 48.02,
+    "moving_time_minutes": 148.78,
+    "new_co_unique_miles": 0.0,
+    "segments": [
+      {
+        "end_milepost": 57.7,
+        "miles": 9.68,
+        "start_milepost": 48.02
+      }
+    ],
+    "strava_distance_miles": 19.149,
+    "strava_url": "https://www.strava.com/activities/746946174"
+  },
+  {
+    "activity_id": 752586140,
+    "activity_name": "Morning Ride",
+    "activity_type": "bike",
+    "co_travel_miles": 8.405,
+    "co_unique_miles": 4.22,
+    "cumulative_percent_complete": 23.962,
+    "cumulative_unique_miles": 44.21,
+    "date": "2016-10-22",
+    "elevation_gain_feet": 46.9,
+    "max_milepost": 64.64,
+    "min_milepost": 60.42,
+    "moving_time_minutes": 70.75,
+    "new_co_unique_miles": 0.0,
+    "segments": [
+      {
+        "end_milepost": 64.64,
+        "miles": 4.22,
+        "start_milepost": 60.42
+      }
+    ],
+    "strava_distance_miles": 10.569,
+    "strava_url": "https://www.strava.com/activities/752586140"
+  },
+  {
+    "activity_id": 760819957,
+    "activity_name": "Morning Run",
+    "activity_type": "run",
+    "co_travel_miles": 20.062,
+    "co_unique_miles": 10.03,
+    "cumulative_percent_complete": 23.962,
+    "cumulative_unique_miles": 44.21,
+    "date": "2016-10-30",
+    "elevation_gain_feet": 70.9,
+    "max_milepost": 48.06,
+    "min_milepost": 38.03,
+    "moving_time_minutes": 155.62,
+    "new_co_unique_miles": 0.0,
+    "segments": [
+      {
+        "end_milepost": 48.06,
+        "miles": 10.03,
+        "start_milepost": 38.03
+      }
+    ],
+    "strava_distance_miles": 20.051,
+    "strava_url": "https://www.strava.com/activities/760819957"
+  },
+  {
+    "activity_id": 767883779,
+    "activity_name": "Morning Run",
+    "activity_type": "run",
+    "co_travel_miles": 20.379,
+    "co_unique_miles": 10.22,
+    "cumulative_percent_complete": 29.501,
+    "cumulative_unique_miles": 54.43,
+    "date": "2016-11-06",
+    "elevation_gain_feet": 37.4,
+    "max_milepost": 99.69,
+    "min_milepost": 89.47,
+    "moving_time_minutes": 157.77,
+    "new_co_unique_miles": 10.22,
+    "segments": [
+      {
+        "end_milepost": 99.69,
+        "miles": 10.22,
+        "start_milepost": 89.47
+      }
+    ],
+    "strava_distance_miles": 20.118,
+    "strava_url": "https://www.strava.com/activities/767883779"
+  },
+  {
+    "activity_id": 781060553,
+    "activity_name": "Morning Run",
+    "activity_type": "run",
+    "co_travel_miles": 20.213,
+    "co_unique_miles": 10.12,
+    "cumulative_percent_complete": 34.986,
+    "cumulative_unique_miles": 64.55,
+    "date": "2016-11-20",
+    "elevation_gain_feet": 66.3,
+    "max_milepost": 109.81,
+    "min_milepost": 99.69,
+    "moving_time_minutes": 153.43,
+    "new_co_unique_miles": 10.12,
+    "segments": [
+      {
+        "end_milepost": 109.81,
+        "miles": 10.12,
+        "start_milepost": 99.69
+      }
+    ],
+    "strava_distance_miles": 20.101,
+    "strava_url": "https://www.strava.com/activities/781060553"
+  },
+  {
+    "activity_id": 13906962190,
+    "activity_name": "Tuscarora",
+    "activity_type": "run",
+    "co_travel_miles": 8.026,
+    "co_unique_miles": 3.93,
+    "cumulative_percent_complete": 34.986,
+    "cumulative_unique_miles": 64.55,
+    "date": "2021-07-31",
+    "elevation_gain_feet": 0.0,
+    "max_milepost": 48.27,
+    "min_milepost": 44.34,
+    "moving_time_minutes": 73.13,
+    "new_co_unique_miles": 0.0,
+    "segments": [
+      {
+        "end_milepost": 48.27,
+        "miles": 3.93,
+        "start_milepost": 44.34
+      }
+    ],
+    "strava_distance_miles": 8.062,
+    "strava_url": "https://www.strava.com/activities/13906962190"
+  },
+  {
+    "activity_id": 19965023599,
+    "activity_name": "Hike on the C&O Canawl",
+    "activity_type": "hike",
+    "co_travel_miles": 0.574,
+    "co_unique_miles": 0.42,
+    "cumulative_percent_complete": 34.986,
+    "cumulative_unique_miles": 64.55,
+    "date": "2026-08-30",
+    "elevation_gain_feet": 8.5,
+    "max_milepost": 99.62,
+    "min_milepost": 99.2,
+    "moving_time_minutes": 30.2,
+    "new_co_unique_miles": 0.0,
+    "segments": [
+      {
+        "end_milepost": 99.62,
+        "miles": 0.42,
+        "start_milepost": 99.2
+      }
+    ],
+    "strava_distance_miles": 0.838,
+    "strava_url": "https://www.strava.com/activities/19965023599"
+  }
+]
