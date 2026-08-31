@@ -1,0 +1,92 @@
+{
+  "activity_count": 23,
+  "bike_unique_miles": 19.44,
+  "bin_miles": 0.01,
+  "canal_miles": 184.5,
+  "combined_percent_complete": 34.986,
+  "combined_unique_miles": 64.55,
+  "completed_segments": [
+    {
+      "end_milepost": 10.04,
+      "miles": 10.04,
+      "start_milepost": 0.0
+    },
+    {
+      "end_milepost": 64.95,
+      "miles": 32.11,
+      "start_milepost": 32.84
+    },
+    {
+      "end_milepost": 72.73,
+      "miles": 2.06,
+      "start_milepost": 70.67
+    },
+    {
+      "end_milepost": 109.81,
+      "miles": 20.34,
+      "start_milepost": 89.47
+    }
+  ],
+  "first_activity_date": "2013-03-12",
+  "hike_unique_miles": 0.42,
+  "latest_activity_date": "2026-08-30",
+  "longest_continuous_completed_section": {
+    "end_milepost": 64.95,
+    "miles": 32.11,
+    "start_milepost": 32.84
+  },
+  "methodology": {
+    "audit_thresholds": {
+      "large_travel_excess_ratio": 0.03,
+      "low_match_percentage": 25.0,
+      "low_matched_point_count": 50,
+      "parallel_min_median_offset_meters": 12.0,
+      "parallel_min_unique_miles": 0.25,
+      "parallel_review_intervals": [
+        {
+          "end_milepost": 3.5,
+          "start_milepost": 0.0
+        }
+      ],
+      "travel_exceeds_strava_tolerance_miles": 0.01
+    },
+    "canal_length_miles": 184.5,
+    "canonical_towpath_sha256": "bab4f87dc843f8b1b5fc1218700998f29d2709a9c9dbaf5af1303d7cf05339e1",
+    "continuity": {
+      "max_along_gap_meters": 400.0,
+      "max_source_gap_meters": 500.0,
+      "max_time_gap_seconds": 180.0,
+      "minimum_alignment_distance_meters": 5.0,
+      "minimum_alignment_ratio": 0.65,
+      "minimum_run_points": 3,
+      "minimum_run_travel_meters": 32.0
+    },
+    "coverage_bin_miles": 0.01,
+    "match_tolerance_meters": 30.0,
+    "projected_crs": "EPSG:5070"
+  },
+  "remaining_miles": 119.95,
+  "remaining_segments": [
+    {
+      "end_milepost": 32.84,
+      "miles": 22.8,
+      "start_milepost": 10.04
+    },
+    {
+      "end_milepost": 70.67,
+      "miles": 5.72,
+      "start_milepost": 64.95
+    },
+    {
+      "end_milepost": 89.47,
+      "miles": 16.74,
+      "start_milepost": 72.73
+    },
+    {
+      "end_milepost": 184.5,
+      "miles": 74.69,
+      "start_milepost": 109.81
+    }
+  ],
+  "run_unique_miles": 59.36
+}
