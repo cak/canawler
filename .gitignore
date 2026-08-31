@@ -1,6 +1,6 @@
 # Byte-compiled / optimized / DLL files
 __pycache__/
-*.py[codz]
+*.py[cod]
 *$py.class
 
 # C extensions
@@ -76,7 +76,7 @@ docs/_build/
 target/
 
 # Jupyter Notebook
-.ipynb_checkpoints
+.ipynb_checkpoints/
 
 # IPython
 profile_default/
@@ -149,8 +149,9 @@ activemq-data/
 
 # Environments
 .env
+.env.*
 .envrc
-.venv
+.venv/
 env/
 venv/
 ENV/
@@ -163,9 +164,6 @@ venv.bak/
 
 # Rope project settings
 .ropeproject
-
-# mkdocs documentation
-/site
 
 # mypy
 .mypy_cache/
@@ -216,3 +214,18 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Canawler private source data (never commit exports or tracks)
+data/raw/**
+!data/raw/.gitkeep
+
+# Reproducible intermediate data
+data/processed/**
+!data/processed/.gitkeep
+
+# Quarto output
+_site/
+.quarto/
+
+# macOS
+.DS_Store
