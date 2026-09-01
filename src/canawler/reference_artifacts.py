@@ -4,11 +4,17 @@ from __future__ import annotations
 
 import json
 import re
+from datetime import datetime
 from decimal import Decimal
 from pathlib import Path
 from typing import Any
 
-from canawler.coverage import BIN_COUNT, BIN_MILES, CANAL_MILES
+from canawler.coverage import (
+    BIN_COUNT,
+    BIN_MILES,
+    CANAL_MILES,
+    _serialized_segment_bins,
+)
 from canawler.reference import ReferenceDataError
 
 ACCESS_POINTS_PATH = Path("data/reference/access-points.json")
@@ -252,15 +258,6 @@ def _recreation_matches(
     return matches, matched_locations
 
 
-def _coverage_bins(segments: list[dict[str, Any]]) -> set[int]:
-    bins: set[int] = set()
-    for segment in segments:
-        start = round(float(segment["start_milepost"]) / BIN_MILES)
-        end = round(float(segment["end_milepost"]) / BIN_MILES)
-        bins.update(range(start, end))
-    return bins
-
-
 def _access_point_bins(access_point: dict[str, Any]) -> range:
     bin_size = Decimal(str(BIN_MILES))
     first = int(Decimal(str(access_point["milepost"])) // bin_size)
@@ -279,6 +276,49 @@ def _coverage_status(access_point: dict[str, Any], covered_bins: set[int]) -> st
     if access_point.get("milepost_end") is not None and count:
         return "partial"
     return "remaining"
+
+
+def _activity_coverages(
+    activity_records: list[dict[str, Any]],
+) -> list[tuple[dict[str, Any], set[int]]]:
+    ordered = sorted(
+        activity_records,
+        key=lambda record: (
+            datetime.fromisoformat(str(record["datetime"])),
+            str(record.get("activity_id") or ""),
+        ),
+    )
+    return [
+        (
+            record,
+            _serialized_segment_bins(
+                record["segments"], f"activity {record.get('activity_id', 'unknown')}"
+            ),
+        )
+        for record in ordered
+    ]
+
+
+def _coverage_event(record: dict[str, Any]) -> dict[str, Any]:
+    return {
+        "covered_at": record["datetime"],
+        "activity_id": record.get("activity_id"),
+        "strava_url": record.get("strava_url"),
+    }
+
+
+def _covering_history(
+    feature_bins: range,
+    activity_coverages: list[tuple[dict[str, Any], set[int]]],
+) -> tuple[dict[str, Any] | None, dict[str, Any] | None]:
+    qualifying = [
+        record
+        for record, covered_bins in activity_coverages
+        if not covered_bins.isdisjoint(feature_bins)
+    ]
+    if not qualifying:
+        return None, None
+    return _coverage_event(qualifying[0]), _coverage_event(qualifying[-1])
 
 
 def _remaining_segments(
@@ -331,6 +371,7 @@ def _feature_type(location: dict[str, Any]) -> str:
 
 
 def build_public_reference_artifacts(
+    activity_records: list[dict[str, Any]],
     coverage: dict[str, Any],
 ) -> tuple[dict[str, Any], dict[str, Any]]:
     access_data = load_access_points()
@@ -340,7 +381,10 @@ def build_public_reference_artifacts(
     locations = recreation_data["locations"]
     locks = lock_data["locks"]
     matches, matched_locations = _recreation_matches(access_points, locations)
-    covered_bins = _coverage_bins(coverage["completed_segments"])
+    covered_bins = _serialized_segment_bins(
+        coverage["completed_segments"], "completed coverage"
+    )
+    activity_coverages = _activity_coverages(activity_records)
     remaining = coverage["remaining_segments"]
     canonical_lock_numbers = {record["lock_number"] for record in locks}
 
@@ -393,6 +437,9 @@ def build_public_reference_artifacts(
             )
         )
         status = _coverage_status(access_point, covered_bins)
+        first_covered, latest_covered = _covering_history(
+            _access_point_bins(access_point), activity_coverages
+        )
         public_access_points.append(
             {
                 **access_point,
@@ -406,21 +453,35 @@ def build_public_reference_artifacts(
                 ],
                 "nearby_features": nearby_features,
                 "coverage_status": status,
+                "first_covered": first_covered,
+                "latest_covered": latest_covered,
                 "remaining_segments": _remaining_segments(
                     access_point, status, remaining
                 ),
             }
         )
 
-    public_locks = [
-        {
-            "lock_number": lock["lock_number"],
-            "name": lock["name"],
-            "common_name": lock["common_name"],
-            "milepost": lock["milepost"],
-        }
-        for lock in locks
-    ]
+    public_locks = []
+    for lock in locks:
+        coverage_point = {"milepost": lock["milepost"], "milepost_end": None}
+        status = _coverage_status(coverage_point, covered_bins)
+        first_covered, latest_covered = _covering_history(
+            _access_point_bins(coverage_point), activity_coverages
+        )
+        public_locks.append(
+            {
+                "lock_number": lock["lock_number"],
+                "name": lock["name"],
+                "common_name": lock["common_name"],
+                "milepost": lock["milepost"],
+                "coverage_status": status,
+                "remaining_segments": _remaining_segments(
+                    coverage_point, status, remaining
+                ),
+                "first_covered": first_covered,
+                "latest_covered": latest_covered,
+            }
+        )
     return (
         {
             "sources": {
