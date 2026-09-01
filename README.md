@@ -26,6 +26,30 @@ The generated CSV and JSON are frontend-neutral. A future presentation layer, su
 
 ## Data sources
 
+Canawler combines external canal references with personal activity data. The source
+organizations supply input facts; Canawler performs the matching, assembly, and
+coverage calculations. Machine-readable attribution is available in
+[`data/public/sources.json`](data/public/sources.json).
+
+### Access points and visitor amenities
+
+The [C&O Canal Association access-point page](https://candocanal.org/access/)
+supplies the automobile access-point names, towpath milepoints or ranges, and
+coordinates used by Canawler.
+
+The [National Park Service C&O Canal Recreational Guide by Milepost](https://www.nps.gov/common/uploads/sortable_dataset/choh/E3324057-FAAC-0D9B-C75464422AFC4A4C/choh-CHOHRecreationalGuidebyMilepost.csv)
+supplies recreation locations and listed visitor amenities used to enrich access
+points. Canawler does not treat this guide as a complete access-point or
+historic-structure inventory.
+
+### Locks
+
+The [National Park Service lift-lock page](https://www.nps.gov/choh/learn/historyculture/lift-locks.htm)
+is the source Canawler uses for the lift-lock count and numbering. The
+[C&O Canal Trust lock collection](https://www.canaltrust.org/pyvactivities/locks/)
+supplies practical lock mileposts and common-name information used by Canawler's
+curated lock reference.
+
 ### C&O reference geometry
 
 The canonical spatial reference is `data/reference/co-towpath/towpath.geojson`. It is derived from the National Park Service Public Trails GIS dataset for Chesapeake & Ohio Canal National Historical Park and is oriented from **Georgetown to Cumberland**.
@@ -39,6 +63,16 @@ Activity history comes from a full Strava bulk export placed under `data/raw/str
 Request a new full export after substantial new C&O activity. Otherwise, consider refreshing roughly every three months; if there has been no meaningful new C&O activity, there is no reason to refresh merely because three months have passed.
 
 Canawler reads the export's `activities.csv` and its referenced gzip-compressed FIT, GPX, or TCX tracks. Only Strava types exactly equal to `Run`, `Ride`, or `Hike` are candidates; they become `run`, `bike`, and `hike` in Canawler output.
+
+### Derived by Canawler
+
+Canawler calculates GPS-matched C&O towpath coverage using 0.01-mile bins. Its
+outputs include completed and remaining segments; combined and run, bike, and hike
+coverage; lock and access-point coverage status; first and latest covering
+activities; covering activity counts; nearby-feature relationships; and matches
+between canonical access points and NPS recreation-guide rows. These calculations
+and relationships are Canawler outputs, not values published by the external source
+organizations.
 
 ## Project data
 
@@ -75,6 +109,28 @@ Public activity JSON retains C&O segment intervals; it does not retain private n
 The analytical CSV tables normalize the richer public JSON model for joins and analysis;
 they are generated from that finalized JSON during the same build.
 
+### Frontend data contract
+
+`data/public/` is the canonical, commit-eligible data product for any frontend. Do
+not read from `data/processed/`, which contains private implementation and audit
+details.
+
+- Use `coverage.json` for overall totals, methodology, and completed or remaining
+  intervals.
+- Use `activities.json`, `locks.json`, and `access-points.json` for the rich nested
+  application model.
+- Use `sources.json` for machine-readable attribution.
+- Use the CSV files for flat analytical tables and joins. They normalize the JSON
+  model; they do not define separate coverage or matching rules.
+
+Feature IDs, activity IDs, and source IDs are the stable join keys across the public
+artifacts. JSON uses `null` and CSV uses an empty cell for unavailable values. In
+particular, an unmatched NPS amenity is unknown rather than `false`.
+
+`site/data/public/` is a generated mirror used by the current Quarto site. Do not
+edit it directly; the site's pre-render script replaces it from the canonical
+directory whenever Quarto renders the project.
+
 ## Building the data
 
 The normal end-to-end data build validates the committed reference, ingests the private export, calculates and structurally validates coverage, writes `data/processed/`, and sanitizes `data/public/`:
@@ -108,7 +164,7 @@ with Quarto as a separate downstream operation:
 
 ```console
 uv run canawler build
-uv run python scripts/publish_site.py
+quarto render site
 ```
 
 ## Coverage methodology
