@@ -97,6 +97,21 @@ COVERAGE_SEGMENT_SCHEMA = {
     "miles": pl.Float64,
 }
 
+SOURCE_SCHEMA = {
+    "source_id": pl.String,
+    "name": pl.String,
+    "organization": pl.String,
+    "url": pl.String,
+    "description": pl.String,
+    "license": pl.String,
+}
+
+ARTIFACT_SOURCE_SCHEMA = {
+    "artifact": pl.String,
+    "source_id": pl.String,
+    "role": pl.String,
+}
+
 
 class ExportError(RuntimeError):
     """Raised when a public JSON input violates the export contract."""
@@ -438,6 +453,88 @@ def _coverage_segment_frame(coverage: dict[str, Any]) -> pl.DataFrame:
     ).select(COVERAGE_SEGMENT_SCHEMA.keys())
 
 
+def _source_frames(registry: dict[str, Any]) -> tuple[pl.DataFrame, pl.DataFrame]:
+    sources = _required_list(registry, "sources", "sources.json")
+    expected_fields = {
+        "id",
+        "name",
+        "organization",
+        "url",
+        "description",
+        "license",
+    }
+    source_rows: list[dict[str, Any]] = []
+    for source in sources:
+        if not isinstance(source, dict) or set(source) != expected_fields:
+            raise ExportError(
+                "A source in data/public/sources.json has invalid fields."
+            )
+        if any(
+            not isinstance(source[field], str) or not source[field]
+            for field in ("id", "name", "organization", "url", "description")
+        ):
+            raise ExportError("Public source text fields must be non-empty strings.")
+        if source["license"] is not None and not isinstance(source["license"], str):
+            raise ExportError("Public source licenses must be strings or null.")
+        source_rows.append(
+            {
+                "source_id": source["id"],
+                "name": source["name"],
+                "organization": source["organization"],
+                "url": source["url"],
+                "description": source["description"],
+                "license": source["license"],
+            }
+        )
+
+    source_ids = [row["source_id"] for row in source_rows]
+    if source_ids != sorted(source_ids) or len(source_ids) != len(set(source_ids)):
+        raise ExportError("Public sources must have unique, sorted IDs.")
+
+    artifacts = registry.get("artifacts")
+    if not isinstance(artifacts, dict) or not artifacts:
+        raise ExportError("Expected `artifacts` to be an object in sources.json.")
+    if list(artifacts) != sorted(artifacts):
+        raise ExportError("Artifact provenance keys must be sorted.")
+
+    relationship_rows: list[dict[str, str]] = []
+    for artifact, metadata in artifacts.items():
+        if not isinstance(metadata, dict):
+            raise ExportError(f"Invalid provenance metadata for {artifact}.")
+        relationships = metadata.get("sources")
+        derivations = metadata.get("derived_by")
+        if not isinstance(relationships, list) or not isinstance(derivations, list):
+            raise ExportError(f"Invalid source or derivation list for {artifact}.")
+        if any(not isinstance(value, str) or not value for value in derivations):
+            raise ExportError(f"Invalid derivation description for {artifact}.")
+        previous: tuple[str, str] | None = None
+        for relationship in relationships:
+            if not isinstance(relationship, dict) or set(relationship) != {
+                "source_id",
+                "role",
+            }:
+                raise ExportError(f"Invalid source relationship for {artifact}.")
+            source_id = relationship["source_id"]
+            role = relationship["role"]
+            if source_id not in source_ids or not isinstance(role, str) or not role:
+                raise ExportError(f"Unresolved source relationship for {artifact}.")
+            order = (source_id, role)
+            if previous is not None and order <= previous:
+                raise ExportError(
+                    f"Source relationships are not sorted for {artifact}."
+                )
+            previous = order
+            relationship_rows.append(
+                {"artifact": artifact, "source_id": source_id, "role": role}
+            )
+
+    sources_frame = pl.DataFrame(source_rows, schema=SOURCE_SCHEMA)
+    relationships_frame = pl.DataFrame(
+        relationship_rows, schema=ARTIFACT_SOURCE_SCHEMA
+    ).sort(["artifact", "source_id", "role"])
+    return sources_frame, relationships_frame
+
+
 def _write_csv(frame: pl.DataFrame, filename: str) -> tuple[Path, bool]:
     path = PUBLIC_DIR / filename
     contents = frame.write_csv(quote_style="non_numeric")
@@ -453,6 +550,7 @@ def main() -> None:
     locks_root = _load_json("locks.json")
     access_points_root = _load_json("access-points.json")
     coverage = _load_json("coverage.json")
+    source_registry = _load_json("sources.json")
 
     locks = _required_list(locks_root, "locks", "locks.json")
     access_points = _required_list(
@@ -474,12 +572,15 @@ def main() -> None:
     )
     nps_matches = _nps_match_frame(access_points, access_point_ids)
     coverage_segments = _coverage_segment_frame(coverage)
+    sources, artifact_sources = _source_frames(source_registry)
 
     outputs = (
         (features, "features.csv"),
         (nearby_features, "feature-nearby-features.csv"),
         (nps_matches, "access-point-nps-matches.csv"),
         (coverage_segments, "coverage-segments.csv"),
+        (sources, "sources.csv"),
+        (artifact_sources, "artifact-sources.csv"),
     )
     results = [_write_csv(frame, filename) for frame, filename in outputs]
 
@@ -488,6 +589,8 @@ def main() -> None:
     print(f"Nearby feature relationships: {nearby_features.height}")
     print(f"NPS matches: {nps_matches.height}")
     print(f"Coverage segments: {coverage_segments.height}")
+    print(f"Sources: {sources.height}")
+    print(f"Artifact source relationships: {artifact_sources.height}")
     print()
     for path, changed in results:
         print(f"{'Wrote' if changed else 'Unchanged'} {_relative(path)}")
