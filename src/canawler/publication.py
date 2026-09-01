@@ -96,7 +96,9 @@ def publish_artifacts(
     )
     from canawler.reference_artifacts import build_public_reference_artifacts
 
-    public_access_points, public_locks = build_public_reference_artifacts(coverage)
+    public_access_points, public_locks = build_public_reference_artifacts(
+        activity_records, coverage
+    )
     _write_if_changed(
         access_points_path,
         json.dumps(public_access_points, indent=2, sort_keys=True, ensure_ascii=False)
