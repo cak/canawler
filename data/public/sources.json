@@ -1,0 +1,348 @@
+{
+  "artifacts": {
+    "access-point-nps-matches.csv": {
+      "derived_by": [
+        "Canawler matching of NPS recreation-guide rows to canonical automobile access points",
+        "Canawler downstream normalization of access-points.json"
+      ],
+      "sources": [
+        {
+          "role": "Canonical automobile access-point facts",
+          "source_id": "co_canal_association_access_points"
+        },
+        {
+          "role": "NPS recreation-guide rows",
+          "source_id": "nps_recreation_guide"
+        }
+      ]
+    },
+    "access-points.json": {
+      "derived_by": [
+        "Canawler stable public identifiers",
+        "Canawler access-point and NPS recreation-guide matching",
+        "Canawler NPS amenity aggregation across matched rows",
+        "Canawler nearby-feature milepost relationships",
+        "Canawler combined and per-mode towpath coverage calculations",
+        "Canawler per-activity coverage matching and activity counts",
+        "Canawler remaining-segment relationships"
+      ],
+      "sources": [
+        {
+          "role": "Canonical automobile access-point facts",
+          "source_id": "co_canal_association_access_points"
+        },
+        {
+          "role": "Practical lock mileposts and common names for nearby locks",
+          "source_id": "co_canal_trust_locks"
+        },
+        {
+          "role": "Lift-lock count and numbering authority",
+          "source_id": "nps_lift_locks"
+        },
+        {
+          "role": "Amenity enrichment and selected nearby recreation features",
+          "source_id": "nps_recreation_guide"
+        },
+        {
+          "role": "Input to Canawler-derived towpath coverage fields",
+          "source_id": "nps_towpath_reference"
+        },
+        {
+          "role": "Input to Canawler-derived activity history fields",
+          "source_id": "strava_activity_data"
+        }
+      ]
+    },
+    "activities.csv": {
+      "derived_by": [
+        "Canawler GPS-to-towpath matching",
+        "Canawler calculated C&O travel and unique miles, matched segments, milepost ranges, and cumulative completion"
+      ],
+      "sources": [
+        {
+          "role": "Towpath geometry input for calculated C&O matching and coverage fields",
+          "source_id": "nps_towpath_reference"
+        },
+        {
+          "role": "User activity-data input",
+          "source_id": "strava_activity_data"
+        }
+      ]
+    },
+    "activities.json": {
+      "derived_by": [
+        "Canawler GPS-to-towpath matching",
+        "Canawler calculated C&O travel and unique miles, matched segments, milepost ranges, and cumulative completion"
+      ],
+      "sources": [
+        {
+          "role": "Towpath geometry input for calculated C&O matching and coverage fields",
+          "source_id": "nps_towpath_reference"
+        },
+        {
+          "role": "User activity-data input",
+          "source_id": "strava_activity_data"
+        }
+      ]
+    },
+    "artifact-sources.csv": {
+      "derived_by": [
+        "Canawler normalization of sources.json artifact and source relationships"
+      ],
+      "sources": [
+        {
+          "role": "External source represented in artifact relationships",
+          "source_id": "co_canal_association_access_points"
+        },
+        {
+          "role": "External source represented in artifact relationships",
+          "source_id": "co_canal_trust_locks"
+        },
+        {
+          "role": "External source represented in artifact relationships",
+          "source_id": "nps_lift_locks"
+        },
+        {
+          "role": "External source represented in artifact relationships",
+          "source_id": "nps_recreation_guide"
+        },
+        {
+          "role": "External source represented in artifact relationships",
+          "source_id": "nps_towpath_reference"
+        },
+        {
+          "role": "External source represented in artifact relationships",
+          "source_id": "strava_activity_data"
+        }
+      ]
+    },
+    "coverage-segments.csv": {
+      "derived_by": [
+        "Canawler coverage calculation",
+        "Canawler downstream normalization of coverage.json published segments"
+      ],
+      "sources": [
+        {
+          "role": "Towpath geometry input for calculated C&O matching and coverage fields",
+          "source_id": "nps_towpath_reference"
+        },
+        {
+          "role": "User activity-data input",
+          "source_id": "strava_activity_data"
+        }
+      ]
+    },
+    "coverage.json": {
+      "derived_by": [
+        "Canawler GPS-to-towpath matching",
+        "Canawler 0.01-mile coverage bins",
+        "Canawler combined, run, bike, and hike coverage",
+        "Canawler completed and remaining segments and coverage totals"
+      ],
+      "sources": [
+        {
+          "role": "Towpath geometry input for calculated C&O matching and coverage fields",
+          "source_id": "nps_towpath_reference"
+        },
+        {
+          "role": "User activity-data input",
+          "source_id": "strava_activity_data"
+        }
+      ]
+    },
+    "feature-nearby-features.csv": {
+      "derived_by": [
+        "Canawler milepost-based nearby-feature relationships within the published one-mile threshold",
+        "Canawler downstream normalization of access-points.json"
+      ],
+      "sources": [
+        {
+          "role": "Canonical automobile access-point facts",
+          "source_id": "co_canal_association_access_points"
+        },
+        {
+          "role": "Practical lock mileposts and common names for nearby locks",
+          "source_id": "co_canal_trust_locks"
+        },
+        {
+          "role": "Lift-lock count and numbering authority",
+          "source_id": "nps_lift_locks"
+        },
+        {
+          "role": "Amenity enrichment and selected nearby recreation features",
+          "source_id": "nps_recreation_guide"
+        }
+      ]
+    },
+    "features.csv": {
+      "derived_by": [
+        "Canawler downstream normalization of its public lock and access-point JSON artifacts for analytical use"
+      ],
+      "sources": [
+        {
+          "role": "Canonical automobile access-point facts",
+          "source_id": "co_canal_association_access_points"
+        },
+        {
+          "role": "Practical lock mileposts and common names for nearby locks",
+          "source_id": "co_canal_trust_locks"
+        },
+        {
+          "role": "Lift-lock count and numbering authority",
+          "source_id": "nps_lift_locks"
+        },
+        {
+          "role": "Amenity enrichment and selected nearby recreation features",
+          "source_id": "nps_recreation_guide"
+        },
+        {
+          "role": "Input to Canawler-derived towpath coverage fields",
+          "source_id": "nps_towpath_reference"
+        },
+        {
+          "role": "Input to Canawler-derived activity history fields",
+          "source_id": "strava_activity_data"
+        }
+      ]
+    },
+    "locks.json": {
+      "derived_by": [
+        "Canawler stable public identifiers",
+        "Canawler combined and per-mode towpath coverage status",
+        "Canawler covering activity counts and first and latest covering activities",
+        "Canawler remaining-segment relationships"
+      ],
+      "sources": [
+        {
+          "role": "Practical lock mileposts and common names",
+          "source_id": "co_canal_trust_locks"
+        },
+        {
+          "role": "Lift-lock count and numbering authority",
+          "source_id": "nps_lift_locks"
+        },
+        {
+          "role": "Input to Canawler-derived towpath coverage fields",
+          "source_id": "nps_towpath_reference"
+        },
+        {
+          "role": "Input to Canawler-derived activity history fields",
+          "source_id": "strava_activity_data"
+        }
+      ]
+    },
+    "sources.csv": {
+      "derived_by": [
+        "Canawler normalization of sources.json external source records"
+      ],
+      "sources": [
+        {
+          "role": "External source represented in the public provenance registry",
+          "source_id": "co_canal_association_access_points"
+        },
+        {
+          "role": "External source represented in the public provenance registry",
+          "source_id": "co_canal_trust_locks"
+        },
+        {
+          "role": "External source represented in the public provenance registry",
+          "source_id": "nps_lift_locks"
+        },
+        {
+          "role": "External source represented in the public provenance registry",
+          "source_id": "nps_recreation_guide"
+        },
+        {
+          "role": "External source represented in the public provenance registry",
+          "source_id": "nps_towpath_reference"
+        },
+        {
+          "role": "External source represented in the public provenance registry",
+          "source_id": "strava_activity_data"
+        }
+      ]
+    },
+    "sources.json": {
+      "derived_by": [
+        "Canawler consolidation of existing source provenance and public artifact derivations"
+      ],
+      "sources": [
+        {
+          "role": "External source represented in the public provenance registry",
+          "source_id": "co_canal_association_access_points"
+        },
+        {
+          "role": "External source represented in the public provenance registry",
+          "source_id": "co_canal_trust_locks"
+        },
+        {
+          "role": "External source represented in the public provenance registry",
+          "source_id": "nps_lift_locks"
+        },
+        {
+          "role": "External source represented in the public provenance registry",
+          "source_id": "nps_recreation_guide"
+        },
+        {
+          "role": "External source represented in the public provenance registry",
+          "source_id": "nps_towpath_reference"
+        },
+        {
+          "role": "External source represented in the public provenance registry",
+          "source_id": "strava_activity_data"
+        }
+      ]
+    }
+  },
+  "schema_version": 1,
+  "sources": [
+    {
+      "description": "Canonical automobile access-point names, source milepoints and ranges, latitude, and longitude used by Canawler.",
+      "id": "co_canal_association_access_points",
+      "license": null,
+      "name": "C&O Canal Association",
+      "organization": "C&O Canal Association",
+      "url": "https://candocanal.org/access/"
+    },
+    {
+      "description": "Practical lift-lock mileposts and common-name information used by Canawler's curated lock reference dataset.",
+      "id": "co_canal_trust_locks",
+      "license": null,
+      "name": "C&O Canal Trust",
+      "organization": "C&O Canal Trust",
+      "url": "https://www.canaltrust.org/pyvactivities/locks/"
+    },
+    {
+      "description": "Authority used by Canawler for the C&O Canal lift-lock count and numbering, including the 74-lock total and fractional numbering.",
+      "id": "nps_lift_locks",
+      "license": null,
+      "name": "National Park Service Lift Locks",
+      "organization": "National Park Service",
+      "url": "https://www.nps.gov/choh/learn/historyculture/lift-locks.htm"
+    },
+    {
+      "description": "Recreation locations and listed visitor amenities used to enrich canonical access points and identify selected nearby recreation features.",
+      "id": "nps_recreation_guide",
+      "license": null,
+      "name": "National Park Service C&O Canal Recreational Guide by Milepost",
+      "organization": "National Park Service",
+      "url": "https://www.nps.gov/common/uploads/sortable_dataset/choh/E3324057-FAAC-0D9B-C75464422AFC4A4C/choh-CHOHRecreationalGuidebyMilepost.csv"
+    },
+    {
+      "description": "Underlying trail data for the canonical towpath geometry used by Canawler's GPS-to-canal matching and milepost coverage calculations.",
+      "id": "nps_towpath_reference",
+      "license": null,
+      "name": "National Park Service Public Trails dataset",
+      "organization": "National Park Service",
+      "url": "https://mapservices.nps.gov/arcgis/rest/services/NationalDatasets/NPS_Public_Trails_Geographic/FeatureServer/0"
+    },
+    {
+      "description": "User activity data originating from Strava and used as input to Canawler's activity and coverage calculations.",
+      "id": "strava_activity_data",
+      "license": null,
+      "name": "Strava activity data",
+      "organization": "Strava",
+      "url": "https://www.strava.com/"
+    }
+  ]
+}
