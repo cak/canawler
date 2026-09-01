@@ -61,8 +61,19 @@ It then publishes allowlisted fields to:
 - `data/public/activities.csv`
 - `data/public/activities.json`
 - `data/public/coverage.json`
+- `data/public/locks.json`
+- `data/public/access-points.json`
+- `data/public/sources.json`
+- `data/public/features.csv`
+- `data/public/feature-nearby-features.csv`
+- `data/public/access-point-nps-matches.csv`
+- `data/public/coverage-segments.csv`
+- `data/public/sources.csv`
+- `data/public/artifact-sources.csv`
 
 Public activity JSON retains C&O segment intervals; it does not retain private notes, source filenames, fitness diagnostics, exact timestamps, or tracks.
+The analytical CSV tables normalize the richer public JSON model for joins and analysis;
+they are generated from that finalized JSON during the same build.
 
 ## Building the data
 
@@ -91,10 +102,13 @@ uv run canawler reference inspect
 uv run canawler reference build
 ```
 
-Ordinary activity builds use the committed canonical GeoJSON and do not contact NPS. The Python data build and Quarto render are separate operations:
+Ordinary activity builds use the committed canonical GeoJSON and do not contact NPS.
+Build the complete public data product first, then mirror it into the site and render
+with Quarto as a separate downstream operation:
 
 ```console
-quarto render site
+uv run canawler build
+uv run python scripts/publish_site.py
 ```
 
 ## Coverage methodology

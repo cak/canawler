@@ -38,6 +38,7 @@ def _parser() -> argparse.ArgumentParser:
 def main(argv: Sequence[str] | None = None) -> int:
     from canawler.activities import ActivityBuildError
     from canawler.coverage import CoverageError
+    from canawler.csv_export import ExportError
     from canawler.reference import ReferenceDataError
 
     args = _parser().parse_args(argv)
@@ -62,7 +63,12 @@ def main(argv: Sequence[str] | None = None) -> int:
             from canawler.activities import build_historical_activities
 
             print(build_historical_activities(args.export).format())
-    except (ActivityBuildError, CoverageError, ReferenceDataError) as error:
+    except (
+        ActivityBuildError,
+        CoverageError,
+        ExportError,
+        ReferenceDataError,
+    ) as error:
         print(f"error: {error}", file=sys.stderr)
         return 1
     return 0

@@ -8,6 +8,8 @@ from io import StringIO
 from pathlib import Path
 from typing import Any
 
+from canawler.csv_export import CsvExportSummary, export_public_csvs
+
 PUBLIC_ACTIVITY_FIELDS = (
     "activity_id",
     "date",
@@ -60,7 +62,7 @@ def publish_artifacts(
     activity_records: list[dict[str, Any]],
     coverage: dict[str, Any],
     output_directory: Path = Path("data/public"),
-) -> tuple[Path, ...]:
+) -> tuple[tuple[Path, ...], CsvExportSummary]:
     """Write deterministic public artifacts using explicit privacy allowlists."""
     public_activities = [
         {field: record[field] for field in PUBLIC_ACTIVITY_FIELDS}
@@ -121,13 +123,18 @@ def publish_artifacts(
         )
         + "\n",
     )
+    analytics = export_public_csvs(output_directory)
     return (
-        csv_path,
-        activities_json_path,
-        coverage_json_path,
-        access_points_path,
-        locks_path,
-        sources_path,
+        (
+            csv_path,
+            activities_json_path,
+            coverage_json_path,
+            access_points_path,
+            locks_path,
+            sources_path,
+            *analytics.output_paths,
+        ),
+        analytics,
     )
 
 

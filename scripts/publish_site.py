@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import shutil
+import subprocess
 import tempfile
 from pathlib import Path
 
@@ -51,6 +52,15 @@ def main() -> None:
     file_count = publish_public_data(root)
     print(f"Public artifacts: {file_count} files", flush=True)
     print("Copied data/public -> site/data/public", flush=True)
+    print("Rendering site with Quarto", flush=True)
+    try:
+        subprocess.run(["quarto", "render", "site"], cwd=root, check=True)
+    except FileNotFoundError as error:
+        raise PublishError("Quarto is not installed or is not on PATH.") from error
+    except subprocess.CalledProcessError as error:
+        raise PublishError(
+            f"Quarto render failed with exit code {error.returncode}."
+        ) from error
 
 
 if __name__ == "__main__":

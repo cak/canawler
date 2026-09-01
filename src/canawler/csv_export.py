@@ -1,15 +1,13 @@
-"""Export public Canawler JSON artifacts as tidy analytics CSV tables."""
+"""Normalize public Canawler JSON artifacts as tidy analytics CSV tables."""
 
 from __future__ import annotations
 
 import json
+from dataclasses import dataclass
 from pathlib import Path
 from typing import Any
 
 import polars as pl
-
-PROJECT_ROOT = Path(__file__).resolve().parents[1]
-PUBLIC_DIR = PROJECT_ROOT / "data" / "public"
 
 MODES = ("run", "bike", "hike")
 AMENITIES = (
@@ -112,25 +110,66 @@ ARTIFACT_SOURCE_SCHEMA = {
     "role": pl.String,
 }
 
+ANALYTICAL_CSV_ARTIFACTS = frozenset(
+    {
+        "access-point-nps-matches.csv",
+        "artifact-sources.csv",
+        "coverage-segments.csv",
+        "feature-nearby-features.csv",
+        "features.csv",
+        "sources.csv",
+    }
+)
+
+
+@dataclass(frozen=True)
+class CsvExportSummary:
+    """Counts and paths for one successful analytical CSV publication."""
+
+    features: int
+    nearby_feature_relationships: int
+    nps_access_point_matches: int
+    coverage_segments: int
+    sources: int
+    artifact_source_relationships: int
+    output_paths: tuple[Path, ...]
+    changed_paths: tuple[Path, ...]
+
+    def format(self) -> str:
+        return "\n".join(
+            (
+                "Public analytics:",
+                f"  Features: {self.features}",
+                f"  Nearby feature relationships: {self.nearby_feature_relationships}",
+                f"  NPS access-point matches: {self.nps_access_point_matches}",
+                f"  Coverage segments: {self.coverage_segments}",
+                f"  Sources: {self.sources}",
+            )
+        )
+
 
 class ExportError(RuntimeError):
     """Raised when a public JSON input violates the export contract."""
 
 
-def _relative(path: Path) -> str:
-    return path.relative_to(PROJECT_ROOT).as_posix()
-
-
-def _load_json(filename: str) -> dict[str, Any]:
-    path = PUBLIC_DIR / filename
+def _load_json(public_directory: Path, filename: str) -> Any:
+    path = public_directory / filename
     if not path.is_file():
-        raise ExportError(
-            f"Missing {_relative(path)}. Run `uv run canawler build` first."
-        )
+        raise ExportError(f"Missing {path} during public CSV export.")
 
-    data = json.loads(path.read_text(encoding="utf-8"))
+    try:
+        data = json.loads(path.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError) as error:
+        raise ExportError(f"Could not read valid JSON from {path}: {error}") from error
+    return data
+
+
+def _load_json_object(public_directory: Path, filename: str) -> dict[str, Any]:
+    data = _load_json(public_directory, filename)
     if not isinstance(data, dict):
-        raise ExportError(f"Expected an object at the root of {_relative(path)}.")
+        raise ExportError(
+            f"Expected an object at the root of {public_directory / filename}."
+        )
     return data
 
 
@@ -151,6 +190,39 @@ def _validate_unique_ids(records: list[dict[str, Any]], label: str) -> set[str]:
     if len(ids) != len(set(ids)):
         raise ExportError(f"Duplicate {label} IDs found.")
     return set(ids)
+
+
+def _validate_activity_ids(activities: Any) -> set[int]:
+    if not isinstance(activities, list) or not all(
+        isinstance(record, dict) for record in activities
+    ):
+        raise ExportError(
+            "Expected an array of objects in data/public/activities.json."
+        )
+    activity_ids = [record.get("activity_id") for record in activities]
+    if any(
+        isinstance(activity_id, bool) or not isinstance(activity_id, int)
+        for activity_id in activity_ids
+    ):
+        raise ExportError("Every public activity must have an integer activity ID.")
+    if len(activity_ids) != len(set(activity_ids)):
+        raise ExportError("Duplicate public activity IDs found.")
+    return set(activity_ids)
+
+
+def _validate_activity_relationships(
+    features: list[dict[str, Any]], activity_ids: set[int]
+) -> None:
+    for feature in features:
+        for relationship in (
+            "first_covering_activity",
+            "latest_covering_activity",
+        ):
+            activity = feature.get(relationship)
+            if activity is not None and activity.get("activity_id") not in activity_ids:
+                raise ExportError(
+                    f"{feature['id']} has an unresolved `{relationship}` activity ID."
+                )
 
 
 def _validate_modes(record: dict[str, Any], feature_id: str) -> None:
@@ -535,22 +607,28 @@ def _source_frames(registry: dict[str, Any]) -> tuple[pl.DataFrame, pl.DataFrame
     return sources_frame, relationships_frame
 
 
-def _write_csv(frame: pl.DataFrame, filename: str) -> tuple[Path, bool]:
-    path = PUBLIC_DIR / filename
+def _serialize_csv(frame: pl.DataFrame) -> str:
     contents = frame.write_csv(quote_style="non_numeric")
     if not contents.endswith("\n"):
         contents += "\n"
+    return contents
+
+
+def _write_csv(path: Path, contents: str) -> bool:
     if path.is_file() and path.read_text(encoding="utf-8") == contents:
-        return path, False
+        return False
     path.write_text(contents, encoding="utf-8")
-    return path, True
+    return True
 
 
-def main() -> None:
-    locks_root = _load_json("locks.json")
-    access_points_root = _load_json("access-points.json")
-    coverage = _load_json("coverage.json")
-    source_registry = _load_json("sources.json")
+def export_public_csvs(public_directory: Path) -> CsvExportSummary:
+    """Validate public JSON and publish the normalized analytical CSV contract."""
+    public_directory = Path(public_directory)
+    locks_root = _load_json_object(public_directory, "locks.json")
+    access_points_root = _load_json_object(public_directory, "access-points.json")
+    coverage = _load_json_object(public_directory, "coverage.json")
+    source_registry = _load_json_object(public_directory, "sources.json")
+    activities = _load_json(public_directory, "activities.json")
 
     locks = _required_list(locks_root, "locks", "locks.json")
     access_points = _required_list(
@@ -565,8 +643,10 @@ def main() -> None:
     if collisions:
         raise ExportError(f"Lock and access-point IDs collide: {sorted(collisions)}")
     feature_ids = lock_ids | access_point_ids
+    activity_ids = _validate_activity_ids(activities)
 
     features = _feature_frame(locks, access_points)
+    _validate_activity_relationships([*locks, *access_points], activity_ids)
     nearby_features = _nearby_feature_frame(
         access_points, access_point_ids, feature_ids, lock_ids
     )
@@ -582,22 +662,34 @@ def main() -> None:
         (sources, "sources.csv"),
         (artifact_sources, "artifact-sources.csv"),
     )
-    results = [_write_csv(frame, filename) for frame, filename in outputs]
+    filenames = {filename for _, filename in outputs}
+    if filenames != ANALYTICAL_CSV_ARTIFACTS:
+        raise ExportError("Analytical CSV outputs do not match the owned artifact set.")
 
-    print("CSV analytics export")
-    print(f"Features: {features.height}")
-    print(f"Nearby feature relationships: {nearby_features.height}")
-    print(f"NPS matches: {nps_matches.height}")
-    print(f"Coverage segments: {coverage_segments.height}")
-    print(f"Sources: {sources.height}")
-    print(f"Artifact source relationships: {artifact_sources.height}")
-    print()
-    for path, changed in results:
-        print(f"{'Wrote' if changed else 'Unchanged'} {_relative(path)}")
+    serialized_outputs = tuple(
+        (public_directory / filename, _serialize_csv(frame))
+        for frame, filename in outputs
+    )
+    public_directory.mkdir(parents=True, exist_ok=True)
+    results = tuple(
+        (path, _write_csv(path, contents)) for path, contents in serialized_outputs
+    )
+
+    return CsvExportSummary(
+        features=features.height,
+        nearby_feature_relationships=nearby_features.height,
+        nps_access_point_matches=nps_matches.height,
+        coverage_segments=coverage_segments.height,
+        sources=sources.height,
+        artifact_source_relationships=artifact_sources.height,
+        output_paths=tuple(path for path, _ in results),
+        changed_paths=tuple(path for path, changed in results if changed),
+    )
 
 
-if __name__ == "__main__":
-    try:
-        main()
-    except ExportError as error:
-        raise SystemExit(str(error)) from None
+__all__ = [
+    "ANALYTICAL_CSV_ARTIFACTS",
+    "CsvExportSummary",
+    "ExportError",
+    "export_public_csvs",
+]

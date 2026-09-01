@@ -11,6 +11,8 @@ from datetime import datetime
 from pathlib import Path
 from typing import Any
 
+from canawler.csv_export import CsvExportSummary
+
 REFERENCE_PATH = Path("data/reference/co-towpath/towpath.geojson")
 PROCESSED_DIRECTORY = Path("data/processed")
 TRACK_WORKERS = 4
@@ -61,6 +63,7 @@ class BuildReport:
     combined_unique_miles: float
     completion_percentage: float
     output_paths: tuple[Path, ...]
+    public_analytics: CsvExportSummary
     issues: tuple[ActivityIssue, ...]
 
     def format(self) -> str:
@@ -75,6 +78,7 @@ class BuildReport:
             f"Covered activity counts: {types}",
             f"Combined unique C&O miles: {self.combined_unique_miles:.2f}",
             f"Completion: {self.completion_percentage:.2f}%",
+            self.public_analytics.format(),
         ]
         lines.extend(f"Output: {path}" for path in self.output_paths)
         if self.issues:
@@ -268,7 +272,7 @@ def build_historical_activities(
         reference_sha256=canonical_reference_sha256(reference_path),
     )
     processed_paths = _write_processed_outputs(processed_directory, records, coverage)
-    public_paths = publish_artifacts(
+    public_paths, public_analytics = publish_artifacts(
         records, coverage, processed_directory.parent / "public"
     )
     type_counts = Counter(record["activity_type"] for record in records)
@@ -280,6 +284,7 @@ def build_historical_activities(
         combined_unique_miles=coverage["combined_unique_miles"],
         completion_percentage=coverage["combined_percent_complete"],
         output_paths=processed_paths + public_paths,
+        public_analytics=public_analytics,
         issues=tuple(issues),
     )
 
