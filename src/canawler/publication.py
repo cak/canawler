@@ -43,6 +43,9 @@ PUBLIC_COVERAGE_FIELDS = (
     "longest_continuous_completed_section",
     "completed_segments",
     "remaining_segments",
+    "run_segments",
+    "bike_segments",
+    "hike_segments",
     "methodology",
 )
 
