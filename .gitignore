@@ -223,12 +223,10 @@ data/raw/**
 data/processed/**
 !data/processed/.gitkeep
 
-# Quarto output
-_site/
-.quarto/
+# Quarto working state and obsolete output
+/.quarto/
+/_site/
+**/*.quarto_ipynb
 
 # macOS
 .DS_Store
-
-# Site data
-site/data/public/

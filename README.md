@@ -18,6 +18,12 @@ data/processed/
 privacy-safe publication data in data/public/
         ↓
 Quarto presentation layer
+        ↓
+_site/ (ignored local render)
+        ↓
+GitHub Action publishes gh-pages
+        ↓
+GitHub Pages at canawler.com
 ```
 
 `src/canawler/` is the authoritative ingestion, matching, coverage, validation, and publication implementation. Quarto may filter, group, sort, highlight, or animate the published results, but it does not parse GPS files or determine coverage.
@@ -82,7 +88,8 @@ organizations.
 | `data/reference/` | Stable public reference data required by the analytical engine. | Not ignored; commit the canonical reference and its provenance. |
 | `data/processed/` | Detailed, reproducible analytical outputs for local inspection and audit. | Ignored except for `.gitkeep`. |
 | `data/public/` | Deliberately sanitized, frontend-ready CSV and JSON. | Not ignored; intended to be committed and deployed. |
-| `site/` | Current Quarto presentation code. | Not ignored; generated `_site/` and `.quarto/` are ignored. |
+| Root Quarto files | Website presentation code (`_quarto.yml`, QMD, and CSS). | Not ignored; Quarto working state is ignored. |
+| `_site/` | Local Quarto render output. | Ignored; GitHub Actions renders and publishes it to `gh-pages`. |
 
 The data build produces these internal files:
 
@@ -127,11 +134,11 @@ Feature IDs, activity IDs, and source IDs are the stable join keys across the pu
 artifacts. JSON uses `null` and CSV uses an empty cell for unavailable values. In
 particular, an unmatched NPS amenity is unknown rather than `false`.
 
-`site/data/public/` is a generated mirror used by the current Quarto site. Do not
-edit it directly; the site's pre-render script replaces it from the canonical
-directory whenever Quarto renders the project.
+The root Quarto project publishes `data/public/` directly as a project resource.
+Quarto copies those artifacts to `_site/data/public/` when it renders; there is no
+second canonical data copy or staging directory.
 
-## Building the data
+## Rebuild data
 
 The normal end-to-end data build validates the committed reference, ingests the private export, calculates and structurally validates coverage, writes `data/processed/`, and sanitizes `data/public/`:
 
@@ -159,13 +166,56 @@ uv run canawler reference build
 ```
 
 Ordinary activity builds use the committed canonical GeoJSON and do not contact NPS.
-Build the complete public data product first, then mirror it into the site and render
-with Quarto as a separate downstream operation:
+
+The data build and website render are deliberately separate. `uv run canawler build`
+reads private local source data and writes detailed local artifacts to
+`data/processed/` plus sanitized, deterministic artifacts to `data/public/`. Quarto
+does not invoke this command.
+
+## Preview and render the website
+
+Preview the root Quarto website using already-generated public data:
 
 ```console
-uv run canawler build
-quarto render site
+quarto preview
 ```
+
+Render the website locally to the ignored `_site/` directory:
+
+```console
+quarto render
+```
+
+Rendering consumes `data/public/`; it does not read or require the private Strava
+export under `data/raw/`.
+
+## Publish the website
+
+1. Rebuild data with `uv run canawler build` when the source export or pipeline has
+   changed.
+2. Review the generated changes under `data/public/`.
+3. Preview or render the site locally when appropriate.
+4. Commit the intended site source and `data/public/` changes; do not commit
+   `_site/`.
+5. Push to `main`.
+
+The Quarto Publish workflow renders the root project using the committed
+`data/public/` artifacts and publishes the result to the `gh-pages` branch. It does
+not install Python or run the Canawler data pipeline. The repository-root `CNAME`
+and `.nojekyll` files are copied into the rendered site by Quarto.
+
+Before the first automated deployment, run Quarto's one-time initialization from
+the repository root:
+
+```console
+quarto publish gh-pages
+```
+
+This performs an actual publish, initializes the `gh-pages` branch, and creates the
+real `_publish.yml`; commit that generated configuration afterward. For subsequent
+deployments, pushing `main` is sufficient. In repository settings, ensure Actions
+has read/write workflow permission and GitHub Pages deploys from the `gh-pages`
+branch root.
 
 ## Coverage methodology
 
@@ -284,12 +334,15 @@ Commit-eligible `data/public/` is an explicit allowlist intended to describe C&O
 
 ## Development
 
-Install the locked Python environment, run Ruff, and render the presentation layer separately:
+Install the locked Python environment, run the checks, and render the presentation
+layer separately:
 
 ```console
 uv sync
 uv run ruff check .
-quarto render site
+uv run ruff format --check .
+uv run pytest
+quarto render
 ```
 
 No Markdown-specific linter is currently configured.

@@ -1,0 +1,23 @@
+project:
+  type: website
+  render:
+    - index.qmd
+    - activities.qmd
+  resources:
+    - data/public/**
+
+website:
+  title: "Canawler"
+  site-url: "https://canawler.com"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Progress
+      - href: activities.qmd
+        text: Activities
+
+format:
+  html:
+    theme: default
+    css: styles.css
+    toc: false
