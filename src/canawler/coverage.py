@@ -662,8 +662,6 @@ def calculate_history(
         "canal_miles": CANAL_MILES,
         "bin_miles": BIN_MILES,
         "methodology": {
-            "canal_length_miles": CANAL_MILES,
-            "coverage_bin_miles": BIN_MILES,
             "match_tolerance_meters": MATCH_TOLERANCE_METERS,
             "projected_crs": MATCH_CRS,
             "canonical_towpath_sha256": reference_sha256,
