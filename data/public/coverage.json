@@ -1,5 +1,17 @@
 {
   "activity_count": 23,
+  "bike_segments": [
+    {
+      "end_milepost": 48.06,
+      "miles": 15.22,
+      "start_milepost": 32.84
+    },
+    {
+      "end_milepost": 64.64,
+      "miles": 4.22,
+      "start_milepost": 60.42
+    }
+  ],
   "bike_unique_miles": 19.44,
   "bin_miles": 0.01,
   "canal_miles": 184.5,
@@ -28,6 +40,13 @@
     }
   ],
   "first_activity_date": "2013-03-12",
+  "hike_segments": [
+    {
+      "end_milepost": 99.62,
+      "miles": 0.42,
+      "start_milepost": 99.2
+    }
+  ],
   "hike_unique_miles": 0.42,
   "latest_activity_date": "2026-08-30",
   "longest_continuous_completed_section": {
@@ -86,6 +105,28 @@
       "end_milepost": 184.5,
       "miles": 74.69,
       "start_milepost": 109.81
+    }
+  ],
+  "run_segments": [
+    {
+      "end_milepost": 10.04,
+      "miles": 10.04,
+      "start_milepost": 0.0
+    },
+    {
+      "end_milepost": 64.95,
+      "miles": 26.92,
+      "start_milepost": 38.03
+    },
+    {
+      "end_milepost": 72.73,
+      "miles": 2.06,
+      "start_milepost": 70.67
+    },
+    {
+      "end_milepost": 109.81,
+      "miles": 20.34,
+      "start_milepost": 89.47
     }
   ],
   "run_unique_miles": 59.36
