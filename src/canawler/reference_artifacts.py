@@ -26,6 +26,11 @@ LOCKS_PATH = Path("data/reference/locks.json")
 ACTIVITY_MODES = ("run", "bike", "hike")
 PUBLIC_SCHEMA_VERSION = 1
 
+ACCESS_POINTS_SOURCE_ID = "co_canal_association_access_points"
+RECREATION_GUIDE_SOURCE_ID = "nps_recreation_guide"
+NPS_LOCKS_SOURCE_ID = "nps_lift_locks"
+CANAL_TRUST_LOCKS_SOURCE_ID = "co_canal_trust_locks"
+
 AMENITY_FIELDS = (
     "parking",
     "restrooms",
@@ -627,11 +632,21 @@ def build_public_reference_artifacts(
         {
             "schema_version": PUBLIC_SCHEMA_VERSION,
             "sources": {
-                "access_points": access_data["source"],
-                "recreation_guide": recreation_data["source"],
+                "access_points": {
+                    "id": ACCESS_POINTS_SOURCE_ID,
+                    **access_data["source"],
+                },
+                "recreation_guide": {
+                    "id": RECREATION_GUIDE_SOURCE_ID,
+                    **recreation_data["source"],
+                },
                 "locks": {
                     "name": "C&O Canal lift-lock reference",
                     "authority_url": "https://www.nps.gov/choh/learn/historyculture/lift-locks.htm",
+                    "source_ids": [
+                        NPS_LOCKS_SOURCE_ID,
+                        CANAL_TRUST_LOCKS_SOURCE_ID,
+                    ],
                 },
             },
             "derived": DERIVED_METADATA,
@@ -640,7 +655,15 @@ def build_public_reference_artifacts(
         {
             "schema_version": PUBLIC_SCHEMA_VERSION,
             "sources": [
-                {"name": source["name"], "url": source["url"]}
+                {
+                    "id": (
+                        NPS_LOCKS_SOURCE_ID
+                        if source["name"] == "National Park Service"
+                        else CANAL_TRUST_LOCKS_SOURCE_ID
+                    ),
+                    "name": source["name"],
+                    "url": source["url"],
+                }
                 for source in lock_data["sources"]
             ],
             "derived": DERIVED_METADATA,
@@ -650,7 +673,11 @@ def build_public_reference_artifacts(
 
 
 __all__ = [
+    "ACCESS_POINTS_SOURCE_ID",
     "AMENITY_FIELDS",
+    "CANAL_TRUST_LOCKS_SOURCE_ID",
+    "NPS_LOCKS_SOURCE_ID",
+    "RECREATION_GUIDE_SOURCE_ID",
     "build_public_reference_artifacts",
     "load_access_points",
     "load_locks",
