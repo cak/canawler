@@ -19,6 +19,16 @@
         "water": true
       },
       "coverage_status": "covered",
+      "first_covered": {
+        "activity_id": 199816335,
+        "covered_at": "2013-03-12T20:30:22Z",
+        "strava_url": "https://www.strava.com/activities/199816335"
+      },
+      "latest_covered": {
+        "activity_id": 199812372,
+        "covered_at": "2013-04-16T21:21:05Z",
+        "strava_url": "https://www.strava.com/activities/199812372"
+      },
       "latitude": 38.904167,
       "longitude": -77.060133,
       "milepost": 0.0,
@@ -92,6 +102,16 @@
         "water": false
       },
       "coverage_status": "covered",
+      "first_covered": {
+        "activity_id": 199789540,
+        "covered_at": "2013-09-14T13:05:34Z",
+        "strava_url": "https://www.strava.com/activities/199789540"
+      },
+      "latest_covered": {
+        "activity_id": 199789540,
+        "covered_at": "2013-09-14T13:05:34Z",
+        "strava_url": "https://www.strava.com/activities/199789540"
+      },
       "latitude": 38.918691,
       "longitude": -77.102019,
       "milepost": 3.1,
@@ -125,6 +145,16 @@
         "water": false
       },
       "coverage_status": "covered",
+      "first_covered": {
+        "activity_id": 199789540,
+        "covered_at": "2013-09-14T13:05:34Z",
+        "strava_url": "https://www.strava.com/activities/199789540"
+      },
+      "latest_covered": {
+        "activity_id": 199781227,
+        "covered_at": "2013-11-17T14:02:49Z",
+        "strava_url": "https://www.strava.com/activities/199781227"
+      },
       "latitude": 38.932841,
       "longitude": -77.112844,
       "milepost": 4.0,
@@ -162,6 +192,16 @@
         "water": false
       },
       "coverage_status": "covered",
+      "first_covered": {
+        "activity_id": 199814600,
+        "covered_at": "2013-04-02T21:06:24Z",
+        "strava_url": "https://www.strava.com/activities/199814600"
+      },
+      "latest_covered": {
+        "activity_id": 199781227,
+        "covered_at": "2013-11-17T14:02:49Z",
+        "strava_url": "https://www.strava.com/activities/199781227"
+      },
       "latitude": 38.939982,
       "longitude": -77.120157,
       "milepost": 5.0,
@@ -207,6 +247,16 @@
         "water": false
       },
       "coverage_status": "covered",
+      "first_covered": {
+        "activity_id": 199814600,
+        "covered_at": "2013-04-02T21:06:24Z",
+        "strava_url": "https://www.strava.com/activities/199814600"
+      },
+      "latest_covered": {
+        "activity_id": 199781227,
+        "covered_at": "2013-11-17T14:02:49Z",
+        "strava_url": "https://www.strava.com/activities/199781227"
+      },
       "latitude": 38.944737,
       "longitude": -77.123348,
       "milepost": 5.4,
@@ -257,6 +307,16 @@
         "water": false
       },
       "coverage_status": "covered",
+      "first_covered": {
+        "activity_id": 199814600,
+        "covered_at": "2013-04-02T21:06:24Z",
+        "strava_url": "https://www.strava.com/activities/199814600"
+      },
+      "latest_covered": {
+        "activity_id": 199781227,
+        "covered_at": "2013-11-17T14:02:49Z",
+        "strava_url": "https://www.strava.com/activities/199781227"
+      },
       "latitude": 38.94546,
       "longitude": -77.122672,
       "milepost": 5.4,
@@ -302,6 +362,16 @@
         "water": false
       },
       "coverage_status": "covered",
+      "first_covered": {
+        "activity_id": 199814600,
+        "covered_at": "2013-04-02T21:06:24Z",
+        "strava_url": "https://www.strava.com/activities/199814600"
+      },
+      "latest_covered": {
+        "activity_id": 199781227,
+        "covered_at": "2013-11-17T14:02:49Z",
+        "strava_url": "https://www.strava.com/activities/199781227"
+      },
       "latitude": 38.95832,
       "longitude": -77.131465,
       "milepost": 6.4,
@@ -352,6 +422,16 @@
         "water": false
       },
       "coverage_status": "covered",
+      "first_covered": {
+        "activity_id": 199814600,
+        "covered_at": "2013-04-02T21:06:24Z",
+        "strava_url": "https://www.strava.com/activities/199814600"
+      },
+      "latest_covered": {
+        "activity_id": 199781227,
+        "covered_at": "2013-11-17T14:02:49Z",
+        "strava_url": "https://www.strava.com/activities/199781227"
+      },
       "latitude": 38.958303,
       "longitude": -77.130849,
       "milepost": 6.4,
@@ -397,6 +477,16 @@
         "water": false
       },
       "coverage_status": "covered",
+      "first_covered": {
+        "activity_id": 199814600,
+        "covered_at": "2013-04-02T21:06:24Z",
+        "strava_url": "https://www.strava.com/activities/199814600"
+      },
+      "latest_covered": {
+        "activity_id": 199781227,
+        "covered_at": "2013-11-17T14:02:49Z",
+        "strava_url": "https://www.strava.com/activities/199781227"
+      },
       "latitude": 38.964611,
       "longitude": -77.138363,
       "milepost": 7.0,
@@ -439,6 +529,16 @@
         "water": false
       },
       "coverage_status": "covered",
+      "first_covered": {
+        "activity_id": 199789540,
+        "covered_at": "2013-09-14T13:05:34Z",
+        "strava_url": "https://www.strava.com/activities/199789540"
+      },
+      "latest_covered": {
+        "activity_id": 199781227,
+        "covered_at": "2013-11-17T14:02:49Z",
+        "strava_url": "https://www.strava.com/activities/199781227"
+      },
       "latitude": 38.972854,
       "longitude": -77.147357,
       "milepost": 7.7,
@@ -492,6 +592,16 @@
         "water": false
       },
       "coverage_status": "covered",
+      "first_covered": {
+        "activity_id": 199789540,
+        "covered_at": "2013-09-14T13:05:34Z",
+        "strava_url": "https://www.strava.com/activities/199789540"
+      },
+      "latest_covered": {
+        "activity_id": 199781227,
+        "covered_at": "2013-11-17T14:02:49Z",
+        "strava_url": "https://www.strava.com/activities/199781227"
+      },
       "latitude": 38.971559,
       "longitude": -77.160636,
       "milepost": 8.3,
@@ -566,6 +676,16 @@
         "water": false
       },
       "coverage_status": "covered",
+      "first_covered": {
+        "activity_id": 199789540,
+        "covered_at": "2013-09-14T13:05:34Z",
+        "strava_url": "https://www.strava.com/activities/199789540"
+      },
+      "latest_covered": {
+        "activity_id": 199781227,
+        "covered_at": "2013-11-17T14:02:49Z",
+        "strava_url": "https://www.strava.com/activities/199781227"
+      },
       "latitude": 38.97208,
       "longitude": -77.1621,
       "milepost": 8.3,
@@ -635,6 +755,16 @@
         "water": true
       },
       "coverage_status": "covered",
+      "first_covered": {
+        "activity_id": 199789540,
+        "covered_at": "2013-09-14T13:05:34Z",
+        "strava_url": "https://www.strava.com/activities/199789540"
+      },
+      "latest_covered": {
+        "activity_id": 199781227,
+        "covered_at": "2013-11-17T14:02:49Z",
+        "strava_url": "https://www.strava.com/activities/199781227"
+      },
       "latitude": 38.972631,
       "longitude": -77.169278,
       "milepost": 8.8,
@@ -725,6 +855,8 @@
         "water": true
       },
       "coverage_status": "remaining",
+      "first_covered": null,
+      "latest_covered": null,
       "latitude": 38.97456,
       "longitude": -77.201968,
       "milepost": 10.4,
@@ -781,6 +913,8 @@
         "water": true
       },
       "coverage_status": "remaining",
+      "first_covered": null,
+      "latest_covered": null,
       "latitude": 38.978697,
       "longitude": -77.215888,
       "milepost": 11.4,
@@ -820,6 +954,8 @@
         "water": true
       },
       "coverage_status": "remaining",
+      "first_covered": null,
+      "latest_covered": null,
       "latitude": 38.981897,
       "longitude": -77.226205,
       "milepost": 12.2,
@@ -859,6 +995,8 @@
         "water": true
       },
       "coverage_status": "remaining",
+      "first_covered": null,
+      "latest_covered": null,
       "latitude": 39.001748,
       "longitude": -77.246836,
       "milepost": 14.3,
@@ -947,6 +1085,8 @@
         "water": true
       },
       "coverage_status": "remaining",
+      "first_covered": null,
+      "latest_covered": null,
       "latitude": 39.031634,
       "longitude": -77.243531,
       "milepost": 16.6,
@@ -995,6 +1135,8 @@
         "water": false
       },
       "coverage_status": "remaining",
+      "first_covered": null,
+      "latest_covered": null,
       "latitude": 39.054972,
       "longitude": -77.290334,
       "milepost": 19.6,
@@ -1043,6 +1185,8 @@
         "water": false
       },
       "coverage_status": "remaining",
+      "first_covered": null,
+      "latest_covered": null,
       "latitude": 39.067226,
       "longitude": -77.328483,
       "milepost": 22.1,
@@ -1099,6 +1243,8 @@
         "water": false
       },
       "coverage_status": "remaining",
+      "first_covered": null,
+      "latest_covered": null,
       "latitude": 39.069167,
       "longitude": -77.340877,
       "milepost": 22.8,
@@ -1155,6 +1301,8 @@
         "water": false
       },
       "coverage_status": "remaining",
+      "first_covered": null,
+      "latest_covered": null,
       "latitude": 39.074731,
       "longitude": -77.420193,
       "milepost": 27.2,
@@ -1194,6 +1342,8 @@
         "water": false
       },
       "coverage_status": "remaining",
+      "first_covered": null,
+      "latest_covered": null,
       "latitude": 39.103463,
       "longitude": -77.472933,
       "milepost": 30.8,
@@ -1249,6 +1399,16 @@
         "water": false
       },
       "coverage_status": "covered",
+      "first_covered": {
+        "activity_id": 311074835,
+        "covered_at": "2015-05-24T17:13:42Z",
+        "strava_url": "https://www.strava.com/activities/311074835"
+      },
+      "latest_covered": {
+        "activity_id": 311074835,
+        "covered_at": "2015-05-24T17:13:42Z",
+        "strava_url": "https://www.strava.com/activities/311074835"
+      },
       "latitude": 39.154861,
       "longitude": -77.518206,
       "milepost": 35.5,
@@ -1282,6 +1442,16 @@
         "water": false
       },
       "coverage_status": "covered",
+      "first_covered": {
+        "activity_id": 199744774,
+        "covered_at": "2014-09-14T13:09:24Z",
+        "strava_url": "https://www.strava.com/activities/199744774"
+      },
+      "latest_covered": {
+        "activity_id": 760819957,
+        "covered_at": "2016-10-30T13:59:41Z",
+        "strava_url": "https://www.strava.com/activities/760819957"
+      },
       "latitude": 39.194685,
       "longitude": -77.469402,
       "milepost": 39.6,
@@ -1319,6 +1489,16 @@
         "water": false
       },
       "coverage_status": "covered",
+      "first_covered": {
+        "activity_id": 199744774,
+        "covered_at": "2014-09-14T13:09:24Z",
+        "strava_url": "https://www.strava.com/activities/199744774"
+      },
+      "latest_covered": {
+        "activity_id": 760819957,
+        "covered_at": "2016-10-30T13:59:41Z",
+        "strava_url": "https://www.strava.com/activities/760819957"
+      },
       "latitude": 39.222563,
       "longitude": -77.449987,
       "milepost": 42.1,
@@ -1368,6 +1548,16 @@
         "water": false
       },
       "coverage_status": "covered",
+      "first_covered": {
+        "activity_id": 199744774,
+        "covered_at": "2014-09-14T13:09:24Z",
+        "strava_url": "https://www.strava.com/activities/199744774"
+      },
+      "latest_covered": {
+        "activity_id": 13906962190,
+        "covered_at": "2021-07-31T13:06:11Z",
+        "strava_url": "https://www.strava.com/activities/13906962190"
+      },
       "latitude": 39.249948,
       "longitude": -77.482726,
       "milepost": 44.6,
@@ -1401,6 +1591,16 @@
         "water": false
       },
       "coverage_status": "covered",
+      "first_covered": {
+        "activity_id": 200480099,
+        "covered_at": "2014-09-27T11:52:26Z",
+        "strava_url": "https://www.strava.com/activities/200480099"
+      },
+      "latest_covered": {
+        "activity_id": 13906962190,
+        "covered_at": "2021-07-31T13:06:11Z",
+        "strava_url": "https://www.strava.com/activities/13906962190"
+      },
       "latitude": 39.273218,
       "longitude": -77.540045,
       "milepost": 48.2,
@@ -1450,6 +1650,16 @@
         "water": false
       },
       "coverage_status": "covered",
+      "first_covered": {
+        "activity_id": 200480099,
+        "covered_at": "2014-09-27T11:52:26Z",
+        "strava_url": "https://www.strava.com/activities/200480099"
+      },
+      "latest_covered": {
+        "activity_id": 746946174,
+        "covered_at": "2016-10-16T14:47:52Z",
+        "strava_url": "https://www.strava.com/activities/746946174"
+      },
       "latitude": 39.306507,
       "longitude": -77.558006,
       "milepost": 50.9,
@@ -1499,6 +1709,16 @@
         "water": false
       },
       "coverage_status": "covered",
+      "first_covered": {
+        "activity_id": 200480099,
+        "covered_at": "2014-09-27T11:52:26Z",
+        "strava_url": "https://www.strava.com/activities/200480099"
+      },
+      "latest_covered": {
+        "activity_id": 746946174,
+        "covered_at": "2016-10-16T14:47:52Z",
+        "strava_url": "https://www.strava.com/activities/746946174"
+      },
       "latitude": 39.31122,
       "longitude": -77.630749,
       "milepost": 55.0,
@@ -1541,6 +1761,16 @@
         "water": false
       },
       "coverage_status": "covered",
+      "first_covered": {
+        "activity_id": 200480099,
+        "covered_at": "2014-09-27T11:52:26Z",
+        "strava_url": "https://www.strava.com/activities/200480099"
+      },
+      "latest_covered": {
+        "activity_id": 386308394,
+        "covered_at": "2015-09-06T13:01:41Z",
+        "strava_url": "https://www.strava.com/activities/386308394"
+      },
       "latitude": 39.329916,
       "longitude": -77.681966,
       "milepost": 58.0,
@@ -1578,6 +1808,16 @@
         "water": false
       },
       "coverage_status": "covered",
+      "first_covered": {
+        "activity_id": 206547267,
+        "covered_at": "2014-10-12T12:50:08Z",
+        "strava_url": "https://www.strava.com/activities/206547267"
+      },
+      "latest_covered": {
+        "activity_id": 752586140,
+        "covered_at": "2016-10-22T14:34:10Z",
+        "strava_url": "https://www.strava.com/activities/752586140"
+      },
       "latitude": 39.329395,
       "longitude": -77.731919,
       "milepost": 61.3,
@@ -1638,6 +1878,16 @@
         "water": false
       },
       "coverage_status": "covered",
+      "first_covered": {
+        "activity_id": 206547267,
+        "covered_at": "2014-10-12T12:50:08Z",
+        "strava_url": "https://www.strava.com/activities/206547267"
+      },
+      "latest_covered": {
+        "activity_id": 752586140,
+        "covered_at": "2016-10-22T14:34:10Z",
+        "strava_url": "https://www.strava.com/activities/752586140"
+      },
       "latitude": 39.33343,
       "longitude": -77.738577,
       "milepost": 61.6,
@@ -1706,6 +1956,16 @@
         "water": false
       },
       "coverage_status": "covered",
+      "first_covered": {
+        "activity_id": 206547267,
+        "covered_at": "2014-10-12T12:50:08Z",
+        "strava_url": "https://www.strava.com/activities/206547267"
+      },
+      "latest_covered": {
+        "activity_id": 206547267,
+        "covered_at": "2014-10-12T12:50:08Z",
+        "strava_url": "https://www.strava.com/activities/206547267"
+      },
       "latitude": 39.364182,
       "longitude": -77.740073,
       "milepost": 64.9,
@@ -1739,6 +1999,8 @@
         "water": false
       },
       "coverage_status": "remaining",
+      "first_covered": null,
+      "latest_covered": null,
       "latitude": 39.385295,
       "longitude": -77.734451,
       "milepost": 67.0,
@@ -1782,6 +2044,8 @@
         "water": true
       },
       "coverage_status": "remaining",
+      "first_covered": null,
+      "latest_covered": null,
       "latitude": 39.419001,
       "longitude": -77.74657,
       "milepost": 69.5,
@@ -1821,6 +2085,16 @@
         "water": false
       },
       "coverage_status": "covered",
+      "first_covered": {
+        "activity_id": 730943315,
+        "covered_at": "2016-10-01T12:30:24Z",
+        "strava_url": "https://www.strava.com/activities/730943315"
+      },
+      "latest_covered": {
+        "activity_id": 730943315,
+        "covered_at": "2016-10-01T12:30:24Z",
+        "strava_url": "https://www.strava.com/activities/730943315"
+      },
       "latitude": 39.433927,
       "longitude": -77.795512,
       "milepost": 72.4,
@@ -1865,6 +2139,8 @@
         "water": false
       },
       "coverage_status": "remaining",
+      "first_covered": null,
+      "latest_covered": null,
       "latitude": 39.436456,
       "longitude": -77.799527,
       "milepost": 72.8,
@@ -1920,6 +2196,8 @@
         "water": false
       },
       "coverage_status": "remaining",
+      "first_covered": null,
+      "latest_covered": null,
       "latitude": 39.46527,
       "longitude": -77.777313,
       "milepost": 76.7,
@@ -1959,6 +2237,8 @@
         "water": false
       },
       "coverage_status": "remaining",
+      "first_covered": null,
+      "latest_covered": null,
       "latitude": 39.499645,
       "longitude": -77.767866,
       "milepost": 81.0,
@@ -1998,6 +2278,8 @@
         "water": false
       },
       "coverage_status": "remaining",
+      "first_covered": null,
+      "latest_covered": null,
       "latitude": 39.496001,
       "longitude": -77.826266,
       "milepost": 84.4,
@@ -2037,6 +2319,8 @@
         "water": false
       },
       "coverage_status": "remaining",
+      "first_covered": null,
+      "latest_covered": null,
       "latitude": 39.501346,
       "longitude": -77.845385,
       "milepost": 85.4,
@@ -2076,6 +2360,8 @@
         "water": false
       },
       "coverage_status": "remaining",
+      "first_covered": null,
+      "latest_covered": null,
       "latitude": 39.530654,
       "longitude": -77.823522,
       "milepost": 88.1,
@@ -2132,6 +2418,8 @@
         "water": false
       },
       "coverage_status": "remaining",
+      "first_covered": null,
+      "latest_covered": null,
       "latitude": 39.530309,
       "longitude": -77.844116,
       "milepost": 89.1,
@@ -2183,6 +2471,16 @@
         "water": false
       },
       "coverage_status": "covered",
+      "first_covered": {
+        "activity_id": 767883779,
+        "covered_at": "2016-11-06T13:39:22Z",
+        "strava_url": "https://www.strava.com/activities/767883779"
+      },
+      "latest_covered": {
+        "activity_id": 19965023599,
+        "covered_at": "2026-08-30T14:38:13Z",
+        "strava_url": "https://www.strava.com/activities/19965023599"
+      },
       "latitude": 39.595037,
       "longitude": -77.824712,
       "milepost": 99.3,
@@ -2225,6 +2523,16 @@
         "water": true
       },
       "coverage_status": "covered",
+      "first_covered": {
+        "activity_id": 781060553,
+        "covered_at": "2016-11-20T15:07:57Z",
+        "strava_url": "https://www.strava.com/activities/781060553"
+      },
+      "latest_covered": {
+        "activity_id": 781060553,
+        "covered_at": "2016-11-20T15:07:57Z",
+        "strava_url": "https://www.strava.com/activities/781060553"
+      },
       "latitude": 39.600996,
       "longitude": -77.826927,
       "milepost": 99.8,
@@ -2267,6 +2575,16 @@
         "water": false
       },
       "coverage_status": "covered",
+      "first_covered": {
+        "activity_id": 781060553,
+        "covered_at": "2016-11-20T15:07:57Z",
+        "strava_url": "https://www.strava.com/activities/781060553"
+      },
+      "latest_covered": {
+        "activity_id": 781060553,
+        "covered_at": "2016-11-20T15:07:57Z",
+        "strava_url": "https://www.strava.com/activities/781060553"
+      },
       "latitude": 39.616863,
       "longitude": -77.888503,
       "milepost": 103.3,
@@ -2295,6 +2613,16 @@
         "water": false
       },
       "coverage_status": "covered",
+      "first_covered": {
+        "activity_id": 781060553,
+        "covered_at": "2016-11-20T15:07:57Z",
+        "strava_url": "https://www.strava.com/activities/781060553"
+      },
+      "latest_covered": {
+        "activity_id": 781060553,
+        "covered_at": "2016-11-20T15:07:57Z",
+        "strava_url": "https://www.strava.com/activities/781060553"
+      },
       "latitude": 39.604678,
       "longitude": -77.911877,
       "milepost": 106.2,
@@ -2340,6 +2668,16 @@
         "water": false
       },
       "coverage_status": "covered",
+      "first_covered": {
+        "activity_id": 781060553,
+        "covered_at": "2016-11-20T15:07:57Z",
+        "strava_url": "https://www.strava.com/activities/781060553"
+      },
+      "latest_covered": {
+        "activity_id": 781060553,
+        "covered_at": "2016-11-20T15:07:57Z",
+        "strava_url": "https://www.strava.com/activities/781060553"
+      },
       "latitude": 39.607079,
       "longitude": -77.921117,
       "milepost": 106.8,
@@ -2390,6 +2728,16 @@
         "water": false
       },
       "coverage_status": "covered",
+      "first_covered": {
+        "activity_id": 781060553,
+        "covered_at": "2016-11-20T15:07:57Z",
+        "strava_url": "https://www.strava.com/activities/781060553"
+      },
+      "latest_covered": {
+        "activity_id": 781060553,
+        "covered_at": "2016-11-20T15:07:57Z",
+        "strava_url": "https://www.strava.com/activities/781060553"
+      },
       "latitude": 39.615866,
       "longitude": -77.926626,
       "milepost": 107.4,
@@ -2435,6 +2783,16 @@
         "water": true
       },
       "coverage_status": "covered",
+      "first_covered": {
+        "activity_id": 781060553,
+        "covered_at": "2016-11-20T15:07:57Z",
+        "strava_url": "https://www.strava.com/activities/781060553"
+      },
+      "latest_covered": {
+        "activity_id": 781060553,
+        "covered_at": "2016-11-20T15:07:57Z",
+        "strava_url": "https://www.strava.com/activities/781060553"
+      },
       "latitude": 39.615311,
       "longitude": -77.947494,
       "milepost": 108.8,
@@ -2501,6 +2859,8 @@
         "water": true
       },
       "coverage_status": "remaining",
+      "first_covered": null,
+      "latest_covered": null,
       "latitude": 39.609261,
       "longitude": -77.970065,
       "milepost": 110.4,
@@ -2548,6 +2908,8 @@
         "water": false
       },
       "coverage_status": "remaining",
+      "first_covered": null,
+      "latest_covered": null,
       "latitude": 39.605391,
       "longitude": -78.005041,
       "milepost": 112.4,
@@ -2587,6 +2949,8 @@
         "water": false
       },
       "coverage_status": "remaining",
+      "first_covered": null,
+      "latest_covered": null,
       "latitude": 39.63297,
       "longitude": -78.028951,
       "milepost": 114.5,
@@ -2629,6 +2993,8 @@
         "water": true
       },
       "coverage_status": "remaining",
+      "first_covered": null,
+      "latest_covered": null,
       "latitude": 39.655987,
       "longitude": -78.053946,
       "milepost": 116.3,
@@ -2668,6 +3034,8 @@
         "water": false
       },
       "coverage_status": "remaining",
+      "first_covered": null,
+      "latest_covered": null,
       "latitude": 39.68443,
       "longitude": -78.103796,
       "milepost": 119.6,
@@ -2702,6 +3070,8 @@
         "water": false
       },
       "coverage_status": "remaining",
+      "first_covered": null,
+      "latest_covered": null,
       "latitude": 39.694227,
       "longitude": -78.154046,
       "milepost": 122.8,
@@ -2753,6 +3123,8 @@
         "water": false
       },
       "coverage_status": "remaining",
+      "first_covered": null,
+      "latest_covered": null,
       "latitude": 39.698253,
       "longitude": -78.181036,
       "milepost": 124.1,
@@ -2795,6 +3167,8 @@
         "water": false
       },
       "coverage_status": "remaining",
+      "first_covered": null,
+      "latest_covered": null,
       "latitude": 39.683618,
       "longitude": -78.199002,
       "milepost": 125.6,
@@ -2844,6 +3218,8 @@
         "water": false
       },
       "coverage_status": "remaining",
+      "first_covered": null,
+      "latest_covered": null,
       "latitude": 39.645446,
       "longitude": -78.251711,
       "milepost": 130.7,
@@ -2899,6 +3275,8 @@
         "water": false
       },
       "coverage_status": "remaining",
+      "first_covered": null,
+      "latest_covered": null,
       "latitude": 39.628174,
       "longitude": -78.298256,
       "milepost": 134.0,
@@ -2957,6 +3335,8 @@
         "water": false
       },
       "coverage_status": "remaining",
+      "first_covered": null,
+      "latest_covered": null,
       "latitude": 39.63648,
       "longitude": -78.323262,
       "milepost": 135.9,
@@ -3000,6 +3380,8 @@
         "water": false
       },
       "coverage_status": "remaining",
+      "first_covered": null,
+      "latest_covered": null,
       "latitude": 39.637868,
       "longitude": -78.328302,
       "milepost": 136.2,
@@ -3043,6 +3425,8 @@
         "water": false
       },
       "coverage_status": "remaining",
+      "first_covered": null,
+      "latest_covered": null,
       "latitude": 39.625648,
       "longitude": -78.385868,
       "milepost": 140.8,
@@ -3085,6 +3469,8 @@
         "water": false
       },
       "coverage_status": "remaining",
+      "first_covered": null,
+      "latest_covered": null,
       "latitude": 39.603639,
       "longitude": -78.42582,
       "milepost": 147.1,
@@ -3128,6 +3514,8 @@
         "water": false
       },
       "coverage_status": "remaining",
+      "first_covered": null,
+      "latest_covered": null,
       "latitude": 39.582848,
       "longitude": -78.411246,
       "milepost": 150.1,
@@ -3178,6 +3566,8 @@
         "water": false
       },
       "coverage_status": "remaining",
+      "first_covered": null,
+      "latest_covered": null,
       "latitude": 39.590113,
       "longitude": -78.429294,
       "milepost": 151.2,
@@ -3212,6 +3602,8 @@
         "water": false
       },
       "coverage_status": "remaining",
+      "first_covered": null,
+      "latest_covered": null,
       "latitude": 39.58128,
       "longitude": -78.46154,
       "milepost": 153.3,
@@ -3270,6 +3662,8 @@
         "water": true
       },
       "coverage_status": "remaining",
+      "first_covered": null,
+      "latest_covered": null,
       "latitude": 39.54445,
       "longitude": -78.460806,
       "milepost": 156.2,
@@ -3317,6 +3711,8 @@
         "water": false
       },
       "coverage_status": "remaining",
+      "first_covered": null,
+      "latest_covered": null,
       "latitude": 39.5256,
       "longitude": -78.53626,
       "milepost": 161.9,
@@ -3360,6 +3756,8 @@
         "water": true
       },
       "coverage_status": "remaining",
+      "first_covered": null,
+      "latest_covered": null,
       "latitude": 39.523862,
       "longitude": -78.543122,
       "milepost": 162.3,
@@ -3408,6 +3806,8 @@
         "water": false
       },
       "coverage_status": "remaining",
+      "first_covered": null,
+      "latest_covered": null,
       "latitude": 39.540405,
       "longitude": -78.611936,
       "milepost": 166.7,
@@ -3472,6 +3872,8 @@
         "water": true
       },
       "coverage_status": "remaining",
+      "first_covered": null,
+      "latest_covered": null,
       "latitude": 39.564306,
       "longitude": -78.719289,
       "milepost": 173.3,
@@ -3511,6 +3913,8 @@
         "water": false
       },
       "coverage_status": "remaining",
+      "first_covered": null,
+      "latest_covered": null,
       "latitude": 39.587698,
       "longitude": -78.743462,
       "milepost": 175.6,
@@ -3582,6 +3986,8 @@
         "water": false
       },
       "coverage_status": "remaining",
+      "first_covered": null,
+      "latest_covered": null,
       "latitude": 39.587303,
       "longitude": -78.754629,
       "milepost": 176.4,
@@ -3641,6 +4047,8 @@
         "water": false
       },
       "coverage_status": "remaining",
+      "first_covered": null,
+      "latest_covered": null,
       "latitude": 39.599369,
       "longitude": -78.750544,
       "milepost": 178.3,
@@ -3675,6 +4083,8 @@
         "water": false
       },
       "coverage_status": "remaining",
+      "first_covered": null,
+      "latest_covered": null,
       "latitude": 39.603402,
       "longitude": -78.741713,
       "milepost": 178.9,
@@ -3709,6 +4119,8 @@
         "water": false
       },
       "coverage_status": "remaining",
+      "first_covered": null,
+      "latest_covered": null,
       "latitude": 39.625274,
       "longitude": -78.759307,
       "milepost": 181.8,
@@ -3743,6 +4155,8 @@
         "water": false
       },
       "coverage_status": "remaining",
+      "first_covered": null,
+      "latest_covered": null,
       "latitude": 39.622741,
       "longitude": -78.773223,
       "milepost": 182.6,
@@ -3777,6 +4191,8 @@
         "water": false
       },
       "coverage_status": "remaining",
+      "first_covered": null,
+      "latest_covered": null,
       "latitude": 39.629393,
       "longitude": -78.773132,
       "milepost": 183.1,
@@ -3811,6 +4227,8 @@
         "water": true
       },
       "coverage_status": "remaining",
+      "first_covered": null,
+      "latest_covered": null,
       "latitude": 39.649348,
       "longitude": -78.7628,
       "milepost": 184.5,
