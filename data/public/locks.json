@@ -1,14 +1,29 @@
 {
+  "derived": {
+    "activity_history": "Canawler qualifying activities whose calculated C&O coverage intersects the feature's 0.01-mile bin or bins",
+    "coverage": "Canawler calculated C&O towpath coverage using 0.01-mile bins"
+  },
   "locks": [
     {
       "common_name": null,
+      "coverage_by_mode": {
+        "bike": "remaining",
+        "hike": "remaining",
+        "run": "covered"
+      },
       "coverage_status": "covered",
       "covering_activity_count": 1,
+      "covering_activity_count_by_mode": {
+        "bike": 0,
+        "hike": 0,
+        "run": 1
+      },
       "first_covering_activity": {
         "activity_id": 199813593,
         "date": "2013-04-09",
         "strava_url": "https://www.strava.com/activities/199813593"
       },
+      "id": "lock-1",
       "latest_covering_activity": {
         "activity_id": 199813593,
         "date": "2013-04-09",
@@ -21,13 +36,24 @@
     },
     {
       "common_name": null,
+      "coverage_by_mode": {
+        "bike": "remaining",
+        "hike": "remaining",
+        "run": "covered"
+      },
       "coverage_status": "covered",
       "covering_activity_count": 1,
+      "covering_activity_count_by_mode": {
+        "bike": 0,
+        "hike": 0,
+        "run": 1
+      },
       "first_covering_activity": {
         "activity_id": 199813593,
         "date": "2013-04-09",
         "strava_url": "https://www.strava.com/activities/199813593"
       },
+      "id": "lock-2",
       "latest_covering_activity": {
         "activity_id": 199813593,
         "date": "2013-04-09",
@@ -40,13 +66,24 @@
     },
     {
       "common_name": null,
+      "coverage_by_mode": {
+        "bike": "remaining",
+        "hike": "remaining",
+        "run": "covered"
+      },
       "coverage_status": "covered",
       "covering_activity_count": 1,
+      "covering_activity_count_by_mode": {
+        "bike": 0,
+        "hike": 0,
+        "run": 1
+      },
       "first_covering_activity": {
         "activity_id": 199813593,
         "date": "2013-04-09",
         "strava_url": "https://www.strava.com/activities/199813593"
       },
+      "id": "lock-3",
       "latest_covering_activity": {
         "activity_id": 199813593,
         "date": "2013-04-09",
@@ -59,13 +96,24 @@
     },
     {
       "common_name": null,
+      "coverage_by_mode": {
+        "bike": "remaining",
+        "hike": "remaining",
+        "run": "covered"
+      },
       "coverage_status": "covered",
       "covering_activity_count": 1,
+      "covering_activity_count_by_mode": {
+        "bike": 0,
+        "hike": 0,
+        "run": 1
+      },
       "first_covering_activity": {
         "activity_id": 199813593,
         "date": "2013-04-09",
         "strava_url": "https://www.strava.com/activities/199813593"
       },
+      "id": "lock-4",
       "latest_covering_activity": {
         "activity_id": 199813593,
         "date": "2013-04-09",
@@ -78,13 +126,24 @@
     },
     {
       "common_name": "Brookmont Lock & Inlet #1",
+      "coverage_by_mode": {
+        "bike": "remaining",
+        "hike": "remaining",
+        "run": "covered"
+      },
       "coverage_status": "covered",
       "covering_activity_count": 3,
+      "covering_activity_count_by_mode": {
+        "bike": 0,
+        "hike": 0,
+        "run": 3
+      },
       "first_covering_activity": {
         "activity_id": 199814600,
         "date": "2013-04-02",
         "strava_url": "https://www.strava.com/activities/199814600"
       },
+      "id": "lock-5",
       "latest_covering_activity": {
         "activity_id": 199781227,
         "date": "2013-11-17",
@@ -97,13 +156,24 @@
     },
     {
       "common_name": "Magazine Lock",
+      "coverage_by_mode": {
+        "bike": "remaining",
+        "hike": "remaining",
+        "run": "covered"
+      },
       "coverage_status": "covered",
       "covering_activity_count": 3,
+      "covering_activity_count_by_mode": {
+        "bike": 0,
+        "hike": 0,
+        "run": 3
+      },
       "first_covering_activity": {
         "activity_id": 199814600,
         "date": "2013-04-02",
         "strava_url": "https://www.strava.com/activities/199814600"
       },
+      "id": "lock-6",
       "latest_covering_activity": {
         "activity_id": 199781227,
         "date": "2013-11-17",
@@ -116,13 +186,24 @@
     },
     {
       "common_name": "Chataqua Lock",
+      "coverage_by_mode": {
+        "bike": "remaining",
+        "hike": "remaining",
+        "run": "covered"
+      },
       "coverage_status": "covered",
       "covering_activity_count": 3,
+      "covering_activity_count_by_mode": {
+        "bike": 0,
+        "hike": 0,
+        "run": 3
+      },
       "first_covering_activity": {
         "activity_id": 199814600,
         "date": "2013-04-02",
         "strava_url": "https://www.strava.com/activities/199814600"
       },
+      "id": "lock-7",
       "latest_covering_activity": {
         "activity_id": 199781227,
         "date": "2013-11-17",
@@ -135,13 +216,24 @@
     },
     {
       "common_name": "Seven Locks 1",
+      "coverage_by_mode": {
+        "bike": "remaining",
+        "hike": "remaining",
+        "run": "covered"
+      },
       "coverage_status": "covered",
       "covering_activity_count": 2,
+      "covering_activity_count_by_mode": {
+        "bike": 0,
+        "hike": 0,
+        "run": 2
+      },
       "first_covering_activity": {
         "activity_id": 199789540,
         "date": "2013-09-14",
         "strava_url": "https://www.strava.com/activities/199789540"
       },
+      "id": "lock-8",
       "latest_covering_activity": {
         "activity_id": 199781227,
         "date": "2013-11-17",
@@ -154,13 +246,24 @@
     },
     {
       "common_name": "Seven Locks 2",
+      "coverage_by_mode": {
+        "bike": "remaining",
+        "hike": "remaining",
+        "run": "covered"
+      },
       "coverage_status": "covered",
       "covering_activity_count": 2,
+      "covering_activity_count_by_mode": {
+        "bike": 0,
+        "hike": 0,
+        "run": 2
+      },
       "first_covering_activity": {
         "activity_id": 199789540,
         "date": "2013-09-14",
         "strava_url": "https://www.strava.com/activities/199789540"
       },
+      "id": "lock-9",
       "latest_covering_activity": {
         "activity_id": 199781227,
         "date": "2013-11-17",
@@ -173,13 +276,24 @@
     },
     {
       "common_name": "Seven Locks 3",
+      "coverage_by_mode": {
+        "bike": "remaining",
+        "hike": "remaining",
+        "run": "covered"
+      },
       "coverage_status": "covered",
       "covering_activity_count": 2,
+      "covering_activity_count_by_mode": {
+        "bike": 0,
+        "hike": 0,
+        "run": 2
+      },
       "first_covering_activity": {
         "activity_id": 199789540,
         "date": "2013-09-14",
         "strava_url": "https://www.strava.com/activities/199789540"
       },
+      "id": "lock-10",
       "latest_covering_activity": {
         "activity_id": 199781227,
         "date": "2013-11-17",
@@ -192,13 +306,24 @@
     },
     {
       "common_name": "Seven Locks 4",
+      "coverage_by_mode": {
+        "bike": "remaining",
+        "hike": "remaining",
+        "run": "covered"
+      },
       "coverage_status": "covered",
       "covering_activity_count": 2,
+      "covering_activity_count_by_mode": {
+        "bike": 0,
+        "hike": 0,
+        "run": 2
+      },
       "first_covering_activity": {
         "activity_id": 199789540,
         "date": "2013-09-14",
         "strava_url": "https://www.strava.com/activities/199789540"
       },
+      "id": "lock-11",
       "latest_covering_activity": {
         "activity_id": 199781227,
         "date": "2013-11-17",
@@ -211,13 +336,24 @@
     },
     {
       "common_name": "Seven Locks 5",
+      "coverage_by_mode": {
+        "bike": "remaining",
+        "hike": "remaining",
+        "run": "covered"
+      },
       "coverage_status": "covered",
       "covering_activity_count": 2,
+      "covering_activity_count_by_mode": {
+        "bike": 0,
+        "hike": 0,
+        "run": 2
+      },
       "first_covering_activity": {
         "activity_id": 199789540,
         "date": "2013-09-14",
         "strava_url": "https://www.strava.com/activities/199789540"
       },
+      "id": "lock-12",
       "latest_covering_activity": {
         "activity_id": 199781227,
         "date": "2013-11-17",
@@ -230,13 +366,24 @@
     },
     {
       "common_name": "Seven Locks 6",
+      "coverage_by_mode": {
+        "bike": "remaining",
+        "hike": "remaining",
+        "run": "covered"
+      },
       "coverage_status": "covered",
       "covering_activity_count": 2,
+      "covering_activity_count_by_mode": {
+        "bike": 0,
+        "hike": 0,
+        "run": 2
+      },
       "first_covering_activity": {
         "activity_id": 199789540,
         "date": "2013-09-14",
         "strava_url": "https://www.strava.com/activities/199789540"
       },
+      "id": "lock-13",
       "latest_covering_activity": {
         "activity_id": 199781227,
         "date": "2013-11-17",
@@ -249,13 +396,24 @@
     },
     {
       "common_name": "Seven Locks 7",
+      "coverage_by_mode": {
+        "bike": "remaining",
+        "hike": "remaining",
+        "run": "covered"
+      },
       "coverage_status": "covered",
       "covering_activity_count": 1,
+      "covering_activity_count_by_mode": {
+        "bike": 0,
+        "hike": 0,
+        "run": 1
+      },
       "first_covering_activity": {
         "activity_id": 199781227,
         "date": "2013-11-17",
         "strava_url": "https://www.strava.com/activities/199781227"
       },
+      "id": "lock-14",
       "latest_covering_activity": {
         "activity_id": 199781227,
         "date": "2013-11-17",
@@ -268,9 +426,20 @@
     },
     {
       "common_name": "Six Locks 1",
+      "coverage_by_mode": {
+        "bike": "remaining",
+        "hike": "remaining",
+        "run": "remaining"
+      },
       "coverage_status": "remaining",
       "covering_activity_count": 0,
+      "covering_activity_count_by_mode": {
+        "bike": 0,
+        "hike": 0,
+        "run": 0
+      },
       "first_covering_activity": null,
+      "id": "lock-15",
       "latest_covering_activity": null,
       "lock_number": "15",
       "milepost": 13.6,
@@ -285,9 +454,20 @@
     },
     {
       "common_name": "Six Locks 2",
+      "coverage_by_mode": {
+        "bike": "remaining",
+        "hike": "remaining",
+        "run": "remaining"
+      },
       "coverage_status": "remaining",
       "covering_activity_count": 0,
+      "covering_activity_count_by_mode": {
+        "bike": 0,
+        "hike": 0,
+        "run": 0
+      },
       "first_covering_activity": null,
+      "id": "lock-16",
       "latest_covering_activity": null,
       "lock_number": "16",
       "milepost": 13.7,
@@ -302,9 +482,20 @@
     },
     {
       "common_name": "Six Locks 3",
+      "coverage_by_mode": {
+        "bike": "remaining",
+        "hike": "remaining",
+        "run": "remaining"
+      },
       "coverage_status": "remaining",
       "covering_activity_count": 0,
+      "covering_activity_count_by_mode": {
+        "bike": 0,
+        "hike": 0,
+        "run": 0
+      },
       "first_covering_activity": null,
+      "id": "lock-17",
       "latest_covering_activity": null,
       "lock_number": "17",
       "milepost": 14.1,
@@ -319,9 +510,20 @@
     },
     {
       "common_name": "Six Locks 4",
+      "coverage_by_mode": {
+        "bike": "remaining",
+        "hike": "remaining",
+        "run": "remaining"
+      },
       "coverage_status": "remaining",
       "covering_activity_count": 0,
+      "covering_activity_count_by_mode": {
+        "bike": 0,
+        "hike": 0,
+        "run": 0
+      },
       "first_covering_activity": null,
+      "id": "lock-18",
       "latest_covering_activity": null,
       "lock_number": "18",
       "milepost": 14.2,
@@ -336,9 +538,20 @@
     },
     {
       "common_name": "Six Locks 5",
+      "coverage_by_mode": {
+        "bike": "remaining",
+        "hike": "remaining",
+        "run": "remaining"
+      },
       "coverage_status": "remaining",
       "covering_activity_count": 0,
+      "covering_activity_count_by_mode": {
+        "bike": 0,
+        "hike": 0,
+        "run": 0
+      },
       "first_covering_activity": null,
+      "id": "lock-19",
       "latest_covering_activity": null,
       "lock_number": "19",
       "milepost": 14.3,
@@ -353,9 +566,20 @@
     },
     {
       "common_name": "Six Locks 6 / Tavern Lock",
+      "coverage_by_mode": {
+        "bike": "remaining",
+        "hike": "remaining",
+        "run": "remaining"
+      },
       "coverage_status": "remaining",
       "covering_activity_count": 0,
+      "covering_activity_count_by_mode": {
+        "bike": 0,
+        "hike": 0,
+        "run": 0
+      },
       "first_covering_activity": null,
+      "id": "lock-20",
       "latest_covering_activity": null,
       "lock_number": "20",
       "milepost": 14.4,
@@ -370,9 +594,20 @@
     },
     {
       "common_name": "Swains Lock",
+      "coverage_by_mode": {
+        "bike": "remaining",
+        "hike": "remaining",
+        "run": "remaining"
+      },
       "coverage_status": "remaining",
       "covering_activity_count": 0,
+      "covering_activity_count_by_mode": {
+        "bike": 0,
+        "hike": 0,
+        "run": 0
+      },
       "first_covering_activity": null,
+      "id": "lock-21",
       "latest_covering_activity": null,
       "lock_number": "21",
       "milepost": 16.7,
@@ -387,9 +622,20 @@
     },
     {
       "common_name": "Pennyfield Lock",
+      "coverage_by_mode": {
+        "bike": "remaining",
+        "hike": "remaining",
+        "run": "remaining"
+      },
       "coverage_status": "remaining",
       "covering_activity_count": 0,
+      "covering_activity_count_by_mode": {
+        "bike": 0,
+        "hike": 0,
+        "run": 0
+      },
       "first_covering_activity": null,
+      "id": "lock-22",
       "latest_covering_activity": null,
       "lock_number": "22",
       "milepost": 19.6,
@@ -404,9 +650,20 @@
     },
     {
       "common_name": "Violette's Lock",
+      "coverage_by_mode": {
+        "bike": "remaining",
+        "hike": "remaining",
+        "run": "remaining"
+      },
       "coverage_status": "remaining",
       "covering_activity_count": 0,
+      "covering_activity_count_by_mode": {
+        "bike": 0,
+        "hike": 0,
+        "run": 0
+      },
       "first_covering_activity": null,
+      "id": "lock-23",
       "latest_covering_activity": null,
       "lock_number": "23",
       "milepost": 22.1,
@@ -421,9 +678,20 @@
     },
     {
       "common_name": "Riley's Lock",
+      "coverage_by_mode": {
+        "bike": "remaining",
+        "hike": "remaining",
+        "run": "remaining"
+      },
       "coverage_status": "remaining",
       "covering_activity_count": 0,
+      "covering_activity_count_by_mode": {
+        "bike": 0,
+        "hike": 0,
+        "run": 0
+      },
       "first_covering_activity": null,
+      "id": "lock-24",
       "latest_covering_activity": null,
       "lock_number": "24",
       "milepost": 22.8,
@@ -438,9 +706,20 @@
     },
     {
       "common_name": "Edward's Ferry",
+      "coverage_by_mode": {
+        "bike": "remaining",
+        "hike": "remaining",
+        "run": "remaining"
+      },
       "coverage_status": "remaining",
       "covering_activity_count": 0,
+      "covering_activity_count_by_mode": {
+        "bike": 0,
+        "hike": 0,
+        "run": 0
+      },
       "first_covering_activity": null,
+      "id": "lock-25",
       "latest_covering_activity": null,
       "lock_number": "25",
       "milepost": 30.8,
@@ -455,13 +734,24 @@
     },
     {
       "common_name": "Wood's Lock",
+      "coverage_by_mode": {
+        "bike": "covered",
+        "hike": "remaining",
+        "run": "covered"
+      },
       "coverage_status": "covered",
       "covering_activity_count": 2,
+      "covering_activity_count_by_mode": {
+        "bike": 1,
+        "hike": 0,
+        "run": 1
+      },
       "first_covering_activity": {
         "activity_id": 311074835,
         "date": "2015-05-24",
         "strava_url": "https://www.strava.com/activities/311074835"
       },
+      "id": "lock-26",
       "latest_covering_activity": {
         "activity_id": 760819957,
         "date": "2016-10-30",
@@ -474,13 +764,24 @@
     },
     {
       "common_name": "Spinks Ferry",
+      "coverage_by_mode": {
+        "bike": "covered",
+        "hike": "remaining",
+        "run": "covered"
+      },
       "coverage_status": "covered",
       "covering_activity_count": 3,
+      "covering_activity_count_by_mode": {
+        "bike": 1,
+        "hike": 0,
+        "run": 2
+      },
       "first_covering_activity": {
         "activity_id": 199744774,
         "date": "2014-09-14",
         "strava_url": "https://www.strava.com/activities/199744774"
       },
+      "id": "lock-27",
       "latest_covering_activity": {
         "activity_id": 760819957,
         "date": "2016-10-30",
@@ -493,13 +794,24 @@
     },
     {
       "common_name": "Fulton's Lock / Dent's Lock",
+      "coverage_by_mode": {
+        "bike": "remaining",
+        "hike": "remaining",
+        "run": "covered"
+      },
       "coverage_status": "covered",
       "covering_activity_count": 4,
+      "covering_activity_count_by_mode": {
+        "bike": 0,
+        "hike": 0,
+        "run": 4
+      },
       "first_covering_activity": {
         "activity_id": 200480099,
         "date": "2014-09-27",
         "strava_url": "https://www.strava.com/activities/200480099"
       },
+      "id": "lock-28",
       "latest_covering_activity": {
         "activity_id": 746946174,
         "date": "2016-10-16",
@@ -512,13 +824,24 @@
     },
     {
       "common_name": "Lander Lock / Catoctin Lock",
+      "coverage_by_mode": {
+        "bike": "remaining",
+        "hike": "remaining",
+        "run": "covered"
+      },
       "coverage_status": "covered",
       "covering_activity_count": 4,
+      "covering_activity_count_by_mode": {
+        "bike": 0,
+        "hike": 0,
+        "run": 4
+      },
       "first_covering_activity": {
         "activity_id": 200480099,
         "date": "2014-09-27",
         "strava_url": "https://www.strava.com/activities/200480099"
       },
+      "id": "lock-29",
       "latest_covering_activity": {
         "activity_id": 746946174,
         "date": "2016-10-16",
@@ -531,13 +854,24 @@
     },
     {
       "common_name": null,
+      "coverage_by_mode": {
+        "bike": "remaining",
+        "hike": "remaining",
+        "run": "covered"
+      },
       "coverage_status": "covered",
       "covering_activity_count": 6,
+      "covering_activity_count_by_mode": {
+        "bike": 0,
+        "hike": 0,
+        "run": 6
+      },
       "first_covering_activity": {
         "activity_id": 200480099,
         "date": "2014-09-27",
         "strava_url": "https://www.strava.com/activities/200480099"
       },
+      "id": "lock-30",
       "latest_covering_activity": {
         "activity_id": 746946174,
         "date": "2016-10-16",
@@ -550,13 +884,24 @@
     },
     {
       "common_name": "Weverton Lock",
+      "coverage_by_mode": {
+        "bike": "remaining",
+        "hike": "remaining",
+        "run": "covered"
+      },
       "coverage_status": "covered",
       "covering_activity_count": 4,
+      "covering_activity_count_by_mode": {
+        "bike": 0,
+        "hike": 0,
+        "run": 4
+      },
       "first_covering_activity": {
         "activity_id": 200480099,
         "date": "2014-09-27",
         "strava_url": "https://www.strava.com/activities/200480099"
       },
+      "id": "lock-31",
       "latest_covering_activity": {
         "activity_id": 386308394,
         "date": "2015-09-06",
@@ -569,13 +914,24 @@
     },
     {
       "common_name": null,
+      "coverage_by_mode": {
+        "bike": "remaining",
+        "hike": "remaining",
+        "run": "covered"
+      },
       "coverage_status": "covered",
       "covering_activity_count": 3,
+      "covering_activity_count_by_mode": {
+        "bike": 0,
+        "hike": 0,
+        "run": 3
+      },
       "first_covering_activity": {
         "activity_id": 206547267,
         "date": "2014-10-12",
         "strava_url": "https://www.strava.com/activities/206547267"
       },
+      "id": "lock-32",
       "latest_covering_activity": {
         "activity_id": 386308394,
         "date": "2015-09-06",
@@ -588,13 +944,24 @@
     },
     {
       "common_name": null,
+      "coverage_by_mode": {
+        "bike": "covered",
+        "hike": "remaining",
+        "run": "covered"
+      },
       "coverage_status": "covered",
       "covering_activity_count": 4,
+      "covering_activity_count_by_mode": {
+        "bike": 1,
+        "hike": 0,
+        "run": 3
+      },
       "first_covering_activity": {
         "activity_id": 206547267,
         "date": "2014-10-12",
         "strava_url": "https://www.strava.com/activities/206547267"
       },
+      "id": "lock-33",
       "latest_covering_activity": {
         "activity_id": 752586140,
         "date": "2016-10-22",
@@ -607,13 +974,24 @@
     },
     {
       "common_name": "Goodheart's Lock",
+      "coverage_by_mode": {
+        "bike": "covered",
+        "hike": "remaining",
+        "run": "covered"
+      },
       "coverage_status": "covered",
       "covering_activity_count": 4,
+      "covering_activity_count_by_mode": {
+        "bike": 1,
+        "hike": 0,
+        "run": 3
+      },
       "first_covering_activity": {
         "activity_id": 206547267,
         "date": "2014-10-12",
         "strava_url": "https://www.strava.com/activities/206547267"
       },
+      "id": "lock-34",
       "latest_covering_activity": {
         "activity_id": 752586140,
         "date": "2016-10-22",
@@ -626,13 +1004,24 @@
     },
     {
       "common_name": null,
+      "coverage_by_mode": {
+        "bike": "covered",
+        "hike": "remaining",
+        "run": "covered"
+      },
       "coverage_status": "covered",
       "covering_activity_count": 3,
+      "covering_activity_count_by_mode": {
+        "bike": 1,
+        "hike": 0,
+        "run": 2
+      },
       "first_covering_activity": {
         "activity_id": 206547267,
         "date": "2014-10-12",
         "strava_url": "https://www.strava.com/activities/206547267"
       },
+      "id": "lock-35",
       "latest_covering_activity": {
         "activity_id": 752586140,
         "date": "2016-10-22",
@@ -645,13 +1034,24 @@
     },
     {
       "common_name": null,
+      "coverage_by_mode": {
+        "bike": "covered",
+        "hike": "remaining",
+        "run": "covered"
+      },
       "coverage_status": "covered",
       "covering_activity_count": 3,
+      "covering_activity_count_by_mode": {
+        "bike": 1,
+        "hike": 0,
+        "run": 2
+      },
       "first_covering_activity": {
         "activity_id": 206547267,
         "date": "2014-10-12",
         "strava_url": "https://www.strava.com/activities/206547267"
       },
+      "id": "lock-36",
       "latest_covering_activity": {
         "activity_id": 752586140,
         "date": "2016-10-22",
@@ -664,9 +1064,20 @@
     },
     {
       "common_name": "Mountain Lock",
+      "coverage_by_mode": {
+        "bike": "remaining",
+        "hike": "remaining",
+        "run": "remaining"
+      },
       "coverage_status": "remaining",
       "covering_activity_count": 0,
+      "covering_activity_count_by_mode": {
+        "bike": 0,
+        "hike": 0,
+        "run": 0
+      },
       "first_covering_activity": null,
+      "id": "lock-37",
       "latest_covering_activity": null,
       "lock_number": "37",
       "milepost": 66.9,
@@ -681,13 +1092,24 @@
     },
     {
       "common_name": "Shepherdstown Lock",
+      "coverage_by_mode": {
+        "bike": "remaining",
+        "hike": "remaining",
+        "run": "covered"
+      },
       "coverage_status": "covered",
       "covering_activity_count": 1,
+      "covering_activity_count_by_mode": {
+        "bike": 0,
+        "hike": 0,
+        "run": 1
+      },
       "first_covering_activity": {
         "activity_id": 730943315,
         "date": "2016-10-01",
         "strava_url": "https://www.strava.com/activities/730943315"
       },
+      "id": "lock-38",
       "latest_covering_activity": {
         "activity_id": 730943315,
         "date": "2016-10-01",
@@ -700,9 +1122,20 @@
     },
     {
       "common_name": "One Mile Lock",
+      "coverage_by_mode": {
+        "bike": "remaining",
+        "hike": "remaining",
+        "run": "remaining"
+      },
       "coverage_status": "remaining",
       "covering_activity_count": 0,
+      "covering_activity_count_by_mode": {
+        "bike": 0,
+        "hike": 0,
+        "run": 0
+      },
       "first_covering_activity": null,
+      "id": "lock-39",
       "latest_covering_activity": null,
       "lock_number": "39",
       "milepost": 74.0,
@@ -717,9 +1150,20 @@
     },
     {
       "common_name": null,
+      "coverage_by_mode": {
+        "bike": "remaining",
+        "hike": "remaining",
+        "run": "remaining"
+      },
       "coverage_status": "remaining",
       "covering_activity_count": 0,
+      "covering_activity_count_by_mode": {
+        "bike": 0,
+        "hike": 0,
+        "run": 0
+      },
       "first_covering_activity": null,
+      "id": "lock-40",
       "latest_covering_activity": null,
       "lock_number": "40",
       "milepost": 79.4,
@@ -734,9 +1178,20 @@
     },
     {
       "common_name": null,
+      "coverage_by_mode": {
+        "bike": "remaining",
+        "hike": "remaining",
+        "run": "remaining"
+      },
       "coverage_status": "remaining",
       "covering_activity_count": 0,
+      "covering_activity_count_by_mode": {
+        "bike": 0,
+        "hike": 0,
+        "run": 0
+      },
       "first_covering_activity": null,
+      "id": "lock-41",
       "latest_covering_activity": null,
       "lock_number": "41",
       "milepost": 88.9,
@@ -751,9 +1206,20 @@
     },
     {
       "common_name": null,
+      "coverage_by_mode": {
+        "bike": "remaining",
+        "hike": "remaining",
+        "run": "remaining"
+      },
       "coverage_status": "remaining",
       "covering_activity_count": 0,
+      "covering_activity_count_by_mode": {
+        "bike": 0,
+        "hike": 0,
+        "run": 0
+      },
       "first_covering_activity": null,
+      "id": "lock-42",
       "latest_covering_activity": null,
       "lock_number": "42",
       "milepost": 89.0,
@@ -768,13 +1234,24 @@
     },
     {
       "common_name": null,
+      "coverage_by_mode": {
+        "bike": "remaining",
+        "hike": "remaining",
+        "run": "covered"
+      },
       "coverage_status": "covered",
       "covering_activity_count": 1,
+      "covering_activity_count_by_mode": {
+        "bike": 0,
+        "hike": 0,
+        "run": 1
+      },
       "first_covering_activity": {
         "activity_id": 767883779,
         "date": "2016-11-06",
         "strava_url": "https://www.strava.com/activities/767883779"
       },
+      "id": "lock-43",
       "latest_covering_activity": {
         "activity_id": 767883779,
         "date": "2016-11-06",
@@ -787,13 +1264,24 @@
     },
     {
       "common_name": "Williamsport",
+      "coverage_by_mode": {
+        "bike": "remaining",
+        "hike": "remaining",
+        "run": "covered"
+      },
       "coverage_status": "covered",
       "covering_activity_count": 1,
+      "covering_activity_count_by_mode": {
+        "bike": 0,
+        "hike": 0,
+        "run": 1
+      },
       "first_covering_activity": {
         "activity_id": 767883779,
         "date": "2016-11-06",
         "strava_url": "https://www.strava.com/activities/767883779"
       },
+      "id": "lock-44",
       "latest_covering_activity": {
         "activity_id": 767883779,
         "date": "2016-11-06",
@@ -806,13 +1294,24 @@
     },
     {
       "common_name": "Two Locks 1",
+      "coverage_by_mode": {
+        "bike": "remaining",
+        "hike": "remaining",
+        "run": "covered"
+      },
       "coverage_status": "covered",
       "covering_activity_count": 1,
+      "covering_activity_count_by_mode": {
+        "bike": 0,
+        "hike": 0,
+        "run": 1
+      },
       "first_covering_activity": {
         "activity_id": 781060553,
         "date": "2016-11-20",
         "strava_url": "https://www.strava.com/activities/781060553"
       },
+      "id": "lock-45",
       "latest_covering_activity": {
         "activity_id": 781060553,
         "date": "2016-11-20",
@@ -825,13 +1324,24 @@
     },
     {
       "common_name": "Two Locks 2",
+      "coverage_by_mode": {
+        "bike": "remaining",
+        "hike": "remaining",
+        "run": "covered"
+      },
       "coverage_status": "covered",
       "covering_activity_count": 1,
+      "covering_activity_count_by_mode": {
+        "bike": 0,
+        "hike": 0,
+        "run": 1
+      },
       "first_covering_activity": {
         "activity_id": 781060553,
         "date": "2016-11-20",
         "strava_url": "https://www.strava.com/activities/781060553"
       },
+      "id": "lock-46",
       "latest_covering_activity": {
         "activity_id": 781060553,
         "date": "2016-11-20",
@@ -844,13 +1354,24 @@
     },
     {
       "common_name": "Four Locks 1",
+      "coverage_by_mode": {
+        "bike": "remaining",
+        "hike": "remaining",
+        "run": "covered"
+      },
       "coverage_status": "covered",
       "covering_activity_count": 1,
+      "covering_activity_count_by_mode": {
+        "bike": 0,
+        "hike": 0,
+        "run": 1
+      },
       "first_covering_activity": {
         "activity_id": 781060553,
         "date": "2016-11-20",
         "strava_url": "https://www.strava.com/activities/781060553"
       },
+      "id": "lock-47",
       "latest_covering_activity": {
         "activity_id": 781060553,
         "date": "2016-11-20",
@@ -863,13 +1384,24 @@
     },
     {
       "common_name": "Four Locks 2",
+      "coverage_by_mode": {
+        "bike": "remaining",
+        "hike": "remaining",
+        "run": "covered"
+      },
       "coverage_status": "covered",
       "covering_activity_count": 1,
+      "covering_activity_count_by_mode": {
+        "bike": 0,
+        "hike": 0,
+        "run": 1
+      },
       "first_covering_activity": {
         "activity_id": 781060553,
         "date": "2016-11-20",
         "strava_url": "https://www.strava.com/activities/781060553"
       },
+      "id": "lock-48",
       "latest_covering_activity": {
         "activity_id": 781060553,
         "date": "2016-11-20",
@@ -882,13 +1414,24 @@
     },
     {
       "common_name": "Four Locks 3",
+      "coverage_by_mode": {
+        "bike": "remaining",
+        "hike": "remaining",
+        "run": "covered"
+      },
       "coverage_status": "covered",
       "covering_activity_count": 1,
+      "covering_activity_count_by_mode": {
+        "bike": 0,
+        "hike": 0,
+        "run": 1
+      },
       "first_covering_activity": {
         "activity_id": 781060553,
         "date": "2016-11-20",
         "strava_url": "https://www.strava.com/activities/781060553"
       },
+      "id": "lock-49",
       "latest_covering_activity": {
         "activity_id": 781060553,
         "date": "2016-11-20",
@@ -901,13 +1444,24 @@
     },
     {
       "common_name": "Four Locks 4",
+      "coverage_by_mode": {
+        "bike": "remaining",
+        "hike": "remaining",
+        "run": "covered"
+      },
       "coverage_status": "covered",
       "covering_activity_count": 1,
+      "covering_activity_count_by_mode": {
+        "bike": 0,
+        "hike": 0,
+        "run": 1
+      },
       "first_covering_activity": {
         "activity_id": 781060553,
         "date": "2016-11-20",
         "strava_url": "https://www.strava.com/activities/781060553"
       },
+      "id": "lock-50",
       "latest_covering_activity": {
         "activity_id": 781060553,
         "date": "2016-11-20",
@@ -920,9 +1474,20 @@
     },
     {
       "common_name": "Hancock 1",
+      "coverage_by_mode": {
+        "bike": "remaining",
+        "hike": "remaining",
+        "run": "remaining"
+      },
       "coverage_status": "remaining",
       "covering_activity_count": 0,
+      "covering_activity_count_by_mode": {
+        "bike": 0,
+        "hike": 0,
+        "run": 0
+      },
       "first_covering_activity": null,
+      "id": "lock-51",
       "latest_covering_activity": null,
       "lock_number": "51",
       "milepost": 122.7,
@@ -937,9 +1502,20 @@
     },
     {
       "common_name": "Hancock 2",
+      "coverage_by_mode": {
+        "bike": "remaining",
+        "hike": "remaining",
+        "run": "remaining"
+      },
       "coverage_status": "remaining",
       "covering_activity_count": 0,
+      "covering_activity_count_by_mode": {
+        "bike": 0,
+        "hike": 0,
+        "run": 0
+      },
       "first_covering_activity": null,
+      "id": "lock-52",
       "latest_covering_activity": null,
       "lock_number": "52",
       "milepost": 122.9,
@@ -954,9 +1530,20 @@
     },
     {
       "common_name": "Irishman's Lock",
+      "coverage_by_mode": {
+        "bike": "remaining",
+        "hike": "remaining",
+        "run": "remaining"
+      },
       "coverage_status": "remaining",
       "covering_activity_count": 0,
+      "covering_activity_count_by_mode": {
+        "bike": 0,
+        "hike": 0,
+        "run": 0
+      },
       "first_covering_activity": null,
+      "id": "lock-53",
       "latest_covering_activity": null,
       "lock_number": "53",
       "milepost": 130.1,
@@ -971,9 +1558,20 @@
     },
     {
       "common_name": null,
+      "coverage_by_mode": {
+        "bike": "remaining",
+        "hike": "remaining",
+        "run": "remaining"
+      },
       "coverage_status": "remaining",
       "covering_activity_count": 0,
+      "covering_activity_count_by_mode": {
+        "bike": 0,
+        "hike": 0,
+        "run": 0
+      },
       "first_covering_activity": null,
+      "id": "lock-54",
       "latest_covering_activity": null,
       "lock_number": "54",
       "milepost": 134.0,
@@ -988,9 +1586,20 @@
     },
     {
       "common_name": null,
+      "coverage_by_mode": {
+        "bike": "remaining",
+        "hike": "remaining",
+        "run": "remaining"
+      },
       "coverage_status": "remaining",
       "covering_activity_count": 0,
+      "covering_activity_count_by_mode": {
+        "bike": 0,
+        "hike": 0,
+        "run": 0
+      },
       "first_covering_activity": null,
+      "id": "lock-55",
       "latest_covering_activity": null,
       "lock_number": "55",
       "milepost": 134.2,
@@ -1005,9 +1614,20 @@
     },
     {
       "common_name": "Sideling Lock",
+      "coverage_by_mode": {
+        "bike": "remaining",
+        "hike": "remaining",
+        "run": "remaining"
+      },
       "coverage_status": "remaining",
       "covering_activity_count": 0,
+      "covering_activity_count_by_mode": {
+        "bike": 0,
+        "hike": 0,
+        "run": 0
+      },
       "first_covering_activity": null,
+      "id": "lock-56",
       "latest_covering_activity": null,
       "lock_number": "56",
       "milepost": 136.2,
@@ -1022,9 +1642,20 @@
     },
     {
       "common_name": null,
+      "coverage_by_mode": {
+        "bike": "remaining",
+        "hike": "remaining",
+        "run": "remaining"
+      },
       "coverage_status": "remaining",
       "covering_activity_count": 0,
+      "covering_activity_count_by_mode": {
+        "bike": 0,
+        "hike": 0,
+        "run": 0
+      },
       "first_covering_activity": null,
+      "id": "lock-57",
       "latest_covering_activity": null,
       "lock_number": "57",
       "milepost": 139.4,
@@ -1039,9 +1670,20 @@
     },
     {
       "common_name": null,
+      "coverage_by_mode": {
+        "bike": "remaining",
+        "hike": "remaining",
+        "run": "remaining"
+      },
       "coverage_status": "remaining",
       "covering_activity_count": 0,
+      "covering_activity_count_by_mode": {
+        "bike": 0,
+        "hike": 0,
+        "run": 0
+      },
       "first_covering_activity": null,
+      "id": "lock-58",
       "latest_covering_activity": null,
       "lock_number": "58",
       "milepost": 144.0,
@@ -1056,9 +1698,20 @@
     },
     {
       "common_name": null,
+      "coverage_by_mode": {
+        "bike": "remaining",
+        "hike": "remaining",
+        "run": "remaining"
+      },
       "coverage_status": "remaining",
       "covering_activity_count": 0,
+      "covering_activity_count_by_mode": {
+        "bike": 0,
+        "hike": 0,
+        "run": 0
+      },
       "first_covering_activity": null,
+      "id": "lock-59",
       "latest_covering_activity": null,
       "lock_number": "59",
       "milepost": 146.5,
@@ -1073,9 +1726,20 @@
     },
     {
       "common_name": null,
+      "coverage_by_mode": {
+        "bike": "remaining",
+        "hike": "remaining",
+        "run": "remaining"
+      },
       "coverage_status": "remaining",
       "covering_activity_count": 0,
+      "covering_activity_count_by_mode": {
+        "bike": 0,
+        "hike": 0,
+        "run": 0
+      },
       "first_covering_activity": null,
+      "id": "lock-60",
       "latest_covering_activity": null,
       "lock_number": "60",
       "milepost": 149.6,
@@ -1090,9 +1754,20 @@
     },
     {
       "common_name": null,
+      "coverage_by_mode": {
+        "bike": "remaining",
+        "hike": "remaining",
+        "run": "remaining"
+      },
       "coverage_status": "remaining",
       "covering_activity_count": 0,
+      "covering_activity_count_by_mode": {
+        "bike": 0,
+        "hike": 0,
+        "run": 0
+      },
       "first_covering_activity": null,
+      "id": "lock-61",
       "latest_covering_activity": null,
       "lock_number": "61",
       "milepost": 153.1,
@@ -1107,9 +1782,20 @@
     },
     {
       "common_name": null,
+      "coverage_by_mode": {
+        "bike": "remaining",
+        "hike": "remaining",
+        "run": "remaining"
+      },
       "coverage_status": "remaining",
       "covering_activity_count": 0,
+      "covering_activity_count_by_mode": {
+        "bike": 0,
+        "hike": 0,
+        "run": 0
+      },
       "first_covering_activity": null,
+      "id": "lock-62",
       "latest_covering_activity": null,
       "lock_number": "62",
       "milepost": 154.1,
@@ -1124,9 +1810,20 @@
     },
     {
       "common_name": null,
+      "coverage_by_mode": {
+        "bike": "remaining",
+        "hike": "remaining",
+        "run": "remaining"
+      },
       "coverage_status": "remaining",
       "covering_activity_count": 0,
+      "covering_activity_count_by_mode": {
+        "bike": 0,
+        "hike": 0,
+        "run": 0
+      },
       "first_covering_activity": null,
+      "id": "lock-63-1-3",
       "latest_covering_activity": null,
       "lock_number": "63 1/3",
       "milepost": 154.5,
@@ -1141,9 +1838,20 @@
     },
     {
       "common_name": null,
+      "coverage_by_mode": {
+        "bike": "remaining",
+        "hike": "remaining",
+        "run": "remaining"
+      },
       "coverage_status": "remaining",
       "covering_activity_count": 0,
+      "covering_activity_count_by_mode": {
+        "bike": 0,
+        "hike": 0,
+        "run": 0
+      },
       "first_covering_activity": null,
+      "id": "lock-64-2-3",
       "latest_covering_activity": null,
       "lock_number": "64 2/3",
       "milepost": 154.6,
@@ -1158,9 +1866,20 @@
     },
     {
       "common_name": null,
+      "coverage_by_mode": {
+        "bike": "remaining",
+        "hike": "remaining",
+        "run": "remaining"
+      },
       "coverage_status": "remaining",
       "covering_activity_count": 0,
+      "covering_activity_count_by_mode": {
+        "bike": 0,
+        "hike": 0,
+        "run": 0
+      },
       "first_covering_activity": null,
+      "id": "lock-66",
       "latest_covering_activity": null,
       "lock_number": "66",
       "milepost": 154.7,
@@ -1175,9 +1894,20 @@
     },
     {
       "common_name": "Darbey's Lock",
+      "coverage_by_mode": {
+        "bike": "remaining",
+        "hike": "remaining",
+        "run": "remaining"
+      },
       "coverage_status": "remaining",
       "covering_activity_count": 0,
+      "covering_activity_count_by_mode": {
+        "bike": 0,
+        "hike": 0,
+        "run": 0
+      },
       "first_covering_activity": null,
+      "id": "lock-67",
       "latest_covering_activity": null,
       "lock_number": "67",
       "milepost": 161.7,
@@ -1192,9 +1922,20 @@
     },
     {
       "common_name": "Crabtree's Lock",
+      "coverage_by_mode": {
+        "bike": "remaining",
+        "hike": "remaining",
+        "run": "remaining"
+      },
       "coverage_status": "remaining",
       "covering_activity_count": 0,
+      "covering_activity_count_by_mode": {
+        "bike": 0,
+        "hike": 0,
+        "run": 0
+      },
       "first_covering_activity": null,
+      "id": "lock-68",
       "latest_covering_activity": null,
       "lock_number": "68",
       "milepost": 164.8,
@@ -1209,9 +1950,20 @@
     },
     {
       "common_name": "Twigg's Lock",
+      "coverage_by_mode": {
+        "bike": "remaining",
+        "hike": "remaining",
+        "run": "remaining"
+      },
       "coverage_status": "remaining",
       "covering_activity_count": 0,
+      "covering_activity_count_by_mode": {
+        "bike": 0,
+        "hike": 0,
+        "run": 0
+      },
       "first_covering_activity": null,
+      "id": "lock-69",
       "latest_covering_activity": null,
       "lock_number": "69",
       "milepost": 166.5,
@@ -1226,9 +1978,20 @@
     },
     {
       "common_name": "Oldtown",
+      "coverage_by_mode": {
+        "bike": "remaining",
+        "hike": "remaining",
+        "run": "remaining"
+      },
       "coverage_status": "remaining",
       "covering_activity_count": 0,
+      "covering_activity_count_by_mode": {
+        "bike": 0,
+        "hike": 0,
+        "run": 0
+      },
       "first_covering_activity": null,
+      "id": "lock-70",
       "latest_covering_activity": null,
       "lock_number": "70",
       "milepost": 166.7,
@@ -1243,9 +2006,20 @@
     },
     {
       "common_name": null,
+      "coverage_by_mode": {
+        "bike": "remaining",
+        "hike": "remaining",
+        "run": "remaining"
+      },
       "coverage_status": "remaining",
       "covering_activity_count": 0,
+      "covering_activity_count_by_mode": {
+        "bike": 0,
+        "hike": 0,
+        "run": 0
+      },
       "first_covering_activity": null,
+      "id": "lock-71",
       "latest_covering_activity": null,
       "lock_number": "71",
       "milepost": 167.0,
@@ -1260,9 +2034,20 @@
     },
     {
       "common_name": "The Narrows / Ten Mile Lock",
+      "coverage_by_mode": {
+        "bike": "remaining",
+        "hike": "remaining",
+        "run": "remaining"
+      },
       "coverage_status": "remaining",
       "covering_activity_count": 0,
+      "covering_activity_count_by_mode": {
+        "bike": 0,
+        "hike": 0,
+        "run": 0
+      },
       "first_covering_activity": null,
+      "id": "lock-72",
       "latest_covering_activity": null,
       "lock_number": "72",
       "milepost": 174.4,
@@ -1277,9 +2062,20 @@
     },
     {
       "common_name": "North Branch 1",
+      "coverage_by_mode": {
+        "bike": "remaining",
+        "hike": "remaining",
+        "run": "remaining"
+      },
       "coverage_status": "remaining",
       "covering_activity_count": 0,
+      "covering_activity_count_by_mode": {
+        "bike": 0,
+        "hike": 0,
+        "run": 0
+      },
       "first_covering_activity": null,
+      "id": "lock-73",
       "latest_covering_activity": null,
       "lock_number": "73",
       "milepost": 175.4,
@@ -1294,9 +2090,20 @@
     },
     {
       "common_name": "North Branch 2",
+      "coverage_by_mode": {
+        "bike": "remaining",
+        "hike": "remaining",
+        "run": "remaining"
+      },
       "coverage_status": "remaining",
       "covering_activity_count": 0,
+      "covering_activity_count_by_mode": {
+        "bike": 0,
+        "hike": 0,
+        "run": 0
+      },
       "first_covering_activity": null,
+      "id": "lock-74",
       "latest_covering_activity": null,
       "lock_number": "74",
       "milepost": 175.5,
@@ -1311,9 +2118,20 @@
     },
     {
       "common_name": "North Branch 3 / Keifers Lock",
+      "coverage_by_mode": {
+        "bike": "remaining",
+        "hike": "remaining",
+        "run": "remaining"
+      },
       "coverage_status": "remaining",
       "covering_activity_count": 0,
+      "covering_activity_count_by_mode": {
+        "bike": 0,
+        "hike": 0,
+        "run": 0
+      },
       "first_covering_activity": null,
+      "id": "lock-75",
       "latest_covering_activity": null,
       "lock_number": "75",
       "milepost": 175.7,
@@ -1327,6 +2145,7 @@
       ]
     }
   ],
+  "schema_version": 1,
   "sources": [
     {
       "name": "National Park Service",
