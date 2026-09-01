@@ -1,0 +1,46 @@
+"access_point_id","access_point_name","access_point_milepost","access_point_milepost_end","nps_location_name","nps_milepost","milepost_distance"
+"georgetown-0-0-1-1","Georgetown",0.0,1.1,"Lock 3 (Georgetown)",0.4,0.0
+"fletchers-cove-3-1","Fletchers Cove",3.1,,"Fletchers Cove",3.1,0.0
+"lock-6-5-4","Lock 6",5.4,,"Lock 6",5.4,0.0
+"sycamore-island-6-4","Sycamore Island",6.4,,"Sycamore Island",6.5,0.1
+"lock-7-7-0","Lock 7",7.0,,"Lock 7 (Glen Echo)",7.0,0.0
+"lock-8-8-3","Lock 8",8.3,,"Lock 8 (Seven Locks)",8.3,0.0
+"lock-10-8-8","Lock 10",8.8,,"Lock 10 (Seven Locks)",8.8,0.0
+"carderock-10-4-10-8","Carderock",10.4,10.8,"Carderock",10.5,0.0
+"marsden-tract-11-4","Marsden Tract",11.4,,"Marsden Tract",11.5,0.1
+"old-angler-s-inn-12-2","Old Angler's Inn",12.2,,"Anglers Access",12.2,0.0
+"great-falls-14-3","Great Falls",14.3,,"Great Falls",14.3,0.0
+"swains-lock-16-6","Swains Lock",16.6,,"Lock 21 (Swains Lock)",16.7,0.1
+"pennyfield-lock-19-6","Pennyfield Lock",19.6,,"Lock 22 (Pennyfield Lock)",19.6,0.0
+"violettes-lock-22-1","Violettes Lock",22.1,,"Lock 23 (Violettes Lock)",22.1,0.0
+"rileys-lock-22-8","Rileys Lock",22.8,,"Seneca (Rileys Lock)",22.8,0.0
+"sycamore-landing-27-2","Sycamore Landing",27.2,,"Sycamore Landing",27.2,0.0
+"edwards-ferry-30-8","Edwards Ferry",30.8,,"Edwards Ferry",30.8,0.0
+"whites-ferry-35-5","Whites Ferry",35.5,,"Whites Ferry",35.5,0.0
+"monocacy-aqueduct-42-1","Monocacy Aqueduct",42.1,,"Monocacy Aqueduct",42.2,0.1
+"nolands-ferry-44-6","Nolands Ferry",44.6,,"Nolands Ferry",44.6,0.0
+"point-of-rocks-48-2","Point of Rocks",48.2,,"Point of Rocks",48.2,0.0
+"lander-50-9","Lander",50.9,,"Lock 29 (Lander)",50.8,0.1
+"brunswick-55-0","Brunswick",55.0,,"Brunswick",55.0,0.0
+"dargan-bend-64-9","Dargan Bend",64.9,,"Dargan Bend",64.9,0.0
+"antietam-69-5","Antietam",69.5,,"Antietam Creek",69.6,0.1
+"lock-38-shepherdstown-72-8","Lock 38 (Shepherdstown)",72.8,,"Lock 38 (Shepherdstown)",72.7,0.1
+"snyders-landing-76-7","Snyders Landing",76.7,,"Snyders Landing",76.6,0.1
+"taylors-landing-81-0","Taylors Landing",81.0,,"Taylors Landing",80.9,0.1
+"dam-no-4-84-4","Dam No. 4",84.4,,"Dam 4",84.4,0.0
+"big-slackwater-boat-ramp-85-4","Big Slackwater Boat Ramp",85.4,,"Big Slackwater",85.5,0.1
+"mcmahons-mill-88-1","McMahons Mill",88.1,,"McMahons Mill",88.1,0.0
+"lock-44-99-3","Lock 44",99.3,,"Lock 44",99.2,0.1
+"williamsport-visitor-center-99-8","Williamsport Visitor Center",99.8,,"Cushwa Basin (Williamsport)",99.8,0.0
+"dam-no-5-106-8","Dam No. 5",106.8,,"Dam 5",106.8,0.0
+"four-locks-108-8","Four Locks",108.8,,"Four Locks",109.0,0.2
+"mccoys-ferry-110-4","McCoys Ferry",110.4,,"McCoys Ferry",110.4,0.0
+"fort-frederick-112-4","Fort Frederick",112.4,,"Fort Frederick State Park",112.4,0.0
+"licking-creek-116-3","Licking Creek",116.3,,"Licking Creek",116.0,0.3
+"cohill-station-130-7","Cohill Station",130.7,,"Cohill Station",130.7,0.0
+"paw-paw-tunnel-156-2","Paw Paw Tunnel",156.2,,"Paw Paw",156.1,0.1
+"town-creek-aqueduct-162-3","Town Creek Aqueduct",162.3,,"Town Creek",162.1,0.2
+"oldtown-lock-70-166-7","Oldtown (Lock 70)",166.7,,"Oldtown Battie Mixon",166.7,0.0
+"spring-gap-173-3","Spring Gap",173.3,,"Spring Gap",173.3,0.0
+"north-branch-175-6","North Branch",175.6,,"Lock 75 (North Branch)",175.5,0.1
+"cumberland-visitor-center-184-5","Cumberland Visitor Center",184.5,,"Canal Terminus (Cumberland)",184.5,0.0
