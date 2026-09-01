@@ -74,6 +74,7 @@ def publish_artifacts(
     coverage_json_path = output_directory / "coverage.json"
     access_points_path = output_directory / "access-points.json"
     locks_path = output_directory / "locks.json"
+    sources_path = output_directory / "sources.json"
 
     stream = StringIO(newline="")
     writer = csv.DictWriter(
@@ -108,12 +109,25 @@ def publish_artifacts(
         locks_path,
         json.dumps(public_locks, indent=2, sort_keys=True, ensure_ascii=False) + "\n",
     )
+    from canawler.provenance import build_public_source_registry
+
+    _write_if_changed(
+        sources_path,
+        json.dumps(
+            build_public_source_registry(),
+            indent=2,
+            sort_keys=True,
+            ensure_ascii=False,
+        )
+        + "\n",
+    )
     return (
         csv_path,
         activities_json_path,
         coverage_json_path,
         access_points_path,
         locks_path,
+        sources_path,
     )
 
 
