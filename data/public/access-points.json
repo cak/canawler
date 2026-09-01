@@ -4908,14 +4908,20 @@
   "schema_version": 1,
   "sources": {
     "access_points": {
+      "id": "co_canal_association_access_points",
       "name": "C&O Canal Association",
       "url": "https://candocanal.org/access/"
     },
     "locks": {
       "authority_url": "https://www.nps.gov/choh/learn/historyculture/lift-locks.htm",
-      "name": "C&O Canal lift-lock reference"
+      "name": "C&O Canal lift-lock reference",
+      "source_ids": [
+        "nps_lift_locks",
+        "co_canal_trust_locks"
+      ]
     },
     "recreation_guide": {
+      "id": "nps_recreation_guide",
       "name": "National Park Service C&O Canal Recreational Guide by Milepost",
       "url": "https://www.nps.gov/common/uploads/sortable_dataset/choh/E3324057-FAAC-0D9B-C75464422AFC4A4C/choh-CHOHRecreationalGuidebyMilepost.csv"
     }
