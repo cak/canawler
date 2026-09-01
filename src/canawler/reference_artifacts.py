@@ -301,8 +301,8 @@ def _activity_coverages(
 
 def _coverage_event(record: dict[str, Any]) -> dict[str, Any]:
     return {
-        "covered_at": record["datetime"],
         "activity_id": record.get("activity_id"),
+        "date": record["date"],
         "strava_url": record.get("strava_url"),
     }
 
@@ -310,15 +310,22 @@ def _coverage_event(record: dict[str, Any]) -> dict[str, Any]:
 def _covering_history(
     feature_bins: range,
     activity_coverages: list[tuple[dict[str, Any], set[int]]],
-) -> tuple[dict[str, Any] | None, dict[str, Any] | None]:
-    qualifying = [
-        record
-        for record, covered_bins in activity_coverages
-        if not covered_bins.isdisjoint(feature_bins)
-    ]
+) -> tuple[int, dict[str, Any] | None, dict[str, Any] | None]:
+    qualifying = []
+    seen_activity_ids = set()
+    for record, covered_bins in activity_coverages:
+        activity_id = record.get("activity_id")
+        if activity_id in seen_activity_ids or covered_bins.isdisjoint(feature_bins):
+            continue
+        qualifying.append(record)
+        seen_activity_ids.add(activity_id)
     if not qualifying:
-        return None, None
-    return _coverage_event(qualifying[0]), _coverage_event(qualifying[-1])
+        return 0, None, None
+    return (
+        len(qualifying),
+        _coverage_event(qualifying[0]),
+        _coverage_event(qualifying[-1]),
+    )
 
 
 def _remaining_segments(
@@ -390,11 +397,13 @@ def build_public_reference_artifacts(
 
     public_access_points = []
     for access_point, match_indexes in zip(access_points, matches, strict=True):
-        amenities = {field: False for field in AMENITY_FIELDS}
+        nps_amenities = (
+            {field: False for field in AMENITY_FIELDS} if match_indexes else None
+        )
         for index in match_indexes:
             for field in AMENITY_FIELDS:
-                amenities[field] = (
-                    amenities[field] or locations[index]["amenities"][field]
+                nps_amenities[field] = (
+                    nps_amenities[field] or locations[index]["amenities"][field]
                 )
 
         nearby_features = []
@@ -404,6 +413,7 @@ def build_public_reference_artifacts(
                 nearby_features.append(
                     {
                         "type": "lock",
+                        "lock_number": lock["lock_number"],
                         "name": lock["name"],
                         "common_name": lock["common_name"],
                         "milepost": lock["milepost"],
@@ -437,24 +447,33 @@ def build_public_reference_artifacts(
             )
         )
         status = _coverage_status(access_point, covered_bins)
-        first_covered, latest_covered = _covering_history(
+        activity_count, first_activity, latest_activity = _covering_history(
             _access_point_bins(access_point), activity_coverages
         )
         public_access_points.append(
             {
                 **access_point,
-                "amenities": amenities,
+                "nps_amenities": nps_amenities,
                 "nps_recreation_matches": [
                     {
                         "name": locations[index]["name"],
                         "milepost": locations[index]["milepost"],
+                        "milepost_distance": float(
+                            round(
+                                _milepost_distance(
+                                    access_point, locations[index]["milepost"]
+                                ),
+                                2,
+                            )
+                        ),
                     }
                     for index in match_indexes
                 ],
                 "nearby_features": nearby_features,
                 "coverage_status": status,
-                "first_covered": first_covered,
-                "latest_covered": latest_covered,
+                "covering_activity_count": activity_count,
+                "first_covering_activity": first_activity,
+                "latest_covering_activity": latest_activity,
                 "remaining_segments": _remaining_segments(
                     access_point, status, remaining
                 ),
@@ -465,7 +484,7 @@ def build_public_reference_artifacts(
     for lock in locks:
         coverage_point = {"milepost": lock["milepost"], "milepost_end": None}
         status = _coverage_status(coverage_point, covered_bins)
-        first_covered, latest_covered = _covering_history(
+        activity_count, first_activity, latest_activity = _covering_history(
             _access_point_bins(coverage_point), activity_coverages
         )
         public_locks.append(
@@ -475,11 +494,12 @@ def build_public_reference_artifacts(
                 "common_name": lock["common_name"],
                 "milepost": lock["milepost"],
                 "coverage_status": status,
+                "covering_activity_count": activity_count,
                 "remaining_segments": _remaining_segments(
                     coverage_point, status, remaining
                 ),
-                "first_covered": first_covered,
-                "latest_covered": latest_covered,
+                "first_covering_activity": first_activity,
+                "latest_covering_activity": latest_activity,
             }
         )
     return (
