@@ -69,7 +69,6 @@
       ],
       "travel_exceeds_strava_tolerance_miles": 0.01
     },
-    "canal_length_miles": 184.5,
     "canonical_towpath_sha256": "bab4f87dc843f8b1b5fc1218700998f29d2709a9c9dbaf5af1303d7cf05339e1",
     "continuity": {
       "max_along_gap_meters": 400.0,
@@ -80,7 +79,6 @@
       "minimum_run_points": 3,
       "minimum_run_travel_meters": 32.0
     },
-    "coverage_bin_miles": 0.01,
     "match_tolerance_meters": 30.0,
     "projected_crs": "EPSG:5070"
   },
