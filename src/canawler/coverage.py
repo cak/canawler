@@ -709,6 +709,15 @@ def calculate_history(
         ),
         "completed_segments": [segment.as_dict() for segment in completed],
         "remaining_segments": [segment.as_dict() for segment in remaining],
+        "run_segments": [
+            segment.as_dict() for segment in bins_to_segments(type_bins["run"])
+        ],
+        "bike_segments": [
+            segment.as_dict() for segment in bins_to_segments(type_bins["bike"])
+        ],
+        "hike_segments": [
+            segment.as_dict() for segment in bins_to_segments(type_bins["hike"])
+        ],
     }
     validate_coverage_outputs(records, coverage)
     return records, coverage
