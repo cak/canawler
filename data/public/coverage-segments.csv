@@ -1,0 +1,16 @@
+"coverage_scope","coverage_status","start_milepost","end_milepost","miles"
+"combined","completed",0.0,10.04,10.04
+"combined","completed",32.84,64.95,32.11
+"combined","completed",70.67,72.73,2.06
+"combined","completed",89.47,109.81,20.34
+"combined","remaining",10.04,32.84,22.8
+"combined","remaining",64.95,70.67,5.72
+"combined","remaining",72.73,89.47,16.74
+"combined","remaining",109.81,184.5,74.69
+"run","covered",0.0,10.04,10.04
+"run","covered",38.03,64.95,26.92
+"run","covered",70.67,72.73,2.06
+"run","covered",89.47,109.81,20.34
+"bike","covered",32.84,48.06,15.22
+"bike","covered",60.42,64.64,4.22
+"hike","covered",99.2,99.62,0.42
