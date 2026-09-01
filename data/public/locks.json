@@ -2,447 +2,1255 @@
   "locks": [
     {
       "common_name": null,
+      "coverage_status": "covered",
+      "first_covered": {
+        "activity_id": 199813593,
+        "covered_at": "2013-04-09T20:51:12Z",
+        "strava_url": "https://www.strava.com/activities/199813593"
+      },
+      "latest_covered": {
+        "activity_id": 199813593,
+        "covered_at": "2013-04-09T20:51:12Z",
+        "strava_url": "https://www.strava.com/activities/199813593"
+      },
       "lock_number": "1",
       "milepost": 0.3,
-      "name": "Lock 1"
+      "name": "Lock 1",
+      "remaining_segments": []
     },
     {
       "common_name": null,
+      "coverage_status": "covered",
+      "first_covered": {
+        "activity_id": 199813593,
+        "covered_at": "2013-04-09T20:51:12Z",
+        "strava_url": "https://www.strava.com/activities/199813593"
+      },
+      "latest_covered": {
+        "activity_id": 199813593,
+        "covered_at": "2013-04-09T20:51:12Z",
+        "strava_url": "https://www.strava.com/activities/199813593"
+      },
       "lock_number": "2",
       "milepost": 0.3,
-      "name": "Lock 2"
+      "name": "Lock 2",
+      "remaining_segments": []
     },
     {
       "common_name": null,
+      "coverage_status": "covered",
+      "first_covered": {
+        "activity_id": 199813593,
+        "covered_at": "2013-04-09T20:51:12Z",
+        "strava_url": "https://www.strava.com/activities/199813593"
+      },
+      "latest_covered": {
+        "activity_id": 199813593,
+        "covered_at": "2013-04-09T20:51:12Z",
+        "strava_url": "https://www.strava.com/activities/199813593"
+      },
       "lock_number": "3",
       "milepost": 0.4,
-      "name": "Lock 3"
+      "name": "Lock 3",
+      "remaining_segments": []
     },
     {
       "common_name": null,
+      "coverage_status": "covered",
+      "first_covered": {
+        "activity_id": 199813593,
+        "covered_at": "2013-04-09T20:51:12Z",
+        "strava_url": "https://www.strava.com/activities/199813593"
+      },
+      "latest_covered": {
+        "activity_id": 199813593,
+        "covered_at": "2013-04-09T20:51:12Z",
+        "strava_url": "https://www.strava.com/activities/199813593"
+      },
       "lock_number": "4",
       "milepost": 0.4,
-      "name": "Lock 4"
+      "name": "Lock 4",
+      "remaining_segments": []
     },
     {
       "common_name": "Brookmont Lock & Inlet #1",
+      "coverage_status": "covered",
+      "first_covered": {
+        "activity_id": 199814600,
+        "covered_at": "2013-04-02T21:06:24Z",
+        "strava_url": "https://www.strava.com/activities/199814600"
+      },
+      "latest_covered": {
+        "activity_id": 199781227,
+        "covered_at": "2013-11-17T14:02:49Z",
+        "strava_url": "https://www.strava.com/activities/199781227"
+      },
       "lock_number": "5",
       "milepost": 5.0,
-      "name": "Lock 5"
+      "name": "Lock 5",
+      "remaining_segments": []
     },
     {
       "common_name": "Magazine Lock",
+      "coverage_status": "covered",
+      "first_covered": {
+        "activity_id": 199814600,
+        "covered_at": "2013-04-02T21:06:24Z",
+        "strava_url": "https://www.strava.com/activities/199814600"
+      },
+      "latest_covered": {
+        "activity_id": 199781227,
+        "covered_at": "2013-11-17T14:02:49Z",
+        "strava_url": "https://www.strava.com/activities/199781227"
+      },
       "lock_number": "6",
       "milepost": 5.4,
-      "name": "Lock 6"
+      "name": "Lock 6",
+      "remaining_segments": []
     },
     {
       "common_name": "Chataqua Lock",
+      "coverage_status": "covered",
+      "first_covered": {
+        "activity_id": 199814600,
+        "covered_at": "2013-04-02T21:06:24Z",
+        "strava_url": "https://www.strava.com/activities/199814600"
+      },
+      "latest_covered": {
+        "activity_id": 199781227,
+        "covered_at": "2013-11-17T14:02:49Z",
+        "strava_url": "https://www.strava.com/activities/199781227"
+      },
       "lock_number": "7",
       "milepost": 7.0,
-      "name": "Lock 7"
+      "name": "Lock 7",
+      "remaining_segments": []
     },
     {
       "common_name": "Seven Locks 1",
+      "coverage_status": "covered",
+      "first_covered": {
+        "activity_id": 199789540,
+        "covered_at": "2013-09-14T13:05:34Z",
+        "strava_url": "https://www.strava.com/activities/199789540"
+      },
+      "latest_covered": {
+        "activity_id": 199781227,
+        "covered_at": "2013-11-17T14:02:49Z",
+        "strava_url": "https://www.strava.com/activities/199781227"
+      },
       "lock_number": "8",
       "milepost": 8.3,
-      "name": "Lock 8"
+      "name": "Lock 8",
+      "remaining_segments": []
     },
     {
       "common_name": "Seven Locks 2",
+      "coverage_status": "covered",
+      "first_covered": {
+        "activity_id": 199789540,
+        "covered_at": "2013-09-14T13:05:34Z",
+        "strava_url": "https://www.strava.com/activities/199789540"
+      },
+      "latest_covered": {
+        "activity_id": 199781227,
+        "covered_at": "2013-11-17T14:02:49Z",
+        "strava_url": "https://www.strava.com/activities/199781227"
+      },
       "lock_number": "9",
       "milepost": 8.7,
-      "name": "Lock 9"
+      "name": "Lock 9",
+      "remaining_segments": []
     },
     {
       "common_name": "Seven Locks 3",
+      "coverage_status": "covered",
+      "first_covered": {
+        "activity_id": 199789540,
+        "covered_at": "2013-09-14T13:05:34Z",
+        "strava_url": "https://www.strava.com/activities/199789540"
+      },
+      "latest_covered": {
+        "activity_id": 199781227,
+        "covered_at": "2013-11-17T14:02:49Z",
+        "strava_url": "https://www.strava.com/activities/199781227"
+      },
       "lock_number": "10",
       "milepost": 8.8,
-      "name": "Lock 10"
+      "name": "Lock 10",
+      "remaining_segments": []
     },
     {
       "common_name": "Seven Locks 4",
+      "coverage_status": "covered",
+      "first_covered": {
+        "activity_id": 199789540,
+        "covered_at": "2013-09-14T13:05:34Z",
+        "strava_url": "https://www.strava.com/activities/199789540"
+      },
+      "latest_covered": {
+        "activity_id": 199781227,
+        "covered_at": "2013-11-17T14:02:49Z",
+        "strava_url": "https://www.strava.com/activities/199781227"
+      },
       "lock_number": "11",
       "milepost": 9.0,
-      "name": "Lock 11"
+      "name": "Lock 11",
+      "remaining_segments": []
     },
     {
       "common_name": "Seven Locks 5",
+      "coverage_status": "covered",
+      "first_covered": {
+        "activity_id": 199789540,
+        "covered_at": "2013-09-14T13:05:34Z",
+        "strava_url": "https://www.strava.com/activities/199789540"
+      },
+      "latest_covered": {
+        "activity_id": 199781227,
+        "covered_at": "2013-11-17T14:02:49Z",
+        "strava_url": "https://www.strava.com/activities/199781227"
+      },
       "lock_number": "12",
       "milepost": 9.3,
-      "name": "Lock 12"
+      "name": "Lock 12",
+      "remaining_segments": []
     },
     {
       "common_name": "Seven Locks 6",
+      "coverage_status": "covered",
+      "first_covered": {
+        "activity_id": 199789540,
+        "covered_at": "2013-09-14T13:05:34Z",
+        "strava_url": "https://www.strava.com/activities/199789540"
+      },
+      "latest_covered": {
+        "activity_id": 199781227,
+        "covered_at": "2013-11-17T14:02:49Z",
+        "strava_url": "https://www.strava.com/activities/199781227"
+      },
       "lock_number": "13",
       "milepost": 9.4,
-      "name": "Lock 13"
+      "name": "Lock 13",
+      "remaining_segments": []
     },
     {
       "common_name": "Seven Locks 7",
+      "coverage_status": "covered",
+      "first_covered": {
+        "activity_id": 199781227,
+        "covered_at": "2013-11-17T14:02:49Z",
+        "strava_url": "https://www.strava.com/activities/199781227"
+      },
+      "latest_covered": {
+        "activity_id": 199781227,
+        "covered_at": "2013-11-17T14:02:49Z",
+        "strava_url": "https://www.strava.com/activities/199781227"
+      },
       "lock_number": "14",
       "milepost": 9.5,
-      "name": "Lock 14"
+      "name": "Lock 14",
+      "remaining_segments": []
     },
     {
       "common_name": "Six Locks 1",
+      "coverage_status": "remaining",
+      "first_covered": null,
+      "latest_covered": null,
       "lock_number": "15",
       "milepost": 13.6,
-      "name": "Lock 15"
+      "name": "Lock 15",
+      "remaining_segments": [
+        {
+          "end_milepost": 32.84,
+          "miles": 22.8,
+          "start_milepost": 10.04
+        }
+      ]
     },
     {
       "common_name": "Six Locks 2",
+      "coverage_status": "remaining",
+      "first_covered": null,
+      "latest_covered": null,
       "lock_number": "16",
       "milepost": 13.7,
-      "name": "Lock 16"
+      "name": "Lock 16",
+      "remaining_segments": [
+        {
+          "end_milepost": 32.84,
+          "miles": 22.8,
+          "start_milepost": 10.04
+        }
+      ]
     },
     {
       "common_name": "Six Locks 3",
+      "coverage_status": "remaining",
+      "first_covered": null,
+      "latest_covered": null,
       "lock_number": "17",
       "milepost": 14.1,
-      "name": "Lock 17"
+      "name": "Lock 17",
+      "remaining_segments": [
+        {
+          "end_milepost": 32.84,
+          "miles": 22.8,
+          "start_milepost": 10.04
+        }
+      ]
     },
     {
       "common_name": "Six Locks 4",
+      "coverage_status": "remaining",
+      "first_covered": null,
+      "latest_covered": null,
       "lock_number": "18",
       "milepost": 14.2,
-      "name": "Lock 18"
+      "name": "Lock 18",
+      "remaining_segments": [
+        {
+          "end_milepost": 32.84,
+          "miles": 22.8,
+          "start_milepost": 10.04
+        }
+      ]
     },
     {
       "common_name": "Six Locks 5",
+      "coverage_status": "remaining",
+      "first_covered": null,
+      "latest_covered": null,
       "lock_number": "19",
       "milepost": 14.3,
-      "name": "Lock 19"
+      "name": "Lock 19",
+      "remaining_segments": [
+        {
+          "end_milepost": 32.84,
+          "miles": 22.8,
+          "start_milepost": 10.04
+        }
+      ]
     },
     {
       "common_name": "Six Locks 6 / Tavern Lock",
+      "coverage_status": "remaining",
+      "first_covered": null,
+      "latest_covered": null,
       "lock_number": "20",
       "milepost": 14.4,
-      "name": "Lock 20"
+      "name": "Lock 20",
+      "remaining_segments": [
+        {
+          "end_milepost": 32.84,
+          "miles": 22.8,
+          "start_milepost": 10.04
+        }
+      ]
     },
     {
       "common_name": "Swains Lock",
+      "coverage_status": "remaining",
+      "first_covered": null,
+      "latest_covered": null,
       "lock_number": "21",
       "milepost": 16.7,
-      "name": "Lock 21"
+      "name": "Lock 21",
+      "remaining_segments": [
+        {
+          "end_milepost": 32.84,
+          "miles": 22.8,
+          "start_milepost": 10.04
+        }
+      ]
     },
     {
       "common_name": "Pennyfield Lock",
+      "coverage_status": "remaining",
+      "first_covered": null,
+      "latest_covered": null,
       "lock_number": "22",
       "milepost": 19.6,
-      "name": "Lock 22"
+      "name": "Lock 22",
+      "remaining_segments": [
+        {
+          "end_milepost": 32.84,
+          "miles": 22.8,
+          "start_milepost": 10.04
+        }
+      ]
     },
     {
       "common_name": "Violette's Lock",
+      "coverage_status": "remaining",
+      "first_covered": null,
+      "latest_covered": null,
       "lock_number": "23",
       "milepost": 22.1,
-      "name": "Lock 23"
+      "name": "Lock 23",
+      "remaining_segments": [
+        {
+          "end_milepost": 32.84,
+          "miles": 22.8,
+          "start_milepost": 10.04
+        }
+      ]
     },
     {
       "common_name": "Riley's Lock",
+      "coverage_status": "remaining",
+      "first_covered": null,
+      "latest_covered": null,
       "lock_number": "24",
       "milepost": 22.8,
-      "name": "Lock 24"
+      "name": "Lock 24",
+      "remaining_segments": [
+        {
+          "end_milepost": 32.84,
+          "miles": 22.8,
+          "start_milepost": 10.04
+        }
+      ]
     },
     {
       "common_name": "Edward's Ferry",
+      "coverage_status": "remaining",
+      "first_covered": null,
+      "latest_covered": null,
       "lock_number": "25",
       "milepost": 30.8,
-      "name": "Lock 25"
+      "name": "Lock 25",
+      "remaining_segments": [
+        {
+          "end_milepost": 32.84,
+          "miles": 22.8,
+          "start_milepost": 10.04
+        }
+      ]
     },
     {
       "common_name": "Wood's Lock",
+      "coverage_status": "covered",
+      "first_covered": {
+        "activity_id": 311074835,
+        "covered_at": "2015-05-24T17:13:42Z",
+        "strava_url": "https://www.strava.com/activities/311074835"
+      },
+      "latest_covered": {
+        "activity_id": 760819957,
+        "covered_at": "2016-10-30T13:59:41Z",
+        "strava_url": "https://www.strava.com/activities/760819957"
+      },
       "lock_number": "26",
       "milepost": 39.4,
-      "name": "Lock 26"
+      "name": "Lock 26",
+      "remaining_segments": []
     },
     {
       "common_name": "Spinks Ferry",
+      "coverage_status": "covered",
+      "first_covered": {
+        "activity_id": 199744774,
+        "covered_at": "2014-09-14T13:09:24Z",
+        "strava_url": "https://www.strava.com/activities/199744774"
+      },
+      "latest_covered": {
+        "activity_id": 760819957,
+        "covered_at": "2016-10-30T13:59:41Z",
+        "strava_url": "https://www.strava.com/activities/760819957"
+      },
       "lock_number": "27",
       "milepost": 41.5,
-      "name": "Lock 27"
+      "name": "Lock 27",
+      "remaining_segments": []
     },
     {
       "common_name": "Fulton's Lock / Dent's Lock",
+      "coverage_status": "covered",
+      "first_covered": {
+        "activity_id": 200480099,
+        "covered_at": "2014-09-27T11:52:26Z",
+        "strava_url": "https://www.strava.com/activities/200480099"
+      },
+      "latest_covered": {
+        "activity_id": 746946174,
+        "covered_at": "2016-10-16T14:47:52Z",
+        "strava_url": "https://www.strava.com/activities/746946174"
+      },
       "lock_number": "28",
       "milepost": 48.9,
-      "name": "Lock 28"
+      "name": "Lock 28",
+      "remaining_segments": []
     },
     {
       "common_name": "Lander Lock / Catoctin Lock",
+      "coverage_status": "covered",
+      "first_covered": {
+        "activity_id": 200480099,
+        "covered_at": "2014-09-27T11:52:26Z",
+        "strava_url": "https://www.strava.com/activities/200480099"
+      },
+      "latest_covered": {
+        "activity_id": 746946174,
+        "covered_at": "2016-10-16T14:47:52Z",
+        "strava_url": "https://www.strava.com/activities/746946174"
+      },
       "lock_number": "29",
       "milepost": 50.8,
-      "name": "Lock 29"
+      "name": "Lock 29",
+      "remaining_segments": []
     },
     {
       "common_name": null,
+      "coverage_status": "covered",
+      "first_covered": {
+        "activity_id": 200480099,
+        "covered_at": "2014-09-27T11:52:26Z",
+        "strava_url": "https://www.strava.com/activities/200480099"
+      },
+      "latest_covered": {
+        "activity_id": 746946174,
+        "covered_at": "2016-10-16T14:47:52Z",
+        "strava_url": "https://www.strava.com/activities/746946174"
+      },
       "lock_number": "30",
       "milepost": 55.0,
-      "name": "Lock 30"
+      "name": "Lock 30",
+      "remaining_segments": []
     },
     {
       "common_name": "Weverton Lock",
+      "coverage_status": "covered",
+      "first_covered": {
+        "activity_id": 200480099,
+        "covered_at": "2014-09-27T11:52:26Z",
+        "strava_url": "https://www.strava.com/activities/200480099"
+      },
+      "latest_covered": {
+        "activity_id": 386308394,
+        "covered_at": "2015-09-06T13:01:41Z",
+        "strava_url": "https://www.strava.com/activities/386308394"
+      },
       "lock_number": "31",
       "milepost": 58.0,
-      "name": "Lock 31"
+      "name": "Lock 31",
+      "remaining_segments": []
     },
     {
       "common_name": null,
+      "coverage_status": "covered",
+      "first_covered": {
+        "activity_id": 206547267,
+        "covered_at": "2014-10-12T12:50:08Z",
+        "strava_url": "https://www.strava.com/activities/206547267"
+      },
+      "latest_covered": {
+        "activity_id": 386308394,
+        "covered_at": "2015-09-06T13:01:41Z",
+        "strava_url": "https://www.strava.com/activities/386308394"
+      },
       "lock_number": "32",
       "milepost": 60.2,
-      "name": "Lock 32"
+      "name": "Lock 32",
+      "remaining_segments": []
     },
     {
       "common_name": null,
+      "coverage_status": "covered",
+      "first_covered": {
+        "activity_id": 206547267,
+        "covered_at": "2014-10-12T12:50:08Z",
+        "strava_url": "https://www.strava.com/activities/206547267"
+      },
+      "latest_covered": {
+        "activity_id": 752586140,
+        "covered_at": "2016-10-22T14:34:10Z",
+        "strava_url": "https://www.strava.com/activities/752586140"
+      },
       "lock_number": "33",
       "milepost": 60.7,
-      "name": "Lock 33"
+      "name": "Lock 33",
+      "remaining_segments": []
     },
     {
       "common_name": "Goodheart's Lock",
+      "coverage_status": "covered",
+      "first_covered": {
+        "activity_id": 206547267,
+        "covered_at": "2014-10-12T12:50:08Z",
+        "strava_url": "https://www.strava.com/activities/206547267"
+      },
+      "latest_covered": {
+        "activity_id": 752586140,
+        "covered_at": "2016-10-22T14:34:10Z",
+        "strava_url": "https://www.strava.com/activities/752586140"
+      },
       "lock_number": "34",
       "milepost": 61.5,
-      "name": "Lock 34"
+      "name": "Lock 34",
+      "remaining_segments": []
     },
     {
       "common_name": null,
+      "coverage_status": "covered",
+      "first_covered": {
+        "activity_id": 206547267,
+        "covered_at": "2014-10-12T12:50:08Z",
+        "strava_url": "https://www.strava.com/activities/206547267"
+      },
+      "latest_covered": {
+        "activity_id": 752586140,
+        "covered_at": "2016-10-22T14:34:10Z",
+        "strava_url": "https://www.strava.com/activities/752586140"
+      },
       "lock_number": "35",
       "milepost": 62.3,
-      "name": "Lock 35"
+      "name": "Lock 35",
+      "remaining_segments": []
     },
     {
       "common_name": null,
+      "coverage_status": "covered",
+      "first_covered": {
+        "activity_id": 206547267,
+        "covered_at": "2014-10-12T12:50:08Z",
+        "strava_url": "https://www.strava.com/activities/206547267"
+      },
+      "latest_covered": {
+        "activity_id": 752586140,
+        "covered_at": "2016-10-22T14:34:10Z",
+        "strava_url": "https://www.strava.com/activities/752586140"
+      },
       "lock_number": "36",
       "milepost": 62.5,
-      "name": "Lock 36"
+      "name": "Lock 36",
+      "remaining_segments": []
     },
     {
       "common_name": "Mountain Lock",
+      "coverage_status": "remaining",
+      "first_covered": null,
+      "latest_covered": null,
       "lock_number": "37",
       "milepost": 66.9,
-      "name": "Lock 37"
+      "name": "Lock 37",
+      "remaining_segments": [
+        {
+          "end_milepost": 70.67,
+          "miles": 5.72,
+          "start_milepost": 64.95
+        }
+      ]
     },
     {
       "common_name": "Shepherdstown Lock",
+      "coverage_status": "covered",
+      "first_covered": {
+        "activity_id": 730943315,
+        "covered_at": "2016-10-01T12:30:24Z",
+        "strava_url": "https://www.strava.com/activities/730943315"
+      },
+      "latest_covered": {
+        "activity_id": 730943315,
+        "covered_at": "2016-10-01T12:30:24Z",
+        "strava_url": "https://www.strava.com/activities/730943315"
+      },
       "lock_number": "38",
       "milepost": 72.7,
-      "name": "Lock 38"
+      "name": "Lock 38",
+      "remaining_segments": []
     },
     {
       "common_name": "One Mile Lock",
+      "coverage_status": "remaining",
+      "first_covered": null,
+      "latest_covered": null,
       "lock_number": "39",
       "milepost": 74.0,
-      "name": "Lock 39"
+      "name": "Lock 39",
+      "remaining_segments": [
+        {
+          "end_milepost": 89.47,
+          "miles": 16.74,
+          "start_milepost": 72.73
+        }
+      ]
     },
     {
       "common_name": null,
+      "coverage_status": "remaining",
+      "first_covered": null,
+      "latest_covered": null,
       "lock_number": "40",
       "milepost": 79.4,
-      "name": "Lock 40"
+      "name": "Lock 40",
+      "remaining_segments": [
+        {
+          "end_milepost": 89.47,
+          "miles": 16.74,
+          "start_milepost": 72.73
+        }
+      ]
     },
     {
       "common_name": null,
+      "coverage_status": "remaining",
+      "first_covered": null,
+      "latest_covered": null,
       "lock_number": "41",
       "milepost": 88.9,
-      "name": "Lock 41"
+      "name": "Lock 41",
+      "remaining_segments": [
+        {
+          "end_milepost": 89.47,
+          "miles": 16.74,
+          "start_milepost": 72.73
+        }
+      ]
     },
     {
       "common_name": null,
+      "coverage_status": "remaining",
+      "first_covered": null,
+      "latest_covered": null,
       "lock_number": "42",
       "milepost": 89.0,
-      "name": "Lock 42"
+      "name": "Lock 42",
+      "remaining_segments": [
+        {
+          "end_milepost": 89.47,
+          "miles": 16.74,
+          "start_milepost": 72.73
+        }
+      ]
     },
     {
       "common_name": null,
+      "coverage_status": "covered",
+      "first_covered": {
+        "activity_id": 767883779,
+        "covered_at": "2016-11-06T13:39:22Z",
+        "strava_url": "https://www.strava.com/activities/767883779"
+      },
+      "latest_covered": {
+        "activity_id": 767883779,
+        "covered_at": "2016-11-06T13:39:22Z",
+        "strava_url": "https://www.strava.com/activities/767883779"
+      },
       "lock_number": "43",
       "milepost": 92.9,
-      "name": "Lock 43"
+      "name": "Lock 43",
+      "remaining_segments": []
     },
     {
       "common_name": "Williamsport",
+      "coverage_status": "covered",
+      "first_covered": {
+        "activity_id": 767883779,
+        "covered_at": "2016-11-06T13:39:22Z",
+        "strava_url": "https://www.strava.com/activities/767883779"
+      },
+      "latest_covered": {
+        "activity_id": 767883779,
+        "covered_at": "2016-11-06T13:39:22Z",
+        "strava_url": "https://www.strava.com/activities/767883779"
+      },
       "lock_number": "44",
       "milepost": 99.1,
-      "name": "Lock 44"
+      "name": "Lock 44",
+      "remaining_segments": []
     },
     {
       "common_name": "Two Locks 1",
+      "coverage_status": "covered",
+      "first_covered": {
+        "activity_id": 781060553,
+        "covered_at": "2016-11-20T15:07:57Z",
+        "strava_url": "https://www.strava.com/activities/781060553"
+      },
+      "latest_covered": {
+        "activity_id": 781060553,
+        "covered_at": "2016-11-20T15:07:57Z",
+        "strava_url": "https://www.strava.com/activities/781060553"
+      },
       "lock_number": "45",
       "milepost": 107.0,
-      "name": "Lock 45"
+      "name": "Lock 45",
+      "remaining_segments": []
     },
     {
       "common_name": "Two Locks 2",
+      "coverage_status": "covered",
+      "first_covered": {
+        "activity_id": 781060553,
+        "covered_at": "2016-11-20T15:07:57Z",
+        "strava_url": "https://www.strava.com/activities/781060553"
+      },
+      "latest_covered": {
+        "activity_id": 781060553,
+        "covered_at": "2016-11-20T15:07:57Z",
+        "strava_url": "https://www.strava.com/activities/781060553"
+      },
       "lock_number": "46",
       "milepost": 107.2,
-      "name": "Lock 46"
+      "name": "Lock 46",
+      "remaining_segments": []
     },
     {
       "common_name": "Four Locks 1",
+      "coverage_status": "covered",
+      "first_covered": {
+        "activity_id": 781060553,
+        "covered_at": "2016-11-20T15:07:57Z",
+        "strava_url": "https://www.strava.com/activities/781060553"
+      },
+      "latest_covered": {
+        "activity_id": 781060553,
+        "covered_at": "2016-11-20T15:07:57Z",
+        "strava_url": "https://www.strava.com/activities/781060553"
+      },
       "lock_number": "47",
       "milepost": 108.7,
-      "name": "Lock 47"
+      "name": "Lock 47",
+      "remaining_segments": []
     },
     {
       "common_name": "Four Locks 2",
+      "coverage_status": "covered",
+      "first_covered": {
+        "activity_id": 781060553,
+        "covered_at": "2016-11-20T15:07:57Z",
+        "strava_url": "https://www.strava.com/activities/781060553"
+      },
+      "latest_covered": {
+        "activity_id": 781060553,
+        "covered_at": "2016-11-20T15:07:57Z",
+        "strava_url": "https://www.strava.com/activities/781060553"
+      },
       "lock_number": "48",
       "milepost": 108.8,
-      "name": "Lock 48"
+      "name": "Lock 48",
+      "remaining_segments": []
     },
     {
       "common_name": "Four Locks 3",
+      "coverage_status": "covered",
+      "first_covered": {
+        "activity_id": 781060553,
+        "covered_at": "2016-11-20T15:07:57Z",
+        "strava_url": "https://www.strava.com/activities/781060553"
+      },
+      "latest_covered": {
+        "activity_id": 781060553,
+        "covered_at": "2016-11-20T15:07:57Z",
+        "strava_url": "https://www.strava.com/activities/781060553"
+      },
       "lock_number": "49",
       "milepost": 108.9,
-      "name": "Lock 49"
+      "name": "Lock 49",
+      "remaining_segments": []
     },
     {
       "common_name": "Four Locks 4",
+      "coverage_status": "covered",
+      "first_covered": {
+        "activity_id": 781060553,
+        "covered_at": "2016-11-20T15:07:57Z",
+        "strava_url": "https://www.strava.com/activities/781060553"
+      },
+      "latest_covered": {
+        "activity_id": 781060553,
+        "covered_at": "2016-11-20T15:07:57Z",
+        "strava_url": "https://www.strava.com/activities/781060553"
+      },
       "lock_number": "50",
       "milepost": 109.0,
-      "name": "Lock 50"
+      "name": "Lock 50",
+      "remaining_segments": []
     },
     {
       "common_name": "Hancock 1",
+      "coverage_status": "remaining",
+      "first_covered": null,
+      "latest_covered": null,
       "lock_number": "51",
       "milepost": 122.7,
-      "name": "Lock 51"
+      "name": "Lock 51",
+      "remaining_segments": [
+        {
+          "end_milepost": 184.5,
+          "miles": 74.69,
+          "start_milepost": 109.81
+        }
+      ]
     },
     {
       "common_name": "Hancock 2",
+      "coverage_status": "remaining",
+      "first_covered": null,
+      "latest_covered": null,
       "lock_number": "52",
       "milepost": 122.9,
-      "name": "Lock 52"
+      "name": "Lock 52",
+      "remaining_segments": [
+        {
+          "end_milepost": 184.5,
+          "miles": 74.69,
+          "start_milepost": 109.81
+        }
+      ]
     },
     {
       "common_name": "Irishman's Lock",
+      "coverage_status": "remaining",
+      "first_covered": null,
+      "latest_covered": null,
       "lock_number": "53",
       "milepost": 130.1,
-      "name": "Lock 53"
+      "name": "Lock 53",
+      "remaining_segments": [
+        {
+          "end_milepost": 184.5,
+          "miles": 74.69,
+          "start_milepost": 109.81
+        }
+      ]
     },
     {
       "common_name": null,
+      "coverage_status": "remaining",
+      "first_covered": null,
+      "latest_covered": null,
       "lock_number": "54",
       "milepost": 134.0,
-      "name": "Lock 54"
+      "name": "Lock 54",
+      "remaining_segments": [
+        {
+          "end_milepost": 184.5,
+          "miles": 74.69,
+          "start_milepost": 109.81
+        }
+      ]
     },
     {
       "common_name": null,
+      "coverage_status": "remaining",
+      "first_covered": null,
+      "latest_covered": null,
       "lock_number": "55",
       "milepost": 134.2,
-      "name": "Lock 55"
+      "name": "Lock 55",
+      "remaining_segments": [
+        {
+          "end_milepost": 184.5,
+          "miles": 74.69,
+          "start_milepost": 109.81
+        }
+      ]
     },
     {
       "common_name": "Sideling Lock",
+      "coverage_status": "remaining",
+      "first_covered": null,
+      "latest_covered": null,
       "lock_number": "56",
       "milepost": 136.2,
-      "name": "Lock 56"
+      "name": "Lock 56",
+      "remaining_segments": [
+        {
+          "end_milepost": 184.5,
+          "miles": 74.69,
+          "start_milepost": 109.81
+        }
+      ]
     },
     {
       "common_name": null,
+      "coverage_status": "remaining",
+      "first_covered": null,
+      "latest_covered": null,
       "lock_number": "57",
       "milepost": 139.4,
-      "name": "Lock 57"
+      "name": "Lock 57",
+      "remaining_segments": [
+        {
+          "end_milepost": 184.5,
+          "miles": 74.69,
+          "start_milepost": 109.81
+        }
+      ]
     },
     {
       "common_name": null,
+      "coverage_status": "remaining",
+      "first_covered": null,
+      "latest_covered": null,
       "lock_number": "58",
       "milepost": 144.0,
-      "name": "Lock 58"
+      "name": "Lock 58",
+      "remaining_segments": [
+        {
+          "end_milepost": 184.5,
+          "miles": 74.69,
+          "start_milepost": 109.81
+        }
+      ]
     },
     {
       "common_name": null,
+      "coverage_status": "remaining",
+      "first_covered": null,
+      "latest_covered": null,
       "lock_number": "59",
       "milepost": 146.5,
-      "name": "Lock 59"
+      "name": "Lock 59",
+      "remaining_segments": [
+        {
+          "end_milepost": 184.5,
+          "miles": 74.69,
+          "start_milepost": 109.81
+        }
+      ]
     },
     {
       "common_name": null,
+      "coverage_status": "remaining",
+      "first_covered": null,
+      "latest_covered": null,
       "lock_number": "60",
       "milepost": 149.6,
-      "name": "Lock 60"
+      "name": "Lock 60",
+      "remaining_segments": [
+        {
+          "end_milepost": 184.5,
+          "miles": 74.69,
+          "start_milepost": 109.81
+        }
+      ]
     },
     {
       "common_name": null,
+      "coverage_status": "remaining",
+      "first_covered": null,
+      "latest_covered": null,
       "lock_number": "61",
       "milepost": 153.1,
-      "name": "Lock 61"
+      "name": "Lock 61",
+      "remaining_segments": [
+        {
+          "end_milepost": 184.5,
+          "miles": 74.69,
+          "start_milepost": 109.81
+        }
+      ]
     },
     {
       "common_name": null,
+      "coverage_status": "remaining",
+      "first_covered": null,
+      "latest_covered": null,
       "lock_number": "62",
       "milepost": 154.1,
-      "name": "Lock 62"
+      "name": "Lock 62",
+      "remaining_segments": [
+        {
+          "end_milepost": 184.5,
+          "miles": 74.69,
+          "start_milepost": 109.81
+        }
+      ]
     },
     {
       "common_name": null,
+      "coverage_status": "remaining",
+      "first_covered": null,
+      "latest_covered": null,
       "lock_number": "63 1/3",
       "milepost": 154.5,
-      "name": "Lock 63 1/3"
+      "name": "Lock 63 1/3",
+      "remaining_segments": [
+        {
+          "end_milepost": 184.5,
+          "miles": 74.69,
+          "start_milepost": 109.81
+        }
+      ]
     },
     {
       "common_name": null,
+      "coverage_status": "remaining",
+      "first_covered": null,
+      "latest_covered": null,
       "lock_number": "64 2/3",
       "milepost": 154.6,
-      "name": "Lock 64 2/3"
+      "name": "Lock 64 2/3",
+      "remaining_segments": [
+        {
+          "end_milepost": 184.5,
+          "miles": 74.69,
+          "start_milepost": 109.81
+        }
+      ]
     },
     {
       "common_name": null,
+      "coverage_status": "remaining",
+      "first_covered": null,
+      "latest_covered": null,
       "lock_number": "66",
       "milepost": 154.7,
-      "name": "Lock 66"
+      "name": "Lock 66",
+      "remaining_segments": [
+        {
+          "end_milepost": 184.5,
+          "miles": 74.69,
+          "start_milepost": 109.81
+        }
+      ]
     },
     {
       "common_name": "Darbey's Lock",
+      "coverage_status": "remaining",
+      "first_covered": null,
+      "latest_covered": null,
       "lock_number": "67",
       "milepost": 161.7,
-      "name": "Lock 67"
+      "name": "Lock 67",
+      "remaining_segments": [
+        {
+          "end_milepost": 184.5,
+          "miles": 74.69,
+          "start_milepost": 109.81
+        }
+      ]
     },
     {
       "common_name": "Crabtree's Lock",
+      "coverage_status": "remaining",
+      "first_covered": null,
+      "latest_covered": null,
       "lock_number": "68",
       "milepost": 164.8,
-      "name": "Lock 68"
+      "name": "Lock 68",
+      "remaining_segments": [
+        {
+          "end_milepost": 184.5,
+          "miles": 74.69,
+          "start_milepost": 109.81
+        }
+      ]
     },
     {
       "common_name": "Twigg's Lock",
+      "coverage_status": "remaining",
+      "first_covered": null,
+      "latest_covered": null,
       "lock_number": "69",
       "milepost": 166.5,
-      "name": "Lock 69"
+      "name": "Lock 69",
+      "remaining_segments": [
+        {
+          "end_milepost": 184.5,
+          "miles": 74.69,
+          "start_milepost": 109.81
+        }
+      ]
     },
     {
       "common_name": "Oldtown",
+      "coverage_status": "remaining",
+      "first_covered": null,
+      "latest_covered": null,
       "lock_number": "70",
       "milepost": 166.7,
-      "name": "Lock 70"
+      "name": "Lock 70",
+      "remaining_segments": [
+        {
+          "end_milepost": 184.5,
+          "miles": 74.69,
+          "start_milepost": 109.81
+        }
+      ]
     },
     {
       "common_name": null,
+      "coverage_status": "remaining",
+      "first_covered": null,
+      "latest_covered": null,
       "lock_number": "71",
       "milepost": 167.0,
-      "name": "Lock 71"
+      "name": "Lock 71",
+      "remaining_segments": [
+        {
+          "end_milepost": 184.5,
+          "miles": 74.69,
+          "start_milepost": 109.81
+        }
+      ]
     },
     {
       "common_name": "The Narrows / Ten Mile Lock",
+      "coverage_status": "remaining",
+      "first_covered": null,
+      "latest_covered": null,
       "lock_number": "72",
       "milepost": 174.4,
-      "name": "Lock 72"
+      "name": "Lock 72",
+      "remaining_segments": [
+        {
+          "end_milepost": 184.5,
+          "miles": 74.69,
+          "start_milepost": 109.81
+        }
+      ]
     },
     {
       "common_name": "North Branch 1",
+      "coverage_status": "remaining",
+      "first_covered": null,
+      "latest_covered": null,
       "lock_number": "73",
       "milepost": 175.4,
-      "name": "Lock 73"
+      "name": "Lock 73",
+      "remaining_segments": [
+        {
+          "end_milepost": 184.5,
+          "miles": 74.69,
+          "start_milepost": 109.81
+        }
+      ]
     },
     {
       "common_name": "North Branch 2",
+      "coverage_status": "remaining",
+      "first_covered": null,
+      "latest_covered": null,
       "lock_number": "74",
       "milepost": 175.5,
-      "name": "Lock 74"
+      "name": "Lock 74",
+      "remaining_segments": [
+        {
+          "end_milepost": 184.5,
+          "miles": 74.69,
+          "start_milepost": 109.81
+        }
+      ]
     },
     {
       "common_name": "North Branch 3 / Keifers Lock",
+      "coverage_status": "remaining",
+      "first_covered": null,
+      "latest_covered": null,
       "lock_number": "75",
       "milepost": 175.7,
-      "name": "Lock 75"
+      "name": "Lock 75",
+      "remaining_segments": [
+        {
+          "end_milepost": 184.5,
+          "miles": 74.69,
+          "start_milepost": 109.81
+        }
+      ]
     }
   ],
   "sources": [
