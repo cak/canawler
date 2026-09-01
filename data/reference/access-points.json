@@ -1,0 +1,575 @@
+{
+  "access_points": [
+    {
+      "latitude": 38.904167,
+      "longitude": -77.060133,
+      "milepost": 0.0,
+      "milepost_end": 1.1,
+      "name": "Georgetown"
+    },
+    {
+      "latitude": 38.918691,
+      "longitude": -77.102019,
+      "milepost": 3.1,
+      "milepost_end": null,
+      "name": "Fletchers Cove"
+    },
+    {
+      "latitude": 38.932841,
+      "longitude": -77.112844,
+      "milepost": 4.0,
+      "milepost_end": null,
+      "name": "Chain Bridge"
+    },
+    {
+      "latitude": 38.939982,
+      "longitude": -77.120157,
+      "milepost": 5.0,
+      "milepost_end": null,
+      "name": "Brookmont footbridge"
+    },
+    {
+      "latitude": 38.944737,
+      "longitude": -77.123348,
+      "milepost": 5.4,
+      "milepost_end": null,
+      "name": "Lock 6"
+    },
+    {
+      "latitude": 38.94546,
+      "longitude": -77.122672,
+      "milepost": 5.4,
+      "milepost_end": null,
+      "name": "Valley Road (Brookmont)"
+    },
+    {
+      "latitude": 38.95832,
+      "longitude": -77.131465,
+      "milepost": 6.4,
+      "milepost_end": null,
+      "name": "Sycamore Island"
+    },
+    {
+      "latitude": 38.958303,
+      "longitude": -77.130849,
+      "milepost": 6.4,
+      "milepost_end": null,
+      "name": "Walhonding Road footbridge"
+    },
+    {
+      "latitude": 38.964611,
+      "longitude": -77.138363,
+      "milepost": 7.0,
+      "milepost_end": null,
+      "name": "Lock 7"
+    },
+    {
+      "latitude": 38.972854,
+      "longitude": -77.147357,
+      "milepost": 7.7,
+      "milepost_end": null,
+      "name": "Cabin John Aqueduct"
+    },
+    {
+      "latitude": 38.971559,
+      "longitude": -77.160636,
+      "milepost": 8.3,
+      "milepost_end": null,
+      "name": "Lock 8"
+    },
+    {
+      "latitude": 38.97208,
+      "longitude": -77.1621,
+      "milepost": 8.3,
+      "milepost_end": null,
+      "name": "Riverside Drive"
+    },
+    {
+      "latitude": 38.972631,
+      "longitude": -77.169278,
+      "milepost": 8.8,
+      "milepost_end": null,
+      "name": "Lock 10"
+    },
+    {
+      "latitude": 38.97456,
+      "longitude": -77.201968,
+      "milepost": 10.4,
+      "milepost_end": 10.8,
+      "name": "Carderock"
+    },
+    {
+      "latitude": 38.978697,
+      "longitude": -77.215888,
+      "milepost": 11.4,
+      "milepost_end": null,
+      "name": "Marsden Tract"
+    },
+    {
+      "latitude": 38.981897,
+      "longitude": -77.226205,
+      "milepost": 12.2,
+      "milepost_end": null,
+      "name": "Old Angler's Inn"
+    },
+    {
+      "latitude": 39.001748,
+      "longitude": -77.246836,
+      "milepost": 14.3,
+      "milepost_end": null,
+      "name": "Great Falls"
+    },
+    {
+      "latitude": 39.031634,
+      "longitude": -77.243531,
+      "milepost": 16.6,
+      "milepost_end": null,
+      "name": "Swains Lock"
+    },
+    {
+      "latitude": 39.054972,
+      "longitude": -77.290334,
+      "milepost": 19.6,
+      "milepost_end": null,
+      "name": "Pennyfield Lock"
+    },
+    {
+      "latitude": 39.067226,
+      "longitude": -77.328483,
+      "milepost": 22.1,
+      "milepost_end": null,
+      "name": "Violettes Lock"
+    },
+    {
+      "latitude": 39.069167,
+      "longitude": -77.340877,
+      "milepost": 22.8,
+      "milepost_end": null,
+      "name": "Rileys Lock"
+    },
+    {
+      "latitude": 39.074731,
+      "longitude": -77.420193,
+      "milepost": 27.2,
+      "milepost_end": null,
+      "name": "Sycamore Landing"
+    },
+    {
+      "latitude": 39.103463,
+      "longitude": -77.472933,
+      "milepost": 30.8,
+      "milepost_end": null,
+      "name": "Edwards Ferry"
+    },
+    {
+      "latitude": 39.154861,
+      "longitude": -77.518206,
+      "milepost": 35.5,
+      "milepost_end": null,
+      "name": "Whites Ferry"
+    },
+    {
+      "latitude": 39.194685,
+      "longitude": -77.469402,
+      "milepost": 39.6,
+      "milepost_end": null,
+      "name": "Dickerson Conservation Park"
+    },
+    {
+      "latitude": 39.222563,
+      "longitude": -77.449987,
+      "milepost": 42.1,
+      "milepost_end": null,
+      "name": "Monocacy Aqueduct"
+    },
+    {
+      "latitude": 39.249948,
+      "longitude": -77.482726,
+      "milepost": 44.6,
+      "milepost_end": null,
+      "name": "Nolands Ferry"
+    },
+    {
+      "latitude": 39.273218,
+      "longitude": -77.540045,
+      "milepost": 48.2,
+      "milepost_end": null,
+      "name": "Point of Rocks"
+    },
+    {
+      "latitude": 39.306507,
+      "longitude": -77.558006,
+      "milepost": 50.9,
+      "milepost_end": null,
+      "name": "Lander"
+    },
+    {
+      "latitude": 39.31122,
+      "longitude": -77.630749,
+      "milepost": 55.0,
+      "milepost_end": null,
+      "name": "Brunswick"
+    },
+    {
+      "latitude": 39.329916,
+      "longitude": -77.681966,
+      "milepost": 58.0,
+      "milepost_end": null,
+      "name": "Weverton"
+    },
+    {
+      "latitude": 39.329395,
+      "longitude": -77.731919,
+      "milepost": 61.3,
+      "milepost_end": null,
+      "name": "Maryland Heights"
+    },
+    {
+      "latitude": 39.33343,
+      "longitude": -77.738577,
+      "milepost": 61.6,
+      "milepost_end": null,
+      "name": "Lock 34"
+    },
+    {
+      "latitude": 39.364182,
+      "longitude": -77.740073,
+      "milepost": 64.9,
+      "milepost_end": null,
+      "name": "Dargan Bend"
+    },
+    {
+      "latitude": 39.385295,
+      "longitude": -77.734451,
+      "milepost": 67.0,
+      "milepost_end": null,
+      "name": "Mountain Lock"
+    },
+    {
+      "latitude": 39.419001,
+      "longitude": -77.74657,
+      "milepost": 69.5,
+      "milepost_end": null,
+      "name": "Antietam"
+    },
+    {
+      "latitude": 39.433927,
+      "longitude": -77.795512,
+      "milepost": 72.4,
+      "milepost_end": null,
+      "name": "Railroad bridge (Shepherdstown)"
+    },
+    {
+      "latitude": 39.436456,
+      "longitude": -77.799527,
+      "milepost": 72.8,
+      "milepost_end": null,
+      "name": "Lock 38 (Shepherdstown)"
+    },
+    {
+      "latitude": 39.46527,
+      "longitude": -77.777313,
+      "milepost": 76.7,
+      "milepost_end": null,
+      "name": "Snyders Landing"
+    },
+    {
+      "latitude": 39.499645,
+      "longitude": -77.767866,
+      "milepost": 81.0,
+      "milepost_end": null,
+      "name": "Taylors Landing"
+    },
+    {
+      "latitude": 39.496001,
+      "longitude": -77.826266,
+      "milepost": 84.4,
+      "milepost_end": null,
+      "name": "Dam No. 4"
+    },
+    {
+      "latitude": 39.501346,
+      "longitude": -77.845385,
+      "milepost": 85.4,
+      "milepost_end": null,
+      "name": "Big Slackwater Boat Ramp"
+    },
+    {
+      "latitude": 39.530654,
+      "longitude": -77.823522,
+      "milepost": 88.1,
+      "milepost_end": null,
+      "name": "McMahons Mill"
+    },
+    {
+      "latitude": 39.530309,
+      "longitude": -77.844116,
+      "milepost": 89.1,
+      "milepost_end": null,
+      "name": "Spring Dell Road"
+    },
+    {
+      "latitude": 39.595037,
+      "longitude": -77.824712,
+      "milepost": 99.3,
+      "milepost_end": null,
+      "name": "Lock 44"
+    },
+    {
+      "latitude": 39.600996,
+      "longitude": -77.826927,
+      "milepost": 99.8,
+      "milepost_end": null,
+      "name": "Williamsport Visitor Center"
+    },
+    {
+      "latitude": 39.616863,
+      "longitude": -77.888503,
+      "milepost": 103.3,
+      "milepost_end": null,
+      "name": "Gift Road"
+    },
+    {
+      "latitude": 39.604678,
+      "longitude": -77.911877,
+      "milepost": 106.2,
+      "milepost_end": null,
+      "name": "Dam No. 5 Road"
+    },
+    {
+      "latitude": 39.607079,
+      "longitude": -77.921117,
+      "milepost": 106.8,
+      "milepost_end": null,
+      "name": "Dam No. 5"
+    },
+    {
+      "latitude": 39.615866,
+      "longitude": -77.926626,
+      "milepost": 107.4,
+      "milepost_end": null,
+      "name": "Lock 46"
+    },
+    {
+      "latitude": 39.615311,
+      "longitude": -77.947494,
+      "milepost": 108.8,
+      "milepost_end": null,
+      "name": "Four Locks"
+    },
+    {
+      "latitude": 39.609261,
+      "longitude": -77.970065,
+      "milepost": 110.4,
+      "milepost_end": null,
+      "name": "McCoys Ferry"
+    },
+    {
+      "latitude": 39.605391,
+      "longitude": -78.005041,
+      "milepost": 112.4,
+      "milepost_end": null,
+      "name": "Fort Frederick"
+    },
+    {
+      "latitude": 39.63297,
+      "longitude": -78.028951,
+      "milepost": 114.5,
+      "milepost_end": null,
+      "name": "Ernstville Road"
+    },
+    {
+      "latitude": 39.655987,
+      "longitude": -78.053946,
+      "milepost": 116.3,
+      "milepost_end": null,
+      "name": "Licking Creek"
+    },
+    {
+      "latitude": 39.68443,
+      "longitude": -78.103796,
+      "milepost": 119.6,
+      "milepost_end": null,
+      "name": "Little Pool"
+    },
+    {
+      "latitude": 39.694227,
+      "longitude": -78.154046,
+      "milepost": 122.8,
+      "milepost_end": null,
+      "name": "Hancock Visitor Center"
+    },
+    {
+      "latitude": 39.698253,
+      "longitude": -78.181036,
+      "milepost": 124.1,
+      "milepost_end": null,
+      "name": "Hancock"
+    },
+    {
+      "latitude": 39.683618,
+      "longitude": -78.199002,
+      "milepost": 125.6,
+      "milepost_end": null,
+      "name": "Berm Road"
+    },
+    {
+      "latitude": 39.645446,
+      "longitude": -78.251711,
+      "milepost": 130.7,
+      "milepost_end": null,
+      "name": "Cohill Station"
+    },
+    {
+      "latitude": 39.628174,
+      "longitude": -78.298256,
+      "milepost": 134.0,
+      "milepost_end": null,
+      "name": "Pearre Road, Dam #6"
+    },
+    {
+      "latitude": 39.63648,
+      "longitude": -78.323262,
+      "milepost": 135.9,
+      "milepost_end": null,
+      "name": "WMRT Pearre parking lot"
+    },
+    {
+      "latitude": 39.637868,
+      "longitude": -78.328302,
+      "milepost": 136.2,
+      "milepost_end": null,
+      "name": "Lock 56 (Pearre)"
+    },
+    {
+      "latitude": 39.625648,
+      "longitude": -78.385868,
+      "milepost": 140.8,
+      "milepost_end": null,
+      "name": "Little Orleans"
+    },
+    {
+      "latitude": 39.603639,
+      "longitude": -78.42582,
+      "milepost": 147.1,
+      "milepost_end": null,
+      "name": "Kasecamp Road"
+    },
+    {
+      "latitude": 39.582848,
+      "longitude": -78.411246,
+      "milepost": 150.1,
+      "milepost_end": null,
+      "name": "Bonds Landing"
+    },
+    {
+      "latitude": 39.590113,
+      "longitude": -78.429294,
+      "milepost": 151.2,
+      "milepost_end": null,
+      "name": "Roby Hollow"
+    },
+    {
+      "latitude": 39.58128,
+      "longitude": -78.46154,
+      "milepost": 153.3,
+      "milepost_end": null,
+      "name": "Twigg Hollow"
+    },
+    {
+      "latitude": 39.54445,
+      "longitude": -78.460806,
+      "milepost": 156.2,
+      "milepost_end": null,
+      "name": "Paw Paw Tunnel"
+    },
+    {
+      "latitude": 39.5256,
+      "longitude": -78.53626,
+      "milepost": 161.9,
+      "milepost_end": null,
+      "name": "Lock 67"
+    },
+    {
+      "latitude": 39.523862,
+      "longitude": -78.543122,
+      "milepost": 162.3,
+      "milepost_end": null,
+      "name": "Town Creek Aqueduct"
+    },
+    {
+      "latitude": 39.540405,
+      "longitude": -78.611936,
+      "milepost": 166.7,
+      "milepost_end": null,
+      "name": "Oldtown (Lock 70)"
+    },
+    {
+      "latitude": 39.564306,
+      "longitude": -78.719289,
+      "milepost": 173.3,
+      "milepost_end": null,
+      "name": "Spring Gap"
+    },
+    {
+      "latitude": 39.587698,
+      "longitude": -78.743462,
+      "milepost": 175.6,
+      "milepost_end": null,
+      "name": "North Branch"
+    },
+    {
+      "latitude": 39.587303,
+      "longitude": -78.754629,
+      "milepost": 176.4,
+      "milepost_end": null,
+      "name": "River Road"
+    },
+    {
+      "latitude": 39.599369,
+      "longitude": -78.750544,
+      "milepost": 178.3,
+      "milepost_end": null,
+      "name": "Mexico Farms"
+    },
+    {
+      "latitude": 39.603402,
+      "longitude": -78.741713,
+      "milepost": 178.9,
+      "milepost_end": null,
+      "name": "Brehm Road"
+    },
+    {
+      "latitude": 39.625274,
+      "longitude": -78.759307,
+      "milepost": 181.8,
+      "milepost_end": null,
+      "name": "Candoc Recreation Area"
+    },
+    {
+      "latitude": 39.622741,
+      "longitude": -78.773223,
+      "milepost": 182.6,
+      "milepost_end": null,
+      "name": "Canal Parkway"
+    },
+    {
+      "latitude": 39.629393,
+      "longitude": -78.773132,
+      "milepost": 183.1,
+      "milepost_end": null,
+      "name": "Elizabeth Street"
+    },
+    {
+      "latitude": 39.649348,
+      "longitude": -78.7628,
+      "milepost": 184.5,
+      "milepost_end": null,
+      "name": "Cumberland Visitor Center"
+    }
+  ],
+  "source": {
+    "name": "C&O Canal Association",
+    "url": "https://candocanal.org/access/"
+  }
+}
