@@ -60,7 +60,7 @@ def publish_artifacts(
     activity_records: list[dict[str, Any]],
     coverage: dict[str, Any],
     output_directory: Path = Path("data/public"),
-) -> tuple[Path, Path, Path]:
+) -> tuple[Path, ...]:
     """Write deterministic public artifacts using explicit privacy allowlists."""
     public_activities = [
         {field: record[field] for field in PUBLIC_ACTIVITY_FIELDS}
@@ -72,6 +72,8 @@ def publish_artifacts(
     csv_path = output_directory / "activities.csv"
     activities_json_path = output_directory / "activities.json"
     coverage_json_path = output_directory / "coverage.json"
+    access_points_path = output_directory / "access-points.json"
+    locks_path = output_directory / "locks.json"
 
     stream = StringIO(newline="")
     writer = csv.DictWriter(
@@ -92,7 +94,25 @@ def publish_artifacts(
         json.dumps(public_coverage, indent=2, sort_keys=True, ensure_ascii=False)
         + "\n",
     )
-    return csv_path, activities_json_path, coverage_json_path
+    from canawler.reference_artifacts import build_public_reference_artifacts
+
+    public_access_points, public_locks = build_public_reference_artifacts(coverage)
+    _write_if_changed(
+        access_points_path,
+        json.dumps(public_access_points, indent=2, sort_keys=True, ensure_ascii=False)
+        + "\n",
+    )
+    _write_if_changed(
+        locks_path,
+        json.dumps(public_locks, indent=2, sort_keys=True, ensure_ascii=False) + "\n",
+    )
+    return (
+        csv_path,
+        activities_json_path,
+        coverage_json_path,
+        access_points_path,
+        locks_path,
+    )
 
 
 __all__ = [

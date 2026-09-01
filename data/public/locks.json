@@ -1,0 +1,458 @@
+{
+  "locks": [
+    {
+      "common_name": null,
+      "lock_number": "1",
+      "milepost": 0.3,
+      "name": "Lock 1"
+    },
+    {
+      "common_name": null,
+      "lock_number": "2",
+      "milepost": 0.3,
+      "name": "Lock 2"
+    },
+    {
+      "common_name": null,
+      "lock_number": "3",
+      "milepost": 0.4,
+      "name": "Lock 3"
+    },
+    {
+      "common_name": null,
+      "lock_number": "4",
+      "milepost": 0.4,
+      "name": "Lock 4"
+    },
+    {
+      "common_name": "Brookmont Lock & Inlet #1",
+      "lock_number": "5",
+      "milepost": 5.0,
+      "name": "Lock 5"
+    },
+    {
+      "common_name": "Magazine Lock",
+      "lock_number": "6",
+      "milepost": 5.4,
+      "name": "Lock 6"
+    },
+    {
+      "common_name": "Chataqua Lock",
+      "lock_number": "7",
+      "milepost": 7.0,
+      "name": "Lock 7"
+    },
+    {
+      "common_name": "Seven Locks 1",
+      "lock_number": "8",
+      "milepost": 8.3,
+      "name": "Lock 8"
+    },
+    {
+      "common_name": "Seven Locks 2",
+      "lock_number": "9",
+      "milepost": 8.7,
+      "name": "Lock 9"
+    },
+    {
+      "common_name": "Seven Locks 3",
+      "lock_number": "10",
+      "milepost": 8.8,
+      "name": "Lock 10"
+    },
+    {
+      "common_name": "Seven Locks 4",
+      "lock_number": "11",
+      "milepost": 9.0,
+      "name": "Lock 11"
+    },
+    {
+      "common_name": "Seven Locks 5",
+      "lock_number": "12",
+      "milepost": 9.3,
+      "name": "Lock 12"
+    },
+    {
+      "common_name": "Seven Locks 6",
+      "lock_number": "13",
+      "milepost": 9.4,
+      "name": "Lock 13"
+    },
+    {
+      "common_name": "Seven Locks 7",
+      "lock_number": "14",
+      "milepost": 9.5,
+      "name": "Lock 14"
+    },
+    {
+      "common_name": "Six Locks 1",
+      "lock_number": "15",
+      "milepost": 13.6,
+      "name": "Lock 15"
+    },
+    {
+      "common_name": "Six Locks 2",
+      "lock_number": "16",
+      "milepost": 13.7,
+      "name": "Lock 16"
+    },
+    {
+      "common_name": "Six Locks 3",
+      "lock_number": "17",
+      "milepost": 14.1,
+      "name": "Lock 17"
+    },
+    {
+      "common_name": "Six Locks 4",
+      "lock_number": "18",
+      "milepost": 14.2,
+      "name": "Lock 18"
+    },
+    {
+      "common_name": "Six Locks 5",
+      "lock_number": "19",
+      "milepost": 14.3,
+      "name": "Lock 19"
+    },
+    {
+      "common_name": "Six Locks 6 / Tavern Lock",
+      "lock_number": "20",
+      "milepost": 14.4,
+      "name": "Lock 20"
+    },
+    {
+      "common_name": "Swains Lock",
+      "lock_number": "21",
+      "milepost": 16.7,
+      "name": "Lock 21"
+    },
+    {
+      "common_name": "Pennyfield Lock",
+      "lock_number": "22",
+      "milepost": 19.6,
+      "name": "Lock 22"
+    },
+    {
+      "common_name": "Violette's Lock",
+      "lock_number": "23",
+      "milepost": 22.1,
+      "name": "Lock 23"
+    },
+    {
+      "common_name": "Riley's Lock",
+      "lock_number": "24",
+      "milepost": 22.8,
+      "name": "Lock 24"
+    },
+    {
+      "common_name": "Edward's Ferry",
+      "lock_number": "25",
+      "milepost": 30.8,
+      "name": "Lock 25"
+    },
+    {
+      "common_name": "Wood's Lock",
+      "lock_number": "26",
+      "milepost": 39.4,
+      "name": "Lock 26"
+    },
+    {
+      "common_name": "Spinks Ferry",
+      "lock_number": "27",
+      "milepost": 41.5,
+      "name": "Lock 27"
+    },
+    {
+      "common_name": "Fulton's Lock / Dent's Lock",
+      "lock_number": "28",
+      "milepost": 48.9,
+      "name": "Lock 28"
+    },
+    {
+      "common_name": "Lander Lock / Catoctin Lock",
+      "lock_number": "29",
+      "milepost": 50.8,
+      "name": "Lock 29"
+    },
+    {
+      "common_name": null,
+      "lock_number": "30",
+      "milepost": 55.0,
+      "name": "Lock 30"
+    },
+    {
+      "common_name": "Weverton Lock",
+      "lock_number": "31",
+      "milepost": 58.0,
+      "name": "Lock 31"
+    },
+    {
+      "common_name": null,
+      "lock_number": "32",
+      "milepost": 60.2,
+      "name": "Lock 32"
+    },
+    {
+      "common_name": null,
+      "lock_number": "33",
+      "milepost": 60.7,
+      "name": "Lock 33"
+    },
+    {
+      "common_name": "Goodheart's Lock",
+      "lock_number": "34",
+      "milepost": 61.5,
+      "name": "Lock 34"
+    },
+    {
+      "common_name": null,
+      "lock_number": "35",
+      "milepost": 62.3,
+      "name": "Lock 35"
+    },
+    {
+      "common_name": null,
+      "lock_number": "36",
+      "milepost": 62.5,
+      "name": "Lock 36"
+    },
+    {
+      "common_name": "Mountain Lock",
+      "lock_number": "37",
+      "milepost": 66.9,
+      "name": "Lock 37"
+    },
+    {
+      "common_name": "Shepherdstown Lock",
+      "lock_number": "38",
+      "milepost": 72.7,
+      "name": "Lock 38"
+    },
+    {
+      "common_name": "One Mile Lock",
+      "lock_number": "39",
+      "milepost": 74.0,
+      "name": "Lock 39"
+    },
+    {
+      "common_name": null,
+      "lock_number": "40",
+      "milepost": 79.4,
+      "name": "Lock 40"
+    },
+    {
+      "common_name": null,
+      "lock_number": "41",
+      "milepost": 88.9,
+      "name": "Lock 41"
+    },
+    {
+      "common_name": null,
+      "lock_number": "42",
+      "milepost": 89.0,
+      "name": "Lock 42"
+    },
+    {
+      "common_name": null,
+      "lock_number": "43",
+      "milepost": 92.9,
+      "name": "Lock 43"
+    },
+    {
+      "common_name": "Williamsport",
+      "lock_number": "44",
+      "milepost": 99.1,
+      "name": "Lock 44"
+    },
+    {
+      "common_name": "Two Locks 1",
+      "lock_number": "45",
+      "milepost": 107.0,
+      "name": "Lock 45"
+    },
+    {
+      "common_name": "Two Locks 2",
+      "lock_number": "46",
+      "milepost": 107.2,
+      "name": "Lock 46"
+    },
+    {
+      "common_name": "Four Locks 1",
+      "lock_number": "47",
+      "milepost": 108.7,
+      "name": "Lock 47"
+    },
+    {
+      "common_name": "Four Locks 2",
+      "lock_number": "48",
+      "milepost": 108.8,
+      "name": "Lock 48"
+    },
+    {
+      "common_name": "Four Locks 3",
+      "lock_number": "49",
+      "milepost": 108.9,
+      "name": "Lock 49"
+    },
+    {
+      "common_name": "Four Locks 4",
+      "lock_number": "50",
+      "milepost": 109.0,
+      "name": "Lock 50"
+    },
+    {
+      "common_name": "Hancock 1",
+      "lock_number": "51",
+      "milepost": 122.7,
+      "name": "Lock 51"
+    },
+    {
+      "common_name": "Hancock 2",
+      "lock_number": "52",
+      "milepost": 122.9,
+      "name": "Lock 52"
+    },
+    {
+      "common_name": "Irishman's Lock",
+      "lock_number": "53",
+      "milepost": 130.1,
+      "name": "Lock 53"
+    },
+    {
+      "common_name": null,
+      "lock_number": "54",
+      "milepost": 134.0,
+      "name": "Lock 54"
+    },
+    {
+      "common_name": null,
+      "lock_number": "55",
+      "milepost": 134.2,
+      "name": "Lock 55"
+    },
+    {
+      "common_name": "Sideling Lock",
+      "lock_number": "56",
+      "milepost": 136.2,
+      "name": "Lock 56"
+    },
+    {
+      "common_name": null,
+      "lock_number": "57",
+      "milepost": 139.4,
+      "name": "Lock 57"
+    },
+    {
+      "common_name": null,
+      "lock_number": "58",
+      "milepost": 144.0,
+      "name": "Lock 58"
+    },
+    {
+      "common_name": null,
+      "lock_number": "59",
+      "milepost": 146.5,
+      "name": "Lock 59"
+    },
+    {
+      "common_name": null,
+      "lock_number": "60",
+      "milepost": 149.6,
+      "name": "Lock 60"
+    },
+    {
+      "common_name": null,
+      "lock_number": "61",
+      "milepost": 153.1,
+      "name": "Lock 61"
+    },
+    {
+      "common_name": null,
+      "lock_number": "62",
+      "milepost": 154.1,
+      "name": "Lock 62"
+    },
+    {
+      "common_name": null,
+      "lock_number": "63 1/3",
+      "milepost": 154.5,
+      "name": "Lock 63 1/3"
+    },
+    {
+      "common_name": null,
+      "lock_number": "64 2/3",
+      "milepost": 154.6,
+      "name": "Lock 64 2/3"
+    },
+    {
+      "common_name": null,
+      "lock_number": "66",
+      "milepost": 154.7,
+      "name": "Lock 66"
+    },
+    {
+      "common_name": "Darbey's Lock",
+      "lock_number": "67",
+      "milepost": 161.7,
+      "name": "Lock 67"
+    },
+    {
+      "common_name": "Crabtree's Lock",
+      "lock_number": "68",
+      "milepost": 164.8,
+      "name": "Lock 68"
+    },
+    {
+      "common_name": "Twigg's Lock",
+      "lock_number": "69",
+      "milepost": 166.5,
+      "name": "Lock 69"
+    },
+    {
+      "common_name": "Oldtown",
+      "lock_number": "70",
+      "milepost": 166.7,
+      "name": "Lock 70"
+    },
+    {
+      "common_name": null,
+      "lock_number": "71",
+      "milepost": 167.0,
+      "name": "Lock 71"
+    },
+    {
+      "common_name": "The Narrows / Ten Mile Lock",
+      "lock_number": "72",
+      "milepost": 174.4,
+      "name": "Lock 72"
+    },
+    {
+      "common_name": "North Branch 1",
+      "lock_number": "73",
+      "milepost": 175.4,
+      "name": "Lock 73"
+    },
+    {
+      "common_name": "North Branch 2",
+      "lock_number": "74",
+      "milepost": 175.5,
+      "name": "Lock 74"
+    },
+    {
+      "common_name": "North Branch 3 / Keifers Lock",
+      "lock_number": "75",
+      "milepost": 175.7,
+      "name": "Lock 75"
+    }
+  ],
+  "sources": [
+    {
+      "name": "National Park Service",
+      "url": "https://www.nps.gov/choh/learn/historyculture/lift-locks.htm"
+    },
+    {
+      "name": "C&O Canal Trust",
+      "url": "https://www.canaltrust.org/pyvactivities/locks/"
+    }
+  ]
+}

@@ -1,0 +1,3849 @@
+{
+  "access_points": [
+    {
+      "amenities": {
+        "bike_rentals": false,
+        "boat_ramp": false,
+        "boat_rentals": false,
+        "camping": false,
+        "camping_fee_area": false,
+        "camping_tent": false,
+        "canal_quarters": false,
+        "canoe_kayak_ramp": false,
+        "fee_area": false,
+        "food": false,
+        "parking": false,
+        "picnic_tables": false,
+        "restrooms": true,
+        "visitor_center": true,
+        "water": true
+      },
+      "coverage_status": "covered",
+      "latitude": 38.904167,
+      "longitude": -77.060133,
+      "milepost": 0.0,
+      "milepost_end": 1.1,
+      "name": "Georgetown",
+      "nearby_features": [
+        {
+          "milepost": 0.1,
+          "milepost_distance": 0.0,
+          "name": "Thompson Boat Center",
+          "source": "recreation_guide",
+          "type": "recreation_location"
+        },
+        {
+          "common_name": null,
+          "milepost": 0.3,
+          "milepost_distance": 0.0,
+          "name": "Lock 1",
+          "source": "locks",
+          "type": "lock"
+        },
+        {
+          "common_name": null,
+          "milepost": 0.3,
+          "milepost_distance": 0.0,
+          "name": "Lock 2",
+          "source": "locks",
+          "type": "lock"
+        },
+        {
+          "common_name": null,
+          "milepost": 0.4,
+          "milepost_distance": 0.0,
+          "name": "Lock 3",
+          "source": "locks",
+          "type": "lock"
+        },
+        {
+          "common_name": null,
+          "milepost": 0.4,
+          "milepost_distance": 0.0,
+          "name": "Lock 4",
+          "source": "locks",
+          "type": "lock"
+        }
+      ],
+      "nps_recreation_matches": [
+        {
+          "milepost": 0.4,
+          "name": "Lock 3 (Georgetown)"
+        }
+      ],
+      "remaining_segments": []
+    },
+    {
+      "amenities": {
+        "bike_rentals": true,
+        "boat_ramp": false,
+        "boat_rentals": true,
+        "camping": false,
+        "camping_fee_area": false,
+        "camping_tent": false,
+        "canal_quarters": false,
+        "canoe_kayak_ramp": false,
+        "fee_area": false,
+        "food": true,
+        "parking": true,
+        "picnic_tables": true,
+        "restrooms": true,
+        "visitor_center": false,
+        "water": false
+      },
+      "coverage_status": "covered",
+      "latitude": 38.918691,
+      "longitude": -77.102019,
+      "milepost": 3.1,
+      "milepost_end": null,
+      "name": "Fletchers Cove",
+      "nearby_features": [],
+      "nps_recreation_matches": [
+        {
+          "milepost": 3.1,
+          "name": "Fletchers Cove"
+        }
+      ],
+      "remaining_segments": []
+    },
+    {
+      "amenities": {
+        "bike_rentals": false,
+        "boat_ramp": false,
+        "boat_rentals": false,
+        "camping": false,
+        "camping_fee_area": false,
+        "camping_tent": false,
+        "canal_quarters": false,
+        "canoe_kayak_ramp": false,
+        "fee_area": false,
+        "food": false,
+        "parking": false,
+        "picnic_tables": false,
+        "restrooms": false,
+        "visitor_center": false,
+        "water": false
+      },
+      "coverage_status": "covered",
+      "latitude": 38.932841,
+      "longitude": -77.112844,
+      "milepost": 4.0,
+      "milepost_end": null,
+      "name": "Chain Bridge",
+      "nearby_features": [
+        {
+          "common_name": "Brookmont Lock & Inlet #1",
+          "milepost": 5.0,
+          "milepost_distance": 1.0,
+          "name": "Lock 5",
+          "source": "locks",
+          "type": "lock"
+        }
+      ],
+      "nps_recreation_matches": [],
+      "remaining_segments": []
+    },
+    {
+      "amenities": {
+        "bike_rentals": false,
+        "boat_ramp": false,
+        "boat_rentals": false,
+        "camping": false,
+        "camping_fee_area": false,
+        "camping_tent": false,
+        "canal_quarters": false,
+        "canoe_kayak_ramp": false,
+        "fee_area": false,
+        "food": false,
+        "parking": false,
+        "picnic_tables": false,
+        "restrooms": false,
+        "visitor_center": false,
+        "water": false
+      },
+      "coverage_status": "covered",
+      "latitude": 38.939982,
+      "longitude": -77.120157,
+      "milepost": 5.0,
+      "milepost_end": null,
+      "name": "Brookmont footbridge",
+      "nearby_features": [
+        {
+          "common_name": "Brookmont Lock & Inlet #1",
+          "milepost": 5.0,
+          "milepost_distance": 0.0,
+          "name": "Lock 5",
+          "source": "locks",
+          "type": "lock"
+        },
+        {
+          "common_name": "Magazine Lock",
+          "milepost": 5.4,
+          "milepost_distance": 0.4,
+          "name": "Lock 6",
+          "source": "locks",
+          "type": "lock"
+        }
+      ],
+      "nps_recreation_matches": [],
+      "remaining_segments": []
+    },
+    {
+      "amenities": {
+        "bike_rentals": false,
+        "boat_ramp": false,
+        "boat_rentals": false,
+        "camping": false,
+        "camping_fee_area": false,
+        "camping_tent": false,
+        "canal_quarters": true,
+        "canoe_kayak_ramp": false,
+        "fee_area": false,
+        "food": false,
+        "parking": true,
+        "picnic_tables": true,
+        "restrooms": false,
+        "visitor_center": false,
+        "water": false
+      },
+      "coverage_status": "covered",
+      "latitude": 38.944737,
+      "longitude": -77.123348,
+      "milepost": 5.4,
+      "milepost_end": null,
+      "name": "Lock 6",
+      "nearby_features": [
+        {
+          "common_name": "Magazine Lock",
+          "milepost": 5.4,
+          "milepost_distance": 0.0,
+          "name": "Lock 6",
+          "source": "locks",
+          "type": "lock"
+        },
+        {
+          "common_name": "Brookmont Lock & Inlet #1",
+          "milepost": 5.0,
+          "milepost_distance": 0.4,
+          "name": "Lock 5",
+          "source": "locks",
+          "type": "lock"
+        }
+      ],
+      "nps_recreation_matches": [
+        {
+          "milepost": 5.4,
+          "name": "Lock 6"
+        }
+      ],
+      "remaining_segments": []
+    },
+    {
+      "amenities": {
+        "bike_rentals": false,
+        "boat_ramp": false,
+        "boat_rentals": false,
+        "camping": false,
+        "camping_fee_area": false,
+        "camping_tent": false,
+        "canal_quarters": false,
+        "canoe_kayak_ramp": false,
+        "fee_area": false,
+        "food": false,
+        "parking": false,
+        "picnic_tables": false,
+        "restrooms": false,
+        "visitor_center": false,
+        "water": false
+      },
+      "coverage_status": "covered",
+      "latitude": 38.94546,
+      "longitude": -77.122672,
+      "milepost": 5.4,
+      "milepost_end": null,
+      "name": "Valley Road (Brookmont)",
+      "nearby_features": [
+        {
+          "common_name": "Magazine Lock",
+          "milepost": 5.4,
+          "milepost_distance": 0.0,
+          "name": "Lock 6",
+          "source": "locks",
+          "type": "lock"
+        },
+        {
+          "common_name": "Brookmont Lock & Inlet #1",
+          "milepost": 5.0,
+          "milepost_distance": 0.4,
+          "name": "Lock 5",
+          "source": "locks",
+          "type": "lock"
+        }
+      ],
+      "nps_recreation_matches": [],
+      "remaining_segments": []
+    },
+    {
+      "amenities": {
+        "bike_rentals": false,
+        "boat_ramp": false,
+        "boat_rentals": false,
+        "camping": false,
+        "camping_fee_area": false,
+        "camping_tent": false,
+        "canal_quarters": false,
+        "canoe_kayak_ramp": false,
+        "fee_area": false,
+        "food": false,
+        "parking": true,
+        "picnic_tables": true,
+        "restrooms": false,
+        "visitor_center": false,
+        "water": false
+      },
+      "coverage_status": "covered",
+      "latitude": 38.95832,
+      "longitude": -77.131465,
+      "milepost": 6.4,
+      "milepost_end": null,
+      "name": "Sycamore Island",
+      "nearby_features": [
+        {
+          "common_name": "Chataqua Lock",
+          "milepost": 7.0,
+          "milepost_distance": 0.6,
+          "name": "Lock 7",
+          "source": "locks",
+          "type": "lock"
+        },
+        {
+          "common_name": "Magazine Lock",
+          "milepost": 5.4,
+          "milepost_distance": 1.0,
+          "name": "Lock 6",
+          "source": "locks",
+          "type": "lock"
+        }
+      ],
+      "nps_recreation_matches": [
+        {
+          "milepost": 6.5,
+          "name": "Sycamore Island"
+        }
+      ],
+      "remaining_segments": []
+    },
+    {
+      "amenities": {
+        "bike_rentals": false,
+        "boat_ramp": false,
+        "boat_rentals": false,
+        "camping": false,
+        "camping_fee_area": false,
+        "camping_tent": false,
+        "canal_quarters": false,
+        "canoe_kayak_ramp": false,
+        "fee_area": false,
+        "food": false,
+        "parking": false,
+        "picnic_tables": false,
+        "restrooms": false,
+        "visitor_center": false,
+        "water": false
+      },
+      "coverage_status": "covered",
+      "latitude": 38.958303,
+      "longitude": -77.130849,
+      "milepost": 6.4,
+      "milepost_end": null,
+      "name": "Walhonding Road footbridge",
+      "nearby_features": [
+        {
+          "common_name": "Chataqua Lock",
+          "milepost": 7.0,
+          "milepost_distance": 0.6,
+          "name": "Lock 7",
+          "source": "locks",
+          "type": "lock"
+        },
+        {
+          "common_name": "Magazine Lock",
+          "milepost": 5.4,
+          "milepost_distance": 1.0,
+          "name": "Lock 6",
+          "source": "locks",
+          "type": "lock"
+        }
+      ],
+      "nps_recreation_matches": [],
+      "remaining_segments": []
+    },
+    {
+      "amenities": {
+        "bike_rentals": false,
+        "boat_ramp": false,
+        "boat_rentals": false,
+        "camping": false,
+        "camping_fee_area": false,
+        "camping_tent": false,
+        "canal_quarters": false,
+        "canoe_kayak_ramp": false,
+        "fee_area": false,
+        "food": false,
+        "parking": true,
+        "picnic_tables": true,
+        "restrooms": false,
+        "visitor_center": false,
+        "water": false
+      },
+      "coverage_status": "covered",
+      "latitude": 38.964611,
+      "longitude": -77.138363,
+      "milepost": 7.0,
+      "milepost_end": null,
+      "name": "Lock 7",
+      "nearby_features": [
+        {
+          "common_name": "Chataqua Lock",
+          "milepost": 7.0,
+          "milepost_distance": 0.0,
+          "name": "Lock 7",
+          "source": "locks",
+          "type": "lock"
+        }
+      ],
+      "nps_recreation_matches": [
+        {
+          "milepost": 7.0,
+          "name": "Lock 7 (Glen Echo)"
+        }
+      ],
+      "remaining_segments": []
+    },
+    {
+      "amenities": {
+        "bike_rentals": false,
+        "boat_ramp": false,
+        "boat_rentals": false,
+        "camping": false,
+        "camping_fee_area": false,
+        "camping_tent": false,
+        "canal_quarters": false,
+        "canoe_kayak_ramp": false,
+        "fee_area": false,
+        "food": false,
+        "parking": false,
+        "picnic_tables": false,
+        "restrooms": false,
+        "visitor_center": false,
+        "water": false
+      },
+      "coverage_status": "covered",
+      "latitude": 38.972854,
+      "longitude": -77.147357,
+      "milepost": 7.7,
+      "milepost_end": null,
+      "name": "Cabin John Aqueduct",
+      "nearby_features": [
+        {
+          "common_name": "Seven Locks 1",
+          "milepost": 8.3,
+          "milepost_distance": 0.6,
+          "name": "Lock 8",
+          "source": "locks",
+          "type": "lock"
+        },
+        {
+          "common_name": "Chataqua Lock",
+          "milepost": 7.0,
+          "milepost_distance": 0.7,
+          "name": "Lock 7",
+          "source": "locks",
+          "type": "lock"
+        },
+        {
+          "common_name": "Seven Locks 2",
+          "milepost": 8.7,
+          "milepost_distance": 1.0,
+          "name": "Lock 9",
+          "source": "locks",
+          "type": "lock"
+        }
+      ],
+      "nps_recreation_matches": [],
+      "remaining_segments": []
+    },
+    {
+      "amenities": {
+        "bike_rentals": false,
+        "boat_ramp": false,
+        "boat_rentals": false,
+        "camping": false,
+        "camping_fee_area": false,
+        "camping_tent": false,
+        "canal_quarters": false,
+        "canoe_kayak_ramp": false,
+        "fee_area": false,
+        "food": false,
+        "parking": true,
+        "picnic_tables": true,
+        "restrooms": true,
+        "visitor_center": false,
+        "water": false
+      },
+      "coverage_status": "covered",
+      "latitude": 38.971559,
+      "longitude": -77.160636,
+      "milepost": 8.3,
+      "milepost_end": null,
+      "name": "Lock 8",
+      "nearby_features": [
+        {
+          "common_name": "Seven Locks 1",
+          "milepost": 8.3,
+          "milepost_distance": 0.0,
+          "name": "Lock 8",
+          "source": "locks",
+          "type": "lock"
+        },
+        {
+          "common_name": "Seven Locks 2",
+          "milepost": 8.7,
+          "milepost_distance": 0.4,
+          "name": "Lock 9",
+          "source": "locks",
+          "type": "lock"
+        },
+        {
+          "common_name": "Seven Locks 3",
+          "milepost": 8.8,
+          "milepost_distance": 0.5,
+          "name": "Lock 10",
+          "source": "locks",
+          "type": "lock"
+        },
+        {
+          "common_name": "Seven Locks 4",
+          "milepost": 9.0,
+          "milepost_distance": 0.7,
+          "name": "Lock 11",
+          "source": "locks",
+          "type": "lock"
+        },
+        {
+          "common_name": "Seven Locks 5",
+          "milepost": 9.3,
+          "milepost_distance": 1.0,
+          "name": "Lock 12",
+          "source": "locks",
+          "type": "lock"
+        }
+      ],
+      "nps_recreation_matches": [
+        {
+          "milepost": 8.3,
+          "name": "Lock 8 (Seven Locks)"
+        }
+      ],
+      "remaining_segments": []
+    },
+    {
+      "amenities": {
+        "bike_rentals": false,
+        "boat_ramp": false,
+        "boat_rentals": false,
+        "camping": false,
+        "camping_fee_area": false,
+        "camping_tent": false,
+        "canal_quarters": false,
+        "canoe_kayak_ramp": false,
+        "fee_area": false,
+        "food": false,
+        "parking": false,
+        "picnic_tables": false,
+        "restrooms": false,
+        "visitor_center": false,
+        "water": false
+      },
+      "coverage_status": "covered",
+      "latitude": 38.97208,
+      "longitude": -77.1621,
+      "milepost": 8.3,
+      "milepost_end": null,
+      "name": "Riverside Drive",
+      "nearby_features": [
+        {
+          "common_name": "Seven Locks 1",
+          "milepost": 8.3,
+          "milepost_distance": 0.0,
+          "name": "Lock 8",
+          "source": "locks",
+          "type": "lock"
+        },
+        {
+          "common_name": "Seven Locks 2",
+          "milepost": 8.7,
+          "milepost_distance": 0.4,
+          "name": "Lock 9",
+          "source": "locks",
+          "type": "lock"
+        },
+        {
+          "common_name": "Seven Locks 3",
+          "milepost": 8.8,
+          "milepost_distance": 0.5,
+          "name": "Lock 10",
+          "source": "locks",
+          "type": "lock"
+        },
+        {
+          "common_name": "Seven Locks 4",
+          "milepost": 9.0,
+          "milepost_distance": 0.7,
+          "name": "Lock 11",
+          "source": "locks",
+          "type": "lock"
+        },
+        {
+          "common_name": "Seven Locks 5",
+          "milepost": 9.3,
+          "milepost_distance": 1.0,
+          "name": "Lock 12",
+          "source": "locks",
+          "type": "lock"
+        }
+      ],
+      "nps_recreation_matches": [],
+      "remaining_segments": []
+    },
+    {
+      "amenities": {
+        "bike_rentals": false,
+        "boat_ramp": false,
+        "boat_rentals": false,
+        "camping": false,
+        "camping_fee_area": false,
+        "camping_tent": false,
+        "canal_quarters": true,
+        "canoe_kayak_ramp": false,
+        "fee_area": false,
+        "food": false,
+        "parking": true,
+        "picnic_tables": true,
+        "restrooms": false,
+        "visitor_center": false,
+        "water": true
+      },
+      "coverage_status": "covered",
+      "latitude": 38.972631,
+      "longitude": -77.169278,
+      "milepost": 8.8,
+      "milepost_end": null,
+      "name": "Lock 10",
+      "nearby_features": [
+        {
+          "common_name": "Seven Locks 3",
+          "milepost": 8.8,
+          "milepost_distance": 0.0,
+          "name": "Lock 10",
+          "source": "locks",
+          "type": "lock"
+        },
+        {
+          "common_name": "Seven Locks 2",
+          "milepost": 8.7,
+          "milepost_distance": 0.1,
+          "name": "Lock 9",
+          "source": "locks",
+          "type": "lock"
+        },
+        {
+          "common_name": "Seven Locks 4",
+          "milepost": 9.0,
+          "milepost_distance": 0.2,
+          "name": "Lock 11",
+          "source": "locks",
+          "type": "lock"
+        },
+        {
+          "common_name": "Seven Locks 1",
+          "milepost": 8.3,
+          "milepost_distance": 0.5,
+          "name": "Lock 8",
+          "source": "locks",
+          "type": "lock"
+        },
+        {
+          "common_name": "Seven Locks 5",
+          "milepost": 9.3,
+          "milepost_distance": 0.5,
+          "name": "Lock 12",
+          "source": "locks",
+          "type": "lock"
+        },
+        {
+          "common_name": "Seven Locks 6",
+          "milepost": 9.4,
+          "milepost_distance": 0.6,
+          "name": "Lock 13",
+          "source": "locks",
+          "type": "lock"
+        },
+        {
+          "common_name": "Seven Locks 7",
+          "milepost": 9.5,
+          "milepost_distance": 0.7,
+          "name": "Lock 14",
+          "source": "locks",
+          "type": "lock"
+        }
+      ],
+      "nps_recreation_matches": [
+        {
+          "milepost": 8.8,
+          "name": "Lock 10 (Seven Locks)"
+        }
+      ],
+      "remaining_segments": []
+    },
+    {
+      "amenities": {
+        "bike_rentals": false,
+        "boat_ramp": false,
+        "boat_rentals": false,
+        "camping": false,
+        "camping_fee_area": false,
+        "camping_tent": false,
+        "canal_quarters": false,
+        "canoe_kayak_ramp": false,
+        "fee_area": false,
+        "food": false,
+        "parking": true,
+        "picnic_tables": true,
+        "restrooms": true,
+        "visitor_center": false,
+        "water": true
+      },
+      "coverage_status": "remaining",
+      "latitude": 38.97456,
+      "longitude": -77.201968,
+      "milepost": 10.4,
+      "milepost_end": 10.8,
+      "name": "Carderock",
+      "nearby_features": [
+        {
+          "common_name": "Seven Locks 7",
+          "milepost": 9.5,
+          "milepost_distance": 0.9,
+          "name": "Lock 14",
+          "source": "locks",
+          "type": "lock"
+        },
+        {
+          "common_name": "Seven Locks 6",
+          "milepost": 9.4,
+          "milepost_distance": 1.0,
+          "name": "Lock 13",
+          "source": "locks",
+          "type": "lock"
+        }
+      ],
+      "nps_recreation_matches": [
+        {
+          "milepost": 10.5,
+          "name": "Carderock"
+        }
+      ],
+      "remaining_segments": [
+        {
+          "end_milepost": 32.84,
+          "miles": 22.8,
+          "start_milepost": 10.04
+        }
+      ]
+    },
+    {
+      "amenities": {
+        "bike_rentals": false,
+        "boat_ramp": false,
+        "boat_rentals": false,
+        "camping": true,
+        "camping_fee_area": true,
+        "camping_tent": false,
+        "canal_quarters": false,
+        "canoe_kayak_ramp": false,
+        "fee_area": false,
+        "food": false,
+        "parking": false,
+        "picnic_tables": false,
+        "restrooms": true,
+        "visitor_center": false,
+        "water": true
+      },
+      "coverage_status": "remaining",
+      "latitude": 38.978697,
+      "longitude": -77.215888,
+      "milepost": 11.4,
+      "milepost_end": null,
+      "name": "Marsden Tract",
+      "nearby_features": [],
+      "nps_recreation_matches": [
+        {
+          "milepost": 11.5,
+          "name": "Marsden Tract"
+        }
+      ],
+      "remaining_segments": [
+        {
+          "end_milepost": 32.84,
+          "miles": 22.8,
+          "start_milepost": 10.04
+        }
+      ]
+    },
+    {
+      "amenities": {
+        "bike_rentals": false,
+        "boat_ramp": false,
+        "boat_rentals": false,
+        "camping": false,
+        "camping_fee_area": false,
+        "camping_tent": false,
+        "canal_quarters": false,
+        "canoe_kayak_ramp": true,
+        "fee_area": false,
+        "food": false,
+        "parking": true,
+        "picnic_tables": false,
+        "restrooms": true,
+        "visitor_center": false,
+        "water": true
+      },
+      "coverage_status": "remaining",
+      "latitude": 38.981897,
+      "longitude": -77.226205,
+      "milepost": 12.2,
+      "milepost_end": null,
+      "name": "Old Angler's Inn",
+      "nearby_features": [],
+      "nps_recreation_matches": [
+        {
+          "milepost": 12.2,
+          "name": "Anglers Access"
+        }
+      ],
+      "remaining_segments": [
+        {
+          "end_milepost": 32.84,
+          "miles": 22.8,
+          "start_milepost": 10.04
+        }
+      ]
+    },
+    {
+      "amenities": {
+        "bike_rentals": false,
+        "boat_ramp": false,
+        "boat_rentals": false,
+        "camping": false,
+        "camping_fee_area": false,
+        "camping_tent": false,
+        "canal_quarters": false,
+        "canoe_kayak_ramp": false,
+        "fee_area": true,
+        "food": true,
+        "parking": true,
+        "picnic_tables": true,
+        "restrooms": true,
+        "visitor_center": true,
+        "water": true
+      },
+      "coverage_status": "remaining",
+      "latitude": 39.001748,
+      "longitude": -77.246836,
+      "milepost": 14.3,
+      "milepost_end": null,
+      "name": "Great Falls",
+      "nearby_features": [
+        {
+          "common_name": "Six Locks 5",
+          "milepost": 14.3,
+          "milepost_distance": 0.0,
+          "name": "Lock 19",
+          "source": "locks",
+          "type": "lock"
+        },
+        {
+          "common_name": "Six Locks 4",
+          "milepost": 14.2,
+          "milepost_distance": 0.1,
+          "name": "Lock 18",
+          "source": "locks",
+          "type": "lock"
+        },
+        {
+          "common_name": "Six Locks 6 / Tavern Lock",
+          "milepost": 14.4,
+          "milepost_distance": 0.1,
+          "name": "Lock 20",
+          "source": "locks",
+          "type": "lock"
+        },
+        {
+          "common_name": "Six Locks 3",
+          "milepost": 14.1,
+          "milepost_distance": 0.2,
+          "name": "Lock 17",
+          "source": "locks",
+          "type": "lock"
+        },
+        {
+          "common_name": "Six Locks 2",
+          "milepost": 13.7,
+          "milepost_distance": 0.6,
+          "name": "Lock 16",
+          "source": "locks",
+          "type": "lock"
+        },
+        {
+          "common_name": "Six Locks 1",
+          "milepost": 13.6,
+          "milepost_distance": 0.7,
+          "name": "Lock 15",
+          "source": "locks",
+          "type": "lock"
+        }
+      ],
+      "nps_recreation_matches": [
+        {
+          "milepost": 14.3,
+          "name": "Great Falls"
+        }
+      ],
+      "remaining_segments": [
+        {
+          "end_milepost": 32.84,
+          "miles": 22.8,
+          "start_milepost": 10.04
+        }
+      ]
+    },
+    {
+      "amenities": {
+        "bike_rentals": false,
+        "boat_ramp": false,
+        "boat_rentals": false,
+        "camping": true,
+        "camping_fee_area": false,
+        "camping_tent": true,
+        "canal_quarters": true,
+        "canoe_kayak_ramp": false,
+        "fee_area": false,
+        "food": false,
+        "parking": true,
+        "picnic_tables": true,
+        "restrooms": true,
+        "visitor_center": false,
+        "water": true
+      },
+      "coverage_status": "remaining",
+      "latitude": 39.031634,
+      "longitude": -77.243531,
+      "milepost": 16.6,
+      "milepost_end": null,
+      "name": "Swains Lock",
+      "nearby_features": [
+        {
+          "common_name": "Swains Lock",
+          "milepost": 16.7,
+          "milepost_distance": 0.1,
+          "name": "Lock 21",
+          "source": "locks",
+          "type": "lock"
+        }
+      ],
+      "nps_recreation_matches": [
+        {
+          "milepost": 16.7,
+          "name": "Lock 21 (Swains Lock)"
+        }
+      ],
+      "remaining_segments": [
+        {
+          "end_milepost": 32.84,
+          "miles": 22.8,
+          "start_milepost": 10.04
+        }
+      ]
+    },
+    {
+      "amenities": {
+        "bike_rentals": false,
+        "boat_ramp": false,
+        "boat_rentals": false,
+        "camping": false,
+        "camping_fee_area": false,
+        "camping_tent": false,
+        "canal_quarters": true,
+        "canoe_kayak_ramp": false,
+        "fee_area": false,
+        "food": false,
+        "parking": true,
+        "picnic_tables": false,
+        "restrooms": true,
+        "visitor_center": false,
+        "water": false
+      },
+      "coverage_status": "remaining",
+      "latitude": 39.054972,
+      "longitude": -77.290334,
+      "milepost": 19.6,
+      "milepost_end": null,
+      "name": "Pennyfield Lock",
+      "nearby_features": [
+        {
+          "common_name": "Pennyfield Lock",
+          "milepost": 19.6,
+          "milepost_distance": 0.0,
+          "name": "Lock 22",
+          "source": "locks",
+          "type": "lock"
+        }
+      ],
+      "nps_recreation_matches": [
+        {
+          "milepost": 19.6,
+          "name": "Lock 22 (Pennyfield Lock)"
+        }
+      ],
+      "remaining_segments": [
+        {
+          "end_milepost": 32.84,
+          "miles": 22.8,
+          "start_milepost": 10.04
+        }
+      ]
+    },
+    {
+      "amenities": {
+        "bike_rentals": false,
+        "boat_ramp": false,
+        "boat_rentals": false,
+        "camping": false,
+        "camping_fee_area": false,
+        "camping_tent": false,
+        "canal_quarters": false,
+        "canoe_kayak_ramp": true,
+        "fee_area": false,
+        "food": false,
+        "parking": true,
+        "picnic_tables": true,
+        "restrooms": true,
+        "visitor_center": false,
+        "water": false
+      },
+      "coverage_status": "remaining",
+      "latitude": 39.067226,
+      "longitude": -77.328483,
+      "milepost": 22.1,
+      "milepost_end": null,
+      "name": "Violettes Lock",
+      "nearby_features": [
+        {
+          "common_name": "Violette's Lock",
+          "milepost": 22.1,
+          "milepost_distance": 0.0,
+          "name": "Lock 23",
+          "source": "locks",
+          "type": "lock"
+        },
+        {
+          "common_name": "Riley's Lock",
+          "milepost": 22.8,
+          "milepost_distance": 0.7,
+          "name": "Lock 24",
+          "source": "locks",
+          "type": "lock"
+        }
+      ],
+      "nps_recreation_matches": [
+        {
+          "milepost": 22.1,
+          "name": "Lock 23 (Violettes Lock)"
+        }
+      ],
+      "remaining_segments": [
+        {
+          "end_milepost": 32.84,
+          "miles": 22.8,
+          "start_milepost": 10.04
+        }
+      ]
+    },
+    {
+      "amenities": {
+        "bike_rentals": false,
+        "boat_ramp": false,
+        "boat_rentals": false,
+        "camping": false,
+        "camping_fee_area": false,
+        "camping_tent": false,
+        "canal_quarters": false,
+        "canoe_kayak_ramp": true,
+        "fee_area": false,
+        "food": false,
+        "parking": true,
+        "picnic_tables": true,
+        "restrooms": true,
+        "visitor_center": false,
+        "water": false
+      },
+      "coverage_status": "remaining",
+      "latitude": 39.069167,
+      "longitude": -77.340877,
+      "milepost": 22.8,
+      "milepost_end": null,
+      "name": "Rileys Lock",
+      "nearby_features": [
+        {
+          "common_name": "Riley's Lock",
+          "milepost": 22.8,
+          "milepost_distance": 0.0,
+          "name": "Lock 24",
+          "source": "locks",
+          "type": "lock"
+        },
+        {
+          "common_name": "Violette's Lock",
+          "milepost": 22.1,
+          "milepost_distance": 0.7,
+          "name": "Lock 23",
+          "source": "locks",
+          "type": "lock"
+        }
+      ],
+      "nps_recreation_matches": [
+        {
+          "milepost": 22.8,
+          "name": "Seneca (Rileys Lock)"
+        }
+      ],
+      "remaining_segments": [
+        {
+          "end_milepost": 32.84,
+          "miles": 22.8,
+          "start_milepost": 10.04
+        }
+      ]
+    },
+    {
+      "amenities": {
+        "bike_rentals": false,
+        "boat_ramp": false,
+        "boat_rentals": false,
+        "camping": false,
+        "camping_fee_area": false,
+        "camping_tent": false,
+        "canal_quarters": false,
+        "canoe_kayak_ramp": true,
+        "fee_area": false,
+        "food": false,
+        "parking": true,
+        "picnic_tables": false,
+        "restrooms": false,
+        "visitor_center": false,
+        "water": false
+      },
+      "coverage_status": "remaining",
+      "latitude": 39.074731,
+      "longitude": -77.420193,
+      "milepost": 27.2,
+      "milepost_end": null,
+      "name": "Sycamore Landing",
+      "nearby_features": [],
+      "nps_recreation_matches": [
+        {
+          "milepost": 27.2,
+          "name": "Sycamore Landing"
+        }
+      ],
+      "remaining_segments": [
+        {
+          "end_milepost": 32.84,
+          "miles": 22.8,
+          "start_milepost": 10.04
+        }
+      ]
+    },
+    {
+      "amenities": {
+        "bike_rentals": false,
+        "boat_ramp": true,
+        "boat_rentals": false,
+        "camping": false,
+        "camping_fee_area": false,
+        "camping_tent": false,
+        "canal_quarters": true,
+        "canoe_kayak_ramp": false,
+        "fee_area": false,
+        "food": false,
+        "parking": true,
+        "picnic_tables": false,
+        "restrooms": false,
+        "visitor_center": false,
+        "water": false
+      },
+      "coverage_status": "remaining",
+      "latitude": 39.103463,
+      "longitude": -77.472933,
+      "milepost": 30.8,
+      "milepost_end": null,
+      "name": "Edwards Ferry",
+      "nearby_features": [
+        {
+          "common_name": "Edward's Ferry",
+          "milepost": 30.8,
+          "milepost_distance": 0.0,
+          "name": "Lock 25",
+          "source": "locks",
+          "type": "lock"
+        },
+        {
+          "milepost": 30.5,
+          "milepost_distance": 0.3,
+          "name": "Chisel Branch",
+          "source": "recreation_guide",
+          "type": "campground"
+        }
+      ],
+      "nps_recreation_matches": [
+        {
+          "milepost": 30.8,
+          "name": "Edwards Ferry"
+        }
+      ],
+      "remaining_segments": [
+        {
+          "end_milepost": 32.84,
+          "miles": 22.8,
+          "start_milepost": 10.04
+        }
+      ]
+    },
+    {
+      "amenities": {
+        "bike_rentals": false,
+        "boat_ramp": true,
+        "boat_rentals": false,
+        "camping": false,
+        "camping_fee_area": false,
+        "camping_tent": false,
+        "canal_quarters": false,
+        "canoe_kayak_ramp": false,
+        "fee_area": false,
+        "food": false,
+        "parking": true,
+        "picnic_tables": true,
+        "restrooms": true,
+        "visitor_center": false,
+        "water": false
+      },
+      "coverage_status": "covered",
+      "latitude": 39.154861,
+      "longitude": -77.518206,
+      "milepost": 35.5,
+      "milepost_end": null,
+      "name": "Whites Ferry",
+      "nearby_features": [],
+      "nps_recreation_matches": [
+        {
+          "milepost": 35.5,
+          "name": "Whites Ferry"
+        }
+      ],
+      "remaining_segments": []
+    },
+    {
+      "amenities": {
+        "bike_rentals": false,
+        "boat_ramp": false,
+        "boat_rentals": false,
+        "camping": false,
+        "camping_fee_area": false,
+        "camping_tent": false,
+        "canal_quarters": false,
+        "canoe_kayak_ramp": false,
+        "fee_area": false,
+        "food": false,
+        "parking": false,
+        "picnic_tables": false,
+        "restrooms": false,
+        "visitor_center": false,
+        "water": false
+      },
+      "coverage_status": "covered",
+      "latitude": 39.194685,
+      "longitude": -77.469402,
+      "milepost": 39.6,
+      "milepost_end": null,
+      "name": "Dickerson Conservation Park",
+      "nearby_features": [
+        {
+          "common_name": "Wood's Lock",
+          "milepost": 39.4,
+          "milepost_distance": 0.2,
+          "name": "Lock 26",
+          "source": "locks",
+          "type": "lock"
+        }
+      ],
+      "nps_recreation_matches": [],
+      "remaining_segments": []
+    },
+    {
+      "amenities": {
+        "bike_rentals": false,
+        "boat_ramp": true,
+        "boat_rentals": false,
+        "camping": false,
+        "camping_fee_area": false,
+        "camping_tent": false,
+        "canal_quarters": false,
+        "canoe_kayak_ramp": false,
+        "fee_area": false,
+        "food": false,
+        "parking": true,
+        "picnic_tables": true,
+        "restrooms": true,
+        "visitor_center": false,
+        "water": false
+      },
+      "coverage_status": "covered",
+      "latitude": 39.222563,
+      "longitude": -77.449987,
+      "milepost": 42.1,
+      "milepost_end": null,
+      "name": "Monocacy Aqueduct",
+      "nearby_features": [
+        {
+          "milepost": 42.5,
+          "milepost_distance": 0.4,
+          "name": "Indian Flats",
+          "source": "recreation_guide",
+          "type": "campground"
+        },
+        {
+          "common_name": "Spinks Ferry",
+          "milepost": 41.5,
+          "milepost_distance": 0.6,
+          "name": "Lock 27",
+          "source": "locks",
+          "type": "lock"
+        }
+      ],
+      "nps_recreation_matches": [
+        {
+          "milepost": 42.2,
+          "name": "Monocacy Aqueduct"
+        }
+      ],
+      "remaining_segments": []
+    },
+    {
+      "amenities": {
+        "bike_rentals": false,
+        "boat_ramp": true,
+        "boat_rentals": false,
+        "camping": false,
+        "camping_fee_area": false,
+        "camping_tent": false,
+        "canal_quarters": false,
+        "canoe_kayak_ramp": false,
+        "fee_area": false,
+        "food": false,
+        "parking": true,
+        "picnic_tables": true,
+        "restrooms": true,
+        "visitor_center": false,
+        "water": false
+      },
+      "coverage_status": "covered",
+      "latitude": 39.249948,
+      "longitude": -77.482726,
+      "milepost": 44.6,
+      "milepost_end": null,
+      "name": "Nolands Ferry",
+      "nearby_features": [],
+      "nps_recreation_matches": [
+        {
+          "milepost": 44.6,
+          "name": "Nolands Ferry"
+        }
+      ],
+      "remaining_segments": []
+    },
+    {
+      "amenities": {
+        "bike_rentals": false,
+        "boat_ramp": true,
+        "boat_rentals": false,
+        "camping": false,
+        "camping_fee_area": false,
+        "camping_tent": false,
+        "canal_quarters": true,
+        "canoe_kayak_ramp": false,
+        "fee_area": false,
+        "food": false,
+        "parking": true,
+        "picnic_tables": false,
+        "restrooms": true,
+        "visitor_center": false,
+        "water": false
+      },
+      "coverage_status": "covered",
+      "latitude": 39.273218,
+      "longitude": -77.540045,
+      "milepost": 48.2,
+      "milepost_end": null,
+      "name": "Point of Rocks",
+      "nearby_features": [
+        {
+          "milepost": 47.6,
+          "milepost_distance": 0.6,
+          "name": "Calico Rocks",
+          "source": "recreation_guide",
+          "type": "campground"
+        },
+        {
+          "common_name": "Fulton's Lock / Dent's Lock",
+          "milepost": 48.9,
+          "milepost_distance": 0.7,
+          "name": "Lock 28",
+          "source": "locks",
+          "type": "lock"
+        }
+      ],
+      "nps_recreation_matches": [
+        {
+          "milepost": 48.2,
+          "name": "Point of Rocks"
+        }
+      ],
+      "remaining_segments": []
+    },
+    {
+      "amenities": {
+        "bike_rentals": false,
+        "boat_ramp": true,
+        "boat_rentals": false,
+        "camping": false,
+        "camping_fee_area": false,
+        "camping_tent": false,
+        "canal_quarters": false,
+        "canoe_kayak_ramp": false,
+        "fee_area": false,
+        "food": false,
+        "parking": true,
+        "picnic_tables": false,
+        "restrooms": true,
+        "visitor_center": false,
+        "water": false
+      },
+      "coverage_status": "covered",
+      "latitude": 39.306507,
+      "longitude": -77.558006,
+      "milepost": 50.9,
+      "milepost_end": null,
+      "name": "Lander",
+      "nearby_features": [
+        {
+          "common_name": "Lander Lock / Catoctin Lock",
+          "milepost": 50.8,
+          "milepost_distance": 0.1,
+          "name": "Lock 29",
+          "source": "locks",
+          "type": "lock"
+        },
+        {
+          "milepost": 50.3,
+          "milepost_distance": 0.6,
+          "name": "Bald Eagle Island",
+          "source": "recreation_guide",
+          "type": "campground"
+        }
+      ],
+      "nps_recreation_matches": [
+        {
+          "milepost": 50.8,
+          "name": "Lock 29 (Lander)"
+        }
+      ],
+      "remaining_segments": []
+    },
+    {
+      "amenities": {
+        "bike_rentals": false,
+        "boat_ramp": true,
+        "boat_rentals": false,
+        "camping": false,
+        "camping_fee_area": false,
+        "camping_tent": false,
+        "canal_quarters": false,
+        "canoe_kayak_ramp": false,
+        "fee_area": false,
+        "food": false,
+        "parking": true,
+        "picnic_tables": true,
+        "restrooms": true,
+        "visitor_center": true,
+        "water": false
+      },
+      "coverage_status": "covered",
+      "latitude": 39.31122,
+      "longitude": -77.630749,
+      "milepost": 55.0,
+      "milepost_end": null,
+      "name": "Brunswick",
+      "nearby_features": [
+        {
+          "common_name": null,
+          "milepost": 55.0,
+          "milepost_distance": 0.0,
+          "name": "Lock 30",
+          "source": "locks",
+          "type": "lock"
+        }
+      ],
+      "nps_recreation_matches": [
+        {
+          "milepost": 55.0,
+          "name": "Brunswick"
+        }
+      ],
+      "remaining_segments": []
+    },
+    {
+      "amenities": {
+        "bike_rentals": false,
+        "boat_ramp": false,
+        "boat_rentals": false,
+        "camping": false,
+        "camping_fee_area": false,
+        "camping_tent": false,
+        "canal_quarters": false,
+        "canoe_kayak_ramp": false,
+        "fee_area": false,
+        "food": false,
+        "parking": false,
+        "picnic_tables": false,
+        "restrooms": false,
+        "visitor_center": false,
+        "water": false
+      },
+      "coverage_status": "covered",
+      "latitude": 39.329916,
+      "longitude": -77.681966,
+      "milepost": 58.0,
+      "milepost_end": null,
+      "name": "Weverton",
+      "nearby_features": [
+        {
+          "common_name": "Weverton Lock",
+          "milepost": 58.0,
+          "milepost_distance": 0.0,
+          "name": "Lock 31",
+          "source": "locks",
+          "type": "lock"
+        }
+      ],
+      "nps_recreation_matches": [],
+      "remaining_segments": []
+    },
+    {
+      "amenities": {
+        "bike_rentals": false,
+        "boat_ramp": false,
+        "boat_rentals": false,
+        "camping": false,
+        "camping_fee_area": false,
+        "camping_tent": false,
+        "canal_quarters": false,
+        "canoe_kayak_ramp": false,
+        "fee_area": false,
+        "food": false,
+        "parking": false,
+        "picnic_tables": false,
+        "restrooms": false,
+        "visitor_center": false,
+        "water": false
+      },
+      "coverage_status": "covered",
+      "latitude": 39.329395,
+      "longitude": -77.731919,
+      "milepost": 61.3,
+      "milepost_end": null,
+      "name": "Maryland Heights",
+      "nearby_features": [
+        {
+          "common_name": "Goodheart's Lock",
+          "milepost": 61.5,
+          "milepost_distance": 0.2,
+          "name": "Lock 34",
+          "source": "locks",
+          "type": "lock"
+        },
+        {
+          "common_name": null,
+          "milepost": 60.7,
+          "milepost_distance": 0.6,
+          "name": "Lock 33",
+          "source": "locks",
+          "type": "lock"
+        },
+        {
+          "milepost": 62.0,
+          "milepost_distance": 0.7,
+          "name": "Huckleberry Hill",
+          "source": "recreation_guide",
+          "type": "campground"
+        },
+        {
+          "common_name": null,
+          "milepost": 62.3,
+          "milepost_distance": 1.0,
+          "name": "Lock 35",
+          "source": "locks",
+          "type": "lock"
+        }
+      ],
+      "nps_recreation_matches": [],
+      "remaining_segments": []
+    },
+    {
+      "amenities": {
+        "bike_rentals": false,
+        "boat_ramp": false,
+        "boat_rentals": false,
+        "camping": false,
+        "camping_fee_area": false,
+        "camping_tent": false,
+        "canal_quarters": false,
+        "canoe_kayak_ramp": false,
+        "fee_area": false,
+        "food": false,
+        "parking": false,
+        "picnic_tables": false,
+        "restrooms": false,
+        "visitor_center": false,
+        "water": false
+      },
+      "coverage_status": "covered",
+      "latitude": 39.33343,
+      "longitude": -77.738577,
+      "milepost": 61.6,
+      "milepost_end": null,
+      "name": "Lock 34",
+      "nearby_features": [
+        {
+          "common_name": "Goodheart's Lock",
+          "milepost": 61.5,
+          "milepost_distance": 0.1,
+          "name": "Lock 34",
+          "source": "locks",
+          "type": "lock"
+        },
+        {
+          "milepost": 62.0,
+          "milepost_distance": 0.4,
+          "name": "Huckleberry Hill",
+          "source": "recreation_guide",
+          "type": "campground"
+        },
+        {
+          "common_name": null,
+          "milepost": 62.3,
+          "milepost_distance": 0.7,
+          "name": "Lock 35",
+          "source": "locks",
+          "type": "lock"
+        },
+        {
+          "common_name": null,
+          "milepost": 60.7,
+          "milepost_distance": 0.9,
+          "name": "Lock 33",
+          "source": "locks",
+          "type": "lock"
+        },
+        {
+          "common_name": null,
+          "milepost": 62.5,
+          "milepost_distance": 0.9,
+          "name": "Lock 36",
+          "source": "locks",
+          "type": "lock"
+        }
+      ],
+      "nps_recreation_matches": [],
+      "remaining_segments": []
+    },
+    {
+      "amenities": {
+        "bike_rentals": false,
+        "boat_ramp": true,
+        "boat_rentals": false,
+        "camping": false,
+        "camping_fee_area": false,
+        "camping_tent": false,
+        "canal_quarters": false,
+        "canoe_kayak_ramp": false,
+        "fee_area": false,
+        "food": false,
+        "parking": true,
+        "picnic_tables": true,
+        "restrooms": true,
+        "visitor_center": false,
+        "water": false
+      },
+      "coverage_status": "covered",
+      "latitude": 39.364182,
+      "longitude": -77.740073,
+      "milepost": 64.9,
+      "milepost_end": null,
+      "name": "Dargan Bend",
+      "nearby_features": [],
+      "nps_recreation_matches": [
+        {
+          "milepost": 64.9,
+          "name": "Dargan Bend"
+        }
+      ],
+      "remaining_segments": []
+    },
+    {
+      "amenities": {
+        "bike_rentals": false,
+        "boat_ramp": false,
+        "boat_rentals": false,
+        "camping": false,
+        "camping_fee_area": false,
+        "camping_tent": false,
+        "canal_quarters": false,
+        "canoe_kayak_ramp": false,
+        "fee_area": false,
+        "food": false,
+        "parking": false,
+        "picnic_tables": false,
+        "restrooms": false,
+        "visitor_center": false,
+        "water": false
+      },
+      "coverage_status": "remaining",
+      "latitude": 39.385295,
+      "longitude": -77.734451,
+      "milepost": 67.0,
+      "milepost_end": null,
+      "name": "Mountain Lock",
+      "nearby_features": [
+        {
+          "common_name": "Mountain Lock",
+          "milepost": 66.9,
+          "milepost_distance": 0.1,
+          "name": "Lock 37",
+          "source": "locks",
+          "type": "lock"
+        }
+      ],
+      "nps_recreation_matches": [],
+      "remaining_segments": [
+        {
+          "end_milepost": 70.67,
+          "miles": 5.72,
+          "start_milepost": 64.95
+        }
+      ]
+    },
+    {
+      "amenities": {
+        "bike_rentals": false,
+        "boat_ramp": false,
+        "boat_rentals": false,
+        "camping": true,
+        "camping_fee_area": true,
+        "camping_tent": false,
+        "canal_quarters": false,
+        "canoe_kayak_ramp": false,
+        "fee_area": false,
+        "food": false,
+        "parking": true,
+        "picnic_tables": false,
+        "restrooms": true,
+        "visitor_center": false,
+        "water": true
+      },
+      "coverage_status": "remaining",
+      "latitude": 39.419001,
+      "longitude": -77.74657,
+      "milepost": 69.5,
+      "milepost_end": null,
+      "name": "Antietam",
+      "nearby_features": [],
+      "nps_recreation_matches": [
+        {
+          "milepost": 69.6,
+          "name": "Antietam Creek"
+        }
+      ],
+      "remaining_segments": [
+        {
+          "end_milepost": 70.67,
+          "miles": 5.72,
+          "start_milepost": 64.95
+        }
+      ]
+    },
+    {
+      "amenities": {
+        "bike_rentals": false,
+        "boat_ramp": false,
+        "boat_rentals": false,
+        "camping": false,
+        "camping_fee_area": false,
+        "camping_tent": false,
+        "canal_quarters": false,
+        "canoe_kayak_ramp": false,
+        "fee_area": false,
+        "food": false,
+        "parking": false,
+        "picnic_tables": false,
+        "restrooms": false,
+        "visitor_center": false,
+        "water": false
+      },
+      "coverage_status": "covered",
+      "latitude": 39.433927,
+      "longitude": -77.795512,
+      "milepost": 72.4,
+      "milepost_end": null,
+      "name": "Railroad bridge (Shepherdstown)",
+      "nearby_features": [
+        {
+          "common_name": "Shepherdstown Lock",
+          "milepost": 72.7,
+          "milepost_distance": 0.3,
+          "name": "Lock 38",
+          "source": "locks",
+          "type": "lock"
+        },
+        {
+          "milepost": 72.8,
+          "milepost_distance": 0.4,
+          "name": "Ferry Hill",
+          "source": "recreation_guide",
+          "type": "recreation_location"
+        }
+      ],
+      "nps_recreation_matches": [],
+      "remaining_segments": []
+    },
+    {
+      "amenities": {
+        "bike_rentals": false,
+        "boat_ramp": false,
+        "boat_rentals": false,
+        "camping": false,
+        "camping_fee_area": false,
+        "camping_tent": false,
+        "canal_quarters": false,
+        "canoe_kayak_ramp": false,
+        "fee_area": false,
+        "food": false,
+        "parking": true,
+        "picnic_tables": false,
+        "restrooms": true,
+        "visitor_center": false,
+        "water": false
+      },
+      "coverage_status": "remaining",
+      "latitude": 39.436456,
+      "longitude": -77.799527,
+      "milepost": 72.8,
+      "milepost_end": null,
+      "name": "Lock 38 (Shepherdstown)",
+      "nearby_features": [
+        {
+          "milepost": 72.8,
+          "milepost_distance": 0.0,
+          "name": "Ferry Hill",
+          "source": "recreation_guide",
+          "type": "recreation_location"
+        },
+        {
+          "common_name": "Shepherdstown Lock",
+          "milepost": 72.7,
+          "milepost_distance": 0.1,
+          "name": "Lock 38",
+          "source": "locks",
+          "type": "lock"
+        }
+      ],
+      "nps_recreation_matches": [
+        {
+          "milepost": 72.7,
+          "name": "Lock 38 (Shepherdstown)"
+        }
+      ],
+      "remaining_segments": [
+        {
+          "end_milepost": 89.47,
+          "miles": 16.74,
+          "start_milepost": 72.73
+        }
+      ]
+    },
+    {
+      "amenities": {
+        "bike_rentals": false,
+        "boat_ramp": true,
+        "boat_rentals": false,
+        "camping": false,
+        "camping_fee_area": false,
+        "camping_tent": false,
+        "canal_quarters": false,
+        "canoe_kayak_ramp": false,
+        "fee_area": false,
+        "food": false,
+        "parking": true,
+        "picnic_tables": false,
+        "restrooms": true,
+        "visitor_center": false,
+        "water": false
+      },
+      "coverage_status": "remaining",
+      "latitude": 39.46527,
+      "longitude": -77.777313,
+      "milepost": 76.7,
+      "milepost_end": null,
+      "name": "Snyders Landing",
+      "nearby_features": [],
+      "nps_recreation_matches": [
+        {
+          "milepost": 76.6,
+          "name": "Snyders Landing"
+        }
+      ],
+      "remaining_segments": [
+        {
+          "end_milepost": 89.47,
+          "miles": 16.74,
+          "start_milepost": 72.73
+        }
+      ]
+    },
+    {
+      "amenities": {
+        "bike_rentals": false,
+        "boat_ramp": true,
+        "boat_rentals": false,
+        "camping": false,
+        "camping_fee_area": false,
+        "camping_tent": false,
+        "canal_quarters": false,
+        "canoe_kayak_ramp": false,
+        "fee_area": false,
+        "food": false,
+        "parking": true,
+        "picnic_tables": false,
+        "restrooms": true,
+        "visitor_center": false,
+        "water": false
+      },
+      "coverage_status": "remaining",
+      "latitude": 39.499645,
+      "longitude": -77.767866,
+      "milepost": 81.0,
+      "milepost_end": null,
+      "name": "Taylors Landing",
+      "nearby_features": [],
+      "nps_recreation_matches": [
+        {
+          "milepost": 80.9,
+          "name": "Taylors Landing"
+        }
+      ],
+      "remaining_segments": [
+        {
+          "end_milepost": 89.47,
+          "miles": 16.74,
+          "start_milepost": 72.73
+        }
+      ]
+    },
+    {
+      "amenities": {
+        "bike_rentals": false,
+        "boat_ramp": false,
+        "boat_rentals": false,
+        "camping": false,
+        "camping_fee_area": false,
+        "camping_tent": false,
+        "canal_quarters": false,
+        "canoe_kayak_ramp": false,
+        "fee_area": false,
+        "food": false,
+        "parking": true,
+        "picnic_tables": false,
+        "restrooms": false,
+        "visitor_center": false,
+        "water": false
+      },
+      "coverage_status": "remaining",
+      "latitude": 39.496001,
+      "longitude": -77.826266,
+      "milepost": 84.4,
+      "milepost_end": null,
+      "name": "Dam No. 4",
+      "nearby_features": [],
+      "nps_recreation_matches": [
+        {
+          "milepost": 84.4,
+          "name": "Dam 4"
+        }
+      ],
+      "remaining_segments": [
+        {
+          "end_milepost": 89.47,
+          "miles": 16.74,
+          "start_milepost": 72.73
+        }
+      ]
+    },
+    {
+      "amenities": {
+        "bike_rentals": false,
+        "boat_ramp": true,
+        "boat_rentals": false,
+        "camping": false,
+        "camping_fee_area": false,
+        "camping_tent": false,
+        "canal_quarters": false,
+        "canoe_kayak_ramp": false,
+        "fee_area": false,
+        "food": false,
+        "parking": true,
+        "picnic_tables": true,
+        "restrooms": true,
+        "visitor_center": false,
+        "water": false
+      },
+      "coverage_status": "remaining",
+      "latitude": 39.501346,
+      "longitude": -77.845385,
+      "milepost": 85.4,
+      "milepost_end": null,
+      "name": "Big Slackwater Boat Ramp",
+      "nearby_features": [],
+      "nps_recreation_matches": [
+        {
+          "milepost": 85.5,
+          "name": "Big Slackwater"
+        }
+      ],
+      "remaining_segments": [
+        {
+          "end_milepost": 89.47,
+          "miles": 16.74,
+          "start_milepost": 72.73
+        }
+      ]
+    },
+    {
+      "amenities": {
+        "bike_rentals": false,
+        "boat_ramp": false,
+        "boat_rentals": false,
+        "camping": false,
+        "camping_fee_area": false,
+        "camping_tent": false,
+        "canal_quarters": false,
+        "canoe_kayak_ramp": false,
+        "fee_area": false,
+        "food": false,
+        "parking": true,
+        "picnic_tables": false,
+        "restrooms": true,
+        "visitor_center": false,
+        "water": false
+      },
+      "coverage_status": "remaining",
+      "latitude": 39.530654,
+      "longitude": -77.823522,
+      "milepost": 88.1,
+      "milepost_end": null,
+      "name": "McMahons Mill",
+      "nearby_features": [
+        {
+          "common_name": null,
+          "milepost": 88.9,
+          "milepost_distance": 0.8,
+          "name": "Lock 41",
+          "source": "locks",
+          "type": "lock"
+        },
+        {
+          "common_name": null,
+          "milepost": 89.0,
+          "milepost_distance": 0.9,
+          "name": "Lock 42",
+          "source": "locks",
+          "type": "lock"
+        }
+      ],
+      "nps_recreation_matches": [
+        {
+          "milepost": 88.1,
+          "name": "McMahons Mill"
+        }
+      ],
+      "remaining_segments": [
+        {
+          "end_milepost": 89.47,
+          "miles": 16.74,
+          "start_milepost": 72.73
+        }
+      ]
+    },
+    {
+      "amenities": {
+        "bike_rentals": false,
+        "boat_ramp": false,
+        "boat_rentals": false,
+        "camping": false,
+        "camping_fee_area": false,
+        "camping_tent": false,
+        "canal_quarters": false,
+        "canoe_kayak_ramp": false,
+        "fee_area": false,
+        "food": false,
+        "parking": false,
+        "picnic_tables": false,
+        "restrooms": false,
+        "visitor_center": false,
+        "water": false
+      },
+      "coverage_status": "remaining",
+      "latitude": 39.530309,
+      "longitude": -77.844116,
+      "milepost": 89.1,
+      "milepost_end": null,
+      "name": "Spring Dell Road",
+      "nearby_features": [
+        {
+          "common_name": null,
+          "milepost": 89.0,
+          "milepost_distance": 0.1,
+          "name": "Lock 42",
+          "source": "locks",
+          "type": "lock"
+        },
+        {
+          "common_name": null,
+          "milepost": 88.9,
+          "milepost_distance": 0.2,
+          "name": "Lock 41",
+          "source": "locks",
+          "type": "lock"
+        }
+      ],
+      "nps_recreation_matches": [],
+      "remaining_segments": [
+        {
+          "end_milepost": 89.47,
+          "miles": 16.74,
+          "start_milepost": 72.73
+        }
+      ]
+    },
+    {
+      "amenities": {
+        "bike_rentals": false,
+        "boat_ramp": false,
+        "boat_rentals": false,
+        "camping": false,
+        "camping_fee_area": false,
+        "camping_tent": false,
+        "canal_quarters": false,
+        "canoe_kayak_ramp": false,
+        "fee_area": false,
+        "food": false,
+        "parking": true,
+        "picnic_tables": false,
+        "restrooms": true,
+        "visitor_center": false,
+        "water": false
+      },
+      "coverage_status": "covered",
+      "latitude": 39.595037,
+      "longitude": -77.824712,
+      "milepost": 99.3,
+      "milepost_end": null,
+      "name": "Lock 44",
+      "nearby_features": [
+        {
+          "common_name": "Williamsport",
+          "milepost": 99.1,
+          "milepost_distance": 0.2,
+          "name": "Lock 44",
+          "source": "locks",
+          "type": "lock"
+        }
+      ],
+      "nps_recreation_matches": [
+        {
+          "milepost": 99.2,
+          "name": "Lock 44"
+        }
+      ],
+      "remaining_segments": []
+    },
+    {
+      "amenities": {
+        "bike_rentals": false,
+        "boat_ramp": true,
+        "boat_rentals": false,
+        "camping": false,
+        "camping_fee_area": false,
+        "camping_tent": false,
+        "canal_quarters": false,
+        "canoe_kayak_ramp": false,
+        "fee_area": false,
+        "food": false,
+        "parking": true,
+        "picnic_tables": true,
+        "restrooms": true,
+        "visitor_center": true,
+        "water": true
+      },
+      "coverage_status": "covered",
+      "latitude": 39.600996,
+      "longitude": -77.826927,
+      "milepost": 99.8,
+      "milepost_end": null,
+      "name": "Williamsport Visitor Center",
+      "nearby_features": [
+        {
+          "common_name": "Williamsport",
+          "milepost": 99.1,
+          "milepost_distance": 0.7,
+          "name": "Lock 44",
+          "source": "locks",
+          "type": "lock"
+        }
+      ],
+      "nps_recreation_matches": [
+        {
+          "milepost": 99.8,
+          "name": "Cushwa Basin (Williamsport)"
+        }
+      ],
+      "remaining_segments": []
+    },
+    {
+      "amenities": {
+        "bike_rentals": false,
+        "boat_ramp": false,
+        "boat_rentals": false,
+        "camping": false,
+        "camping_fee_area": false,
+        "camping_tent": false,
+        "canal_quarters": false,
+        "canoe_kayak_ramp": false,
+        "fee_area": false,
+        "food": false,
+        "parking": false,
+        "picnic_tables": false,
+        "restrooms": false,
+        "visitor_center": false,
+        "water": false
+      },
+      "coverage_status": "covered",
+      "latitude": 39.616863,
+      "longitude": -77.888503,
+      "milepost": 103.3,
+      "milepost_end": null,
+      "name": "Gift Road",
+      "nearby_features": [],
+      "nps_recreation_matches": [],
+      "remaining_segments": []
+    },
+    {
+      "amenities": {
+        "bike_rentals": false,
+        "boat_ramp": false,
+        "boat_rentals": false,
+        "camping": false,
+        "camping_fee_area": false,
+        "camping_tent": false,
+        "canal_quarters": false,
+        "canoe_kayak_ramp": false,
+        "fee_area": false,
+        "food": false,
+        "parking": false,
+        "picnic_tables": false,
+        "restrooms": false,
+        "visitor_center": false,
+        "water": false
+      },
+      "coverage_status": "covered",
+      "latitude": 39.604678,
+      "longitude": -77.911877,
+      "milepost": 106.2,
+      "milepost_end": null,
+      "name": "Dam No. 5 Road",
+      "nearby_features": [
+        {
+          "common_name": "Two Locks 1",
+          "milepost": 107.0,
+          "milepost_distance": 0.8,
+          "name": "Lock 45",
+          "source": "locks",
+          "type": "lock"
+        },
+        {
+          "common_name": "Two Locks 2",
+          "milepost": 107.2,
+          "milepost_distance": 1.0,
+          "name": "Lock 46",
+          "source": "locks",
+          "type": "lock"
+        }
+      ],
+      "nps_recreation_matches": [],
+      "remaining_segments": []
+    },
+    {
+      "amenities": {
+        "bike_rentals": false,
+        "boat_ramp": false,
+        "boat_rentals": false,
+        "camping": false,
+        "camping_fee_area": false,
+        "camping_tent": false,
+        "canal_quarters": false,
+        "canoe_kayak_ramp": false,
+        "fee_area": false,
+        "food": false,
+        "parking": true,
+        "picnic_tables": false,
+        "restrooms": true,
+        "visitor_center": false,
+        "water": false
+      },
+      "coverage_status": "covered",
+      "latitude": 39.607079,
+      "longitude": -77.921117,
+      "milepost": 106.8,
+      "milepost_end": null,
+      "name": "Dam No. 5",
+      "nearby_features": [
+        {
+          "common_name": "Two Locks 1",
+          "milepost": 107.0,
+          "milepost_distance": 0.2,
+          "name": "Lock 45",
+          "source": "locks",
+          "type": "lock"
+        },
+        {
+          "common_name": "Two Locks 2",
+          "milepost": 107.2,
+          "milepost_distance": 0.4,
+          "name": "Lock 46",
+          "source": "locks",
+          "type": "lock"
+        }
+      ],
+      "nps_recreation_matches": [
+        {
+          "milepost": 106.8,
+          "name": "Dam 5"
+        }
+      ],
+      "remaining_segments": []
+    },
+    {
+      "amenities": {
+        "bike_rentals": false,
+        "boat_ramp": false,
+        "boat_rentals": false,
+        "camping": false,
+        "camping_fee_area": false,
+        "camping_tent": false,
+        "canal_quarters": false,
+        "canoe_kayak_ramp": false,
+        "fee_area": false,
+        "food": false,
+        "parking": false,
+        "picnic_tables": false,
+        "restrooms": false,
+        "visitor_center": false,
+        "water": false
+      },
+      "coverage_status": "covered",
+      "latitude": 39.615866,
+      "longitude": -77.926626,
+      "milepost": 107.4,
+      "milepost_end": null,
+      "name": "Lock 46",
+      "nearby_features": [
+        {
+          "common_name": "Two Locks 2",
+          "milepost": 107.2,
+          "milepost_distance": 0.2,
+          "name": "Lock 46",
+          "source": "locks",
+          "type": "lock"
+        },
+        {
+          "common_name": "Two Locks 1",
+          "milepost": 107.0,
+          "milepost_distance": 0.4,
+          "name": "Lock 45",
+          "source": "locks",
+          "type": "lock"
+        }
+      ],
+      "nps_recreation_matches": [],
+      "remaining_segments": []
+    },
+    {
+      "amenities": {
+        "bike_rentals": false,
+        "boat_ramp": true,
+        "boat_rentals": false,
+        "camping": false,
+        "camping_fee_area": false,
+        "camping_tent": false,
+        "canal_quarters": true,
+        "canoe_kayak_ramp": false,
+        "fee_area": false,
+        "food": false,
+        "parking": true,
+        "picnic_tables": true,
+        "restrooms": true,
+        "visitor_center": false,
+        "water": true
+      },
+      "coverage_status": "covered",
+      "latitude": 39.615311,
+      "longitude": -77.947494,
+      "milepost": 108.8,
+      "milepost_end": null,
+      "name": "Four Locks",
+      "nearby_features": [
+        {
+          "common_name": "Four Locks 2",
+          "milepost": 108.8,
+          "milepost_distance": 0.0,
+          "name": "Lock 48",
+          "source": "locks",
+          "type": "lock"
+        },
+        {
+          "common_name": "Four Locks 1",
+          "milepost": 108.7,
+          "milepost_distance": 0.1,
+          "name": "Lock 47",
+          "source": "locks",
+          "type": "lock"
+        },
+        {
+          "common_name": "Four Locks 3",
+          "milepost": 108.9,
+          "milepost_distance": 0.1,
+          "name": "Lock 49",
+          "source": "locks",
+          "type": "lock"
+        },
+        {
+          "common_name": "Four Locks 4",
+          "milepost": 109.0,
+          "milepost_distance": 0.2,
+          "name": "Lock 50",
+          "source": "locks",
+          "type": "lock"
+        }
+      ],
+      "nps_recreation_matches": [
+        {
+          "milepost": 109.0,
+          "name": "Four Locks"
+        }
+      ],
+      "remaining_segments": []
+    },
+    {
+      "amenities": {
+        "bike_rentals": false,
+        "boat_ramp": true,
+        "boat_rentals": false,
+        "camping": true,
+        "camping_fee_area": true,
+        "camping_tent": false,
+        "canal_quarters": false,
+        "canoe_kayak_ramp": false,
+        "fee_area": false,
+        "food": false,
+        "parking": true,
+        "picnic_tables": true,
+        "restrooms": true,
+        "visitor_center": false,
+        "water": true
+      },
+      "coverage_status": "remaining",
+      "latitude": 39.609261,
+      "longitude": -77.970065,
+      "milepost": 110.4,
+      "milepost_end": null,
+      "name": "McCoys Ferry",
+      "nearby_features": [
+        {
+          "milepost": 110.0,
+          "milepost_distance": 0.4,
+          "name": "North Mountain",
+          "source": "recreation_guide",
+          "type": "campground"
+        }
+      ],
+      "nps_recreation_matches": [
+        {
+          "milepost": 110.4,
+          "name": "McCoys Ferry"
+        }
+      ],
+      "remaining_segments": [
+        {
+          "end_milepost": 184.5,
+          "miles": 74.69,
+          "start_milepost": 109.81
+        }
+      ]
+    },
+    {
+      "amenities": {
+        "bike_rentals": false,
+        "boat_ramp": true,
+        "boat_rentals": false,
+        "camping": true,
+        "camping_fee_area": true,
+        "camping_tent": false,
+        "canal_quarters": false,
+        "canoe_kayak_ramp": false,
+        "fee_area": false,
+        "food": false,
+        "parking": true,
+        "picnic_tables": true,
+        "restrooms": false,
+        "visitor_center": false,
+        "water": false
+      },
+      "coverage_status": "remaining",
+      "latitude": 39.605391,
+      "longitude": -78.005041,
+      "milepost": 112.4,
+      "milepost_end": null,
+      "name": "Fort Frederick",
+      "nearby_features": [],
+      "nps_recreation_matches": [
+        {
+          "milepost": 112.4,
+          "name": "Fort Frederick State Park"
+        }
+      ],
+      "remaining_segments": [
+        {
+          "end_milepost": 184.5,
+          "miles": 74.69,
+          "start_milepost": 109.81
+        }
+      ]
+    },
+    {
+      "amenities": {
+        "bike_rentals": false,
+        "boat_ramp": false,
+        "boat_rentals": false,
+        "camping": false,
+        "camping_fee_area": false,
+        "camping_tent": false,
+        "canal_quarters": false,
+        "canoe_kayak_ramp": false,
+        "fee_area": false,
+        "food": false,
+        "parking": false,
+        "picnic_tables": false,
+        "restrooms": false,
+        "visitor_center": false,
+        "water": false
+      },
+      "coverage_status": "remaining",
+      "latitude": 39.63297,
+      "longitude": -78.028951,
+      "milepost": 114.5,
+      "milepost_end": null,
+      "name": "Ernstville Road",
+      "nearby_features": [
+        {
+          "milepost": 113.8,
+          "milepost_distance": 0.7,
+          "name": "Big Pool",
+          "source": "recreation_guide",
+          "type": "boat_access"
+        }
+      ],
+      "nps_recreation_matches": [],
+      "remaining_segments": [
+        {
+          "end_milepost": 184.5,
+          "miles": 74.69,
+          "start_milepost": 109.81
+        }
+      ]
+    },
+    {
+      "amenities": {
+        "bike_rentals": false,
+        "boat_ramp": false,
+        "boat_rentals": false,
+        "camping": true,
+        "camping_fee_area": false,
+        "camping_tent": true,
+        "canal_quarters": false,
+        "canoe_kayak_ramp": false,
+        "fee_area": false,
+        "food": false,
+        "parking": false,
+        "picnic_tables": false,
+        "restrooms": true,
+        "visitor_center": false,
+        "water": true
+      },
+      "coverage_status": "remaining",
+      "latitude": 39.655987,
+      "longitude": -78.053946,
+      "milepost": 116.3,
+      "milepost_end": null,
+      "name": "Licking Creek",
+      "nearby_features": [],
+      "nps_recreation_matches": [
+        {
+          "milepost": 116.0,
+          "name": "Licking Creek"
+        }
+      ],
+      "remaining_segments": [
+        {
+          "end_milepost": 184.5,
+          "miles": 74.69,
+          "start_milepost": 109.81
+        }
+      ]
+    },
+    {
+      "amenities": {
+        "bike_rentals": false,
+        "boat_ramp": false,
+        "boat_rentals": false,
+        "camping": false,
+        "camping_fee_area": false,
+        "camping_tent": false,
+        "canal_quarters": false,
+        "canoe_kayak_ramp": false,
+        "fee_area": false,
+        "food": false,
+        "parking": false,
+        "picnic_tables": false,
+        "restrooms": false,
+        "visitor_center": false,
+        "water": false
+      },
+      "coverage_status": "remaining",
+      "latitude": 39.68443,
+      "longitude": -78.103796,
+      "milepost": 119.6,
+      "milepost_end": null,
+      "name": "Little Pool",
+      "nearby_features": [],
+      "nps_recreation_matches": [],
+      "remaining_segments": [
+        {
+          "end_milepost": 184.5,
+          "miles": 74.69,
+          "start_milepost": 109.81
+        }
+      ]
+    },
+    {
+      "amenities": {
+        "bike_rentals": false,
+        "boat_ramp": false,
+        "boat_rentals": false,
+        "camping": false,
+        "camping_fee_area": false,
+        "camping_tent": false,
+        "canal_quarters": false,
+        "canoe_kayak_ramp": false,
+        "fee_area": false,
+        "food": false,
+        "parking": false,
+        "picnic_tables": false,
+        "restrooms": false,
+        "visitor_center": false,
+        "water": false
+      },
+      "coverage_status": "remaining",
+      "latitude": 39.694227,
+      "longitude": -78.154046,
+      "milepost": 122.8,
+      "milepost_end": null,
+      "name": "Hancock Visitor Center",
+      "nearby_features": [
+        {
+          "common_name": "Hancock 1",
+          "milepost": 122.7,
+          "milepost_distance": 0.1,
+          "name": "Lock 51",
+          "source": "locks",
+          "type": "lock"
+        },
+        {
+          "common_name": "Hancock 2",
+          "milepost": 122.9,
+          "milepost_distance": 0.1,
+          "name": "Lock 52",
+          "source": "locks",
+          "type": "lock"
+        }
+      ],
+      "nps_recreation_matches": [],
+      "remaining_segments": [
+        {
+          "end_milepost": 184.5,
+          "miles": 74.69,
+          "start_milepost": 109.81
+        }
+      ]
+    },
+    {
+      "amenities": {
+        "bike_rentals": false,
+        "boat_ramp": false,
+        "boat_rentals": false,
+        "camping": false,
+        "camping_fee_area": false,
+        "camping_tent": false,
+        "canal_quarters": false,
+        "canoe_kayak_ramp": false,
+        "fee_area": false,
+        "food": false,
+        "parking": false,
+        "picnic_tables": false,
+        "restrooms": false,
+        "visitor_center": false,
+        "water": false
+      },
+      "coverage_status": "remaining",
+      "latitude": 39.698253,
+      "longitude": -78.181036,
+      "milepost": 124.1,
+      "milepost_end": null,
+      "name": "Hancock",
+      "nearby_features": [
+        {
+          "milepost": 124.5,
+          "milepost_distance": 0.4,
+          "name": "Little Tonoloway (Hancock)",
+          "source": "recreation_guide",
+          "type": "boat_access"
+        }
+      ],
+      "nps_recreation_matches": [],
+      "remaining_segments": [
+        {
+          "end_milepost": 184.5,
+          "miles": 74.69,
+          "start_milepost": 109.81
+        }
+      ]
+    },
+    {
+      "amenities": {
+        "bike_rentals": false,
+        "boat_ramp": false,
+        "boat_rentals": false,
+        "camping": false,
+        "camping_fee_area": false,
+        "camping_tent": false,
+        "canal_quarters": false,
+        "canoe_kayak_ramp": false,
+        "fee_area": false,
+        "food": false,
+        "parking": false,
+        "picnic_tables": false,
+        "restrooms": false,
+        "visitor_center": false,
+        "water": false
+      },
+      "coverage_status": "remaining",
+      "latitude": 39.683618,
+      "longitude": -78.199002,
+      "milepost": 125.6,
+      "milepost_end": null,
+      "name": "Berm Road",
+      "nearby_features": [
+        {
+          "milepost": 126.4,
+          "milepost_distance": 0.8,
+          "name": "White Rock",
+          "source": "recreation_guide",
+          "type": "campground"
+        },
+        {
+          "milepost": 126.6,
+          "milepost_distance": 1.0,
+          "name": "Little Pool",
+          "source": "recreation_guide",
+          "type": "campground"
+        }
+      ],
+      "nps_recreation_matches": [],
+      "remaining_segments": [
+        {
+          "end_milepost": 184.5,
+          "miles": 74.69,
+          "start_milepost": 109.81
+        }
+      ]
+    },
+    {
+      "amenities": {
+        "bike_rentals": false,
+        "boat_ramp": false,
+        "boat_rentals": false,
+        "camping": false,
+        "camping_fee_area": false,
+        "camping_tent": false,
+        "canal_quarters": false,
+        "canoe_kayak_ramp": true,
+        "fee_area": false,
+        "food": false,
+        "parking": true,
+        "picnic_tables": false,
+        "restrooms": false,
+        "visitor_center": false,
+        "water": false
+      },
+      "coverage_status": "remaining",
+      "latitude": 39.645446,
+      "longitude": -78.251711,
+      "milepost": 130.7,
+      "milepost_end": null,
+      "name": "Cohill Station",
+      "nearby_features": [
+        {
+          "common_name": "Irishman's Lock",
+          "milepost": 130.1,
+          "milepost_distance": 0.6,
+          "name": "Lock 53",
+          "source": "locks",
+          "type": "lock"
+        },
+        {
+          "milepost": 129.9,
+          "milepost_distance": 0.8,
+          "name": "Leopards Mill",
+          "source": "recreation_guide",
+          "type": "campground"
+        }
+      ],
+      "nps_recreation_matches": [
+        {
+          "milepost": 130.7,
+          "name": "Cohill Station"
+        }
+      ],
+      "remaining_segments": [
+        {
+          "end_milepost": 184.5,
+          "miles": 74.69,
+          "start_milepost": 109.81
+        }
+      ]
+    },
+    {
+      "amenities": {
+        "bike_rentals": false,
+        "boat_ramp": false,
+        "boat_rentals": false,
+        "camping": false,
+        "camping_fee_area": false,
+        "camping_tent": false,
+        "canal_quarters": false,
+        "canoe_kayak_ramp": false,
+        "fee_area": false,
+        "food": false,
+        "parking": false,
+        "picnic_tables": false,
+        "restrooms": false,
+        "visitor_center": false,
+        "water": false
+      },
+      "coverage_status": "remaining",
+      "latitude": 39.628174,
+      "longitude": -78.298256,
+      "milepost": 134.0,
+      "milepost_end": null,
+      "name": "Pearre Road, Dam #6",
+      "nearby_features": [
+        {
+          "common_name": null,
+          "milepost": 134.0,
+          "milepost_distance": 0.0,
+          "name": "Lock 54",
+          "source": "locks",
+          "type": "lock"
+        },
+        {
+          "common_name": null,
+          "milepost": 134.2,
+          "milepost_distance": 0.2,
+          "name": "Lock 55",
+          "source": "locks",
+          "type": "lock"
+        },
+        {
+          "milepost": 133.6,
+          "milepost_distance": 0.4,
+          "name": "Cacapon Juntion",
+          "source": "recreation_guide",
+          "type": "campground"
+        }
+      ],
+      "nps_recreation_matches": [],
+      "remaining_segments": [
+        {
+          "end_milepost": 184.5,
+          "miles": 74.69,
+          "start_milepost": 109.81
+        }
+      ]
+    },
+    {
+      "amenities": {
+        "bike_rentals": false,
+        "boat_ramp": false,
+        "boat_rentals": false,
+        "camping": false,
+        "camping_fee_area": false,
+        "camping_tent": false,
+        "canal_quarters": false,
+        "canoe_kayak_ramp": false,
+        "fee_area": false,
+        "food": false,
+        "parking": false,
+        "picnic_tables": false,
+        "restrooms": false,
+        "visitor_center": false,
+        "water": false
+      },
+      "coverage_status": "remaining",
+      "latitude": 39.63648,
+      "longitude": -78.323262,
+      "milepost": 135.9,
+      "milepost_end": null,
+      "name": "WMRT Pearre parking lot",
+      "nearby_features": [
+        {
+          "common_name": "Sideling Lock",
+          "milepost": 136.2,
+          "milepost_distance": 0.3,
+          "name": "Lock 56",
+          "source": "locks",
+          "type": "lock"
+        }
+      ],
+      "nps_recreation_matches": [],
+      "remaining_segments": [
+        {
+          "end_milepost": 184.5,
+          "miles": 74.69,
+          "start_milepost": 109.81
+        }
+      ]
+    },
+    {
+      "amenities": {
+        "bike_rentals": false,
+        "boat_ramp": false,
+        "boat_rentals": false,
+        "camping": false,
+        "camping_fee_area": false,
+        "camping_tent": false,
+        "canal_quarters": false,
+        "canoe_kayak_ramp": false,
+        "fee_area": false,
+        "food": false,
+        "parking": false,
+        "picnic_tables": false,
+        "restrooms": false,
+        "visitor_center": false,
+        "water": false
+      },
+      "coverage_status": "remaining",
+      "latitude": 39.637868,
+      "longitude": -78.328302,
+      "milepost": 136.2,
+      "milepost_end": null,
+      "name": "Lock 56 (Pearre)",
+      "nearby_features": [
+        {
+          "common_name": "Sideling Lock",
+          "milepost": 136.2,
+          "milepost_distance": 0.0,
+          "name": "Lock 56",
+          "source": "locks",
+          "type": "lock"
+        }
+      ],
+      "nps_recreation_matches": [],
+      "remaining_segments": [
+        {
+          "end_milepost": 184.5,
+          "miles": 74.69,
+          "start_milepost": 109.81
+        }
+      ]
+    },
+    {
+      "amenities": {
+        "bike_rentals": false,
+        "boat_ramp": false,
+        "boat_rentals": false,
+        "camping": false,
+        "camping_fee_area": false,
+        "camping_tent": false,
+        "canal_quarters": false,
+        "canoe_kayak_ramp": false,
+        "fee_area": false,
+        "food": false,
+        "parking": false,
+        "picnic_tables": false,
+        "restrooms": false,
+        "visitor_center": false,
+        "water": false
+      },
+      "coverage_status": "remaining",
+      "latitude": 39.625648,
+      "longitude": -78.385868,
+      "milepost": 140.8,
+      "milepost_end": null,
+      "name": "Little Orleans",
+      "nearby_features": [
+        {
+          "milepost": 140.9,
+          "milepost_distance": 0.1,
+          "name": "Fifteenmile Creek",
+          "source": "recreation_guide",
+          "type": "campground"
+        }
+      ],
+      "nps_recreation_matches": [],
+      "remaining_segments": [
+        {
+          "end_milepost": 184.5,
+          "miles": 74.69,
+          "start_milepost": 109.81
+        }
+      ]
+    },
+    {
+      "amenities": {
+        "bike_rentals": false,
+        "boat_ramp": false,
+        "boat_rentals": false,
+        "camping": false,
+        "camping_fee_area": false,
+        "camping_tent": false,
+        "canal_quarters": false,
+        "canoe_kayak_ramp": false,
+        "fee_area": false,
+        "food": false,
+        "parking": false,
+        "picnic_tables": false,
+        "restrooms": false,
+        "visitor_center": false,
+        "water": false
+      },
+      "coverage_status": "remaining",
+      "latitude": 39.603639,
+      "longitude": -78.42582,
+      "milepost": 147.1,
+      "milepost_end": null,
+      "name": "Kasecamp Road",
+      "nearby_features": [
+        {
+          "common_name": null,
+          "milepost": 146.5,
+          "milepost_distance": 0.6,
+          "name": "Lock 59",
+          "source": "locks",
+          "type": "lock"
+        }
+      ],
+      "nps_recreation_matches": [],
+      "remaining_segments": [
+        {
+          "end_milepost": 184.5,
+          "miles": 74.69,
+          "start_milepost": 109.81
+        }
+      ]
+    },
+    {
+      "amenities": {
+        "bike_rentals": false,
+        "boat_ramp": false,
+        "boat_rentals": false,
+        "camping": false,
+        "camping_fee_area": false,
+        "camping_tent": false,
+        "canal_quarters": false,
+        "canoe_kayak_ramp": false,
+        "fee_area": false,
+        "food": false,
+        "parking": false,
+        "picnic_tables": false,
+        "restrooms": false,
+        "visitor_center": false,
+        "water": false
+      },
+      "coverage_status": "remaining",
+      "latitude": 39.582848,
+      "longitude": -78.411246,
+      "milepost": 150.1,
+      "milepost_end": null,
+      "name": "Bonds Landing",
+      "nearby_features": [
+        {
+          "common_name": null,
+          "milepost": 149.6,
+          "milepost_distance": 0.5,
+          "name": "Lock 60",
+          "source": "locks",
+          "type": "lock"
+        },
+        {
+          "milepost": 149.4,
+          "milepost_distance": 0.7,
+          "name": "Stickpile Hill",
+          "source": "recreation_guide",
+          "type": "campground"
+        }
+      ],
+      "nps_recreation_matches": [],
+      "remaining_segments": [
+        {
+          "end_milepost": 184.5,
+          "miles": 74.69,
+          "start_milepost": 109.81
+        }
+      ]
+    },
+    {
+      "amenities": {
+        "bike_rentals": false,
+        "boat_ramp": false,
+        "boat_rentals": false,
+        "camping": false,
+        "camping_fee_area": false,
+        "camping_tent": false,
+        "canal_quarters": false,
+        "canoe_kayak_ramp": false,
+        "fee_area": false,
+        "food": false,
+        "parking": false,
+        "picnic_tables": false,
+        "restrooms": false,
+        "visitor_center": false,
+        "water": false
+      },
+      "coverage_status": "remaining",
+      "latitude": 39.590113,
+      "longitude": -78.429294,
+      "milepost": 151.2,
+      "milepost_end": null,
+      "name": "Roby Hollow",
+      "nearby_features": [],
+      "nps_recreation_matches": [],
+      "remaining_segments": [
+        {
+          "end_milepost": 184.5,
+          "miles": 74.69,
+          "start_milepost": 109.81
+        }
+      ]
+    },
+    {
+      "amenities": {
+        "bike_rentals": false,
+        "boat_ramp": false,
+        "boat_rentals": false,
+        "camping": false,
+        "camping_fee_area": false,
+        "camping_tent": false,
+        "canal_quarters": false,
+        "canoe_kayak_ramp": false,
+        "fee_area": false,
+        "food": false,
+        "parking": false,
+        "picnic_tables": false,
+        "restrooms": false,
+        "visitor_center": false,
+        "water": false
+      },
+      "coverage_status": "remaining",
+      "latitude": 39.58128,
+      "longitude": -78.46154,
+      "milepost": 153.3,
+      "milepost_end": null,
+      "name": "Twigg Hollow",
+      "nearby_features": [
+        {
+          "common_name": null,
+          "milepost": 153.1,
+          "milepost_distance": 0.2,
+          "name": "Lock 61",
+          "source": "locks",
+          "type": "lock"
+        },
+        {
+          "milepost": 154.1,
+          "milepost_distance": 0.8,
+          "name": "Sorrel Ridge",
+          "source": "recreation_guide",
+          "type": "campground"
+        },
+        {
+          "common_name": null,
+          "milepost": 154.1,
+          "milepost_distance": 0.8,
+          "name": "Lock 62",
+          "source": "locks",
+          "type": "lock"
+        }
+      ],
+      "nps_recreation_matches": [],
+      "remaining_segments": [
+        {
+          "end_milepost": 184.5,
+          "miles": 74.69,
+          "start_milepost": 109.81
+        }
+      ]
+    },
+    {
+      "amenities": {
+        "bike_rentals": false,
+        "boat_ramp": false,
+        "boat_rentals": false,
+        "camping": true,
+        "camping_fee_area": true,
+        "camping_tent": false,
+        "canal_quarters": false,
+        "canoe_kayak_ramp": true,
+        "fee_area": false,
+        "food": false,
+        "parking": true,
+        "picnic_tables": true,
+        "restrooms": true,
+        "visitor_center": false,
+        "water": true
+      },
+      "coverage_status": "remaining",
+      "latitude": 39.54445,
+      "longitude": -78.460806,
+      "milepost": 156.2,
+      "milepost_end": null,
+      "name": "Paw Paw Tunnel",
+      "nearby_features": [
+        {
+          "milepost": 156.9,
+          "milepost_distance": 0.7,
+          "name": "Purslane Run",
+          "source": "recreation_guide",
+          "type": "campground"
+        }
+      ],
+      "nps_recreation_matches": [
+        {
+          "milepost": 156.1,
+          "name": "Paw Paw"
+        }
+      ],
+      "remaining_segments": [
+        {
+          "end_milepost": 184.5,
+          "miles": 74.69,
+          "start_milepost": 109.81
+        }
+      ]
+    },
+    {
+      "amenities": {
+        "bike_rentals": false,
+        "boat_ramp": false,
+        "boat_rentals": false,
+        "camping": false,
+        "camping_fee_area": false,
+        "camping_tent": false,
+        "canal_quarters": false,
+        "canoe_kayak_ramp": false,
+        "fee_area": false,
+        "food": false,
+        "parking": false,
+        "picnic_tables": false,
+        "restrooms": false,
+        "visitor_center": false,
+        "water": false
+      },
+      "coverage_status": "remaining",
+      "latitude": 39.5256,
+      "longitude": -78.53626,
+      "milepost": 161.9,
+      "milepost_end": null,
+      "name": "Lock 67",
+      "nearby_features": [
+        {
+          "common_name": "Darbey's Lock",
+          "milepost": 161.7,
+          "milepost_distance": 0.2,
+          "name": "Lock 67",
+          "source": "locks",
+          "type": "lock"
+        }
+      ],
+      "nps_recreation_matches": [],
+      "remaining_segments": [
+        {
+          "end_milepost": 184.5,
+          "miles": 74.69,
+          "start_milepost": 109.81
+        }
+      ]
+    },
+    {
+      "amenities": {
+        "bike_rentals": false,
+        "boat_ramp": false,
+        "boat_rentals": false,
+        "camping": true,
+        "camping_fee_area": false,
+        "camping_tent": true,
+        "canal_quarters": false,
+        "canoe_kayak_ramp": false,
+        "fee_area": false,
+        "food": false,
+        "parking": false,
+        "picnic_tables": false,
+        "restrooms": true,
+        "visitor_center": false,
+        "water": true
+      },
+      "coverage_status": "remaining",
+      "latitude": 39.523862,
+      "longitude": -78.543122,
+      "milepost": 162.3,
+      "milepost_end": null,
+      "name": "Town Creek Aqueduct",
+      "nearby_features": [
+        {
+          "common_name": "Darbey's Lock",
+          "milepost": 161.7,
+          "milepost_distance": 0.6,
+          "name": "Lock 67",
+          "source": "locks",
+          "type": "lock"
+        }
+      ],
+      "nps_recreation_matches": [
+        {
+          "milepost": 162.1,
+          "name": "Town Creek"
+        }
+      ],
+      "remaining_segments": [
+        {
+          "end_milepost": 184.5,
+          "miles": 74.69,
+          "start_milepost": 109.81
+        }
+      ]
+    },
+    {
+      "amenities": {
+        "bike_rentals": false,
+        "boat_ramp": false,
+        "boat_rentals": false,
+        "camping": false,
+        "camping_fee_area": false,
+        "camping_tent": false,
+        "canal_quarters": false,
+        "canoe_kayak_ramp": false,
+        "fee_area": false,
+        "food": false,
+        "parking": true,
+        "picnic_tables": true,
+        "restrooms": true,
+        "visitor_center": false,
+        "water": false
+      },
+      "coverage_status": "remaining",
+      "latitude": 39.540405,
+      "longitude": -78.611936,
+      "milepost": 166.7,
+      "milepost_end": null,
+      "name": "Oldtown (Lock 70)",
+      "nearby_features": [
+        {
+          "common_name": "Oldtown",
+          "milepost": 166.7,
+          "milepost_distance": 0.0,
+          "name": "Lock 70",
+          "source": "locks",
+          "type": "lock"
+        },
+        {
+          "common_name": "Twigg's Lock",
+          "milepost": 166.5,
+          "milepost_distance": 0.2,
+          "name": "Lock 69",
+          "source": "locks",
+          "type": "lock"
+        },
+        {
+          "common_name": null,
+          "milepost": 167.0,
+          "milepost_distance": 0.3,
+          "name": "Lock 71",
+          "source": "locks",
+          "type": "lock"
+        }
+      ],
+      "nps_recreation_matches": [
+        {
+          "milepost": 166.7,
+          "name": "Oldtown Battie Mixon"
+        }
+      ],
+      "remaining_segments": [
+        {
+          "end_milepost": 184.5,
+          "miles": 74.69,
+          "start_milepost": 109.81
+        }
+      ]
+    },
+    {
+      "amenities": {
+        "bike_rentals": false,
+        "boat_ramp": true,
+        "boat_rentals": false,
+        "camping": true,
+        "camping_fee_area": true,
+        "camping_tent": false,
+        "canal_quarters": false,
+        "canoe_kayak_ramp": false,
+        "fee_area": false,
+        "food": false,
+        "parking": true,
+        "picnic_tables": true,
+        "restrooms": false,
+        "visitor_center": false,
+        "water": true
+      },
+      "coverage_status": "remaining",
+      "latitude": 39.564306,
+      "longitude": -78.719289,
+      "milepost": 173.3,
+      "milepost_end": null,
+      "name": "Spring Gap",
+      "nearby_features": [],
+      "nps_recreation_matches": [
+        {
+          "milepost": 173.3,
+          "name": "Spring Gap"
+        }
+      ],
+      "remaining_segments": [
+        {
+          "end_milepost": 184.5,
+          "miles": 74.69,
+          "start_milepost": 109.81
+        }
+      ]
+    },
+    {
+      "amenities": {
+        "bike_rentals": false,
+        "boat_ramp": false,
+        "boat_rentals": false,
+        "camping": false,
+        "camping_fee_area": false,
+        "camping_tent": false,
+        "canal_quarters": false,
+        "canoe_kayak_ramp": false,
+        "fee_area": false,
+        "food": false,
+        "parking": true,
+        "picnic_tables": true,
+        "restrooms": true,
+        "visitor_center": false,
+        "water": false
+      },
+      "coverage_status": "remaining",
+      "latitude": 39.587698,
+      "longitude": -78.743462,
+      "milepost": 175.6,
+      "milepost_end": null,
+      "name": "North Branch",
+      "nearby_features": [
+        {
+          "common_name": "North Branch 2",
+          "milepost": 175.5,
+          "milepost_distance": 0.1,
+          "name": "Lock 74",
+          "source": "locks",
+          "type": "lock"
+        },
+        {
+          "common_name": "North Branch 3 / Keifers Lock",
+          "milepost": 175.7,
+          "milepost_distance": 0.1,
+          "name": "Lock 75",
+          "source": "locks",
+          "type": "lock"
+        },
+        {
+          "common_name": "North Branch 1",
+          "milepost": 175.4,
+          "milepost_distance": 0.2,
+          "name": "Lock 73",
+          "source": "locks",
+          "type": "lock"
+        },
+        {
+          "milepost": 175.3,
+          "milepost_distance": 0.3,
+          "name": "Irons Mountain",
+          "source": "recreation_guide",
+          "type": "campground"
+        }
+      ],
+      "nps_recreation_matches": [
+        {
+          "milepost": 175.5,
+          "name": "Lock 75 (North Branch)"
+        }
+      ],
+      "remaining_segments": [
+        {
+          "end_milepost": 184.5,
+          "miles": 74.69,
+          "start_milepost": 109.81
+        }
+      ]
+    },
+    {
+      "amenities": {
+        "bike_rentals": false,
+        "boat_ramp": false,
+        "boat_rentals": false,
+        "camping": false,
+        "camping_fee_area": false,
+        "camping_tent": false,
+        "canal_quarters": false,
+        "canoe_kayak_ramp": false,
+        "fee_area": false,
+        "food": false,
+        "parking": false,
+        "picnic_tables": false,
+        "restrooms": false,
+        "visitor_center": false,
+        "water": false
+      },
+      "coverage_status": "remaining",
+      "latitude": 39.587303,
+      "longitude": -78.754629,
+      "milepost": 176.4,
+      "milepost_end": null,
+      "name": "River Road",
+      "nearby_features": [
+        {
+          "common_name": "North Branch 3 / Keifers Lock",
+          "milepost": 175.7,
+          "milepost_distance": 0.7,
+          "name": "Lock 75",
+          "source": "locks",
+          "type": "lock"
+        },
+        {
+          "common_name": "North Branch 2",
+          "milepost": 175.5,
+          "milepost_distance": 0.9,
+          "name": "Lock 74",
+          "source": "locks",
+          "type": "lock"
+        },
+        {
+          "common_name": "North Branch 1",
+          "milepost": 175.4,
+          "milepost_distance": 1.0,
+          "name": "Lock 73",
+          "source": "locks",
+          "type": "lock"
+        }
+      ],
+      "nps_recreation_matches": [],
+      "remaining_segments": [
+        {
+          "end_milepost": 184.5,
+          "miles": 74.69,
+          "start_milepost": 109.81
+        }
+      ]
+    },
+    {
+      "amenities": {
+        "bike_rentals": false,
+        "boat_ramp": false,
+        "boat_rentals": false,
+        "camping": false,
+        "camping_fee_area": false,
+        "camping_tent": false,
+        "canal_quarters": false,
+        "canoe_kayak_ramp": false,
+        "fee_area": false,
+        "food": false,
+        "parking": false,
+        "picnic_tables": false,
+        "restrooms": false,
+        "visitor_center": false,
+        "water": false
+      },
+      "coverage_status": "remaining",
+      "latitude": 39.599369,
+      "longitude": -78.750544,
+      "milepost": 178.3,
+      "milepost_end": null,
+      "name": "Mexico Farms",
+      "nearby_features": [],
+      "nps_recreation_matches": [],
+      "remaining_segments": [
+        {
+          "end_milepost": 184.5,
+          "miles": 74.69,
+          "start_milepost": 109.81
+        }
+      ]
+    },
+    {
+      "amenities": {
+        "bike_rentals": false,
+        "boat_ramp": false,
+        "boat_rentals": false,
+        "camping": false,
+        "camping_fee_area": false,
+        "camping_tent": false,
+        "canal_quarters": false,
+        "canoe_kayak_ramp": false,
+        "fee_area": false,
+        "food": false,
+        "parking": false,
+        "picnic_tables": false,
+        "restrooms": false,
+        "visitor_center": false,
+        "water": false
+      },
+      "coverage_status": "remaining",
+      "latitude": 39.603402,
+      "longitude": -78.741713,
+      "milepost": 178.9,
+      "milepost_end": null,
+      "name": "Brehm Road",
+      "nearby_features": [],
+      "nps_recreation_matches": [],
+      "remaining_segments": [
+        {
+          "end_milepost": 184.5,
+          "miles": 74.69,
+          "start_milepost": 109.81
+        }
+      ]
+    },
+    {
+      "amenities": {
+        "bike_rentals": false,
+        "boat_ramp": false,
+        "boat_rentals": false,
+        "camping": false,
+        "camping_fee_area": false,
+        "camping_tent": false,
+        "canal_quarters": false,
+        "canoe_kayak_ramp": false,
+        "fee_area": false,
+        "food": false,
+        "parking": false,
+        "picnic_tables": false,
+        "restrooms": false,
+        "visitor_center": false,
+        "water": false
+      },
+      "coverage_status": "remaining",
+      "latitude": 39.625274,
+      "longitude": -78.759307,
+      "milepost": 181.8,
+      "milepost_end": null,
+      "name": "Candoc Recreation Area",
+      "nearby_features": [],
+      "nps_recreation_matches": [],
+      "remaining_segments": [
+        {
+          "end_milepost": 184.5,
+          "miles": 74.69,
+          "start_milepost": 109.81
+        }
+      ]
+    },
+    {
+      "amenities": {
+        "bike_rentals": false,
+        "boat_ramp": false,
+        "boat_rentals": false,
+        "camping": false,
+        "camping_fee_area": false,
+        "camping_tent": false,
+        "canal_quarters": false,
+        "canoe_kayak_ramp": false,
+        "fee_area": false,
+        "food": false,
+        "parking": false,
+        "picnic_tables": false,
+        "restrooms": false,
+        "visitor_center": false,
+        "water": false
+      },
+      "coverage_status": "remaining",
+      "latitude": 39.622741,
+      "longitude": -78.773223,
+      "milepost": 182.6,
+      "milepost_end": null,
+      "name": "Canal Parkway",
+      "nearby_features": [],
+      "nps_recreation_matches": [],
+      "remaining_segments": [
+        {
+          "end_milepost": 184.5,
+          "miles": 74.69,
+          "start_milepost": 109.81
+        }
+      ]
+    },
+    {
+      "amenities": {
+        "bike_rentals": false,
+        "boat_ramp": false,
+        "boat_rentals": false,
+        "camping": false,
+        "camping_fee_area": false,
+        "camping_tent": false,
+        "canal_quarters": false,
+        "canoe_kayak_ramp": false,
+        "fee_area": false,
+        "food": false,
+        "parking": false,
+        "picnic_tables": false,
+        "restrooms": false,
+        "visitor_center": false,
+        "water": false
+      },
+      "coverage_status": "remaining",
+      "latitude": 39.629393,
+      "longitude": -78.773132,
+      "milepost": 183.1,
+      "milepost_end": null,
+      "name": "Elizabeth Street",
+      "nearby_features": [],
+      "nps_recreation_matches": [],
+      "remaining_segments": [
+        {
+          "end_milepost": 184.5,
+          "miles": 74.69,
+          "start_milepost": 109.81
+        }
+      ]
+    },
+    {
+      "amenities": {
+        "bike_rentals": false,
+        "boat_ramp": false,
+        "boat_rentals": false,
+        "camping": false,
+        "camping_fee_area": false,
+        "camping_tent": false,
+        "canal_quarters": false,
+        "canoe_kayak_ramp": false,
+        "fee_area": false,
+        "food": false,
+        "parking": true,
+        "picnic_tables": false,
+        "restrooms": true,
+        "visitor_center": true,
+        "water": true
+      },
+      "coverage_status": "remaining",
+      "latitude": 39.649348,
+      "longitude": -78.7628,
+      "milepost": 184.5,
+      "milepost_end": null,
+      "name": "Cumberland Visitor Center",
+      "nearby_features": [],
+      "nps_recreation_matches": [
+        {
+          "milepost": 184.5,
+          "name": "Canal Terminus (Cumberland)"
+        }
+      ],
+      "remaining_segments": [
+        {
+          "end_milepost": 184.5,
+          "miles": 74.69,
+          "start_milepost": 109.81
+        }
+      ]
+    }
+  ],
+  "sources": {
+    "access_points": {
+      "name": "C&O Canal Association",
+      "url": "https://candocanal.org/access/"
+    },
+    "locks": {
+      "authority_url": "https://www.nps.gov/choh/learn/historyculture/lift-locks.htm",
+      "name": "C&O Canal lift-lock reference"
+    },
+    "recreation_guide": {
+      "name": "National Park Service C&O Canal Recreational Guide by Milepost",
+      "url": "https://www.nps.gov/common/uploads/sortable_dataset/choh/E3324057-FAAC-0D9B-C75464422AFC4A4C/choh-CHOHRecreationalGuidebyMilepost.csv"
+    }
+  }
+}
