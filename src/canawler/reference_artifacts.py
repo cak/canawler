@@ -2,8 +2,11 @@
 
 from __future__ import annotations
 
+import hashlib
 import json
 import re
+import unicodedata
+from collections import Counter
 from datetime import datetime
 from decimal import Decimal
 from pathlib import Path
@@ -20,6 +23,8 @@ from canawler.reference import ReferenceDataError
 ACCESS_POINTS_PATH = Path("data/reference/access-points.json")
 RECREATION_GUIDE_PATH = Path("data/reference/recreation-guide.json")
 LOCKS_PATH = Path("data/reference/locks.json")
+ACTIVITY_MODES = ("run", "bike", "hike")
+PUBLIC_SCHEMA_VERSION = 1
 
 AMENITY_FIELDS = (
     "parking",
@@ -38,6 +43,14 @@ AMENITY_FIELDS = (
     "canal_quarters",
     "fee_area",
 )
+
+DERIVED_METADATA = {
+    "coverage": "Canawler calculated C&O towpath coverage using 0.01-mile bins",
+    "activity_history": (
+        "Canawler qualifying activities whose calculated C&O coverage intersects "
+        "the feature's 0.01-mile bin or bins"
+    ),
+}
 
 
 def _load_object(path: Path) -> dict[str, Any]:
@@ -114,6 +127,70 @@ def _normalize_name(value: str) -> str:
     value = re.sub(r"'s\b", "s", value)
     value = re.sub(r"\bno\.?\s+(?=\d)", "", value)
     return " ".join(re.sub(r"[^a-z0-9]+", " ", value).split())
+
+
+def _id_part(value: Any) -> str:
+    ascii_value = (
+        unicodedata.normalize("NFKD", str(value))
+        .encode("ascii", "ignore")
+        .decode("ascii")
+        .casefold()
+    )
+    return "-".join(re.findall(r"[a-z0-9]+", ascii_value))
+
+
+def _number_id_part(value: Any) -> str:
+    return _id_part(str(value).replace("-", "minus-"))
+
+
+def _lock_id(lock_number: str) -> str:
+    return f"lock-{_id_part(lock_number)}"
+
+
+def _access_point_ids(access_points: list[dict[str, Any]]) -> list[str]:
+    bases = [
+        "-".join(
+            part
+            for part in (
+                _id_part(access_point["name"]),
+                _number_id_part(access_point["milepost"]),
+                (
+                    _number_id_part(access_point["milepost_end"])
+                    if access_point["milepost_end"] is not None
+                    else ""
+                ),
+            )
+            if part
+        )
+        for access_point in access_points
+    ]
+    base_counts = Counter(bases)
+    candidates = []
+    for base, access_point in zip(bases, access_points, strict=True):
+        if base_counts[base] == 1:
+            candidates.append(base)
+            continue
+        candidates.append(
+            f"{base}-lat-{_number_id_part(access_point['latitude'])}"
+            f"-lon-{_number_id_part(access_point['longitude'])}"
+        )
+
+    candidate_counts = Counter(candidates)
+    result = []
+    for candidate, access_point in zip(candidates, access_points, strict=True):
+        if candidate_counts[candidate] == 1:
+            result.append(candidate)
+            continue
+        canonical = json.dumps(
+            access_point, ensure_ascii=True, separators=(",", ":"), sort_keys=True
+        )
+        digest = hashlib.sha256(canonical.encode()).hexdigest()[:8]
+        result.append(f"{candidate}-{digest}")
+    if len(set(result)) != len(result) or any(
+        re.fullmatch(r"[a-z0-9]+(?:-[a-z0-9]+)*", value) is None for value in result
+    ):
+        raise ReferenceDataError("access-point public IDs are not unique and URL-safe")
+    return result
 
 
 def load_recreation_guide(path: Path = RECREATION_GUIDE_PATH) -> dict[str, Any]:
@@ -310,7 +387,12 @@ def _coverage_event(record: dict[str, Any]) -> dict[str, Any]:
 def _covering_history(
     feature_bins: range,
     activity_coverages: list[tuple[dict[str, Any], set[int]]],
-) -> tuple[int, dict[str, Any] | None, dict[str, Any] | None]:
+) -> tuple[
+    int,
+    dict[str, int],
+    dict[str, Any] | None,
+    dict[str, Any] | None,
+]:
     qualifying = []
     seen_activity_ids = set()
     for record, covered_bins in activity_coverages:
@@ -319,10 +401,21 @@ def _covering_history(
             continue
         qualifying.append(record)
         seen_activity_ids.add(activity_id)
+    count_by_mode = {mode: 0 for mode in ACTIVITY_MODES}
+    for record in qualifying:
+        activity_type = record.get("activity_type")
+        if activity_type not in count_by_mode:
+            raise ReferenceDataError(
+                f"unsupported qualifying activity type: {activity_type!r}"
+            )
+        count_by_mode[activity_type] += 1
+    if len(qualifying) != sum(count_by_mode.values()):
+        raise ReferenceDataError("covering activity mode counts do not equal total")
     if not qualifying:
-        return 0, None, None
+        return 0, count_by_mode, None, None
     return (
         len(qualifying),
+        count_by_mode,
         _coverage_event(qualifying[0]),
         _coverage_event(qualifying[-1]),
     )
@@ -387,16 +480,29 @@ def build_public_reference_artifacts(
     access_points = access_data["access_points"]
     locations = recreation_data["locations"]
     locks = lock_data["locks"]
+    access_point_ids = _access_point_ids(access_points)
+    lock_ids = {lock["lock_number"]: _lock_id(lock["lock_number"]) for lock in locks}
+    if len(set(lock_ids.values())) != len(locks) or any(
+        re.fullmatch(r"[a-z0-9]+(?:-[a-z0-9]+)*", value) is None
+        for value in lock_ids.values()
+    ):
+        raise ReferenceDataError("lock public IDs are not unique and URL-safe")
     matches, matched_locations = _recreation_matches(access_points, locations)
     covered_bins = _serialized_segment_bins(
         coverage["completed_segments"], "completed coverage"
     )
     activity_coverages = _activity_coverages(activity_records)
+    mode_coverage_bins = {
+        mode: _serialized_segment_bins(coverage[f"{mode}_segments"], f"{mode} coverage")
+        for mode in ACTIVITY_MODES
+    }
     remaining = coverage["remaining_segments"]
     canonical_lock_numbers = {record["lock_number"] for record in locks}
 
     public_access_points = []
-    for access_point, match_indexes in zip(access_points, matches, strict=True):
+    for access_point, access_point_id, match_indexes in zip(
+        access_points, access_point_ids, matches, strict=True
+    ):
         nps_amenities = (
             {field: False for field in AMENITY_FIELDS} if match_indexes else None
         )
@@ -412,6 +518,7 @@ def build_public_reference_artifacts(
             if distance <= Decimal("1.0"):
                 nearby_features.append(
                     {
+                        "id": lock_ids[lock["lock_number"]],
                         "type": "lock",
                         "lock_number": lock["lock_number"],
                         "name": lock["name"],
@@ -447,11 +554,16 @@ def build_public_reference_artifacts(
             )
         )
         status = _coverage_status(access_point, covered_bins)
-        activity_count, first_activity, latest_activity = _covering_history(
-            _access_point_bins(access_point), activity_coverages
+        coverage_by_mode = {
+            mode: _coverage_status(access_point, mode_coverage_bins[mode])
+            for mode in ACTIVITY_MODES
+        }
+        activity_count, count_by_mode, first_activity, latest_activity = (
+            _covering_history(_access_point_bins(access_point), activity_coverages)
         )
         public_access_points.append(
             {
+                "id": access_point_id,
                 **access_point,
                 "nps_amenities": nps_amenities,
                 "nps_recreation_matches": [
@@ -471,7 +583,9 @@ def build_public_reference_artifacts(
                 ],
                 "nearby_features": nearby_features,
                 "coverage_status": status,
+                "coverage_by_mode": coverage_by_mode,
                 "covering_activity_count": activity_count,
+                "covering_activity_count_by_mode": count_by_mode,
                 "first_covering_activity": first_activity,
                 "latest_covering_activity": latest_activity,
                 "remaining_segments": _remaining_segments(
@@ -484,17 +598,24 @@ def build_public_reference_artifacts(
     for lock in locks:
         coverage_point = {"milepost": lock["milepost"], "milepost_end": None}
         status = _coverage_status(coverage_point, covered_bins)
-        activity_count, first_activity, latest_activity = _covering_history(
-            _access_point_bins(coverage_point), activity_coverages
+        coverage_by_mode = {
+            mode: _coverage_status(coverage_point, mode_coverage_bins[mode])
+            for mode in ACTIVITY_MODES
+        }
+        activity_count, count_by_mode, first_activity, latest_activity = (
+            _covering_history(_access_point_bins(coverage_point), activity_coverages)
         )
         public_locks.append(
             {
+                "id": lock_ids[lock["lock_number"]],
                 "lock_number": lock["lock_number"],
                 "name": lock["name"],
                 "common_name": lock["common_name"],
                 "milepost": lock["milepost"],
                 "coverage_status": status,
+                "coverage_by_mode": coverage_by_mode,
                 "covering_activity_count": activity_count,
+                "covering_activity_count_by_mode": count_by_mode,
                 "remaining_segments": _remaining_segments(
                     coverage_point, status, remaining
                 ),
@@ -504,6 +625,7 @@ def build_public_reference_artifacts(
         )
     return (
         {
+            "schema_version": PUBLIC_SCHEMA_VERSION,
             "sources": {
                 "access_points": access_data["source"],
                 "recreation_guide": recreation_data["source"],
@@ -512,13 +634,16 @@ def build_public_reference_artifacts(
                     "authority_url": "https://www.nps.gov/choh/learn/historyculture/lift-locks.htm",
                 },
             },
+            "derived": DERIVED_METADATA,
             "access_points": public_access_points,
         },
         {
+            "schema_version": PUBLIC_SCHEMA_VERSION,
             "sources": [
                 {"name": source["name"], "url": source["url"]}
                 for source in lock_data["sources"]
             ],
+            "derived": DERIVED_METADATA,
             "locks": public_locks,
         },
     )
