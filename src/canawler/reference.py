@@ -662,7 +662,7 @@ def validate_canonical_reference(path: Path = DEFAULT_OUTPUT) -> LineString:
     """Validate a committed canonical reference without contacting NPS."""
     path = Path(path)
     try:
-        payload = json.loads(path.read_text())
+        payload = json.loads(path.read_text(encoding="utf-8"))
         features = payload["features"]
         if payload.get("type") != "FeatureCollection" or len(features) != 1:
             raise ReferenceDataError(
@@ -731,16 +731,19 @@ def build_reference(
     metadata_path = Path(metadata_path)
     output_path.parent.mkdir(parents=True, exist_ok=True)
     metadata_path.parent.mkdir(parents=True, exist_ok=True)
-    unchanged = output_path.exists() and output_path.read_text() == geojson_text
+    unchanged = (
+        output_path.exists() and output_path.read_text(encoding="utf-8") == geojson_text
+    )
     if not unchanged:
-        output_path.write_text(geojson_text)
+        output_path.write_text(geojson_text, encoding="utf-8")
     if not unchanged or not metadata_path.exists():
         metadata_path.write_text(
             _metadata(
                 retrieved or datetime.now(tz=UTC).date(),
                 len(choh),
                 len(selected),
-            )
+            ),
+            encoding="utf-8",
         )
 
     eastern = tuple(geometry.coords[0])

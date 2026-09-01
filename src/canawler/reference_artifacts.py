@@ -60,7 +60,7 @@ DERIVED_METADATA = {
 
 def _load_object(path: Path) -> dict[str, Any]:
     try:
-        value = json.loads(path.read_text())
+        value = json.loads(path.read_text(encoding="utf-8"))
     except (OSError, json.JSONDecodeError) as error:
         raise ReferenceDataError(
             f"could not read reference data {path}: {error}"

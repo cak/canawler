@@ -130,7 +130,7 @@ class CoverageEngine:
     @classmethod
     def from_geojson(cls, path: Path) -> CoverageEngine:
         try:
-            payload = json.loads(Path(path).read_text())
+            payload = json.loads(Path(path).read_text(encoding="utf-8"))
             features = payload["features"]
             if len(features) != 1:
                 raise CoverageError(

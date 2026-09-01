@@ -145,8 +145,8 @@ def discover_strava_export(
 
 def _write_if_changed(path: Path, text: str) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
-    if not path.exists() or path.read_text() != text:
-        path.write_text(text)
+    if not path.exists() or path.read_text(encoding="utf-8") != text:
+        path.write_text(text, encoding="utf-8")
 
 
 def _write_processed_outputs(
@@ -308,7 +308,9 @@ def audit_historical_activities(export_directory: Path | None = None) -> str:
     from canawler.coverage import audit_activity_record
 
     build = build_historical_activities(export_directory)
-    records = json.loads((PROCESSED_DIRECTORY / "activities.json").read_text())
+    records = json.loads(
+        (PROCESSED_DIRECTORY / "activities.json").read_text(encoding="utf-8")
+    )
     findings = [
         _format_audit_finding(record, reasons)
         for record in records
