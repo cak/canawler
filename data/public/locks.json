@@ -3,14 +3,15 @@
     {
       "common_name": null,
       "coverage_status": "covered",
-      "first_covered": {
+      "covering_activity_count": 1,
+      "first_covering_activity": {
         "activity_id": 199813593,
-        "covered_at": "2013-04-09T20:51:12Z",
+        "date": "2013-04-09",
         "strava_url": "https://www.strava.com/activities/199813593"
       },
-      "latest_covered": {
+      "latest_covering_activity": {
         "activity_id": 199813593,
-        "covered_at": "2013-04-09T20:51:12Z",
+        "date": "2013-04-09",
         "strava_url": "https://www.strava.com/activities/199813593"
       },
       "lock_number": "1",
@@ -21,14 +22,15 @@
     {
       "common_name": null,
       "coverage_status": "covered",
-      "first_covered": {
+      "covering_activity_count": 1,
+      "first_covering_activity": {
         "activity_id": 199813593,
-        "covered_at": "2013-04-09T20:51:12Z",
+        "date": "2013-04-09",
         "strava_url": "https://www.strava.com/activities/199813593"
       },
-      "latest_covered": {
+      "latest_covering_activity": {
         "activity_id": 199813593,
-        "covered_at": "2013-04-09T20:51:12Z",
+        "date": "2013-04-09",
         "strava_url": "https://www.strava.com/activities/199813593"
       },
       "lock_number": "2",
@@ -39,14 +41,15 @@
     {
       "common_name": null,
       "coverage_status": "covered",
-      "first_covered": {
+      "covering_activity_count": 1,
+      "first_covering_activity": {
         "activity_id": 199813593,
-        "covered_at": "2013-04-09T20:51:12Z",
+        "date": "2013-04-09",
         "strava_url": "https://www.strava.com/activities/199813593"
       },
-      "latest_covered": {
+      "latest_covering_activity": {
         "activity_id": 199813593,
-        "covered_at": "2013-04-09T20:51:12Z",
+        "date": "2013-04-09",
         "strava_url": "https://www.strava.com/activities/199813593"
       },
       "lock_number": "3",
@@ -57,14 +60,15 @@
     {
       "common_name": null,
       "coverage_status": "covered",
-      "first_covered": {
+      "covering_activity_count": 1,
+      "first_covering_activity": {
         "activity_id": 199813593,
-        "covered_at": "2013-04-09T20:51:12Z",
+        "date": "2013-04-09",
         "strava_url": "https://www.strava.com/activities/199813593"
       },
-      "latest_covered": {
+      "latest_covering_activity": {
         "activity_id": 199813593,
-        "covered_at": "2013-04-09T20:51:12Z",
+        "date": "2013-04-09",
         "strava_url": "https://www.strava.com/activities/199813593"
       },
       "lock_number": "4",
@@ -75,14 +79,15 @@
     {
       "common_name": "Brookmont Lock & Inlet #1",
       "coverage_status": "covered",
-      "first_covered": {
+      "covering_activity_count": 3,
+      "first_covering_activity": {
         "activity_id": 199814600,
-        "covered_at": "2013-04-02T21:06:24Z",
+        "date": "2013-04-02",
         "strava_url": "https://www.strava.com/activities/199814600"
       },
-      "latest_covered": {
+      "latest_covering_activity": {
         "activity_id": 199781227,
-        "covered_at": "2013-11-17T14:02:49Z",
+        "date": "2013-11-17",
         "strava_url": "https://www.strava.com/activities/199781227"
       },
       "lock_number": "5",
@@ -93,14 +98,15 @@
     {
       "common_name": "Magazine Lock",
       "coverage_status": "covered",
-      "first_covered": {
+      "covering_activity_count": 3,
+      "first_covering_activity": {
         "activity_id": 199814600,
-        "covered_at": "2013-04-02T21:06:24Z",
+        "date": "2013-04-02",
         "strava_url": "https://www.strava.com/activities/199814600"
       },
-      "latest_covered": {
+      "latest_covering_activity": {
         "activity_id": 199781227,
-        "covered_at": "2013-11-17T14:02:49Z",
+        "date": "2013-11-17",
         "strava_url": "https://www.strava.com/activities/199781227"
       },
       "lock_number": "6",
@@ -111,14 +117,15 @@
     {
       "common_name": "Chataqua Lock",
       "coverage_status": "covered",
-      "first_covered": {
+      "covering_activity_count": 3,
+      "first_covering_activity": {
         "activity_id": 199814600,
-        "covered_at": "2013-04-02T21:06:24Z",
+        "date": "2013-04-02",
         "strava_url": "https://www.strava.com/activities/199814600"
       },
-      "latest_covered": {
+      "latest_covering_activity": {
         "activity_id": 199781227,
-        "covered_at": "2013-11-17T14:02:49Z",
+        "date": "2013-11-17",
         "strava_url": "https://www.strava.com/activities/199781227"
       },
       "lock_number": "7",
@@ -129,14 +136,15 @@
     {
       "common_name": "Seven Locks 1",
       "coverage_status": "covered",
-      "first_covered": {
+      "covering_activity_count": 2,
+      "first_covering_activity": {
         "activity_id": 199789540,
-        "covered_at": "2013-09-14T13:05:34Z",
+        "date": "2013-09-14",
         "strava_url": "https://www.strava.com/activities/199789540"
       },
-      "latest_covered": {
+      "latest_covering_activity": {
         "activity_id": 199781227,
-        "covered_at": "2013-11-17T14:02:49Z",
+        "date": "2013-11-17",
         "strava_url": "https://www.strava.com/activities/199781227"
       },
       "lock_number": "8",
@@ -147,14 +155,15 @@
     {
       "common_name": "Seven Locks 2",
       "coverage_status": "covered",
-      "first_covered": {
+      "covering_activity_count": 2,
+      "first_covering_activity": {
         "activity_id": 199789540,
-        "covered_at": "2013-09-14T13:05:34Z",
+        "date": "2013-09-14",
         "strava_url": "https://www.strava.com/activities/199789540"
       },
-      "latest_covered": {
+      "latest_covering_activity": {
         "activity_id": 199781227,
-        "covered_at": "2013-11-17T14:02:49Z",
+        "date": "2013-11-17",
         "strava_url": "https://www.strava.com/activities/199781227"
       },
       "lock_number": "9",
@@ -165,14 +174,15 @@
     {
       "common_name": "Seven Locks 3",
       "coverage_status": "covered",
-      "first_covered": {
+      "covering_activity_count": 2,
+      "first_covering_activity": {
         "activity_id": 199789540,
-        "covered_at": "2013-09-14T13:05:34Z",
+        "date": "2013-09-14",
         "strava_url": "https://www.strava.com/activities/199789540"
       },
-      "latest_covered": {
+      "latest_covering_activity": {
         "activity_id": 199781227,
-        "covered_at": "2013-11-17T14:02:49Z",
+        "date": "2013-11-17",
         "strava_url": "https://www.strava.com/activities/199781227"
       },
       "lock_number": "10",
@@ -183,14 +193,15 @@
     {
       "common_name": "Seven Locks 4",
       "coverage_status": "covered",
-      "first_covered": {
+      "covering_activity_count": 2,
+      "first_covering_activity": {
         "activity_id": 199789540,
-        "covered_at": "2013-09-14T13:05:34Z",
+        "date": "2013-09-14",
         "strava_url": "https://www.strava.com/activities/199789540"
       },
-      "latest_covered": {
+      "latest_covering_activity": {
         "activity_id": 199781227,
-        "covered_at": "2013-11-17T14:02:49Z",
+        "date": "2013-11-17",
         "strava_url": "https://www.strava.com/activities/199781227"
       },
       "lock_number": "11",
@@ -201,14 +212,15 @@
     {
       "common_name": "Seven Locks 5",
       "coverage_status": "covered",
-      "first_covered": {
+      "covering_activity_count": 2,
+      "first_covering_activity": {
         "activity_id": 199789540,
-        "covered_at": "2013-09-14T13:05:34Z",
+        "date": "2013-09-14",
         "strava_url": "https://www.strava.com/activities/199789540"
       },
-      "latest_covered": {
+      "latest_covering_activity": {
         "activity_id": 199781227,
-        "covered_at": "2013-11-17T14:02:49Z",
+        "date": "2013-11-17",
         "strava_url": "https://www.strava.com/activities/199781227"
       },
       "lock_number": "12",
@@ -219,14 +231,15 @@
     {
       "common_name": "Seven Locks 6",
       "coverage_status": "covered",
-      "first_covered": {
+      "covering_activity_count": 2,
+      "first_covering_activity": {
         "activity_id": 199789540,
-        "covered_at": "2013-09-14T13:05:34Z",
+        "date": "2013-09-14",
         "strava_url": "https://www.strava.com/activities/199789540"
       },
-      "latest_covered": {
+      "latest_covering_activity": {
         "activity_id": 199781227,
-        "covered_at": "2013-11-17T14:02:49Z",
+        "date": "2013-11-17",
         "strava_url": "https://www.strava.com/activities/199781227"
       },
       "lock_number": "13",
@@ -237,14 +250,15 @@
     {
       "common_name": "Seven Locks 7",
       "coverage_status": "covered",
-      "first_covered": {
+      "covering_activity_count": 1,
+      "first_covering_activity": {
         "activity_id": 199781227,
-        "covered_at": "2013-11-17T14:02:49Z",
+        "date": "2013-11-17",
         "strava_url": "https://www.strava.com/activities/199781227"
       },
-      "latest_covered": {
+      "latest_covering_activity": {
         "activity_id": 199781227,
-        "covered_at": "2013-11-17T14:02:49Z",
+        "date": "2013-11-17",
         "strava_url": "https://www.strava.com/activities/199781227"
       },
       "lock_number": "14",
@@ -255,8 +269,9 @@
     {
       "common_name": "Six Locks 1",
       "coverage_status": "remaining",
-      "first_covered": null,
-      "latest_covered": null,
+      "covering_activity_count": 0,
+      "first_covering_activity": null,
+      "latest_covering_activity": null,
       "lock_number": "15",
       "milepost": 13.6,
       "name": "Lock 15",
@@ -271,8 +286,9 @@
     {
       "common_name": "Six Locks 2",
       "coverage_status": "remaining",
-      "first_covered": null,
-      "latest_covered": null,
+      "covering_activity_count": 0,
+      "first_covering_activity": null,
+      "latest_covering_activity": null,
       "lock_number": "16",
       "milepost": 13.7,
       "name": "Lock 16",
@@ -287,8 +303,9 @@
     {
       "common_name": "Six Locks 3",
       "coverage_status": "remaining",
-      "first_covered": null,
-      "latest_covered": null,
+      "covering_activity_count": 0,
+      "first_covering_activity": null,
+      "latest_covering_activity": null,
       "lock_number": "17",
       "milepost": 14.1,
       "name": "Lock 17",
@@ -303,8 +320,9 @@
     {
       "common_name": "Six Locks 4",
       "coverage_status": "remaining",
-      "first_covered": null,
-      "latest_covered": null,
+      "covering_activity_count": 0,
+      "first_covering_activity": null,
+      "latest_covering_activity": null,
       "lock_number": "18",
       "milepost": 14.2,
       "name": "Lock 18",
@@ -319,8 +337,9 @@
     {
       "common_name": "Six Locks 5",
       "coverage_status": "remaining",
-      "first_covered": null,
-      "latest_covered": null,
+      "covering_activity_count": 0,
+      "first_covering_activity": null,
+      "latest_covering_activity": null,
       "lock_number": "19",
       "milepost": 14.3,
       "name": "Lock 19",
@@ -335,8 +354,9 @@
     {
       "common_name": "Six Locks 6 / Tavern Lock",
       "coverage_status": "remaining",
-      "first_covered": null,
-      "latest_covered": null,
+      "covering_activity_count": 0,
+      "first_covering_activity": null,
+      "latest_covering_activity": null,
       "lock_number": "20",
       "milepost": 14.4,
       "name": "Lock 20",
@@ -351,8 +371,9 @@
     {
       "common_name": "Swains Lock",
       "coverage_status": "remaining",
-      "first_covered": null,
-      "latest_covered": null,
+      "covering_activity_count": 0,
+      "first_covering_activity": null,
+      "latest_covering_activity": null,
       "lock_number": "21",
       "milepost": 16.7,
       "name": "Lock 21",
@@ -367,8 +388,9 @@
     {
       "common_name": "Pennyfield Lock",
       "coverage_status": "remaining",
-      "first_covered": null,
-      "latest_covered": null,
+      "covering_activity_count": 0,
+      "first_covering_activity": null,
+      "latest_covering_activity": null,
       "lock_number": "22",
       "milepost": 19.6,
       "name": "Lock 22",
@@ -383,8 +405,9 @@
     {
       "common_name": "Violette's Lock",
       "coverage_status": "remaining",
-      "first_covered": null,
-      "latest_covered": null,
+      "covering_activity_count": 0,
+      "first_covering_activity": null,
+      "latest_covering_activity": null,
       "lock_number": "23",
       "milepost": 22.1,
       "name": "Lock 23",
@@ -399,8 +422,9 @@
     {
       "common_name": "Riley's Lock",
       "coverage_status": "remaining",
-      "first_covered": null,
-      "latest_covered": null,
+      "covering_activity_count": 0,
+      "first_covering_activity": null,
+      "latest_covering_activity": null,
       "lock_number": "24",
       "milepost": 22.8,
       "name": "Lock 24",
@@ -415,8 +439,9 @@
     {
       "common_name": "Edward's Ferry",
       "coverage_status": "remaining",
-      "first_covered": null,
-      "latest_covered": null,
+      "covering_activity_count": 0,
+      "first_covering_activity": null,
+      "latest_covering_activity": null,
       "lock_number": "25",
       "milepost": 30.8,
       "name": "Lock 25",
@@ -431,14 +456,15 @@
     {
       "common_name": "Wood's Lock",
       "coverage_status": "covered",
-      "first_covered": {
+      "covering_activity_count": 2,
+      "first_covering_activity": {
         "activity_id": 311074835,
-        "covered_at": "2015-05-24T17:13:42Z",
+        "date": "2015-05-24",
         "strava_url": "https://www.strava.com/activities/311074835"
       },
-      "latest_covered": {
+      "latest_covering_activity": {
         "activity_id": 760819957,
-        "covered_at": "2016-10-30T13:59:41Z",
+        "date": "2016-10-30",
         "strava_url": "https://www.strava.com/activities/760819957"
       },
       "lock_number": "26",
@@ -449,14 +475,15 @@
     {
       "common_name": "Spinks Ferry",
       "coverage_status": "covered",
-      "first_covered": {
+      "covering_activity_count": 3,
+      "first_covering_activity": {
         "activity_id": 199744774,
-        "covered_at": "2014-09-14T13:09:24Z",
+        "date": "2014-09-14",
         "strava_url": "https://www.strava.com/activities/199744774"
       },
-      "latest_covered": {
+      "latest_covering_activity": {
         "activity_id": 760819957,
-        "covered_at": "2016-10-30T13:59:41Z",
+        "date": "2016-10-30",
         "strava_url": "https://www.strava.com/activities/760819957"
       },
       "lock_number": "27",
@@ -467,14 +494,15 @@
     {
       "common_name": "Fulton's Lock / Dent's Lock",
       "coverage_status": "covered",
-      "first_covered": {
+      "covering_activity_count": 4,
+      "first_covering_activity": {
         "activity_id": 200480099,
-        "covered_at": "2014-09-27T11:52:26Z",
+        "date": "2014-09-27",
         "strava_url": "https://www.strava.com/activities/200480099"
       },
-      "latest_covered": {
+      "latest_covering_activity": {
         "activity_id": 746946174,
-        "covered_at": "2016-10-16T14:47:52Z",
+        "date": "2016-10-16",
         "strava_url": "https://www.strava.com/activities/746946174"
       },
       "lock_number": "28",
@@ -485,14 +513,15 @@
     {
       "common_name": "Lander Lock / Catoctin Lock",
       "coverage_status": "covered",
-      "first_covered": {
+      "covering_activity_count": 4,
+      "first_covering_activity": {
         "activity_id": 200480099,
-        "covered_at": "2014-09-27T11:52:26Z",
+        "date": "2014-09-27",
         "strava_url": "https://www.strava.com/activities/200480099"
       },
-      "latest_covered": {
+      "latest_covering_activity": {
         "activity_id": 746946174,
-        "covered_at": "2016-10-16T14:47:52Z",
+        "date": "2016-10-16",
         "strava_url": "https://www.strava.com/activities/746946174"
       },
       "lock_number": "29",
@@ -503,14 +532,15 @@
     {
       "common_name": null,
       "coverage_status": "covered",
-      "first_covered": {
+      "covering_activity_count": 6,
+      "first_covering_activity": {
         "activity_id": 200480099,
-        "covered_at": "2014-09-27T11:52:26Z",
+        "date": "2014-09-27",
         "strava_url": "https://www.strava.com/activities/200480099"
       },
-      "latest_covered": {
+      "latest_covering_activity": {
         "activity_id": 746946174,
-        "covered_at": "2016-10-16T14:47:52Z",
+        "date": "2016-10-16",
         "strava_url": "https://www.strava.com/activities/746946174"
       },
       "lock_number": "30",
@@ -521,14 +551,15 @@
     {
       "common_name": "Weverton Lock",
       "coverage_status": "covered",
-      "first_covered": {
+      "covering_activity_count": 4,
+      "first_covering_activity": {
         "activity_id": 200480099,
-        "covered_at": "2014-09-27T11:52:26Z",
+        "date": "2014-09-27",
         "strava_url": "https://www.strava.com/activities/200480099"
       },
-      "latest_covered": {
+      "latest_covering_activity": {
         "activity_id": 386308394,
-        "covered_at": "2015-09-06T13:01:41Z",
+        "date": "2015-09-06",
         "strava_url": "https://www.strava.com/activities/386308394"
       },
       "lock_number": "31",
@@ -539,14 +570,15 @@
     {
       "common_name": null,
       "coverage_status": "covered",
-      "first_covered": {
+      "covering_activity_count": 3,
+      "first_covering_activity": {
         "activity_id": 206547267,
-        "covered_at": "2014-10-12T12:50:08Z",
+        "date": "2014-10-12",
         "strava_url": "https://www.strava.com/activities/206547267"
       },
-      "latest_covered": {
+      "latest_covering_activity": {
         "activity_id": 386308394,
-        "covered_at": "2015-09-06T13:01:41Z",
+        "date": "2015-09-06",
         "strava_url": "https://www.strava.com/activities/386308394"
       },
       "lock_number": "32",
@@ -557,14 +589,15 @@
     {
       "common_name": null,
       "coverage_status": "covered",
-      "first_covered": {
+      "covering_activity_count": 4,
+      "first_covering_activity": {
         "activity_id": 206547267,
-        "covered_at": "2014-10-12T12:50:08Z",
+        "date": "2014-10-12",
         "strava_url": "https://www.strava.com/activities/206547267"
       },
-      "latest_covered": {
+      "latest_covering_activity": {
         "activity_id": 752586140,
-        "covered_at": "2016-10-22T14:34:10Z",
+        "date": "2016-10-22",
         "strava_url": "https://www.strava.com/activities/752586140"
       },
       "lock_number": "33",
@@ -575,14 +608,15 @@
     {
       "common_name": "Goodheart's Lock",
       "coverage_status": "covered",
-      "first_covered": {
+      "covering_activity_count": 4,
+      "first_covering_activity": {
         "activity_id": 206547267,
-        "covered_at": "2014-10-12T12:50:08Z",
+        "date": "2014-10-12",
         "strava_url": "https://www.strava.com/activities/206547267"
       },
-      "latest_covered": {
+      "latest_covering_activity": {
         "activity_id": 752586140,
-        "covered_at": "2016-10-22T14:34:10Z",
+        "date": "2016-10-22",
         "strava_url": "https://www.strava.com/activities/752586140"
       },
       "lock_number": "34",
@@ -593,14 +627,15 @@
     {
       "common_name": null,
       "coverage_status": "covered",
-      "first_covered": {
+      "covering_activity_count": 3,
+      "first_covering_activity": {
         "activity_id": 206547267,
-        "covered_at": "2014-10-12T12:50:08Z",
+        "date": "2014-10-12",
         "strava_url": "https://www.strava.com/activities/206547267"
       },
-      "latest_covered": {
+      "latest_covering_activity": {
         "activity_id": 752586140,
-        "covered_at": "2016-10-22T14:34:10Z",
+        "date": "2016-10-22",
         "strava_url": "https://www.strava.com/activities/752586140"
       },
       "lock_number": "35",
@@ -611,14 +646,15 @@
     {
       "common_name": null,
       "coverage_status": "covered",
-      "first_covered": {
+      "covering_activity_count": 3,
+      "first_covering_activity": {
         "activity_id": 206547267,
-        "covered_at": "2014-10-12T12:50:08Z",
+        "date": "2014-10-12",
         "strava_url": "https://www.strava.com/activities/206547267"
       },
-      "latest_covered": {
+      "latest_covering_activity": {
         "activity_id": 752586140,
-        "covered_at": "2016-10-22T14:34:10Z",
+        "date": "2016-10-22",
         "strava_url": "https://www.strava.com/activities/752586140"
       },
       "lock_number": "36",
@@ -629,8 +665,9 @@
     {
       "common_name": "Mountain Lock",
       "coverage_status": "remaining",
-      "first_covered": null,
-      "latest_covered": null,
+      "covering_activity_count": 0,
+      "first_covering_activity": null,
+      "latest_covering_activity": null,
       "lock_number": "37",
       "milepost": 66.9,
       "name": "Lock 37",
@@ -645,14 +682,15 @@
     {
       "common_name": "Shepherdstown Lock",
       "coverage_status": "covered",
-      "first_covered": {
+      "covering_activity_count": 1,
+      "first_covering_activity": {
         "activity_id": 730943315,
-        "covered_at": "2016-10-01T12:30:24Z",
+        "date": "2016-10-01",
         "strava_url": "https://www.strava.com/activities/730943315"
       },
-      "latest_covered": {
+      "latest_covering_activity": {
         "activity_id": 730943315,
-        "covered_at": "2016-10-01T12:30:24Z",
+        "date": "2016-10-01",
         "strava_url": "https://www.strava.com/activities/730943315"
       },
       "lock_number": "38",
@@ -663,8 +701,9 @@
     {
       "common_name": "One Mile Lock",
       "coverage_status": "remaining",
-      "first_covered": null,
-      "latest_covered": null,
+      "covering_activity_count": 0,
+      "first_covering_activity": null,
+      "latest_covering_activity": null,
       "lock_number": "39",
       "milepost": 74.0,
       "name": "Lock 39",
@@ -679,8 +718,9 @@
     {
       "common_name": null,
       "coverage_status": "remaining",
-      "first_covered": null,
-      "latest_covered": null,
+      "covering_activity_count": 0,
+      "first_covering_activity": null,
+      "latest_covering_activity": null,
       "lock_number": "40",
       "milepost": 79.4,
       "name": "Lock 40",
@@ -695,8 +735,9 @@
     {
       "common_name": null,
       "coverage_status": "remaining",
-      "first_covered": null,
-      "latest_covered": null,
+      "covering_activity_count": 0,
+      "first_covering_activity": null,
+      "latest_covering_activity": null,
       "lock_number": "41",
       "milepost": 88.9,
       "name": "Lock 41",
@@ -711,8 +752,9 @@
     {
       "common_name": null,
       "coverage_status": "remaining",
-      "first_covered": null,
-      "latest_covered": null,
+      "covering_activity_count": 0,
+      "first_covering_activity": null,
+      "latest_covering_activity": null,
       "lock_number": "42",
       "milepost": 89.0,
       "name": "Lock 42",
@@ -727,14 +769,15 @@
     {
       "common_name": null,
       "coverage_status": "covered",
-      "first_covered": {
+      "covering_activity_count": 1,
+      "first_covering_activity": {
         "activity_id": 767883779,
-        "covered_at": "2016-11-06T13:39:22Z",
+        "date": "2016-11-06",
         "strava_url": "https://www.strava.com/activities/767883779"
       },
-      "latest_covered": {
+      "latest_covering_activity": {
         "activity_id": 767883779,
-        "covered_at": "2016-11-06T13:39:22Z",
+        "date": "2016-11-06",
         "strava_url": "https://www.strava.com/activities/767883779"
       },
       "lock_number": "43",
@@ -745,14 +788,15 @@
     {
       "common_name": "Williamsport",
       "coverage_status": "covered",
-      "first_covered": {
+      "covering_activity_count": 1,
+      "first_covering_activity": {
         "activity_id": 767883779,
-        "covered_at": "2016-11-06T13:39:22Z",
+        "date": "2016-11-06",
         "strava_url": "https://www.strava.com/activities/767883779"
       },
-      "latest_covered": {
+      "latest_covering_activity": {
         "activity_id": 767883779,
-        "covered_at": "2016-11-06T13:39:22Z",
+        "date": "2016-11-06",
         "strava_url": "https://www.strava.com/activities/767883779"
       },
       "lock_number": "44",
@@ -763,14 +807,15 @@
     {
       "common_name": "Two Locks 1",
       "coverage_status": "covered",
-      "first_covered": {
+      "covering_activity_count": 1,
+      "first_covering_activity": {
         "activity_id": 781060553,
-        "covered_at": "2016-11-20T15:07:57Z",
+        "date": "2016-11-20",
         "strava_url": "https://www.strava.com/activities/781060553"
       },
-      "latest_covered": {
+      "latest_covering_activity": {
         "activity_id": 781060553,
-        "covered_at": "2016-11-20T15:07:57Z",
+        "date": "2016-11-20",
         "strava_url": "https://www.strava.com/activities/781060553"
       },
       "lock_number": "45",
@@ -781,14 +826,15 @@
     {
       "common_name": "Two Locks 2",
       "coverage_status": "covered",
-      "first_covered": {
+      "covering_activity_count": 1,
+      "first_covering_activity": {
         "activity_id": 781060553,
-        "covered_at": "2016-11-20T15:07:57Z",
+        "date": "2016-11-20",
         "strava_url": "https://www.strava.com/activities/781060553"
       },
-      "latest_covered": {
+      "latest_covering_activity": {
         "activity_id": 781060553,
-        "covered_at": "2016-11-20T15:07:57Z",
+        "date": "2016-11-20",
         "strava_url": "https://www.strava.com/activities/781060553"
       },
       "lock_number": "46",
@@ -799,14 +845,15 @@
     {
       "common_name": "Four Locks 1",
       "coverage_status": "covered",
-      "first_covered": {
+      "covering_activity_count": 1,
+      "first_covering_activity": {
         "activity_id": 781060553,
-        "covered_at": "2016-11-20T15:07:57Z",
+        "date": "2016-11-20",
         "strava_url": "https://www.strava.com/activities/781060553"
       },
-      "latest_covered": {
+      "latest_covering_activity": {
         "activity_id": 781060553,
-        "covered_at": "2016-11-20T15:07:57Z",
+        "date": "2016-11-20",
         "strava_url": "https://www.strava.com/activities/781060553"
       },
       "lock_number": "47",
@@ -817,14 +864,15 @@
     {
       "common_name": "Four Locks 2",
       "coverage_status": "covered",
-      "first_covered": {
+      "covering_activity_count": 1,
+      "first_covering_activity": {
         "activity_id": 781060553,
-        "covered_at": "2016-11-20T15:07:57Z",
+        "date": "2016-11-20",
         "strava_url": "https://www.strava.com/activities/781060553"
       },
-      "latest_covered": {
+      "latest_covering_activity": {
         "activity_id": 781060553,
-        "covered_at": "2016-11-20T15:07:57Z",
+        "date": "2016-11-20",
         "strava_url": "https://www.strava.com/activities/781060553"
       },
       "lock_number": "48",
@@ -835,14 +883,15 @@
     {
       "common_name": "Four Locks 3",
       "coverage_status": "covered",
-      "first_covered": {
+      "covering_activity_count": 1,
+      "first_covering_activity": {
         "activity_id": 781060553,
-        "covered_at": "2016-11-20T15:07:57Z",
+        "date": "2016-11-20",
         "strava_url": "https://www.strava.com/activities/781060553"
       },
-      "latest_covered": {
+      "latest_covering_activity": {
         "activity_id": 781060553,
-        "covered_at": "2016-11-20T15:07:57Z",
+        "date": "2016-11-20",
         "strava_url": "https://www.strava.com/activities/781060553"
       },
       "lock_number": "49",
@@ -853,14 +902,15 @@
     {
       "common_name": "Four Locks 4",
       "coverage_status": "covered",
-      "first_covered": {
+      "covering_activity_count": 1,
+      "first_covering_activity": {
         "activity_id": 781060553,
-        "covered_at": "2016-11-20T15:07:57Z",
+        "date": "2016-11-20",
         "strava_url": "https://www.strava.com/activities/781060553"
       },
-      "latest_covered": {
+      "latest_covering_activity": {
         "activity_id": 781060553,
-        "covered_at": "2016-11-20T15:07:57Z",
+        "date": "2016-11-20",
         "strava_url": "https://www.strava.com/activities/781060553"
       },
       "lock_number": "50",
@@ -871,8 +921,9 @@
     {
       "common_name": "Hancock 1",
       "coverage_status": "remaining",
-      "first_covered": null,
-      "latest_covered": null,
+      "covering_activity_count": 0,
+      "first_covering_activity": null,
+      "latest_covering_activity": null,
       "lock_number": "51",
       "milepost": 122.7,
       "name": "Lock 51",
@@ -887,8 +938,9 @@
     {
       "common_name": "Hancock 2",
       "coverage_status": "remaining",
-      "first_covered": null,
-      "latest_covered": null,
+      "covering_activity_count": 0,
+      "first_covering_activity": null,
+      "latest_covering_activity": null,
       "lock_number": "52",
       "milepost": 122.9,
       "name": "Lock 52",
@@ -903,8 +955,9 @@
     {
       "common_name": "Irishman's Lock",
       "coverage_status": "remaining",
-      "first_covered": null,
-      "latest_covered": null,
+      "covering_activity_count": 0,
+      "first_covering_activity": null,
+      "latest_covering_activity": null,
       "lock_number": "53",
       "milepost": 130.1,
       "name": "Lock 53",
@@ -919,8 +972,9 @@
     {
       "common_name": null,
       "coverage_status": "remaining",
-      "first_covered": null,
-      "latest_covered": null,
+      "covering_activity_count": 0,
+      "first_covering_activity": null,
+      "latest_covering_activity": null,
       "lock_number": "54",
       "milepost": 134.0,
       "name": "Lock 54",
@@ -935,8 +989,9 @@
     {
       "common_name": null,
       "coverage_status": "remaining",
-      "first_covered": null,
-      "latest_covered": null,
+      "covering_activity_count": 0,
+      "first_covering_activity": null,
+      "latest_covering_activity": null,
       "lock_number": "55",
       "milepost": 134.2,
       "name": "Lock 55",
@@ -951,8 +1006,9 @@
     {
       "common_name": "Sideling Lock",
       "coverage_status": "remaining",
-      "first_covered": null,
-      "latest_covered": null,
+      "covering_activity_count": 0,
+      "first_covering_activity": null,
+      "latest_covering_activity": null,
       "lock_number": "56",
       "milepost": 136.2,
       "name": "Lock 56",
@@ -967,8 +1023,9 @@
     {
       "common_name": null,
       "coverage_status": "remaining",
-      "first_covered": null,
-      "latest_covered": null,
+      "covering_activity_count": 0,
+      "first_covering_activity": null,
+      "latest_covering_activity": null,
       "lock_number": "57",
       "milepost": 139.4,
       "name": "Lock 57",
@@ -983,8 +1040,9 @@
     {
       "common_name": null,
       "coverage_status": "remaining",
-      "first_covered": null,
-      "latest_covered": null,
+      "covering_activity_count": 0,
+      "first_covering_activity": null,
+      "latest_covering_activity": null,
       "lock_number": "58",
       "milepost": 144.0,
       "name": "Lock 58",
@@ -999,8 +1057,9 @@
     {
       "common_name": null,
       "coverage_status": "remaining",
-      "first_covered": null,
-      "latest_covered": null,
+      "covering_activity_count": 0,
+      "first_covering_activity": null,
+      "latest_covering_activity": null,
       "lock_number": "59",
       "milepost": 146.5,
       "name": "Lock 59",
@@ -1015,8 +1074,9 @@
     {
       "common_name": null,
       "coverage_status": "remaining",
-      "first_covered": null,
-      "latest_covered": null,
+      "covering_activity_count": 0,
+      "first_covering_activity": null,
+      "latest_covering_activity": null,
       "lock_number": "60",
       "milepost": 149.6,
       "name": "Lock 60",
@@ -1031,8 +1091,9 @@
     {
       "common_name": null,
       "coverage_status": "remaining",
-      "first_covered": null,
-      "latest_covered": null,
+      "covering_activity_count": 0,
+      "first_covering_activity": null,
+      "latest_covering_activity": null,
       "lock_number": "61",
       "milepost": 153.1,
       "name": "Lock 61",
@@ -1047,8 +1108,9 @@
     {
       "common_name": null,
       "coverage_status": "remaining",
-      "first_covered": null,
-      "latest_covered": null,
+      "covering_activity_count": 0,
+      "first_covering_activity": null,
+      "latest_covering_activity": null,
       "lock_number": "62",
       "milepost": 154.1,
       "name": "Lock 62",
@@ -1063,8 +1125,9 @@
     {
       "common_name": null,
       "coverage_status": "remaining",
-      "first_covered": null,
-      "latest_covered": null,
+      "covering_activity_count": 0,
+      "first_covering_activity": null,
+      "latest_covering_activity": null,
       "lock_number": "63 1/3",
       "milepost": 154.5,
       "name": "Lock 63 1/3",
@@ -1079,8 +1142,9 @@
     {
       "common_name": null,
       "coverage_status": "remaining",
-      "first_covered": null,
-      "latest_covered": null,
+      "covering_activity_count": 0,
+      "first_covering_activity": null,
+      "latest_covering_activity": null,
       "lock_number": "64 2/3",
       "milepost": 154.6,
       "name": "Lock 64 2/3",
@@ -1095,8 +1159,9 @@
     {
       "common_name": null,
       "coverage_status": "remaining",
-      "first_covered": null,
-      "latest_covered": null,
+      "covering_activity_count": 0,
+      "first_covering_activity": null,
+      "latest_covering_activity": null,
       "lock_number": "66",
       "milepost": 154.7,
       "name": "Lock 66",
@@ -1111,8 +1176,9 @@
     {
       "common_name": "Darbey's Lock",
       "coverage_status": "remaining",
-      "first_covered": null,
-      "latest_covered": null,
+      "covering_activity_count": 0,
+      "first_covering_activity": null,
+      "latest_covering_activity": null,
       "lock_number": "67",
       "milepost": 161.7,
       "name": "Lock 67",
@@ -1127,8 +1193,9 @@
     {
       "common_name": "Crabtree's Lock",
       "coverage_status": "remaining",
-      "first_covered": null,
-      "latest_covered": null,
+      "covering_activity_count": 0,
+      "first_covering_activity": null,
+      "latest_covering_activity": null,
       "lock_number": "68",
       "milepost": 164.8,
       "name": "Lock 68",
@@ -1143,8 +1210,9 @@
     {
       "common_name": "Twigg's Lock",
       "coverage_status": "remaining",
-      "first_covered": null,
-      "latest_covered": null,
+      "covering_activity_count": 0,
+      "first_covering_activity": null,
+      "latest_covering_activity": null,
       "lock_number": "69",
       "milepost": 166.5,
       "name": "Lock 69",
@@ -1159,8 +1227,9 @@
     {
       "common_name": "Oldtown",
       "coverage_status": "remaining",
-      "first_covered": null,
-      "latest_covered": null,
+      "covering_activity_count": 0,
+      "first_covering_activity": null,
+      "latest_covering_activity": null,
       "lock_number": "70",
       "milepost": 166.7,
       "name": "Lock 70",
@@ -1175,8 +1244,9 @@
     {
       "common_name": null,
       "coverage_status": "remaining",
-      "first_covered": null,
-      "latest_covered": null,
+      "covering_activity_count": 0,
+      "first_covering_activity": null,
+      "latest_covering_activity": null,
       "lock_number": "71",
       "milepost": 167.0,
       "name": "Lock 71",
@@ -1191,8 +1261,9 @@
     {
       "common_name": "The Narrows / Ten Mile Lock",
       "coverage_status": "remaining",
-      "first_covered": null,
-      "latest_covered": null,
+      "covering_activity_count": 0,
+      "first_covering_activity": null,
+      "latest_covering_activity": null,
       "lock_number": "72",
       "milepost": 174.4,
       "name": "Lock 72",
@@ -1207,8 +1278,9 @@
     {
       "common_name": "North Branch 1",
       "coverage_status": "remaining",
-      "first_covered": null,
-      "latest_covered": null,
+      "covering_activity_count": 0,
+      "first_covering_activity": null,
+      "latest_covering_activity": null,
       "lock_number": "73",
       "milepost": 175.4,
       "name": "Lock 73",
@@ -1223,8 +1295,9 @@
     {
       "common_name": "North Branch 2",
       "coverage_status": "remaining",
-      "first_covered": null,
-      "latest_covered": null,
+      "covering_activity_count": 0,
+      "first_covering_activity": null,
+      "latest_covering_activity": null,
       "lock_number": "74",
       "milepost": 175.5,
       "name": "Lock 74",
@@ -1239,8 +1312,9 @@
     {
       "common_name": "North Branch 3 / Keifers Lock",
       "coverage_status": "remaining",
-      "first_covered": null,
-      "latest_covered": null,
+      "covering_activity_count": 0,
+      "first_covering_activity": null,
+      "latest_covering_activity": null,
       "lock_number": "75",
       "milepost": 175.7,
       "name": "Lock 75",
