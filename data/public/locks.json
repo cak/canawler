@@ -2148,10 +2148,12 @@
   "schema_version": 1,
   "sources": [
     {
+      "id": "nps_lift_locks",
       "name": "National Park Service",
       "url": "https://www.nps.gov/choh/learn/historyculture/lift-locks.htm"
     },
     {
+      "id": "co_canal_trust_locks",
       "name": "C&O Canal Trust",
       "url": "https://www.canaltrust.org/pyvactivities/locks/"
     }
