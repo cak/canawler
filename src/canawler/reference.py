@@ -32,6 +32,19 @@ QUERY_URL = f"{FEATURESERVER_URL}/query"
 UNIT_CODE = "CHOH"
 DEFAULT_OUTPUT = Path("data/reference/co-towpath/towpath.geojson")
 DEFAULT_METADATA = Path("data/reference/co-towpath/README.md")
+PUBLIC_DIR = Path("data/public")
+PUBLIC_JSON_DIR = PUBLIC_DIR / "json"
+PUBLIC_CSV_DIR = PUBLIC_DIR / "csv"
+
+
+def public_format_directories(public_directory: Path = PUBLIC_DIR) -> tuple[Path, Path]:
+    """Return the canonical JSON and derived CSV directories for a public root."""
+    public_directory = Path(public_directory)
+    return (
+        public_directory / PUBLIC_JSON_DIR.name,
+        public_directory / PUBLIC_CSV_DIR.name,
+    )
+
 
 INSPECTION_FIELDS = (
     "OBJECTID",
@@ -761,6 +774,9 @@ def build_reference(
 
 
 __all__ = [
+    "PUBLIC_CSV_DIR",
+    "PUBLIC_DIR",
+    "PUBLIC_JSON_DIR",
     "BuildReport",
     "ReferenceDataError",
     "build_reference",
@@ -768,6 +784,7 @@ __all__ = [
     "filter_choh_features",
     "inspect_reference",
     "normalize_towpath_geometry",
+    "public_format_directories",
     "select_towpath_features",
     "validate_canonical_reference",
 ]

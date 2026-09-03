@@ -205,6 +205,37 @@
         }
       ]
     },
+    "features.json": {
+      "derived_by": [
+        "Canawler combined public lock and access-point feature representation"
+      ],
+      "sources": [
+        {
+          "role": "Canonical automobile access-point facts",
+          "source_id": "co_canal_association_access_points"
+        },
+        {
+          "role": "Practical lock mileposts and common names for nearby locks",
+          "source_id": "co_canal_trust_locks"
+        },
+        {
+          "role": "Lift-lock count and numbering authority",
+          "source_id": "nps_lift_locks"
+        },
+        {
+          "role": "Amenity enrichment and selected nearby recreation features",
+          "source_id": "nps_recreation_guide"
+        },
+        {
+          "role": "Input to Canawler-derived towpath coverage fields",
+          "source_id": "nps_towpath_reference"
+        },
+        {
+          "role": "Input to Canawler-derived activity history fields",
+          "source_id": "strava_activity_data"
+        }
+      ]
+    },
     "locks.json": {
       "derived_by": [
         "Canawler stable public identifiers",

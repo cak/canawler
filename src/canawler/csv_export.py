@@ -2,12 +2,16 @@
 
 from __future__ import annotations
 
+import csv
 import json
 from dataclasses import dataclass
+from io import StringIO
 from pathlib import Path
 from typing import Any
 
 import polars as pl
+
+from canawler.reference import PUBLIC_DIR, public_format_directories
 
 MODES = ("run", "bike", "hike")
 AMENITIES = (
@@ -110,6 +114,24 @@ ARTIFACT_SOURCE_SCHEMA = {
     "role": pl.String,
 }
 
+PUBLIC_ACTIVITY_COLUMNS = (
+    "activity_id",
+    "date",
+    "activity_name",
+    "activity_type",
+    "strava_distance_miles",
+    "co_travel_miles",
+    "co_unique_miles",
+    "new_co_unique_miles",
+    "cumulative_unique_miles",
+    "cumulative_percent_complete",
+    "min_milepost",
+    "max_milepost",
+    "moving_time_minutes",
+    "elevation_gain_feet",
+    "strava_url",
+)
+
 ANALYTICAL_CSV_ARTIFACTS = frozenset(
     {
         "access-point-nps-matches.csv",
@@ -120,6 +142,7 @@ ANALYTICAL_CSV_ARTIFACTS = frozenset(
         "sources.csv",
     }
 )
+PUBLIC_CSV_ARTIFACTS = ANALYTICAL_CSV_ARTIFACTS | {"activities.csv"}
 
 
 @dataclass(frozen=True)
@@ -173,10 +196,10 @@ def _load_json_object(public_directory: Path, filename: str) -> dict[str, Any]:
     return data
 
 
-def _required_list(root: dict[str, Any], key: str, filename: str) -> list[Any]:
+def _required_list(root: dict[str, Any], key: str, source_path: Path) -> list[Any]:
     value = root.get(key)
     if not isinstance(value, list):
-        raise ExportError(f"Expected `{key}` to be an array in data/public/{filename}.")
+        raise ExportError(f"Expected `{key}` to be an array in {source_path}.")
     return value
 
 
@@ -192,13 +215,44 @@ def _validate_unique_ids(records: list[dict[str, Any]], label: str) -> set[str]:
     return set(ids)
 
 
-def _validate_activity_ids(activities: Any) -> set[int]:
+def _validate_features_document(
+    features_root: dict[str, Any],
+    source_path: Path,
+    locks: list[dict[str, Any]],
+    access_points: list[dict[str, Any]],
+) -> tuple[list[dict[str, Any]], list[dict[str, Any]]]:
+    if set(features_root) != {"schema_version", "features"}:
+        raise ExportError(f"Unexpected root fields in {source_path}.")
+    features = _required_list(features_root, "features", source_path)
+    split: dict[str, list[dict[str, Any]]] = {"lock": [], "access_point": []}
+    for record in features:
+        if not isinstance(record, dict):
+            raise ExportError(f"Expected feature objects in {source_path}.")
+        feature_type = record.get("feature_type")
+        if feature_type not in split:
+            raise ExportError(f"Invalid feature type in {source_path}.")
+        split[feature_type].append(
+            {key: value for key, value in record.items() if key != "feature_type"}
+        )
+
+    def indexed(records: list[dict[str, Any]]) -> dict[str, dict[str, Any]]:
+        return {str(record.get("id")): record for record in records}
+
+    if indexed(split["lock"]) != indexed(locks) or indexed(
+        split["access_point"]
+    ) != indexed(access_points):
+        raise ExportError(
+            f"Feature records in {source_path} do not match the canonical "
+            "lock and access-point artifacts."
+        )
+    return split["lock"], split["access_point"]
+
+
+def _validate_activity_ids(activities: Any, source_path: Path) -> set[int]:
     if not isinstance(activities, list) or not all(
         isinstance(record, dict) for record in activities
     ):
-        raise ExportError(
-            "Expected an array of objects in data/public/activities.json."
-        )
+        raise ExportError(f"Expected an array of objects in {source_path}.")
     activity_ids = [record.get("activity_id") for record in activities]
     if any(
         isinstance(activity_id, bool) or not isinstance(activity_id, int)
@@ -486,7 +540,9 @@ def _nps_match_frame(
     )
 
 
-def _coverage_segment_frame(coverage: dict[str, Any]) -> pl.DataFrame:
+def _coverage_segment_frame(
+    coverage: dict[str, Any], source_path: Path
+) -> pl.DataFrame:
     definitions = (
         ("completed_segments", "combined", "completed", 0, 0),
         ("remaining_segments", "combined", "remaining", 0, 1),
@@ -496,11 +552,9 @@ def _coverage_segment_frame(coverage: dict[str, Any]) -> pl.DataFrame:
     )
     rows: list[dict[str, Any]] = []
     for key, scope, status, scope_order, status_order in definitions:
-        for segment in _required_list(coverage, key, "coverage.json"):
+        for segment in _required_list(coverage, key, source_path):
             if not isinstance(segment, dict):
-                raise ExportError(
-                    f"Expected objects in `{key}` in data/public/coverage.json."
-                )
+                raise ExportError(f"Expected objects in `{key}` in {source_path}.")
             rows.append(
                 {
                     "coverage_scope": scope,
@@ -525,8 +579,10 @@ def _coverage_segment_frame(coverage: dict[str, Any]) -> pl.DataFrame:
     ).select(COVERAGE_SEGMENT_SCHEMA.keys())
 
 
-def _source_frames(registry: dict[str, Any]) -> tuple[pl.DataFrame, pl.DataFrame]:
-    sources = _required_list(registry, "sources", "sources.json")
+def _source_frames(
+    registry: dict[str, Any], source_path: Path
+) -> tuple[pl.DataFrame, pl.DataFrame]:
+    sources = _required_list(registry, "sources", source_path)
     expected_fields = {
         "id",
         "name",
@@ -538,9 +594,7 @@ def _source_frames(registry: dict[str, Any]) -> tuple[pl.DataFrame, pl.DataFrame
     source_rows: list[dict[str, Any]] = []
     for source in sources:
         if not isinstance(source, dict) or set(source) != expected_fields:
-            raise ExportError(
-                "A source in data/public/sources.json has invalid fields."
-            )
+            raise ExportError(f"A source in {source_path} has invalid fields.")
         if any(
             not isinstance(source[field], str) or not source[field]
             for field in ("id", "name", "organization", "url", "description")
@@ -614,6 +668,23 @@ def _serialize_csv(frame: pl.DataFrame) -> str:
     return contents
 
 
+def _serialize_activity_csv(activities: list[dict[str, Any]]) -> str:
+    stream = StringIO(newline="")
+    writer = csv.DictWriter(
+        stream, fieldnames=PUBLIC_ACTIVITY_COLUMNS, lineterminator="\n"
+    )
+    writer.writeheader()
+    for index, record in enumerate(activities):
+        missing = set(PUBLIC_ACTIVITY_COLUMNS) - set(record)
+        if missing:
+            raise ExportError(
+                f"Public activity {index} is missing CSV fields: "
+                + ", ".join(sorted(missing))
+            )
+        writer.writerow({field: record[field] for field in PUBLIC_ACTIVITY_COLUMNS})
+    return stream.getvalue()
+
+
 def _write_csv(path: Path, contents: str) -> bool:
     if path.is_file() and path.read_text(encoding="utf-8") == contents:
         return False
@@ -621,21 +692,33 @@ def _write_csv(path: Path, contents: str) -> bool:
     return True
 
 
-def export_public_csvs(public_directory: Path) -> CsvExportSummary:
-    """Validate public JSON and publish the normalized analytical CSV contract."""
+def export_public_csvs(public_directory: Path = PUBLIC_DIR) -> CsvExportSummary:
+    """Read canonical public JSON and publish the derived CSV contract."""
     public_directory = Path(public_directory)
-    locks_root = _load_json_object(public_directory, "locks.json")
-    access_points_root = _load_json_object(public_directory, "access-points.json")
-    coverage = _load_json_object(public_directory, "coverage.json")
-    source_registry = _load_json_object(public_directory, "sources.json")
-    activities = _load_json(public_directory, "activities.json")
+    json_directory, csv_directory = public_format_directories(public_directory)
+    locks_path = json_directory / "locks.json"
+    access_points_path = json_directory / "access-points.json"
+    features_path = json_directory / "features.json"
+    coverage_path = json_directory / "coverage.json"
+    sources_path = json_directory / "sources.json"
+    activities_path = json_directory / "activities.json"
 
-    locks = _required_list(locks_root, "locks", "locks.json")
+    locks_root = _load_json_object(json_directory, locks_path.name)
+    access_points_root = _load_json_object(json_directory, access_points_path.name)
+    features_root = _load_json_object(json_directory, features_path.name)
+    coverage = _load_json_object(json_directory, coverage_path.name)
+    source_registry = _load_json_object(json_directory, sources_path.name)
+    activities = _load_json(json_directory, activities_path.name)
+
+    locks = _required_list(locks_root, "locks", locks_path)
     access_points = _required_list(
-        access_points_root, "access_points", "access-points.json"
+        access_points_root, "access_points", access_points_path
     )
     if not all(isinstance(record, dict) for record in [*locks, *access_points]):
         raise ExportError("Feature arrays must contain objects.")
+    feature_locks, feature_access_points = _validate_features_document(
+        features_root, features_path, locks, access_points
+    )
 
     lock_ids = _validate_unique_ids(locks, "lock")
     access_point_ids = _validate_unique_ids(access_points, "access-point")
@@ -643,16 +726,16 @@ def export_public_csvs(public_directory: Path) -> CsvExportSummary:
     if collisions:
         raise ExportError(f"Lock and access-point IDs collide: {sorted(collisions)}")
     feature_ids = lock_ids | access_point_ids
-    activity_ids = _validate_activity_ids(activities)
+    activity_ids = _validate_activity_ids(activities, activities_path)
 
-    features = _feature_frame(locks, access_points)
+    features = _feature_frame(feature_locks, feature_access_points)
     _validate_activity_relationships([*locks, *access_points], activity_ids)
     nearby_features = _nearby_feature_frame(
         access_points, access_point_ids, feature_ids, lock_ids
     )
     nps_matches = _nps_match_frame(access_points, access_point_ids)
-    coverage_segments = _coverage_segment_frame(coverage)
-    sources, artifact_sources = _source_frames(source_registry)
+    coverage_segments = _coverage_segment_frame(coverage, coverage_path)
+    sources, artifact_sources = _source_frames(source_registry, sources_path)
 
     outputs = (
         (features, "features.csv"),
@@ -662,15 +745,18 @@ def export_public_csvs(public_directory: Path) -> CsvExportSummary:
         (sources, "sources.csv"),
         (artifact_sources, "artifact-sources.csv"),
     )
-    filenames = {filename for _, filename in outputs}
-    if filenames != ANALYTICAL_CSV_ARTIFACTS:
-        raise ExportError("Analytical CSV outputs do not match the owned artifact set.")
+    filenames = {"activities.csv", *(filename for _, filename in outputs)}
+    if filenames != PUBLIC_CSV_ARTIFACTS:
+        raise ExportError("Public CSV outputs do not match the owned artifact set.")
 
-    serialized_outputs = tuple(
-        (public_directory / filename, _serialize_csv(frame))
-        for frame, filename in outputs
+    serialized_outputs = (
+        (csv_directory / "activities.csv", _serialize_activity_csv(activities)),
+        *(
+            (csv_directory / filename, _serialize_csv(frame))
+            for frame, filename in outputs
+        ),
     )
-    public_directory.mkdir(parents=True, exist_ok=True)
+    csv_directory.mkdir(parents=True, exist_ok=True)
     results = tuple(
         (path, _write_csv(path, contents)) for path, contents in serialized_outputs
     )
@@ -689,6 +775,8 @@ def export_public_csvs(public_directory: Path) -> CsvExportSummary:
 
 __all__ = [
     "ANALYTICAL_CSV_ARTIFACTS",
+    "PUBLIC_ACTIVITY_COLUMNS",
+    "PUBLIC_CSV_ARTIFACTS",
     "CsvExportSummary",
     "ExportError",
     "export_public_csvs",

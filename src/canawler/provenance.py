@@ -230,6 +230,12 @@ def build_public_source_registry() -> dict[str, Any]:
                 "Canawler downstream normalization of its public lock and access-point JSON artifacts for analytical use"
             ],
         },
+        "features.json": {
+            "sources": _relationships(*access_sources, *feature_coverage_sources),
+            "derived_by": [
+                "Canawler combined public lock and access-point feature representation"
+            ],
+        },
         "locks.json": {
             "sources": _relationships(
                 (

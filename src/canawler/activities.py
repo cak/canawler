@@ -214,7 +214,11 @@ def build_historical_activities(
         canonical_reference_sha256,
     )
     from canawler.publication import publish_artifacts
-    from canawler.reference import validate_canonical_reference
+    from canawler.reference import (
+        PUBLIC_DIR,
+        public_format_directories,
+        validate_canonical_reference,
+    )
     from canawler.strava import load_catalog
 
     export_directory = discover_strava_export(export_directory)
@@ -272,8 +276,16 @@ def build_historical_activities(
         reference_sha256=canonical_reference_sha256(reference_path),
     )
     processed_paths = _write_processed_outputs(processed_directory, records, coverage)
+    public_directory = Path(processed_directory).parent / PUBLIC_DIR.name
     public_paths, public_analytics = publish_artifacts(
-        records, coverage, processed_directory.parent / "public"
+        records, coverage, public_directory
+    )
+    from canawler.visualization import build_coverage_map
+
+    _, public_csv_directory = public_format_directories(public_directory)
+    visualization_paths = build_coverage_map(
+        reference_path=reference_path,
+        coverage_path=public_csv_directory / "coverage-segments.csv",
     )
     type_counts = Counter(record["activity_type"] for record in records)
     return BuildReport(
@@ -283,7 +295,7 @@ def build_historical_activities(
         covered_type_counts=dict(type_counts),
         combined_unique_miles=coverage["combined_unique_miles"],
         completion_percentage=coverage["combined_percent_complete"],
-        output_paths=processed_paths + public_paths,
+        output_paths=processed_paths + public_paths + visualization_paths,
         public_analytics=public_analytics,
         issues=tuple(issues),
     )

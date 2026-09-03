@@ -5,6 +5,7 @@ from __future__ import annotations
 import hashlib
 import json
 import math
+from collections.abc import Iterable
 from dataclasses import dataclass
 from pathlib import Path
 from typing import Any
@@ -13,7 +14,7 @@ import numpy as np
 from pyproj import Transformer
 from shapely import STRtree, line_locate_point, points
 from shapely.geometry import LineString, shape
-from shapely.ops import transform
+from shapely.ops import substring, transform
 
 from canawler.activities import Activity, GPSObservation
 
@@ -97,6 +98,50 @@ def bins_to_segments(
         )
         for start, end in runs
     )
+
+
+def milepost_intervals_to_geometries(
+    reference: LineString,
+    intervals: Iterable[tuple[float, float]],
+) -> tuple[LineString, ...]:
+    """Slice a route using Canawler's normalized 0–184.5 mile coordinate."""
+    if (
+        reference.geom_type != "LineString"
+        or reference.is_empty
+        or not reference.is_valid
+        or reference.length <= 0
+    ):
+        raise CoverageError("reference geometry must be one valid, nonempty LineString")
+
+    geometries: list[LineString] = []
+    for index, interval in enumerate(intervals):
+        try:
+            start_raw, end_raw = interval
+            start = float(start_raw)
+            end = float(end_raw)
+        except (TypeError, ValueError) as error:
+            raise CoverageError(f"coverage interval {index} is malformed") from error
+        if not math.isfinite(start) or not math.isfinite(end):
+            raise CoverageError(f"coverage interval {index} must contain finite values")
+        if not 0 <= start <= CANAL_MILES or not 0 <= end <= CANAL_MILES:
+            raise CoverageError(
+                f"coverage interval {index} is outside 0-{CANAL_MILES} miles"
+            )
+        if start >= end:
+            raise CoverageError(
+                f"coverage interval {index} start must be less than its end"
+            )
+
+        geometry = substring(
+            reference,
+            start / CANAL_MILES,
+            end / CANAL_MILES,
+            normalized=True,
+        )
+        if geometry.geom_type != "LineString" or geometry.is_empty:
+            raise CoverageError(f"coverage interval {index} produced no line geometry")
+        geometries.append(geometry)
+    return tuple(geometries)
 
 
 class CoverageEngine:
@@ -735,5 +780,6 @@ __all__ = [
     "bins_to_segments",
     "calculate_history",
     "canonical_reference_sha256",
+    "milepost_intervals_to_geometries",
     "validate_coverage_outputs",
 ]

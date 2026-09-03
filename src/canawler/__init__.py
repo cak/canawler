@@ -40,6 +40,7 @@ def main(argv: Sequence[str] | None = None) -> int:
     from canawler.coverage import CoverageError
     from canawler.csv_export import ExportError
     from canawler.reference import ReferenceDataError
+    from canawler.visualization import VisualizationError
 
     args = _parser().parse_args(argv)
     try:
@@ -68,6 +69,7 @@ def main(argv: Sequence[str] | None = None) -> int:
         CoverageError,
         ExportError,
         ReferenceDataError,
+        VisualizationError,
     ) as error:
         print(f"error: {error}", file=sys.stderr)
         return 1

@@ -2,13 +2,16 @@
 
 from __future__ import annotations
 
-import csv
 import json
-from io import StringIO
 from pathlib import Path
 from typing import Any
 
-from canawler.csv_export import CsvExportSummary, export_public_csvs
+from canawler.csv_export import (
+    PUBLIC_ACTIVITY_COLUMNS,
+    CsvExportSummary,
+    export_public_csvs,
+)
+from canawler.reference import PUBLIC_DIR, public_format_directories
 
 PUBLIC_ACTIVITY_FIELDS = (
     "activity_id",
@@ -28,8 +31,6 @@ PUBLIC_ACTIVITY_FIELDS = (
     "strava_url",
     "segments",
 )
-PUBLIC_ACTIVITY_COLUMNS = PUBLIC_ACTIVITY_FIELDS[:-1]
-
 PUBLIC_COVERAGE_FIELDS = (
     "canal_miles",
     "bin_miles",
@@ -58,12 +59,37 @@ def _write_if_changed(path: Path, text: str) -> None:
         path.write_text(text, encoding="utf-8")
 
 
+def _combined_features(
+    access_points: dict[str, Any], locks: dict[str, Any]
+) -> dict[str, Any]:
+    """Combine the rich feature records without changing their source schemas."""
+    features = [
+        *(
+            {"feature_type": "access_point", **record}
+            for record in access_points["access_points"]
+        ),
+        *({"feature_type": "lock", **record} for record in locks["locks"]),
+    ]
+    features.sort(
+        key=lambda record: (
+            record["milepost"],
+            record["feature_type"],
+            record["name"],
+            record["id"],
+        )
+    )
+    return {
+        "schema_version": access_points["schema_version"],
+        "features": features,
+    }
+
+
 def publish_artifacts(
     activity_records: list[dict[str, Any]],
     coverage: dict[str, Any],
-    output_directory: Path = Path("data/public"),
+    output_directory: Path = PUBLIC_DIR,
 ) -> tuple[tuple[Path, ...], CsvExportSummary]:
-    """Write deterministic public artifacts using explicit privacy allowlists."""
+    """Write canonical JSON, then derive deterministic CSV from that JSON."""
     public_activities = [
         {field: record[field] for field in PUBLIC_ACTIVITY_FIELDS}
         for record in activity_records
@@ -71,22 +97,13 @@ def publish_artifacts(
     public_coverage = {field: coverage[field] for field in PUBLIC_COVERAGE_FIELDS}
 
     output_directory = Path(output_directory)
-    csv_path = output_directory / "activities.csv"
-    activities_json_path = output_directory / "activities.json"
-    coverage_json_path = output_directory / "coverage.json"
-    access_points_path = output_directory / "access-points.json"
-    locks_path = output_directory / "locks.json"
-    sources_path = output_directory / "sources.json"
-
-    stream = StringIO(newline="")
-    writer = csv.DictWriter(
-        stream, fieldnames=PUBLIC_ACTIVITY_COLUMNS, lineterminator="\n"
-    )
-    writer.writeheader()
-    for record in public_activities:
-        writer.writerow({field: record[field] for field in PUBLIC_ACTIVITY_COLUMNS})
-
-    _write_if_changed(csv_path, stream.getvalue())
+    json_directory, _ = public_format_directories(output_directory)
+    activities_json_path = json_directory / "activities.json"
+    coverage_json_path = json_directory / "coverage.json"
+    access_points_path = json_directory / "access-points.json"
+    features_path = json_directory / "features.json"
+    locks_path = json_directory / "locks.json"
+    sources_path = json_directory / "sources.json"
     _write_if_changed(
         activities_json_path,
         json.dumps(public_activities, indent=2, sort_keys=True, ensure_ascii=False)
@@ -111,6 +128,16 @@ def publish_artifacts(
         locks_path,
         json.dumps(public_locks, indent=2, sort_keys=True, ensure_ascii=False) + "\n",
     )
+    _write_if_changed(
+        features_path,
+        json.dumps(
+            _combined_features(public_access_points, public_locks),
+            indent=2,
+            sort_keys=True,
+            ensure_ascii=False,
+        )
+        + "\n",
+    )
     from canawler.provenance import build_public_source_registry
 
     _write_if_changed(
@@ -126,10 +153,10 @@ def publish_artifacts(
     analytics = export_public_csvs(output_directory)
     return (
         (
-            csv_path,
             activities_json_path,
             coverage_json_path,
             access_points_path,
+            features_path,
             locks_path,
             sources_path,
             *analytics.output_paths,
