@@ -17,6 +17,8 @@ data/processed/
         ↓
 privacy-safe publication data in data/public/
         ↓
+static presentation assets in assets/generated/
+        ↓
 Quarto presentation layer
         ↓
 _site/ (ignored local render)
@@ -35,7 +37,7 @@ The generated CSV and JSON are frontend-neutral. A future presentation layer, su
 Canawler combines external canal references with personal activity data. The source
 organizations supply input facts; Canawler performs the matching, assembly, and
 coverage calculations. Machine-readable attribution is available in
-[`data/public/sources.json`](data/public/sources.json).
+[`data/public/json/sources.json`](data/public/json/sources.json).
 
 ### Access points and visitor amenities
 
@@ -87,7 +89,9 @@ organizations.
 | `data/raw/` | Private source data, including complete Strava exports and GPS tracks. | Ignored except for `.gitkeep`; never commit source contents. |
 | `data/reference/` | Stable public reference data required by the analytical engine. | Not ignored; commit the canonical reference and its provenance. |
 | `data/processed/` | Detailed, reproducible analytical outputs for local inspection and audit. | Ignored except for `.gitkeep`. |
-| `data/public/` | Deliberately sanitized, frontend-ready CSV and JSON. | Not ignored; intended to be committed and deployed. |
+| `data/public/json/` | Deliberately sanitized, canonical frontend-ready JSON. | Not ignored; intended to be committed and deployed. |
+| `data/public/csv/` | Derived, analysis-friendly CSV normalized from the public JSON. | Not ignored; intended to be committed and deployed. |
+| `assets/generated/` | Deterministic presentation assets derived from Canawler data. | Not ignored; commit alongside the public data used to generate them. |
 | Root Quarto files | Website presentation code (`_quarto.yml`, QMD, and CSS). | Not ignored; Quarto working state is ignored. |
 | `_site/` | Local Quarto render output. | Ignored; GitHub Actions renders and publishes it to `gh-pages`. |
 
@@ -99,18 +103,19 @@ The data build produces these internal files:
 
 It then publishes allowlisted fields to:
 
-- `data/public/activities.csv`
-- `data/public/activities.json`
-- `data/public/coverage.json`
-- `data/public/locks.json`
-- `data/public/access-points.json`
-- `data/public/sources.json`
-- `data/public/features.csv`
-- `data/public/feature-nearby-features.csv`
-- `data/public/access-point-nps-matches.csv`
-- `data/public/coverage-segments.csv`
-- `data/public/sources.csv`
-- `data/public/artifact-sources.csv`
+- `data/public/json/activities.json`
+- `data/public/json/coverage.json`
+- `data/public/json/features.json`
+- `data/public/json/locks.json`
+- `data/public/json/access-points.json`
+- `data/public/json/sources.json`
+- `data/public/csv/activities.csv`
+- `data/public/csv/features.csv`
+- `data/public/csv/feature-nearby-features.csv`
+- `data/public/csv/access-point-nps-matches.csv`
+- `data/public/csv/coverage-segments.csv`
+- `data/public/csv/sources.csv`
+- `data/public/csv/artifact-sources.csv`
 
 Public activity JSON retains C&O segment intervals; it does not retain private notes, source filenames, fitness diagnostics, exact timestamps, or tracks.
 The analytical CSV tables normalize the richer public JSON model for joins and analysis;
@@ -118,14 +123,16 @@ they are generated from that finalized JSON during the same build.
 
 ### Frontend data contract
 
-`data/public/` is the canonical, commit-eligible data product for any frontend. Do
-not read from `data/processed/`, which contains private implementation and audit
-details.
+`data/public/json/` is the canonical, commit-eligible data product for any
+frontend. Do not read from `data/processed/`, which contains private
+implementation and audit details. `data/public/csv/` is derived from that JSON for
+analysis and joins.
 
 - Use `coverage.json` for overall totals, methodology, and completed or remaining
   intervals.
 - Use `activities.json`, `locks.json`, and `access-points.json` for the rich nested
   application model.
+- Use `features.json` for the combined lock and access-point feature collection.
 - Use `sources.json` for machine-readable attribution.
 - Use the CSV files for flat analytical tables and joins. They normalize the JSON
   model; they do not define separate coverage or matching rules.
@@ -134,9 +141,16 @@ Feature IDs, activity IDs, and source IDs are the stable join keys across the pu
 artifacts. JSON uses `null` and CSV uses an empty cell for unavailable values. In
 particular, an unmatched NPS amenity is unknown rather than `false`.
 
-The root Quarto project publishes `data/public/` directly as a project resource.
-Quarto copies those artifacts to `_site/data/public/` when it renders; there is no
-second canonical data copy or staging directory.
+The root Quarto project publishes both format directories as project resources.
+Quarto copies those artifacts to `_site/data/public/json/` and
+`_site/data/public/csv/` when it renders; there is no second canonical data copy or
+staging directory.
+
+The same build also writes `assets/generated/canal-coverage.svg` and a convenience
+`assets/generated/canal-coverage.png` from the validated canonical towpath and
+published coverage intervals. The SVG remains the primary site asset. Both outputs
+are committed so local and GitHub Actions Quarto renders do not require the private
+Strava export.
 
 ## Rebuild data
 
@@ -169,8 +183,8 @@ Ordinary activity builds use the committed canonical GeoJSON and do not contact 
 
 The data build and website render are deliberately separate. `uv run canawler build`
 reads private local source data and writes detailed local artifacts to
-`data/processed/` plus sanitized, deterministic artifacts to `data/public/`. Quarto
-does not invoke this command.
+`data/processed/`, sanitized deterministic artifacts to `data/public/`, and static
+presentation assets to `assets/generated/`. Quarto does not invoke this command.
 
 ## Preview and render the website
 
@@ -186,23 +200,25 @@ Render the website locally to the ignored `_site/` directory:
 quarto render
 ```
 
-Rendering consumes `data/public/`; it does not read or require the private Strava
-export under `data/raw/`.
+Rendering consumes `data/public/` and `assets/generated/`; it does not read or
+require the private Strava export under `data/raw/`.
 
 ## Publish the website
 
 1. Rebuild data with `uv run canawler build` when the source export or pipeline has
    changed.
-2. Review the generated changes under `data/public/`.
+2. Review the generated changes under `data/public/` and `assets/generated/`.
 3. Preview or render the site locally when appropriate.
-4. Commit the intended site source and `data/public/` changes; do not commit
-   `_site/`.
+4. Commit the intended site source, `data/public/`, and `assets/generated/` changes;
+   do not commit `_site/`.
 5. Push to `main`.
 
 The Quarto Publish workflow renders the root project using the committed
-`data/public/` artifacts and publishes the result to the `gh-pages` branch. It does
-not install Python or run the Canawler data pipeline. The repository-root `CNAME`
-and `.nojekyll` files are copied into the rendered site by Quarto.
+`data/public/` artifacts and publishes the result to the `gh-pages` branch. Before
+rendering, it regenerates static visualizations through the same package API used by
+the canonical build. It does not process the private Strava export in CI. The
+repository-root `CNAME` and `.nojekyll` files are copied into the rendered site by
+Quarto.
 
 Before the first automated deployment, run Quarto's one-time initialization from
 the repository root:
