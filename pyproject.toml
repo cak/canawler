@@ -9,7 +9,9 @@ authors = [
 requires-python = ">=3.11"
 dependencies = [
     "fitdecode>=0.11.0",
+    "geopandas>=1.1.1",
     "numpy>=2.4.6",
+    "plotnine>=0.15.0",
     "polars>=1.44.1",
     "pyproj>=3.7.2",
     "shapely>=2.1.2",
@@ -26,5 +28,6 @@ build-backend = "uv_build"
 dev = [
     "great-tables>=0.24.0",
     "jupyter>=1.1.1",
+    "pytest>=9.0.2",
     "ruff>=0.16.5",
 ]
