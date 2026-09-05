@@ -2,7 +2,7 @@
 title: "Canawler"
 subtitle: "C&O Canal Progress"
 resources:
-  - data/public/coverage.json
+  - data/public/json/coverage.json
 ---
 
 Track my progress running, biking, and hiking the 184.5-mile C&O Canal towpath.
@@ -12,7 +12,7 @@ Track my progress running, biking, and hiking the 184.5-mile C&O Canal towpath.
 ```{ojs}
 //| echo: false
 
-coverage = FileAttachment("data/public/coverage.json").json()
+coverage = FileAttachment("data/public/json/coverage.json").json()
 
 viewof coverageMode = Inputs.radio(
   ["Combined", "Run", "Bike", "Hike"],
@@ -97,7 +97,7 @@ canalRuler = {
 
 ## Map
 
-C&O Canal coverage map coming soon.
+![](assets/generated/canal-coverage.svg){fig-alt="Geographic map of the C&O Canal towpath from Georgetown to Cumberland, with traveled sections highlighted in blue."}
 
 ## Recent Progress
 

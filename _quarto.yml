@@ -4,7 +4,9 @@ project:
     - index.qmd
     - activities.qmd
   resources:
-    - data/public/**
+    - data/public/json/**
+    - data/public/csv/**
+    - assets/generated/**
 
 website:
   title: "Canawler"
